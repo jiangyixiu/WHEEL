@@ -1,13 +1,11 @@
-CONFIG_LOCAL_LOGFILE = '/debuglog.log'
-
 import logging
 from config import CONFIG_LOCAL_LOGFILE 
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)-2s %(message)s',
-                    datefmt='%d %b %Y %H:%M:%S',
-                    filename='/debuglog.log',
-                    filemode='a')
+                format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)-2s %(message)s',
+                datefmt='%d %b %Y %H:%M:%S',
+                filename=CONFIG_LOCAL_LOGFILE,
+                filemode='a')
 
 console = logging.StreamHandler()
 console.setLevel(logging.DEBUG)
