@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+body{background-color: #F5F5F5;font-family: "PingFangSC-Regular","Microsoft YaHei";}
+.isGift{
+	display: none;
+	margin-top: 3.333333rem;
+	background-color: #FFFFFF;
+}
+.hasGift+.details{
+	margin-top: 1px;
+}
+.giftIcon{
+	width: 4.166666rem;
+	height: 4.166666rem;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: #FFFFFF url(../images/icon_buy_send.png) no-repeat center;
+	background-size: 1.458333rem 1.333333rem;
+	margin: auto;
+	position: relative;
+	top: -2.083333rem;
+}
+.giftText{
+	margin-top: -2.083333rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #3573B3;
+}
+.detailTop{
+	background-color: #FFFFFF;
+	padding: 1.222rem 2rem 0.944rem;
+	color: #4A4A4A;
+	position: relative;
+}
+.billready, .shzIcon, .shsbIcon{
+	position: absolute;
+	top: 3.1rem;
+	right: 0.833333rem;
+	width: 10.125rem;
+	height: 8.458333rem;
+	display: none;
+}
+.hasGift .billready, .hasGift .shzIcon, .hasGift .shsbIcon{
+	top: 2.266667rem;
+}
+.detailTop1{
+    background-color: #FFFFFF;
+    padding: 1.6rem 2rem;
+    color: #4A4A4A;
+}
+.className{
+    font-family: 'PingFangSC-Medium','microsoft yahei';
+	font-size: 1.333333rem;
+	margin-bottom: 0.8rem;
+}
+.classTag{
+	font-size: 1rem;
+	color: #B8B8B8;
+	margin-left: -0.166666rem;
+}
+.classTag>span{
+	padding: 0.166666rem 0.5rem;
+	font-size: 0.833333rem;
+	color: #999999;
+	background-color: #F5F5F5;
+	margin-right: 0.6rem;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+.details{margin-top: 0.833333rem;background-color: #FFFFFF;padding: 0.2rem 0 1.8rem;}
+.dtsTitle{
+	padding: 1.666666rem 0 0.333333rem 1.833333rem;
+    color: #b8b8b8;
+}
+.dtsItem{
+	font-size: 1.166666rem;
+	color: #333333;
+	padding: 0 2.5rem;
+	margin-top: 1.666666rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+.dtsLeft{
+	/*width: 4.666666rem;*/
+	width: 5rem;
+	margin-right: 2.5rem;
+	/*text-align: justify;
+	text-align-last: justify;*/
+	color: #999999;
+}
+.dtsPrice .ub-f1{color: #F7A90C;}
+.ub-f1{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+}
+.detailBottom{
+	/*margin-top: 1.666666rem;*/
+	margin-top: 2rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	padding: 0 2.666666rem;
+}
+.dbBtm{
+	margin-top: -2rem;
+	padding: 1.666666rem 1.5rem 0;
+	line-height: normal;
+}
+.dtlBtn{
+	font-size: 1.166666rem;
+	height: 3.333333rem;
+	line-height: 3.333333rem;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	display: none;
+}
+.dtlTxt{display: none;color: #333333;}
+.dtlTitle{font-size: 1.166666rem;}
+.dtlCtn{font-size: 1rem;color: #B8B8B8;}
+.tzs, .ckxq1{margin-left: 2.5rem;color: #FFFFFF;background-color: #3573B3;}
+.ckxq{color: #FFFFFF;background-color: #3573B3;}
+.tzs, .syfp, .ckfpxx, .ckfpjd, .ckxq1{width: 9rem;}
+.ckfpxx, .ckfpjd{color: #3573B3;background-color: #FFFFFF;}
+.syfp{color: #FFFFFF;background-color: #F7A90C;}
+.fpclz{color: #999999;background-color: #EBEBEB;}
+.bnkfp{width: 25.833333rem;color: #FFFFFF;background-color: #3573B3;}
+.jrzbj{width: 25.833333rem;color: #FFFFFF;background-color: #20C05A;}
+.ckhf{width: 25.833333rem;color: #FFFFFF;background-color: #B8B8B8;}
+.jrzbj1{width: 9rem;margin-left: 2.5rem;color: #FFFFFF;background-color: #20C05A;}
+.ckhf1{width: 9rem;margin-left: 2.5rem;color: #FFFFFF;background-color: #B8B8B8;}
+/*发票信息*/
+.invoiceMsg{
+	background-color: #FFFFFF;
+	padding-top: 0.833333rem;
+	padding-bottom: 2.5rem;
+}
+/*查看回放弹窗*/
+.ckhfLayer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	font-size: 1.166666rem;
+	display: none;
+}
+.ckhfCth{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 2.5rem 1.666666rem 1.666666rem;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	margin-top: -2.666666rem;
+}
+.ckhfCth>div{
+	margin-bottom: 2rem;
+	color: #333333;
+}
+.ckhfCth>a{
+	width: 18.25rem;
+	height: 3.333333rem;
+	line-height: 3.333333rem;
+	background-color: #3573B3;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+}

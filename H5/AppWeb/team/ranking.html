@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>累计学习数据</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="css/ranking.css?v=0.0.88">
+    <script src="../common/jquery.min.js"></script>
+    <script src="../common/angular.min.js"></script>
+    <script src="../common/util.js?v=0.0.2"></script>
+	<script src="https://s95.cnzz.com/z_stat.php?id=1261329276&web_id=1261329276" language="JavaScript"></script>
+    <script>
+    	//声明_czc对象:
+		var _czc = _czc || [];
+		//绑定siteid
+		_czc.push(["_setAccount", "1261329276"]);
+    </script>
+    <script src="js/ranking.js?v=0.0.88"></script>
+    <style>
+		a[title="站长统计"] {display: none;}
+	</style>
+</head>
+<body ng-controller="rankingList">
+    <!-- 头 -->
+    <ul class="topTitle">
+        <li class="topL" ng-cloak>团队成员 <span>{{ bars.length }}</span> 人</li>
+        <li class="topR">
+            <p class="studyTM">学习时长</p>
+            <p class="absorb">吸收率</p>
+        </li>
+    </ul>
+    <!-- 排行榜 -->
+    <ul class="lists">
+        <li class="list" ng-repeat="bar in bars" on-finish-render-filters="Bar" ng-click="toPersonal(bar.employee_id)" ng-cloak>
+            <div class="lsNumber" ng-cloak>
+                {{ $index + 1 }}
+            </div>
+            <div class="lsPhoto lsPhoto{{$index}}">
+                <img class="photo" src="{{bar.avatar}}" alt="">
+            </div>
+            <ul class="lsMiddle">
+                <li class="midTop">
+                    <span class="name" ng-cloak>{{ bar.employee_name }}</span>
+                    <span class="tm" ng-cloak>{{ bar.sum_study_time/60 | number:0 }} <i class="tm_text">分钟</i></span>
+                </li>
+                <li class="default"><i style="width:{{ widths[$index] }}%;"></i></li>
+            </ul>
+           	<div class="lsCircle" id="{{ bar.avg_score }}">
+		        <span class="circleText">{{ bar.avg_score | number:0 }}<i> %</i></span>
+           	</div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<image class="banner" style="height:12.15rem;" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/banner.jpg"></image>
+<view class="time_place box bgWhite">
+	<image class="title_time label" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/title_time.png"></image>
+
+	<view style="overflow:hidden">
+		<image class="icon_time icon" mode="widthFix" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/icon_time.png"></image>
+		<view class="iconText">
+			<text class="iconDate">2017年1月14-15日 (两天)</text>
+			<text class="iconTime">09:30-17:30</text>
+		</view>
+	</view>
+
+	<view style="overflow:hidden">
+		<image class="icon_add icon" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/icon_add.png"></image>
+		<view class="iconText">
+			<text class="iconDate">上海商城剧院 4层</text>
+			<text class="iconTime">(上海市南京西路1376号)</text>
+		</view>
+	</view>
+
+	<view bindtap="bindMapTap" class="usermap">
+		<image mode="widthFix" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/btn_navigation.png"></image>
+	</view>
+
+	<view style="overflow:hidden">
+		<image class="icon_add icon" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/icon_traffic.png"></image>
+			<view class="iconText">
+			<text class="iconDate">地铁2号线静安寺站6号口出</text>
+			<text class="iconTime">向东步行800米即可</text>
+		</view>
+	</view>
+</view>
+
+<view class="title_seat box bgGray">
+	<image class="title_time label" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/title_seat.png"></image>
+	<image style="width:340px;display:flex;margin:auto;" mode="widthFix" bindtap="previewImage" data-src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/content_seat.jpg" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/content_seat.png"></image>
+</view>
+
+<image style="display:flex;margin:auto;" mode="widthFix" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/pic_progress.png"></image>
+
+<view class="title_living box bgGray">
+	<image class="title_living label" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/title_living.png"></image>
+	<image style="display:flex;margin:auto;" mode="widthFix" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/content_living.png"></image>
+</view>
+
+<view class="title_meal box bgWhite">
+	<image class="title_meal label" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/title_meal.png"></image>
+	<image style="display:flex;margin:auto;" mode="widthFix" src="http://www.chazuomba.com/files/fileImg/czxyWx/guide/content_meal.png"></image>
+</view>

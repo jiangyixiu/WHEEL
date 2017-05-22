@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<title>详情</title>
+		<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+		<!--<link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">-->
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="orderDetail.css?v=1.1.2">
+		<script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script>
+		<script type="text/javascript" src="orderDetail.js?v=1.0.8"></script>
+	</head>
+
+	<body>
+		<div class="isGift">
+			<div class="giftIcon"></div>
+			<div class="giftText">赠送好友</div>
+		</div>
+		<div class="detailTop">
+			<div class="className"></div>
+			<div class="classTag">
+				<span></span>
+				<span></span>
+			</div>
+			<img class="billready" src="pic_bought_billready.png" />
+			<img class="shzIcon" src="pic_bought_check.png" />
+			<img class="shsbIcon" src="pic_bought_defeat.png" />
+		</div>
+		<div class="details">
+			<div class="dtsTitle">订单信息</div>
+			<div class="dtsItem dtsPrice">
+				<div class="dtsLeft">价　　格</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtsArea" style="display: none;">
+				<div class="dtsLeft">选　　区</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtsName">
+				<div class="dtsLeft">姓　　名</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtsTel">
+				<div class="dtsLeft">手　　机</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtsEmail">
+				<div class="dtsLeft">邮　　箱</div>
+				<div class="ub-f1"></div>
+			</div>
+			<!--<div class="dtsItem dtlAddr">
+				<div class="dtsLeft">寄票地址</div>
+				<div class="ub-f1"></div>
+			</div>-->
+			<div class="dtsItem dtlCompany">
+				<div class="dtsLeft">公　　司</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtlJob">
+				<div class="dtsLeft">职　　位</div>
+				<div class="ub-f1"></div>
+			</div>
+			<div class="dtsItem dtlQs">
+				<div class="dtsLeft">提　　问</div>
+				<div class="ub-f1"></div>
+			</div>
+		</div>
+		<div class="detailBottom">
+			<div class="dtlBtn syfp">索要发票</div>
+			<div class="dtlBtn ckfpxx">查看发票信息</div>
+			<div class="dtlBtn ckfpjd">查看发票进度</div>
+			<div class="dtlBtn ckxq">查看详情</div>
+			<div class="dtlBtn ckxq1">查看详情</div>
+			<div class="dtlBtn tzs">查看录取通知</div>
+			<div class="dtlBtn bnkfp">查看录取通知</div>
+			<div class="dtlBtn jrzbj">进入直播间</div>
+			<div class="dtlBtn ckhf">查看回放</div>
+		</div>
+		<!--<div class="dbBtm">
+			<div class="dtlTxt shz">
+				<div class="dtlCtn">＊本课程采取审核制招生，支付成功后，工作人员会在1个工作日内与您联系，评估课程与您的匹配度，如果课程不适合您，学费将全额退回。</div>
+			</div>
+			<div class="dtlTxt bmcg">
+				<div class="dtlTitle">很遗憾，报名失败</div>
+				<div class="dtlCtn">经过综合评定，您不符合本次听课要求建议您选听其他课程。我们会在3个工作日内将押金全部返还，请留意。</div>
+			</div>
+		</div>-->
+		<div style="height: 2rem;"></div>
+		<div class="ckhfLayer">
+			<div class="ckhfCth">
+				<div>直播已结束，您可下载「好多课APP」查看回放</div>
+				<a id="Android" style="display: none;" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">立即下载</a>
+           		<a id="IOS" style="display: none;">立即下载</a>
+			</div>
+		</div>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="../netWork/publicShare.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var title = '我正在插坐学院上课，你也一起吧！';
+				var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+				var linkUrl = webAppUrl;
+				var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+				courseShare(title, descText, linkUrl, imageUrl);
+			});
+			 _IsIOS();
+	        function _IsIOS() {
+	            var ua = navigator.userAgent.toLowerCase();
+	            if (ua.match(/iPhone\sOS/i) == "iphone os"||navigator.userAgent.indexOf("iPad") != -1) {
+	                $("#IOS").show();
+	                $("#Android").hide();
+	                new Mlink({
+						mlink: "Aamv",
+						button: $("a#IOS")[0],
+						params: {
+							key: 'hdk_main'
+						}
+					});
+	                return;
+	            } else if (ua.match(/Android/i) == "android"){
+	                $("#IOS").hide();
+	                $("#Android").show();
+	                return;
+	            }
+	        }
+		</script>
+	</body>
+
+</html>

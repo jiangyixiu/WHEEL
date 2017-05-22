@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation"content="portrait">
+    <meta name="x5-orientation"content="portrait">
+    <title>同学录</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/classmate.css">
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/classmate.js?v=1.0.1"></script>
+</head>
+<body data-include="header,footer">
+    <div class="headPic headPicClassmate"></div>
+    <div class="headline">同学录 · Alumni</div>
+
+    <!--同学录-->
+    <div class="classmate">
+        <div class="classmateBox" id="classmateBox">
+            <!--<div class="classmateBoxMin" style="float: left;">-->
+                <!--<div class="photo"><span class="name">陈惠敏</span></div>-->
+                <!--<div class="profile">北京 | 金融P2P</div>-->
+                <!--<span class="job">大河报运营经理</span>-->
+                <!--<div class="title">对未来新媒体运营更有阿道夫阿道夫阿道夫</div>-->
+            <!--</div>-->
+        </div>
+
+        <div id="moreText" style="margin:auto;font-size: 1rem ;color: #ccc;">上拉加载更多</div>
+        <!--loadding-->
+        <div class="loadding">
+            <div class="spinner">
+                <div class="bar1">
+                </div>
+                <div class="bar2">
+                </div>
+                <div class="bar3">
+                </div>
+                <div class="bar4">
+                </div>
+                <div class="bar5">
+                </div>
+                <div class="bar6">
+                </div>
+                <div class="bar7">
+                </div>
+                <div class="bar8">
+                </div>
+                <div class="bar9">
+                </div>
+                <div class="bar10">
+                </div>
+                <div class="bar11">
+                </div>
+                <div class="bar12">
+                </div>
+            </div>
+            <p>奋力加载中</p>
+        </div><!--loadding-->
+
+    </div>
+
+    <!--点击同学展示-->
+    <div class="shade" id="shade">
+        <ul class="lecturerClickBox">
+            <li  id="shadeRemove" ><i class="icon-remove"></i></li>
+            <li class="photo"></li>
+            <li class="name"></li>
+            <li class="job"></li>
+            <li class="achieve"></li>
+        </ul>
+    </div>
+
+    <!--分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="netWork/publicShare.js?v=1.0.1"></script>
+    <script type="text/javascript">
+        $(function() {
+            var title = '我正在插坐学院上课，你也一起吧！';
+            var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+            var linkUrl = window.location.href;
+            var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+            courseShare(title, descText, linkUrl, imageUrl);
+        });
+    </script>
+</body>
+</html>

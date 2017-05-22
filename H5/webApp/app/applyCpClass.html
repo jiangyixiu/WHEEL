@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>申请企业课程</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/applyCpClass.css?v=2.3">
+		<script src="../bootstrap/js/jquery.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script src="../js/CZNative.js"></script>
+	</head>
+
+	<body>
+		<form action="" class="form" id="form">
+			<!--<div class="title">
+				<div></div>
+				<span>企业课程</span>
+			</div>-->
+			<div class="subContent">
+				<div class="scTitle">企业课程</div>
+				<div class="splitLine"></div>
+				<div class="scSubTitle">企业课程是插坐学院专为企业用户打造的线上团队课程，购买之后，可在12个月内反复学习App内所有课程（包含当前1000+节课及未来12个月内更新的课程），并能随时查看团队学习数据。</div>
+			</div>
+			<div style="height: 0.833333rem;background-color: #f8f8f8;"></div>
+			<ul class="userinfoBg userinfoBg1">
+				<li class="userCompany">
+					<span class="item">公司</span>
+					<div class="inputSts">
+						<i class="icon-ok" class="cue" style="display: none;"></i>
+						<input type="text" name="userCompany" id="userCompany" placeholder="请输入公司名称">
+					</div>
+				</li>
+				<li class="userNumber">
+					<span class="item">人数</span>
+					<div class="inputSts">
+						<i class="icon-ok" class="cue" style="display: none;"></i>
+						<input type="number" name="userNumber" id="userNumber" min="3" placeholder="3人，5980元起购">
+					</div>
+				</li>
+
+				<li class="userName">
+					<span class="item">姓名</span>
+					<div class="inputSts">
+						<i class="icon-ok" class="cue" style="display: none;"></i>
+						<input type="text" name="userName" id="userName">
+					</div>
+				</li>
+				<li class="userTel">
+					<span class="item">手机</span>
+					<div class="inputSts">
+						<i class="icon-ok" class="cue" style="display: none;"></i>
+						<input type="tel" name="userTel" id="userTel" maxlength="11" placeholder="请正确填写，以便与您联系">
+						
+					</div>
+				</li>
+				<li class="ask">
+					<span class="item">备注</span>
+					<textarea rows="5" name="ask" id="ask" placeholder="岗位+你最想解决的实际工作问题是？"></textarea>
+				</li>
+			</ul>
+
+			<div class="telephone">如有疑问，请咨询：<a style="color: #0530f3;text-decoration: none;">400-801-5751</a></div>
+
+		</form>
+		<!-- 资格查询 -->
+		<div id="showPayDiv" style="position: fixed;bottom: 0;">
+			<div>提交</div>
+		</div>
+
+		<div id="applyResult">
+			<img class="icon_submit" src="images/icon_submit.png" />
+			<div class="div1">已提交</div>
+			<div class="div2">
+				<p>您的申请信息已提交成功，课程</p>
+				<p>顾问将在2个工作日内与您联系</p>
+				<p>请耐心等待</p>
+			</div>
+		</div>
+		
+		<script>
+			var id = request('id'),
+				type = request('type');
+			var userCompany, userNumber, userName, userTel, ask;
+			$(function(){
+//				getAjaxDataByPhpNew('/Web/getCourseinfo', {
+//					id: id, type: type
+//				}, function(res){
+//					$('.title>div').text(res.data.name)
+//				});
+				$('.telephone>a').click(function(){
+					makePhoneCall({
+					    'phoneNumber': '400-801-5751'
+					});
+//					window.location.href = 'tel://400-801-5751';
+				})
+				
+				$('#showPayDiv').click(function(){
+					userCompany = $.trim($('#userCompany').val());
+					userNumber = $.trim($('#userNumber').val());
+					userName = $.trim($('#userName').val());
+					userTel = $.trim($('#userTel').val());
+					ask = $.trim($('#ask').val());
+					if(!userCompany){
+						showTips('请输入公司名称！', function(){
+							$('#userCompany').focus();
+						});
+						return;
+					} else if(!userNumber){
+						showTips('请输入申购人数！', function(){
+							$('#userNumber').focus();
+						});
+						return;
+					} else if(!userName){
+						showTips('请输入姓名！', function(){
+							$('#userName').focus();
+						});
+						return;
+					} else if(!userTel){
+						showTips('请输入手机号码！', function(){
+							$('#userTel').focus();
+						});
+						return;
+					}
+					$('input').trigger('blur');
+					if($('.icon-exclamation-sign').hasClass('icon-exclamation-sign')){  //是否有错误标志
+				        showTips('请填写正确信息！');
+				        return false;
+				    }
+					
+					getAjaxDataByPhpNew('/Web/saveCompanyInfo', {
+						id: id,
+						type: type,
+						companyName: userCompany,
+						pcount: userNumber,
+						name: userName,
+						mobile: userTel,
+						content: ask
+					}, function(res){
+						if(res.status == '200'){
+							$('#form, #showPayDiv').hide();
+							$('#applyResult').show();
+//							var url = 'applyCpClassResult.html?t=' + new Date().getTime();
+//							navigateTo({
+//							    'title': ' ',
+//							    'url':  url
+//							});
+//							window.location.href = url;
+						} else {
+							showTips(res.msg);
+						}
+					});
+				});
+				$('#userCompany, #userName').on('blur input', function(){
+					cue($.trim($(this).val()),$(this));
+				});
+				$('#userNumber').on('blur input', function(){
+					var regx = /^[0-9]+$/;
+					var val = $.trim($(this).val());
+					var bl = regx.test(val);
+					if(bl) {
+						if(val < 3) {
+							bl = false
+						}
+					}
+					cue(bl, $(this));
+				});
+				$('#userTel').on('blur input', function(){
+					var regMobile = /^[0|2-9]\d{4,16}$/;
+			        var regMobile11 = /^1\d{10}$/;
+			        if (regMobile.test($(this).val())) {
+			            cue(regMobile.test($(this).val()),$(this));
+			        }else if (regMobile11.test($(this).val())) {
+			            cue(regMobile11.test($(this).val()),$(this));
+			        }else{
+			            cue(false,$(this));
+			        };
+				});
+			});
+			function cue(Boolean, obj) {
+				if(Boolean) {
+					obj.parent().find('i').attr('class', 'icon-ok').css('color', '#7ed321').show();
+				} else {
+					obj.parent().find('i').attr('class', 'icon-exclamation-sign').attr('wrong', 'wrong').css('color', 'red').show();
+				}
+			}
+			// 提示信息
+			function showTips(title, cb){
+			    if( $('#dialog') ){$('#dialog').remove();}
+			    var body = "";
+			    body += "<div class='weui_dialog_alert' id='dialog' style='display: none;' >";
+			    body += "<div class='weui_mask'></div>";
+			    body += "<div class='weui_dialog'>";
+			    body += "<div class='weui_dialog_hd'><strong class='weui_dialog_title'>温馨提示</strong></div>";
+			    body += "<div class='weui_dialog_bd'>" + title + "</div>";
+			    body += "<div class='weui_dialog_ft'>";
+			    body += " <a href='javascript:;' class='weui_btn_dialog primary' style='color: #3573B3'>确定</a>";
+			    body += "</div>";
+			    body += "</div>";
+			    body += "</div>";
+			    $("body").append(body);
+			    var $dialog = $('#dialog');
+			    $dialog.show();
+			    $dialog.find('.weui_btn_dialog').one('click', function () {
+			        $dialog.hide();
+			        cb && cb();
+			    });
+			}
+		</script>
+	</body>
+
+</html>

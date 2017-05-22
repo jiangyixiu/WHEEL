@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<style>
+			html, body{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				vertical-align: middle;
+			}
+		</style>
+		<script>
+			var ua = window.navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i) != 'micromessenger') {
+				window.location.href = 'pay.html';
+			}
+		</script>
+		<script src="../common/jquery.min.js"></script>
+    		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="../common/publicShare.js?v=1"></script>
+	</head>
+	<body>
+		<img src="images/pic.png" />
+		
+		<script>
+			var title = '一本定义新媒体编辑岗位的教材 | 《新媒体编辑实战技巧》第二批预售';
+            var descText = '新媒体编辑必备。';
+            var linkUrl = window.location.href;
+            var imageUrl = 'http://www.chazuomba.com/files/activity/buyBook/images/pic_book@1.5x.png';
+            courseShare(title, descText, linkUrl, imageUrl);
+		</script>
+	</body>
+</html>

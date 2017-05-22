@@ -1,0 +1,52 @@
+*{color: #333333;}
+
+.teamList{
+	margin-left: 2rem;
+	padding: 1.1666rem 2rem 1.1666rem 0;
+	overflow: hidden;
+	border-bottom: 1px solid #f2f2f2;
+}
+/*团队头像*/
+.teamList > li{
+	float: left;
+}
+.teamList > .avatarList{
+	position: relative;
+	overflow: hidden;
+	background: #F5F5F5;
+	border: 2px solid #EBEBEB;
+	border-radius: 4px;
+}
+
+.avatarList > img{
+	width: 2.125rem;
+	float: left;
+}
+.avatarList > img:nth-child(1){
+	margin-bottom: 1px;
+}
+.avatarList > img:nth-child(2){
+	margin-left: 1px;
+}
+.avatarList > img:nth-child(3){
+	clear: both;
+}
+.avatarList > img:nth-child(4){
+	margin-left: 1px;
+}
+
+/**/
+.cultivate_name{
+	padding-left: 1rem;
+    padding-top: 0.3rem;
+	width: 20.8333rem;
+	font-family: .PingFangSC-Medium,"microsoft yahei";
+	font-size: 1.25rem;
+}
+.study_end_at{
+	margin-top: 0.56rem;
+	width: 20.8333rem;
+	font-family: .PingFangSC-Regular;
+	font-size: 1rem;
+	color: #999999;
+}

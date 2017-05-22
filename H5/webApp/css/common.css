@@ -1,0 +1,964 @@
+body {
+    font-family: "PingFangSC-Light", "Microsoft YaHei";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent!important;
+}
+
+.titleEn {
+    text-transform: uppercase;
+}
+
+
+/*线上线下立即报名按钮*/
+
+#enroll {
+    /*width: 100%;
+    height: 4.16rem;
+    font-size: 1.33rem;
+    text-align: center;
+    line-height: 4.16rem;
+    color: #ffffff;
+    background: #3573B3;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    cursor: pointer;*/
+    width: 100%;
+    height: 5rem;
+    padding: .833333rem 1.5rem;
+    font-size: 1.33rem;
+    text-align: center;
+    color: #ffffff;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    cursor: pointer;
+    border-top: 1px solid #ECECEC;
+    box-sizing: border-box;
+    /*position: relative;*/
+}
+
+#enroll span {
+    /*margin-top: -0.3rem;
+    padding-left: 2.4rem;
+    padding-top: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url("../images/icon_buy_sign.png") no-repeat 0rem center;
+    background-size: 20%;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 28.25rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #F7A90C;
+    border-radius: .333333rem;
+    font-size: 1.25rem;
+    font-family: PingFangSC-Regular, 'Microsoft YaHei';
+}
+
+#enrollFriend span, #enrollSelf span, #enroll span, #showPayDiv {
+    font-family: "PingFangSC-Regular", "Microsoft YaHei"!important;
+    /*font-weight: 100!important;*/
+}
+
+#enroll1 {
+    width: 100%;
+    height: 5rem;
+    padding: .833333rem 1.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    cursor: pointer;
+    border-top: 1px solid #ECECEC;
+    box-sizing: border-box;
+}
+
+#enrollFriend {
+    float: left;
+    width: 10.333333rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #CECECE;
+    border-radius: .333333rem;
+    color: #333;
+}
+
+#enrollSelf {
+    float: right;
+    width: 16.666667rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #F7A90C;
+    border-radius: .333333rem;
+    color: #ffffff;
+}
+#enrollSelf i, #enroll i, #showPayDiv i{
+    font-size: 1.36rem;
+    margin: 1px;
+}
+#enrollFriend span::after {
+    content: '';
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.3rem;
+    position: absolute;
+    background: url(../images/icon_bought_presents.png) no-repeat;
+    background-size: 100% 100%;
+    top: .99rem;
+    left: 0;
+    margin: auto;
+    padding-bottom: 1px;
+}
+
+
+/*头部*/
+
+.header {
+    position: fixed;
+    /*top: 0;*/
+    /*left: 0;*/
+    z-index: 99999;
+    padding: 0 0 0 1.66rem;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: auto;
+    height: 2.08rem;
+}
+
+.header span {
+    float: right;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5.66rem;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.header span i:before {
+    font-size: 1.83rem;
+    color: #3573B3;
+}
+
+.header span:focus, .header span:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.nav {
+    padding-top: 11rem;
+    /*padding-top: 7.33rem;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+    background-color: #3C7EC3;
+    opacity: 0.95;
+    color: #fff;
+    display: none;
+}
+
+.nav>li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nav>li>a {
+    color: #ffffff;
+    padding: 1.25rem 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #0053a9;
+}
+
+
+/*.nav > span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    text-align: right;
+    -webkit-transform:  rotate(180deg);
+    -moz-transform:  rotate(180deg);
+    -ms-transform:  rotate(180deg);
+    -o-transform:  rotate(180deg);
+    transform:  rotate(180deg);
+}*/
+
+.navRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+#orderList {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 2.333333rem;
+    padding-right: 2rem;
+    padding-top: .1rem;
+    font-size: 1.166666rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#remove, #lineBar {
+    display: block;
+    float: left;
+}
+
+#orderList:after {
+    content: " ";
+    width: 2rem;
+    height: 1.4rem;
+    background: url(../images/line_bar.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#orderList:before {
+    content: " ";
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 1.666666rem;
+    height: 1.666666rem;
+    background: url(../images/btn_bought.png) no-repeat center center;
+    background-size: auto 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#remove>i:before {
+    padding: 0 2rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.83rem;
+    color: #ffffff;
+}
+
+.shade>span>i:before {
+    margin-top: 5rem;
+    float: right;
+    padding: 1.66rem;
+    font-size: 1.83rem;
+    color: #ffffff;
+}
+
+@media (orientation: landscape) {
+    .header {
+        position: fixed;
+        z-index: 99999;
+        padding: 0 0 0 1.66rem;
+        width: 100%;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        max-height: 80px;
+        background-color: #ffffff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .logo {
+        width: auto;
+        height: 1.25rem;
+    }
+    .header span {
+        float: right;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        line-height: 3rem;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .header span i:before {
+        font-size: 1rem;
+        color: #3573B3;
+    }
+    .header span:focus, .header span:hover {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .nav {
+        padding-top: 19%;
+        padding-bottom: 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 3.33rem;
+        text-align: center;
+        background-color: #3C7EC3;
+        opacity: 0.95;
+        color: #fff;
+        display: none;
+    }
+    .nav>li {
+        margin: 0 0.66rem;
+        width: auto;
+        display: inline-block;
+        padding: 0 0.83rem;
+        height: auto;
+        line-height: 1.66rem;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .nav>li>a {
+        color: #ffffff;
+        padding: 0;
+    }
+    .nav>li>a:focus, .nav>li>a:hover {
+        background-color: #eee;
+        color: #444;
+    }
+    .nav>span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        text-align: right;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .nav>span>i:before {
+        display: inline;
+        font-size: 1.33rem;
+        color: #ffffff;
+    }
+    .shade>span>i:before {
+        margin-top: 5rem;
+        float: right;
+        padding: 1.66rem;
+        font-size: 1.83rem;
+        color: #ffffff;
+    }
+}
+
+
+/*页脚*/
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3.33rem 2rem;
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer .title {
+    margin-bottom: 2rem;
+    font-size: 1.33rem;
+    font-family: PingFangSC-Regular, "microsoft yahei";
+}
+
+.footer .special {
+    margin-right: 1.66rem!important;
+    width: 6.66rem!important;
+}
+
+.footer .titleMin {
+    margin-bottom: 0.41rem;
+    margin-right: 3.33rem;
+    width: 5rem;
+    display: inline-block;
+    font-size: 1.16rem;
+    color: #53606E;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.footer .titleMin:after {
+    /*文本两边对齐*/
+    content: ' ';
+    width: 100%;
+    display: inline-block;
+}
+
+.footer li, .footer .titleMin {
+    position: relative;
+}
+
+.footer .color {
+    position: absolute;
+    top: 0;
+}
+
+.footer .color {
+    font-size: 1.16rem;
+    color: #3573B3;
+}
+
+.footer .icp {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.41rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #F3F3F3;
+    color: #bbbbbb;
+}
+
+#followBg {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#follow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    width: 16.66rem;
+    height: 16.66rem;
+    text-align: center;
+    font-size: 1.66rem;
+    color: #333;
+}
+
+#followBg i {
+    text-align: center;
+    width: 3.33rem;
+    height: 3.33rem;
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    font-size: 1.5rem;
+    color: #000;
+    background: #FFFFFF;
+}
+
+
+/*加载样式 */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.25;
+    }
+}
+
+#moreText {
+    margin: auto;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+div.loadding {
+    padding: 0 0 10px;
+    display: none
+}
+
+div.spinner {
+    margin: 0 auto;
+    position: relative;
+    width: 1.562rem;
+    height: 1.562rem;
+    display: block;
+    z-index: 100;
+}
+
+div.spinner div {
+    width: 40%;
+    height: 40%;
+    background: #aaaaaa;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    opacity: 0;
+    -webkit-animation: fade 1s linear infinite;
+    -webkit-border-radius: 1.562rem;
+}
+
+div.spinner div.bar1 {
+    -webkit-transform: rotate(0deg) translate(0, -142%);
+    -webkit-animation-delay: 0s;
+}
+
+div.spinner div.bar2 {
+    -webkit-transform: rotate(30deg) translate(0, -142%);
+    -webkit-animation-delay: -0.9167s;
+}
+
+div.spinner div.bar3 {
+    -webkit-transform: rotate(60deg) translate(0, -142%);
+    -webkit-animation-delay: -0.833s;
+}
+
+div.spinner div.bar4 {
+    -webkit-transform: rotate(90deg) translate(0, -142%);
+    -webkit-animation-delay: -0.75s;
+}
+
+div.spinner div.bar5 {
+    -webkit-transform: rotate(120deg) translate(0, -142%);
+    -webkit-animation-delay: -0.667s;
+}
+
+div.spinner div.bar6 {
+    -webkit-transform: rotate(150deg) translate(0, -142%);
+    -webkit-animation-delay: -0.5833s;
+}
+
+div.spinner div.bar7 {
+    -webkit-transform: rotate(180deg) translate(0, -142%);
+    -webkit-animation-delay: -0.5s;
+}
+
+div.spinner div.bar8 {
+    -webkit-transform: rotate(210deg) translate(0, -142%);
+    -webkit-animation-delay: -0.41667s;
+}
+
+div.spinner div.bar9 {
+    -webkit-transform: rotate(240deg) translate(0, -142%);
+    -webkit-animation-delay: -0.333s;
+}
+
+div.spinner div.bar10 {
+    -webkit-transform: rotate(270deg) translate(0, -142%);
+    -webkit-animation-delay: -0.25s;
+}
+
+div.spinner div.bar11 {
+    -webkit-transform: rotate(300deg) translate(0, -142%);
+    -webkit-animation-delay: -0.1667s;
+}
+
+div.spinner div.bar12 {
+    -webkit-transform: rotate(330deg) translate(0, -142%);
+    -webkit-animation-delay: -0.0833s;
+}
+
+div.loadding p {
+    padding-top: 0.83rem;
+    text-align: center;
+    font-size: 0.62rem;
+    color: #999;
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+    body, html {
+        font-size: 12px !important;
+    }
+    .nav>li>a {
+        font-size: 2rem;
+        padding: 1.5rem 0;
+    }
+    .banner {
+        margin-top: 6rem;
+        width: 100%;
+        height: 40rem!important;
+        background-color: #f5f5f5;
+        background-image: url('../images/top/banner_01_IPAD.jpg');
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+    .header {
+        position: fixed;
+        z-index: 99999;
+        padding: 0 0 0 2rem;
+        width: 100%;
+        height: 6rem!important;
+        line-height: 6rem!important;
+        background-color: #ffffff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .logo {
+        width: auto;
+        height: 2.5rem;
+    }
+    .header span {
+        float: right;
+        width: 6rem;
+        height: 6rem;
+        text-align: center;
+        line-height: 7rem;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .header span i:before {
+        font-size: 2.2rem;
+        /*color: #3573B3;*/
+    }
+    .header span:focus, .header span:hover {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .nav {
+        padding-top: 16.5rem;
+    }
+    /*.selfLearning{*/
+    /*padding: 0 5.5rem 7.1rem;*/
+    /*}*/
+    .speechBoxLine .contentBoxMin {
+        width: 38rem!important;
+    }
+    .speechBox {}
+    .lecturerClickBox {
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+}
+
+
+/*iPad 横屏头图*/
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .banner {
+        background-image: url("../images/top/ipad_hengPing/banner_01.jpg")!important;
+    }
+    .headPicLecturer {
+        background-image: url("../images/top/ipad_hengPing/banner_02.jpg")!important;
+    }
+    .headPicClassmate {
+        background-image: url("../images/top/ipad_hengPing/banner_05.jpg")!important;
+    }
+    .headPicAboutUs {
+        background-image: url("../images/top/ipad_hengPing/banner_07.jpg")!important;
+    }
+    .headPicOfflineCourse {
+        background-image: url("../images/top/ipad_hengPing/banner_04.jpg")!important;
+    }
+    .headPicOnlineCourse {
+        background-image: url("../images/top/ipad_hengPing/banner_03.jpg")!important;
+    }
+    .headPicSelfLearning {
+        background-image: url("../images/top/ipad_hengPing/banner_06.jpg")!important;
+    }
+    /*.banner{margin-top:3rem!important;}*/
+}
+
+
+/* 提示框 */
+
+.weui_mask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.weui_mask_transparent {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.weui_mask_transition {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+.weui_dialog {
+    position: fixed;
+    z-index: 13;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFC;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_hd {
+    padding: 1.2em 20px .5em;
+}
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_bd {
+    text-align: left;
+}
+
+.weui_dialog_hd {
+    padding: 1.2em 0 .5em;
+}
+
+.weui_dialog_title {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.weui_dialog_bd {
+    padding: 0 20px;
+    font-size: 15px;
+    color: #888;
+}
+
+.weui_dialog_ft {
+    position: relative;
+    line-height: 42px;
+    margin-top: 20px;
+    font-size: 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.weui_dialog_ft a {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #3CC51F;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.weui_dialog_ft a:active {
+    background-color: #EEEEEE;
+}
+
+.weui_dialog_ft:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.weui_dialog_confirm .weui_dialog_ft a {
+    position: relative;
+}
+
+.weui_dialog_confirm .weui_dialog_ft a:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.weui_dialog_confirm .weui_dialog_ft a:first-child:after {
+    display: none;
+}
+
+.weui_btn_dialog.default {
+    color: #353535;
+}
+
+.weui_btn_dialog.primary {
+    color: #0BB20C;
+}
+
+@media screen and (min-width: 1024px) {
+    .weui_dialog {
+        width: 35%;
+    }
+}
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_hd {
+    padding: 1.2em 20px .5em;
+}
+
+.weui_dialog_hd {
+    padding: 1.2em 0 .5em;
+}
+
+.weui_dialog_title {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.weui_dialog_ft {
+    position: relative;
+    line-height: 42px;
+    margin-top: 20px;
+    font-size: 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.weui_dialog_ft a {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #3CC51F;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.weui_dialog_ft a:active {
+    background-color: #EEEEEE;
+}
+
+.weui_dialog_ft:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.weui_dialog_confirm .weui_dialog_ft a {
+    position: relative;
+}
+
+.weui_dialog_confirm .weui_dialog_ft a:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.weui_dialog_confirm .weui_dialog_ft a:first-child:after {
+    display: none;
+}
+
+.weui_btn_dialog.default {
+    color: #353535;
+}
+
+.weui_btn_dialog.primary {
+    color: #0BB20C;
+}

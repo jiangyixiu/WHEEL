@@ -1,0 +1,57 @@
+.bgGray{
+	background-color: #f5f5f5;
+}
+.bgWhite{
+	background-color: #fff;
+}
+.banner{
+	width: 100%;
+}
+.box{
+	font-family: PingFangSC-Regular, "microsoft yahei";
+	padding: 60rpx 0;
+}
+.label{
+	margin: 0 auto 1.444rem;
+	display: block;
+	width: 216rpx;
+	height: 66rpx;
+}
+.time_place{
+	font-size: 28rpx;
+	padding-bottom: 10rpxZ;
+}
+.icon{
+	float: left;
+	margin: 0 0 40rpx 108rpx;
+	width: 80rpx;
+	height: 82rpx;
+}
+.iconText{
+	float: left;
+	margin-left: 40rpx;
+	margin-top: 4rpx;
+	line-height: 40rpx;
+	height: 40rpx;
+}
+.iconDate{
+	float: left;
+}
+.iconTime{
+	float: left;
+	clear: both;
+}
+.usermap{
+	width:100%;
+	display:flex;
+	text-align:right;
+}
+.usermap>image{
+	margin-left: 230rpx;
+	width: 412rpx;
+	height: 256rpx;
+}
+.title_meal.label{
+	width: 238rpx;
+	height: 66rpx;
+}

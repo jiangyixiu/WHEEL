@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<title>讲师介绍</title>
+		<link rel="stylesheet" href="../css/common.css?v=1.0.2">
+		<link rel="stylesheet" href="../css/reset.css?v=1.0.2">
+		<link rel="stylesheet" href="css/lecturerShare.css?v=1.0.9">
+		<script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+        <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript" src="../netWork/publicShare.js"></script>
+		<script type="text/javascript" src="../js/main.js?v=1.0.2"></script>
+		<script src="https://s95.cnzz.com/z_stat.php?id=1261329276&web_id=1261329276" language="JavaScript"></script>
+		<script>
+            //声明_czc对象:
+            var _czc = _czc || [];
+            //绑定siteid
+            _czc.push(["_setAccount", "1261329276"]);
+		</script>
+		<script type="text/javascript" src="js/lecturerShare.js?v=1.0.95"></script>
+		<style>
+			a[title="站长统计"] {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header">
+			<a href="http://www.chazuomba.com/files/webApp" style="float: left;"><img class="logo" src="../images/logo.png" alt="插坐学院"></a>
+			<a id="Android" class="btn btn-download" style="display: none;" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">使用app查看</a>
+			<!--<a id="IOS" class="btn btn-download" style="display: none;" href="https://itunes.apple.com/cn/app/hao-duo-ke/id1116383904?mt=8">使用app查看</a>-->
+			<a id="IOS" class="btn btn-download" style="display: none;">使用app查看</a>
+		</div>
+		<div class="content">
+			<div class="lecturerPic">
+				<div class="lecturerMsg">
+					<div class="lecturerName"></div>
+					<div class="classMsg">
+						<div class="classCount"></div>
+						<div class="viewCount"></div>
+					</div>
+				</div>
+			</div>
+			<div class="lecturerBg"></div>
+			<ul class="lecturerItd">
+				<li class="lecturerItdItem"></li>
+			</ul>
+			<div class="loadMoreItd down"></div>
+		</div>
+		<ul class="classList" id="classList">
+		</ul>
+		<script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script>
+		<script>
+			new Mlink({
+				mlink: "Aa7K",
+				button: $("a#IOS")[0],
+				params: {
+					key: 'hdk_teacher'
+				},
+				cparams: {
+					teacherId: request("teacherId")
+				}
+			});
+			//展示下载链接
+			_IsIOS();
+			function _IsIOS() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/iPhone\sOS/i) == "iphone os" || navigator.userAgent.indexOf("iPad") != -1) {
+					$("#IOS").show();
+					$("#Android").hide();
+					return;
+				} else if(ua.match(/Android/i) == "android") {
+					$("#IOS").hide();
+					$("#Android").show();
+					return;
+				}
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+
+	<body style="width: 100%; height: 240px; margin: 10px auto;padding: 0;">
+		<div id="container" style="height: 100%"></div>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+		<script type="text/javascript">
+			/**
+			 * dataZoom控制滑动和缩放
+			 */
+			var dom = document.getElementById("container");
+			var myChart = echarts.init(dom);
+			var app = {};
+			option = null;
+			app.title = '折柱混合';
+			option = {
+				title: { //标题组件
+					show: false,
+					text: '柱状折现混合图',
+					link: 'https://www.baidu.com',
+					target: 'blank',
+					subtext: '副标题',
+					sublink: 'http://echarts.baidu.com/option.html#title',
+					subtarget: 'self'
+				},
+				legend: { //图例组件
+					show: false,
+					data: ['降水量', '平均温度']
+				},
+				grid: { //直角坐标系内绘图网格
+					show: false,
+					containLabel: true,
+					left: 10,
+					right: 10,
+					bottom: 0
+				},
+				tooltip: {
+					trigger: 'axis'
+				},
+				toolbox: {
+					feature: {
+//						saveAsImage: { show: true }
+					}
+				},
+				xAxis: [{
+					type: 'category',
+					data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+				}],
+				yAxis: [{
+					type: 'value',
+//					name: '水量',
+					min: 0,
+					max: 250,
+					axisLabel: {
+						formatter: '{value} ml'
+					}
+				}, {
+					type: 'value',
+//					name: '温度',
+					min: 0,
+					max: 5,
+					axisLabel: {
+						formatter: '{value} °C'
+					}
+				}],
+				series: [{
+					name: '降水量',
+					type: 'bar',
+					data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+			        itemStyle: {
+			        	normal: {
+			        		color: '#3C7EC3'
+			        	}
+			        }
+				}, {
+					name: '平均温度',
+					type: 'line',
+					yAxisIndex: 1,
+					data: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+				}],
+				dataZoom: [
+		            {
+		                show: true,
+		                type: 'inside',
+		                start: 50,
+		                end: 100
+		            }
+		        ],
+//		        itemStyle: {
+//		        	normal: {
+//		        		color: 'blue'
+//		        	}
+//		        }
+			};
+			if(option && typeof option === "object") {
+				myChart.setOption(option, true);
+			}
+		</script>
+	</body>
+
+</html>

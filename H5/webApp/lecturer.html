@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>优秀讲师</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css?v=1.0.1">
+    <link rel="stylesheet" href="css/reset.css?v=1.0.1">
+    <link rel="stylesheet" href="css/lecturer.css?v=1.0.1">
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script src="js/headerFooter.js?v=1.0.1"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js?v=1.0.1"></script>
+    <script type="text/javascript" src="js/lecturer.js?v=1.0.1"></script>
+</head>
+<body data-include="header,footer">
+    <div class="headPic headPicLecturer"></div>
+    <div class="headline">讲师团队 · Faculty</div>
+
+    <!--讲师团队-->
+    <div class="lecturer">
+        <div class="lecturerBox" id="lecturerBox">
+            <!--<div class="lecturerShow">-->
+            <!--<span class="photo"></span>-->
+            <!--<span class="name"></span>-->
+            <!--<span class="info"></span>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <!--点击讲师展示-->
+    <div class="shade" id="shade">
+        <ul class="lecturerClickBox">
+            <li  id="shadeRemove" ><i class="icon-remove"></i></li>
+            <li class="photo"></li>
+            <li class="name">小马宋</li>
+            <li class="job">暴风创意合伙人</li>
+            <li class="achieve">罗辑思维创意顾问 <br />
+                前暴风魔镜创意合伙人 <br />
+                《一个广告文案的自白》系列作者 <br />
+                著有《那些让文案绝望的文案》</li>
+        </ul>
+    </div>
+
+    <!--分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="netWork/publicShare.js?v=1.0.1"></script>
+    <script type="text/javascript">
+        $(function() {
+            var title = '我正在插坐学院上课，你也一起吧！';
+            var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+            var linkUrl = window.location.href;
+            var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+            courseShare(title, descText, linkUrl, imageUrl);
+        });
+    </script>
+</body>
+</html>

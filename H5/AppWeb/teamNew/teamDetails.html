@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title>&nbsp;</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="../common/reset.css">
+		<link rel="stylesheet" href="css/teamDetails.css?v=0.0.999999">
+		<script src="../common/jquery.min.js"></script>
+		<script src="../common/angular.min.js"></script>
+		<script src="../common/util.js"></script>
+		<script src="https://s95.cnzz.com/z_stat.php?id=1261329276&web_id=1261329276" language="JavaScript"></script>
+		<script>
+	    	//声明_czc对象:
+			var _czc = _czc || [];
+			//绑定siteid
+			_czc.push(["_setAccount", "1261329276"]);
+	    </script>
+		<script src="js/teamDetails.js?v=0.0.1"></script>
+		<style>
+			a[title="站长统计"] {display: none;}
+		</style>
+	</head>
+<body ng-controller="rankingList">
+	<ul class="banner">
+		<li ng-cloak>{{ bars.companyCultivate.cultivate_name }}</li>
+		<li>	{{ bars.companyCultivate.cultivate_subtitle }}</li>
+	</ul>
+	
+	<ul class="topTitle">
+        <li class="topL" ng-cloak>开始学习&nbsp;&nbsp; <span>{{ bars.companyCultivate.employee_count }}</span> &nbsp;&nbsp;人</li>
+        <div style="width: 1px;height: 1.6666rem;background-color: #EBEBEB;position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;"></div>
+        <li class="topR">累积学习&nbsp;&nbsp; <span>{{ days | number:0 }}</span> &nbsp;&nbsp;天</li>
+    </ul>
+    
+	<ul class="list" on-finish-render-filters="Bar">
+		<li class="average" id="{{ bars.avg_study*100 | number:0 }}" ng-cloak>
+			<img class="clip" src="images/icon_team_clip.png"/>
+			<div class="avTop">
+				<span class="dd">平均学习进度</span>
+				<span class="dt">学完课程与总课程数的占比</span>
+				<span class="avCircle" ng-cloak><i>{{ bars.avg_study*100 | number:0}}<span style="font-size:0.666666rem;padding-left: .22rem;">%</span></i></span>
+			</div>
+			<div class="avBtm">查看详情</div>
+		</li>
+		<li class="absorb" id="{{ bars.avg_ticket | number:0 }}">
+			<img class="clip" src="images/icon_team_clip.png"/>
+			<div class="avTop">
+				<span class="dd">平均吸收率</span>
+				<span class="dt">所有知识点的掌握率</span>
+				<span class="abCircle"><i>{{ bars.avg_ticket | number:0 }}<span style="font-size:0.666666rem;padding-left: .22rem;">%</span></i></span>
+			</div>
+			<div class="avBtm">查看详情</div>
+		</li>
+	</ul>
+</body>
+</html>

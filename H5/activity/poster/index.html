@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <title>海报生成器</title>
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="../common/reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="index.css">
+	    	<script src="../common/jquery.min.js"></script>
+	    	<script src="html2canvas.js"></script>
+	    	<script src="canvas2image.js"></script>
+	    	<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="poster_model">
+			<div class="poster_model_title">请选择海报模板</div>
+			<div class="poster_model_list">
+				<!--<div class="poster_model_item"></div>-->
+			</div>
+		</div>
+		<div id="poster_demo">
+			<!--<img src="images/bg1.jpg" class="poster_demo_bg" />
+			<img src="images/ele1.png" class="poster_demo_ele" style="width: 2rem;right: 5rem;bottom: 1.25rem;" />
+			<img src="images/ele2.png" class="poster_demo_ele" style="right: 1rem;bottom: 0;width: 5.5rem;" />
+			<div class="poster_demo_text"><p>按照公历，北半球的春季为3月、4月和5月。公历于1912年开始在中国正式采用，取代农历。     ——维基百科</p></div>-->
+		</div>
+		<div id="poster_input">
+			<textarea id="poster_text" name="poster_text" rows="5" placeholder="点我输入文字"></textarea>
+			<button id="poster_create">生成海报</button>
+		</div>
+		<div id="poster_output">
+			
+		</div>
+	</body>
+</html>

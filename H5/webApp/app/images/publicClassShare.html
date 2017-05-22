@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title></title>
+    <link rel="stylesheet" href="../css/common.css?v=1.0.2">
+    <link rel="stylesheet" href="../css/reset.css?v=1.0.2">
+    <link rel="stylesheet" href="css/publicClassShare.css?v=0.0.2">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../netWork/publicShare.js"></script>
+    <script type="text/javascript" src="../js/main.js?v=1.0.2"></script>
+    <script type="text/javascript" src="js/publicClassShare.js?v=0.0.27"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="header">
+    <a href="http://www.chazuomba.com/files/webApp" style="float: left;"><img class="logo" src="../images/logo.png" alt="插坐学院"></a>
+    <a id="Android" class="btn btn-download" style="display: none;" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">使用app查看</a>
+    <!--<a id="IOS" class="btn btn-download" style="display: none;" href="https://itunes.apple.com/cn/app/hao-duo-ke/id1116383904?mt=8">使用app查看</a>-->
+    <a id="IOS" class="btn btn-download" style="display: none;">使用app查看</a>
+</div>
+<div class="banner" style="visibility: hidden;">
+    <div class="mask">
+        <h2><!-- KOL系列课程 --></h2>
+        <p>
+            <!-- 不可错过的职场推广技巧 -->
+        </p>
+        <span><!-- 含4门课程 --></span>
+        <span><!-- 共300节 --></span>
+        <span><!-- 9999人已学 --></span>
+    </div>
+</div>
+
+<div class="main">
+    <ul class="tab">
+        <li class="tab-selected" mark="1">全部课程</li>
+        <li mark="2">讲师信息</li>
+        <li mark="3">课程信息</li>
+    </ul>
+
+    <div class="info">
+        <!-- 全部课程 -->
+        <ul class="classList" id="classList"></ul>
+        <!-- 讲师信息 -->
+        <ul class="teacherList">
+            <!-- <li class="teacherItem">
+                <div class="avatar"></div>
+                <ul class="teacherCtn">
+                    <li class="tName">赵圆圆</li>
+                    <li class="tJob">奥美资深创意总监</li>
+                    <li class="tEffect">教你正确做好品牌传播</li>
+                    <li class="tTime">1天前 | 品牌营销的难点</li>
+                    <li class="tAngle"></li>
+                </ul>
+            </li> -->
+        </ul>
+        <!-- 课程信息 -->
+        <ul class="courseList">
+            <!-- 课程信息 -->
+        </ul>
+    </div>
+    <p style="height:4.16rem;"></p>
+</div>
+
+<!--<div id="enroll" style="display:none;">-->
+    <!--<span>&lt;!&ndash; 购买 ¥289/年 &ndash;&gt;</span>-->
+<!--</div>-->
+
+<script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script>
+<script>
+    new Mlink({
+        mlink: "AKTM",
+        button: $("a#IOS")[0],
+        params: {
+            key: 'hdk_seriesLessons'
+        },
+        cparams: {
+            groupId: request("groupId")
+        }
+    });
+    //展示下载链接
+    _IsIOS();
+    function _IsIOS() {
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/iPhone\sOS/i) == "iphone os" || navigator.userAgent.indexOf("iPad") != -1) {
+            $("#IOS").show();
+            $("#Android").hide();
+            return;
+        } else if(ua.match(/Android/i) == "android") {
+            $("#IOS").hide();
+            $("#Android").show();
+            return;
+        }
+    }
+</script>
+
+</body>
+
+</html>

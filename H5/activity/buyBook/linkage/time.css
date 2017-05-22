@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+*{  padding:0; margin: 0;}
+/*科e互联特效基本框架CSS结束，应用特效时，以上样式可删除*/
+.page {display: none;position: fixed;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;overflow: hidden;}
+/*#datescroll div{float: left;margin-left: 10%;margin-top: 15px;padding-right: 22px;}*/
+#datescroll div{float: left;/*margin-top: 15px;*/padding-right: 22px;}
+
+#yearwrapper{position: absolute;left: 5%;top:40px;bottom: 0px;width:30%;}
+#monthwrapper{position: absolute;left: 35%;top:40px;bottom: 0px;width:30%;}
+#daywrapper{position: absolute;left: 65%;top:40px;bottom: 0px;width:30%;}
+/*#monthwrapper{position: absolute;left: 26%;top:45px;bottom: 60px;width:100%;}
+#daywrapper{position: absolute;left: 50%;top:45px;bottom: 60px;width:100%;}
+*/
+#Hourwrapper ul li{color: #898989;font-size: 12px;}
+#Minutewrapper ul li{color: #898989;font-size: 12px;}
+#Secondwrapper ul li{color: #898989;font-size: 12px;}
+#yearwrapper ul li{color: #888;font-size: 14px;height: 40px;overflow: hidden;}
+#monthwrapper ul li{color: #888;font-size: 14px;height: 40px;overflow: hidden;}
+#daywrapper ul li{color: #888;font-size: 14px;height: 40px;overflow: hidden;}
+.curr{color: #000!important;}
+
+#markyear{position:relative; margin-left: 76px;top:-2px;border-top: 1px solid red;}
+#markmonth{position:relative; margin-left: 40px;top:-2px;}
+#markday{position:relative; margin-left: 42px;top:-2px;}
+#markhour{position:relative; margin-left: 62px;top:-2px;}
+#markminut{position:relative; margin-left: 58px;top:-2px;}
+#marksecond{position:relative; margin-left: 68px;top:-2px;}
+#dateheader{width: 100%;height: 50px;background: #04BE02;text-align: center;color: #fff;line-height: 50px;font-size: 20px;}
+
+#dateshadow{display: none;position: absolute;width: 100%;height: 70.2642857142rem;top:0;left:0;background: #888; filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;z-index: 999;}
+#datePage{font-size: 12px; border-radius: 3px; /*position:absolute;*/vertical-align:middle;bottom:0;width: 100%;height: 240px;background: #FFFFFF;z-index:9999999;}
+#datetitle{width: 100%;height:40px;background: #04be02;text-align: center;color: #fff;line-height: 40px;font-size: 20px;font-family:'microsoft yahei';}
+#datetitle h1{font-weight:normal;}
+#datemark{font-size: 18px;left:0%;width: 100%;height: 26px;position:absolute;top:125px;border:1px solid #eee;}
+#timemark{font-size: 18px;left:5%;width: 90%;height: 20px;position:absolute;top:242px;background:#eee;border:1px solid #eee;}
+#datescroll{width:100%; border-radius: 4px;height: 200px;text-align: center;line-height: 40px;}
+#yearwrapper ul,#monthwrapper ul,#daywrapper ul{width:100%;}
+
+#datetitle h1{font-size:18px;}
+
+
+#dateFooter{width:100%;height: 40px;}
+#setcancle ul{text-align: center;line-height: 40px;font-size: 20px;overflow: hidden;background: #F3F6F5;}
+#setcancle ul li{border-radius:3px;height: 40px;list-style-type: none;font-family:'microsoft yahei';font-size:16px;}
+#setcancle ul li:nth-child(1){float: left;padding-left: 15px;}
+#setcancle ul li:nth-child(2){float: right;padding-right: 15px;}
+#dateconfirm{color:#04be02;}
+#datecancle{color:#666;}

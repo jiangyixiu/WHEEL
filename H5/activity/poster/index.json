@@ -1,0 +1,18 @@
+[{
+	"demo": "images/demo1.jpeg",
+	"bg": "images/bg1.jpg",
+	"ele": [{
+		"src": "images/ele1.png",
+		"style": "width: 2rem;right: 5rem;bottom: 1.25rem;"
+	}, {
+		"src": "images/ele2.png",
+		"style": "right: 1rem;bottom: 0;width: 5.5rem;"
+	}]
+}, {
+	"demo": "images/demo1.jpeg",
+	"bg": "images/bg1.jpg",
+	"ele": [{
+		"src": "images/ele1.png",
+		"style": "width: 2rem;right: 5rem;bottom: 1.25rem;"
+	}]
+}]

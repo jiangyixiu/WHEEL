@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation"content="portrait">
+    <meta name="x5-orientation"content="portrait">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/aboutUs.js"></script>
+</head>
+<body data-include="header,footer">
+    <div class="headPic headPicAboutUs"></div>
+    <div class="headline">关于我们 · ABOUT US</div>
+    <ul class="aboutUsBody">
+        <li class="title">好好工作  好好生活</li>
+        <li class="titleMin">
+            插坐团队小而美。坦诚、乐观，乐于分享。我们投入时间和热情，做更多更好的课程。<br><br>
+            责任心、目标感、 专业度。所有大事都由无数件小事组成，踏踏实实做好每一件小事
+            ，做有价值的事。
+        <li>
+    </ul>
+
+    <!--分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="netWork/publicShare.js?v=1.0.1"></script>
+    <script type="text/javascript">
+        $(function() {
+            var title = '我正在插坐学院上课，你也一起吧！';
+            var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+            var linkUrl = window.location.href;
+            var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+            courseShare(title, descText, linkUrl, imageUrl);
+        });
+    </script>
+</body>
+</html>

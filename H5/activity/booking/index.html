@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="../common/swiper/swiper.min.css">
+		<link rel="stylesheet" href="index.css?v=0.1.7">
+		<script src="../common/jquery.min.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="../common/publicShare.js"></script>
+		<script src="../common/swiper/swiper.min.js"></script>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide0"></div>
+				<div class="swiper-slide slide1"></div>
+				<div class="swiper-slide slide2"></div>
+				<div class="swiper-slide slide3"></div>
+				<div class="swiper-slide slide4">
+					<video id="video" src="zzl.mp4" poster="images/zzl.png" controls="controls" preload="preload"></video> 
+				</div>
+				<div class="swiper-slide slide5">
+					<img src="images/6.png" width="100%" height="100%" />
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<img src="images/silde.png" id="array" />
+		</div>
+		<script>
+			window.onload = function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					direction: 'vertical',
+//					loop: true,
+					pagination: '.swiper-pagination',
+        			paginationType: 'fraction',
+					//virtualTranslate : true,
+					mousewheelControl: true,
+					onSlideChangeEnd: function(swiper) {
+						videoPause(swiper);
+					},
+					onTransitionEnd: function(swiper) {
+						videoPause(swiper);
+					},
+//					onSliderMove: function(swiper) {
+//						document.getElementById('video').pause();
+//					},
+					watchSlidesProgress: true,
+					onProgress: function(swiper) {
+						for(var i = 0; i < swiper.slides.length; i++) {
+							var slide = swiper.slides[i];
+							var progress = slide.progress;
+							var translate = progress * swiper.height / 4;
+							scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
+							var opacity = 1 - Math.min(Math.abs(progress / 2), 0.5);
+							slide.style.opacity = opacity;
+							es = slide.style;
+							es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,' + translate + 'px,-' + translate + 'px) scaleY(' + scale + ')';
+						}
+					},
+					onSetTransition: function(swiper, speed) {
+						for(var i = 0; i < swiper.slides.length; i++) {
+							es = swiper.slides[i].style;
+							es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+						}
+					},
+				})
+			}
+			
+			//播放器控制
+			function videoPlay(swiper){
+				console.log(swiper.activeIndex)
+			}
+			function videoPause(swiper){
+				if(swiper.activeIndex != 4){
+					document.getElementById('video').pause();
+				}
+				// 最后一页隐藏 下滑图片
+				if(swiper.activeIndex == (swiper.slides.length - 1)){
+					$('#array').hide();
+				} else {
+					$('#array').show();
+				}
+			}
+			
+			var imageUrl = 'http://www.chazuomba.com/files/activity/booking/images/cover.png';
+		    var title = '一本定义新媒体编辑岗位的标准教材｜《新媒体编辑实战技巧》限量预售';
+		    var descText = '新媒体编辑必备。';
+		    var linkUrl = window.location.href;
+		    courseShare(title, descText, linkUrl, imageUrl);
+		</script>
+	</body>
+
+</html>

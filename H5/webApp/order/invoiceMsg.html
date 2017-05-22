@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<title>发票信息</title>
+		<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+		<!--<link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">-->
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="orderDetail.css">
+		<script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="invoiceMsg">
+			<div class="dtsItem">
+				<div class="dtsLeft">开出情况</div>
+				<div class="ub-f1 iStatus"></div>
+			</div>
+			<div class="dtsItem">
+				<div class="dtsLeft">发票抬头</div>
+				<div class="ub-f1 iTitle"></div>
+			</div>
+			<div class="dtsItem">
+				<div class="dtsLeft">发票类型</div>
+				<div class="ub-f1 iType"></div>
+			</div>
+			<div class="dtsItem">
+				<div class="dtsLeft">备注信息</div>
+				<div class="ub-f1 iRemark"></div>
+			</div>
+			<div class="dtsItem dtlAddr">
+				<div class="dtsLeft">收&nbsp;&nbsp;件&nbsp;人</div>
+				<div class="ub-f1 iName"></div>
+			</div>
+			<div class="dtsItem dtlCompany">
+				<div class="dtsLeft">联系电话</div>
+				<div class="ub-f1 iTel"></div>
+			</div>
+			<div class="dtsItem dtlJob">
+				<div class="dtsLeft">寄送地址</div>
+				<div class="ub-f1 iAddr"></div>
+			</div>
+		</div>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="../netWork/publicShare.js"></script>
+		<script>
+			var title = '我正在插坐学院上课，你也一起吧！';
+			var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+	    	var linkUrl = webAppUrl;
+	    	var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+	   		courseShare(title, descText, linkUrl, imageUrl);
+			var orderNo = request('orderNo'),
+				unionId = request('unionId');
+			getAjaxData('findInvoiceDetailByUnionId', {
+				orderNo: orderNo,
+				unionId: unionId
+			}, function(data){
+				data = data.data;
+				var invoiceStatus = data.invoiceStatus;
+				if(invoiceStatus == '1'){//发票处理中
+					$(".iStatus").html('<span style="color: #F7A90C;">处理中</span>');
+				} else if(invoiceStatus == '2'){//发票已开出
+					$(".iStatus").html('<span style="color: #3573B3;">已开出</span>');
+				}
+				$(".iTitle").text(data.invoiceTitle);
+				$(".iType").text(data.invoiceType);
+				$(".iRemark").text(data.invoiceRemarks || '无');
+				$(".iName").text(data.invoiceName);
+				$(".iTel").text(data.invoiceMobile);
+				$(".iAddr").text(data.invoiceAddress);
+			});
+		</script>
+	</body>
+
+</html>

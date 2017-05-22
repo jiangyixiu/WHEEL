@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script><!--IOS直接打开app-->
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="audit.js?v=0.2.9"></script>
+</head>
+
+<style>
+    body{
+        font-family: PingFangSC-Medium,"microsoft yahei";
+    }
+    .toper{
+        position: relative;
+        width: 100%;
+        height: 6.5rem;
+        line-height: 6.5rem;
+        background-color: #3573B3;
+    }
+    .logo{
+        margin-left: 2.16rem;
+        width: auto;
+        height: 1.666rem;
+    }
+    .toper .bg{
+        width: auto;
+        height: 5.5rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+    }
+    .bodyer{
+        padding: 2.7rem 1.666rem 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: #fff;
+    }
+    .bodyer .title{
+        display: block;
+        width: 27.91rem;
+        margin:auto;
+    }
+    .bodyer .text{
+        font-family: 'PingFangSC-Medium','microsoft yahei';
+        text-align: justify;
+        margin: 0.9rem 0 1.2rem;
+        padding: 1.4285rem;
+        line-height: 1.8rem;
+        color: #333;
+        border: 1.5px dashed #f3f3f3;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        border-radius:3px;
+    }
+    .Prompt .line{
+        float: left;
+        width: 0.25rem;
+        height: 4.6rem;
+        background-color: #FFCC00;
+    }
+    .Prompt .text{
+        float: left;
+        margin: 0 0 0 1.33rem;
+        font-size: 1.08rem;
+        line-height: 1.6rem;
+        color: #425D78;
+    }
+    .foot{
+        width: 100%;
+        height: 5rem;
+        line-height: 5rem;
+        background-image: url("../images/pay/bg_pay_bottom.png");
+        background-size: 100% 100%;
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        padding: 0 1rem;
+    }
+    .left{
+        float: left;
+    }
+    .foot .appLogo{
+        width: 3.6rem;
+        height: auto;
+    }
+    .right{
+        line-height: 0;
+        margin-top: 1.25rem;
+        float: right;
+    }
+    .foot .mid{
+        padding-top: 0.83rem;
+        padding-left: 1rem;
+        float: left;
+        width: 16rem;
+        height: 100%;
+        line-height: 1.66rem;
+        color: #FFFFFF;
+    }
+    .mid .mid_title{
+        float: left;
+        display: block;
+        font-size: 1.08rem;
+        font-weight: 600;
+    }
+    .mid .mid_text{
+        float: left;
+        display: block;
+        font-size: 0.83rem;
+    }
+    .right .dowBtm{
+        margin-top: 1.16rem;
+        float: right;
+        padding: 1.25rem 1.83rem;
+        background-color: #3573B3;
+        font-size: 1.08rem;
+        color: #FFFFFF;
+        border-radius: 4px;
+    }
+    @media (max-width: 1024px) and (min-width: 750px) {
+        .title{
+            height: 3.6rem!important;
+        }
+        .bodyer .text{
+            font-size: 1.8rem;
+            line-height: 3.1rem;
+        }
+        .Prompt .line{
+            width: 0.3rem;
+            height: 9rem;
+        }
+    }
+    /*二维码*/
+    .QRbox{
+        padding-right: 1rem;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: -8.2rem;
+        left: 0;
+        line-height: 1.2rem;
+    }
+    .QRNotes{
+        font-family: PingFangSC-Regular, "microsoft yahei";
+        float: right;
+        text-align: right;
+        position: absolute;
+        right: 8.6rem;
+        bottom: 0.3rem;
+        color: #333;
+        font-size: 0.9rem;
+    }
+    .hrefBtn{
+        line-height: 2.8rem;
+        padding: 1rem 2rem;
+        background: #fff;
+    }
+    .hrefBtn:active{
+        background-color: #F3F3F3;
+    }
+    .hrefBtn .icon1{
+        height: 2rem;
+        width: auto;
+    }
+    .hrefBtn .icon2{
+        height: 1.4rem;
+        float: right;
+        margin: 0.8rem 0;
+    }
+    .hrefBtn span{
+        color: #333;
+        font-size: 1.2rem;
+        padding-left: 0.4rem;
+    }
+    .Prompt{overflow: hidden;}
+    #receiptFp{
+        margin: 1rem 0 1rem 1.33rem;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+        color: #425D78;
+        text-decoration: underline;
+    }
+
+    .QR{
+        width: 7rem;
+        height: auto;
+        float: right;
+    }
+
+</style>
+
+<body style="display: none;">
+
+<div class="toper">
+    <img class="logo"src="images/offline/pic_pay_check.png" alt=""/>
+    <img class="bg" src="../images/pay/bg_pay_tel.png" alt=""/>
+</div>
+
+<div class="bodyer">
+    <img class="title" src="images/offline/pic_pay_chart_check.png" alt=""/>
+    <p class="text">
+        本门课程采取<span style="color: #F7A90C;">审核招生制</span>，支付成功后，工作人员会在1个工作日内与您联系，评估课程与您的匹配度，如果课程不适合您，学费将全额退回。
+    </p>
+</div>
+
+<div id="through" style="display:none;">
+    <div style="width:100%;height:0.714rem;background:#F5F5F5;"></div>
+    <div class="notice hrefBtn" id="notice">
+        <img class="icon1" src="images/offline/icon_pay_notice.png?v=1.0.1" alt=""/>
+        <span>查看录取通知</span>
+        <img class="icon2" src="images/offline/icon_suc_go.png" alt=""/>
+    </div>
+    <div style="width:100%;height:1px;background:#F5F5F5;"></div>
+    <div class="receipt hrefBtn" id="receipt" style="display: none;">
+        <img class="icon1" src="images/offline/icon_pay_receipt.png?v=1.0.1" alt=""/>
+        <span>索要发票</span>
+        <img class="icon2" src="images/offline/icon_suc_go.png" alt=""/>
+    </div>
+</div>
+
+<div style="height: 5.3rem;"></div>
+
+<div class="foot">
+
+    <!--二维码-->
+    <div class="QRbox" id="QRbox">
+        <img class="QR" id="QR" src="../images/WechatIMG6.png" alt=""/>
+        <span class="QRNotes">长按识别二维码<br/>可联系我们</span>
+    </div>
+
+    <div class="left">
+        <img class="appLogo" src="../images/pay/icon_pay_bottom.png?v=1.0.0" alt=""/>
+    </div>
+    <div class="mid">
+        <span class="mid_title">专注企业新媒体培训</span>
+        <span class="mid_text">15300+人正在使用</span>
+    </div>
+    <div class="right">
+        <a id="Android" style="display: none;font-size: 1rem;background-color: #3573B3" class="btn btn-primary" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">立即下载</a>
+        <a id="IOS" style="display: none;font-size: 1rem;background-color: #3573B3"  class="btn btn-primary" href="###">立即下载</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var audit = request('audit');
+
+    _IsIOS();
+    function _IsIOS() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/iPhone\sOS/i) == "iphone os"||navigator.userAgent.indexOf("iPad") != -1) {
+            $("#IOS").show();
+            $("#Android").hide();
+            if(isSafari=navigator.userAgent.indexOf("Safari")<0) {
+                $("#IOS").click(function(){
+                    alert('请在Safari中打开^_^');
+                });
+            }
+            return;
+        } else if (ua.match(/Android/i) == "android"){
+            $("#IOS").hide();
+            $("#Android").show();
+            return;
+        }
+    }
+
+</script>
+
+<!--分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../netWork/publicShare.js?v=1.0.2"></script>
+<script type="text/javascript">
+    var imageUrl = 'http://www.chazuomba.com/files/webApp/images/logo-01.png';
+    var title = '我正在插坐学院上课，你也一起吧！';
+    var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+    var linkUrl = "http://www.chazuomba.com/files/webApp/";
+    courseShare(title, descText, linkUrl, imageUrl);
+    new Mlink({
+        mlink: "Aamv",
+        button: $("a#IOS")[0],
+        params: {
+            key: 'hdk_main'
+        }
+    });
+</script>
+</body>
+</html>

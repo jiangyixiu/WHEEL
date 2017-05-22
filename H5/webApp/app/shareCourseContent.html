@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation"content="portrait">
+    <meta name="x5-orientation"content="portrait">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="../css/common.css?v=1.0.1">
+    <link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shareCourseContent.css?v=1.0.7" />
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js?v=1.0.1"></script>
+    <script type="text/javascript" src="../plug_in/jquery.qrcode.min.js"></script>
+	<script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script>
+    <script src="https://s95.cnzz.com/z_stat.php?id=1261329276&web_id=1261329276" language="JavaScript"></script>
+    <script>
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid
+        _czc.push(["_setAccount", "1261329276"]);
+    </script>
+    <script type="text/javascript" src="js/shareCourseContent.js?v=1.2.4"></script>
+    <style>
+        a[title="站长统计"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+		<a href="http://www.chazuomba.com/files/webApp" style="float: left;"><img class="logo" src="../images/logo.png" alt="插坐学院"></a>
+		<a id="Android" class="btn btn-download" style="display: none;" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">使用app查看</a>
+		<a id="IOS" class="btn btn-download" style="display: none;">使用app查看</a>
+	</div>
+
+    <div class="title" id="title"></div>
+    <div id="newQrcode"></div>
+    <div id="enroll" style="display: none;">
+        <span></span>
+    </div>
+    <div id="content" style="font-size: 16px"></div>
+
+    <img id="loading" src="../images/loading.gif" style="display: none; width: 10rem; position: fixed; top:0; right: 0; bottom: 0; left: 0; margin: auto"/>
+
+    <!--分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../netWork/publicShare.js?v=1.0.1"></script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+
+        var courseId = request('id');
+        getUserIp(courseId,4);
+
+
+			//展示下载链接
+			_IsIOS();
+			function _IsIOS() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/iPhone\sOS/i) == "iphone os" || navigator.userAgent.indexOf("iPad") != -1) {
+					$("#IOS").show();
+					$("#Android").hide();
+//					if(isSafari = navigator.userAgent.indexOf("Safari") < 0) {
+//						$("#IOS").click(function() {
+//							alert('请在Safari中打开^_^');
+//						});
+//					}
+					return;
+				} else if(ua.match(/Android/i) == "android") {
+					$("#IOS").hide();
+					$("#Android").show();
+					return;
+				}
+			}
+		</script>
+</body>
+</html>

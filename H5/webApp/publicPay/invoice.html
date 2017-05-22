@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation"content="portrait">
+    <meta name="x5-orientation"content="portrait">
+    <title>发票信息</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css?v=1.0.2">
+    <link rel="stylesheet" href="../css/reset.css?v=1.0.2">
+    <link rel="stylesheet" href="invoice.css">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js?v=1.0.2"></script>
+    <script type="text/javascript" src="invoice.js?v=1.0.5"></script>
+</head>
+
+<body style="background-color: #f8f8f8;">
+<form action="" class="form" id="form">
+    <ul class="userinfoBg">
+        <div id="append">
+            <li class="invoiceTitle">
+                <span class="item">发票抬头</span>　
+                <input type="text" name="invoiceTitle" id="invoiceTitle">
+            </li>
+            <li class="select receiptNeed" id="receiptNeed">
+                <span class="item">发票类型</span>
+                    <span id="invoiceType" class="right">
+                        <i class="icon-circle blue" id="invoiceZx">咨询费</i>
+                        <i class="icon-circle" id="invoiceFw">服务费</i>
+                    </span>
+            </li>
+            <li class="invoiceRemarks">
+                <span class="item">备注信息</span>　
+                <input type="text" name="invoiceRemarks" id="invoiceRemarks" placeholder="发票其它需求（选填）">
+            </li>
+            <li class="nickname">
+                <span class="item">收件人
+                    <i class="icon-ok" class="cue" style="display: none;"></i>
+                </span>　
+                <input type="text" name="username" id="userName">
+            </li>
+            <li class="mobile">
+                <span class="item">联系电话
+                    <i class="icon-ok" class="cue" style="display: none;"></i>
+                </span>　
+                <input type="text" name="mobile"  id="userPhone">
+            </li>
+            <li class="invoiceAddress">
+                <span class="item">寄送地址</span>　
+                <input type="text" name="invoiceAddress" id="invoiceAddress">
+            </li>
+
+        </div>
+    </ul>
+
+    <div class="notes">＊本发票将在30个工作日内寄出，请确认以上信息填写无误，一经开出，不再接受信息更改及重新补开</div>
+    <div class="telephone">如有疑问，请咨询：<span style="color: #0530f3;">400-801-5751</span></div>
+
+</form>
+<!-- 提交按钮 -->
+<div  id="enroll" style="position: fixed;bottom: 0;"><span>提交信息</span></div>
+
+<!--分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../netWork/publicShare.js?v=1.0.2"></script>
+<script type="text/javascript">
+    var imageUrl = 'http://www.chazuomba.com/files/webApp/images/logo-01.png';
+    var title = '我正在插坐学院上课，你也一起吧！';
+    var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+    var linkUrl = "http://www.chazuomba.com/files/webApp/";
+    courseShare(title, descText, linkUrl, imageUrl);
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body{
+    background-size:  cover;
+    background-position: center;
+    background-image: url(../images/pay_Bg_Image.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
+    width: 94%;
+    height: 96%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 2px solid #295a8e;
+    border-radius: 6px;
+    font-family: "PingFangSC-Light", "Microsoft YaHei";
+}
+/* 顶部logo */
+.top_Logo_Div{
+    margin-top: 1.75rem;
+    text-align: center
+}
+.top_Logo_Img{
+    height: 7.25rem;
+}
+
+/* 录取通知书 */
+.top_Title_Div{
+    margin-top:1.125rem;
+    text-align: center
+}
+.top_Title_Img{
+    height: 3rem;
+}
+
+/* 头像 */
+.top_Icon_Div{
+    margin:auto;
+    height: 6.8rem;
+    width: 6.8rem;
+    margin-top:3.4rem;
+    text-align: center;
+    border: none;
+    /*border-radius:50%;*/
+}
+.top_Icon_Img{
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+    border: 2px solid #295a8e;
+}
+/* 名字 */
+.center_Name_Title{
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    color: #295a8e;
+    text-align: center;
+}
+/*  你被录取了 */
+.center_itron_Title{
+    margin: 12% auto 12%;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+.center_itron_Title img{
+    width: 76%;
+}
+/* 数量 */
+.center_count_Title{
+    font-size: 1rem;
+    color: #ff5447;
+    height: 2rem;
+    margin-top: 4.375rem;
+    text-align: center;
+    margin-left: 0.2rem;
+}
+
+/*logo*/
+.foot_Logo_Div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    text-align: center;
+}
+.foot_Logo_Img{
+    height: 1.6rem;
+}
+
+/* 底部高度 */
+.bootomDiv{
+    overflow: hidden;
+}
+
+/* 支付按钮 */
+.button:hover{
+    /*background-color: #A8A9AF;*/
+}
+.button:active{
+    /*background-color: #A8A9AF;*/
+}
+.button{
+    /*padding: 0.72rem 0;*/
+    line-height: 3rem;
+    margin: 0 auto 2rem;
+    width: 11.6rem;
+    text-align: center;
+    color: #295a8e;
+    font-size: 1.16rem;
+    border: 1px solid #295a8e;
+    border-radius: 3rem;
+}

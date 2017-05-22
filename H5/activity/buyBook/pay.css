@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+.df {display: -webkit-flex;display: flex;box-sizing: border-box;}
+.df1 {flex: 1;overflow: hidden;}
+.dfac {align-items: center;}/*flex垂直居中*/
+.dfae {align-items: flex-end;}
+
+body {background-color: #F5F5F5;font-family: PingFangSC-Regular, "microsoft yahei";}
+.bookMsg {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0 2rem;
+	height: 14rem;
+}
+.bookImg {
+	width: 6.75rem;
+	height: 6.75rem;
+	margin-right: 1.333333rem;
+}
+.bookName {
+	font-family: PingFangSC-Medium, "microsoft yahei";
+	font-size: 1.333333rem;
+	line-height: 1;
+	color: #4A4A4A;
+	display: block;
+	text-decoration: none;
+}
+.bookSub {
+	font-size: 1rem;
+	color: #666666;
+	line-height: 1.333333rem;
+	margin-top: 0.833333rem;
+	margin-left: .5rem;
+}
+.bookCtn {
+	margin-top: .5rem;
+	margin-left: .5rem;
+	height: 2rem;
+}
+.bookPrice {
+	font-family: PingFangSC-Semibold, "microsoft yahei";
+	font-size: 1.5rem;
+	color: #FF8B00;
+	line-height: 1;
+}
+.bookTip {
+	margin-left: 1.333333rem;
+	font-size: 1rem;
+	color: #B8B8B8;
+}
+.buyCount {
+	background-color: #FFFFFF;
+	height: 5rem;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0 2rem;
+	font-size: 1.166666rem;
+	color: #666666;
+}
+.bookCountCtn {
+	height: 2.5rem;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+}
+.countUp, .countDown {
+	width: 2.5rem;
+	height: 100%;
+	background-color: #F5F5F5;
+	position: relative;
+}
+.countDown {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.countDown:after, .countUp:before, .countUp:after {
+	position: absolute;
+	content: '';
+	background-color: #999999;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.countDown:after, .countUp:after {
+	width: 1.166666rem;
+	height: 0.166666rem;
+}
+.countUp:before {
+	width: 0.166666rem;
+	height: 1.166666rem;
+}
+.countUp {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.countDown.disabled:after {
+	background-color: #E0E0E0;
+}
+.bookCount {
+	width: 4.166666rem;
+	text-align: center;
+	border: 0;
+	outline: none;
+	color: #4A4A4A;
+	font-size: 1.166666rem;
+	font-weight: bold;
+}
+.fhTime {
+	font-size: 1.083333rem;
+	color: #666666;
+	padding-left: 2rem;
+	height: 3.666666rem;
+	line-height: 3.666666rem;
+	background-color: #FFFFFF;
+}
+#buyBookForm {
+	background-color: #FFFFFF;
+	padding: 1.666666rem 2rem 3.333333rem;
+	margin-top: 0.833333rem;
+}
+#buyBookForm>.df {
+	margin-top: 1.666666rem;
+	position: relative;
+}
+.formLeft {
+	margin-right: 2.666666rem;
+	font-size: 1.166666rem;
+	color: #4A4A4A;
+	line-height: 1;
+	width: 3rem;
+}
+.formLeft>span, .icItem>span, .icTitle>span{
+	font-size: 1rem;
+	color: #EA4F51;
+	line-height: 1;
+	vertical-align: text-top;
+}
+#buyBookForm input, .invoiceTitle, #feedBack {
+	height: 3.333333rem;
+	background-color: #F4F4F4;
+	border-radius: 4px;
+	border: 0;
+	outline: none;
+	padding: 0 1rem;
+	font-size: 1.083333rem;
+}
+#buyBookForm input {
+	padding-right: 2rem;
+}
+.provinceCtr, .cityCtr {
+	position: relative;
+	height: 3.333333rem;
+	line-height: 3.333333rem;
+	background-color: #F4F4F4;
+	border-radius: 4px;
+	border: 0;
+	font-size: 1.083333rem;
+	justify-content: center;
+}
+.provinceCtr>div, .cityCtr>div {
+	height: 100%;
+	padding: 0 4rem 0 1rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.provinceCtr>div:before, .cityCtr>div:before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2rem;
+	border-right: 1px solid #E0E0E0;
+	top: 50%;
+	right: 3rem;
+	-webkit-transform: translateY(-50%) scaleX(.5);
+	-ms-transform: translateY(-50%) scaleX(.5);
+	-moz-transform: translateY(-50%) scaleX(.5);
+	-o-transform: translateY(-50%) scaleX(.5);
+	transform: translateY(-50%) scaleX(.5);
+}
+.provinceCtr>div:after, .cityCtr>div:after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 50%;
+	right: 1rem;
+	border-width: 0.5rem 0.5rem 0;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #D8D8D8;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.cityCtr {
+	margin-left: 1.666666rem;
+}
+#province, #city {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 7;
+}
+.placeholder {
+	color: #B8B8B8;
+}
+i.icon-ok, i.icon-exclamation-sign {
+	position: absolute;
+	top: 50%;
+	right: .5rem;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#invoiceForm {
+	margin-top: 0.833333rem;
+	background-color: #FFFFFF;
+	padding: 2.5rem 2rem;
+}
+.chooseInvoice {
+	margin-bottom: 2.5rem;
+}
+.icbox {
+	width: 1.166666rem;
+	height: 1.166666rem;
+	background: url(images/btn_checkbox.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-right: 14px;
+}
+.icbox.checked {
+	background-image: url(images/btn_checkedbox.png);
+}
+.chooseInvoice>.df1 {
+	font-size: 1.166666rem;
+	color: #4A4A4A;
+}
+.icItem, .icTitle{
+	font-size: 1.166666rem;
+	color: #4A4A4A;
+	margin-bottom: 1.666666rem;
+}
+.icTitle {
+	margin-bottom: 0.833333rem;
+}
+.invoiceCtn {
+	display: none;
+}
+.feeType {
+	margin-bottom: 20px;
+	font-size: 1.166666rem;
+	color: #4A4A4A;
+}
+.iradio:first-child {
+	margin-right: 3rem;
+}
+.iradio>i {
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 1px solid #B8B8B8;
+	border-radius: 50%;
+	margin-right: 1rem;
+	position: relative;
+}
+.iradio.checked>i:after {
+	content: '';
+	width: 0.75rem;
+	height: 0.75rem;
+	background-color: #3573B3;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.25rem;
+}
+.inputInvoice {
+	position: relative;
+	margin-bottom: 1.666666rem;
+}
+.line {
+	height: 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+.feedTitle {
+	margin: 0.833333rem 0;
+	font-size: 1.166666rem;
+	color: #4A4A4A;
+}
+#feedBack {
+	height: auto;
+	resize: none;
+	padding: 1rem;
+	margin-bottom: 3.333333rem;
+}
+.tips {
+	font-size: 1.166666rem;
+	color: #666666;
+	line-height: 1.75rem;
+}
+.tips>a {
+	color: #3573B3;
+	text-decoration: none;
+}
+
+
+#buyBookBtm {
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #FFFFFF;
+	font-family: PingFangSC-Semibold, "microsoft yahei";
+	box-shadow: 0 -4px 3px 0 rgba(0, 0, 0, .04);
+	z-index: 99;
+}
+#buyBookBtm>.df1 {
+	margin-left: 1.25rem;
+}
+.totalPrice {
+	font-size: 1.666666rem;
+	color: #FF8B00;
+}
+.fee {
+	margin-left: -0.5rem;
+	font-family: PingFangSC-Regular, "microsoft yahei";
+	font-size: 1rem;
+	color: #B8B8B8;
+}
+#AliPay {
+	width: 10rem;
+	height: 100%;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1.333333rem;
+	color: #FFFFFF;
+	background-color: #1CACEB;
+	box-shadow: 0 -2px 2px 0 rgba(27, 140, 190, .09);
+}

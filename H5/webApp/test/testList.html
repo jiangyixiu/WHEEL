@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="新媒体运营,插坐学院,新媒体培训,线上直播,充电,职场学习,垂直学习社区,插座" />
+    <meta name="description" content="插坐学院，成立于2014年11月，是一个面向年轻公司人的跨界学习社区，致力为年轻公司人提供接地气、有价值的学习资讯、交流活动。插坐学院主要为工作五年以内的年轻人，提供接地气、有价值的学习资讯，定期举办线下沙龙、公开课等活动。帮助年轻人组建不同领域的学习小组，进行交流学习，为各大企业推荐优秀学员。插坐学院官方微信：chazuomba。">
+    <title>试题列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="testList.css"/>
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/BaseUrl.js?v=0.0.1"></script>
+    <script type="text/javascript" src="js/testList.js"></script>
+</head>
+    <body>
+        <div id="testList">
+            <!--<ul class="testBox">-->
+                <!--<li class="title">企业新媒体的内容创作与编辑技巧 | 北京站</li>-->
+                <!--<li class="tagging">-->
+                    <!--<span>共20题</span>-->
+                    <!--<span>满分100分</span>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </body>
+
+    <!--分享-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../netWork/publicShare.js?v=1.0.2"></script>
+    <script type="text/javascript">
+        var id = request("id");
+        $(function() {
+            getAjaxData('getQuestionChildListV220',{
+                id: id
+            },function (data) {
+                console.log(data)
+
+                var title = data.data.parent.title;
+                var descText = '插坐学院新媒体测试题';
+                var linkUrl = 'http://www.chazuomba.com/files/webApp/test/testList.html?id='+id;
+                var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+                courseShare(title, descText, linkUrl, imageUrl);
+            })
+        });
+    </script>
+</html>

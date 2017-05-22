@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+<body style="background-color: #f8f8f8;">
+
+<form action="" class="form" id="form">
+    <div class="title"></div>
+    <ul class="userinfoBg userinfoBg1">
+        <li class="remind" id="remind" style="color: #ff4343">＊必填</li>
+        <li class="nickname">
+            <span class="item">姓名</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="text" name="username" id="userName">
+            </div>
+        </li>
+        <li class="mobile">
+            <span class="item">手机</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="tel" name="mobile"  id="userPhone" maxlength="11" placeholder="请正确填写，确保收到短信">
+            </div>
+        </li>
+
+        <li class="email">
+            <span class="item">邮箱</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="text" name="mobile"  id="userEmail" placeholder="请正确填写，确保收到录取通知">
+            </div>
+        </li>
+        </div>
+    </ul>
+    <ul class="userinfoBg">
+        <li class="remind">＊选填</li>
+        <li class="userCompany">
+            <span class="item">公司</span>　
+            <input type="text" name="work" id="userCompany"></li>
+        <li class="userJob">
+            <span class="item">职位</span>　
+            <input type="text" id="_userJob"></li>
+        <li class="ask">
+            <span class="item">提问</span>　
+            <input type="text" name="content" placeholder="你最想解决的实际工作问题是…（900字以内）" id="ask">
+        </li>
+    </ul>
+
+    <div class="telephone">如有疑问，请咨询：<span style="color: #0530f3;">400-801-5751</span></div>
+
+</form>
+<!-- 资格查询 -->
+<div id="showPayDiv" style="position: fixed;bottom: 0;">
+	<div>资格查询</div>
+</div>
+
+<!--分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../netWork/publicShare.js"></script>
+<script type="text/javascript">
+    var imageUrl = 'http://www.chazuomba.com/files/webApp/images/logo-01.png';
+    var title = '我正在插坐学院上课，你也一起吧！';
+    var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+    var linkUrl = "http://www.chazuomba.com/files/webApp/";
+    courseShare(title, descText, linkUrl, imageUrl);
+</script>
+</body>
+</html>
+
+</html>

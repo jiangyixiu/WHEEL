@@ -1,0 +1,134 @@
+@charset "utf-8";	
+*{color: #333333;font-family: PingFangSC-Medium,"microsoft yahei";}
+html, body{width: 100%;height: 100%;}
+body{
+	background-color: #F5F5F5;
+}
+.banner{
+	padding-left: 2.916666rem;
+	height: 8rem;
+	width: auto;
+	background-color: #3573B3;
+	box-sizing: border-box;
+	margin-bottom: -0.1666666rem;
+    z-index: 2;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+}
+.banner > li{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.banner .avatar{
+	margin-top: 0.76rem;
+	border-radius: 50%;
+	border: 0.25rem solid #FFFFFF;
+	width: 4.166666rem;
+	height: 4.166666rem;
+	float: left;
+}
+.banner .name{
+	font-size: 1.416666rem;
+	height: 1.333333rem;
+	color: #FFFFFF;
+}
+.banner .catalog_name{
+	margin-top: 1rem;
+	font-size: 1rem;
+	height: 0.833333rem;
+	color: #FFFFFF;
+}
+.banner .cultivate_name{
+	margin-top: 1rem;
+	font-size: 0.833333rem;
+	color: rgba(255,255,255,0.6);
+	/*background: url(../images/iconarrow_manage_person_classname.png) no-repeat left center;
+	background-size: auto 70%;
+	padding-left: 1.291666rem;*/
+}
+.banner > li:nth-child(1){
+	position: relative;
+	height: 100%;
+	text-align: center;
+}
+/*.banner .arrow_manage{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.166666rem;
+    height: 0.633333rem;
+}*/
+.banner > li:nth-child(2){
+	margin-left: 2rem;
+	margin-right: 2rem;
+	flex: 1;
+}
+/*列表*/
+.listDate{
+	padding-top: 1.916666rem;
+	/*width: auto;
+	height: 3.666666rem;
+	line-height: 3.666666rem;*/
+	font-size: 1.083333rem;
+	text-indent: 1.666666rem;
+	/*box-shadow: 0 0.125rem 0.166666rem 0 rgba(0,0,0,0.06);*/
+}
+/*.details{
+	padding: 2.44rem 1.166666rem 0.083333rem 0;
+	margin-left: 4.9166rem;
+	border-left: 1px solid #EEEEEE;
+}*/
+.lsEach{
+	font-family: PingFangSC-Regular,"microsoft yahei";
+	font-size: 1.083333rem;
+	color: #666666;
+	/*letter-spacing: 0.31px;*/
+	/*height: 1.666666rem;
+	height: 1.083333rem;
+	line-height: 1.666666rem;*/
+	position: relative;
+	margin-top: 1.166666rem;
+	display: -webkit-flex;
+	display: flex;
+	/*margin-bottom: 2rem;*/
+}
+/*.lsEach:after{
+	content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #EEEEEE;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: -0.2712rem;
+    bottom: 0;
+    margin: auto;
+}*/
+.details>.lsEach:last-child{
+	/*margin-bottom: 1rem;*/
+	padding-bottom: 1.5rem;
+	box-shadow: 0 0.125rem 0.166666rem 0 rgba(0,0,0,0.06);
+}
+.lsTime{
+	/*padding: 0 1.458333rem 0 1.666666rem;*/
+	font-family: PingFangSC-Regular,"microsoft yahei";
+	color: #999999;
+	width: 4.416666rem;
+	padding-left: 1.666666rem;
+}
+.lsCourse_name{
+	font-family: PingFangSC-Regular,"microsoft yahei";
+	flex: 1;
+	width: 17.75rem;
+	color: #666666;
+	letter-spacing: 0.31px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-right: 4.625rem;
+}

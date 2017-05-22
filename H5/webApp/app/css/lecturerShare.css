@@ -1,0 +1,327 @@
+@charset "utf-8";
+body {
+    background-color: #f3f3f3;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "PingFangSC-Regular", "Microsoft YaHei";;
+}
+
+.header {
+    text-align: right;
+    padding-right: 0.83rem;
+    overflow: hidden;
+}
+
+.btn-download {
+    color: #337ab7;
+    text-decoration: none;
+    border: 1px solid #7DA5CE;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.content {
+    margin-top: 5rem;
+    background-color: #FFFFFF;
+    padding-bottom: 0.84rem;
+    position: relative;
+}
+
+/*横屏显示*/
+@media (orientation: landscape) {
+    .content {
+        margin-top: 2.5rem;
+    }
+}
+
+/*头部适配*/
+@media (min-width: 750px) and (max-width: 1024px) {
+    .content {
+        margin-top: 6rem;
+    }
+
+    .lecturerPic, .lecturerBg {
+        height: 30rem !important;
+    }
+}
+
+.lecturerPic {
+    width: 100%;
+    height: 22rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.lecturerBg {
+    width: 100%;
+    height: 22rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/bg_teacher_shade.png) no-repeat center;
+    background-size: cover;
+    z-index: 8;
+}
+
+.lecturerMsg {
+    position: absolute;
+    left: 1rem;
+    bottom: .5rem;
+    color: #FFFFFF;
+    z-index: 9;
+}
+
+.lecturerName {
+    font-size: 2.42rem;
+    letter-spacing: 0.2px;
+}
+
+.classMsg {
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: .2rem;
+}
+
+.classMsg > div {
+    float: left;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+}
+
+.classCount {
+    background: url(../images/icon_book.png) no-repeat left center;
+    background-size: 1rem 1rem;
+    margin-right: 0.8rem;
+}
+
+.viewCount {
+    background: url(../images/icon_eye.png) no-repeat left center;
+    background-size: 1rem 1rem;
+}
+
+.lecturerItdItem {
+    padding: 0 6.5rem 0 1rem;
+    color: #666666;
+    font-size: 1.17rem;
+    line-height: 1.84rem;
+    height: 3.68rem;
+    overflow: hidden;
+    -webkit-transition: height .1s linear;
+    -moz-transition: height .1s linear;
+    -ms-transition: height .1s linear;
+    -o-transition: height .1s linear;
+    transition: height .1s linear;
+}
+
+.loadMoreItd {
+    display: none;
+    margin-top: 1rem;
+    height: 2rem;
+}
+
+.loadMoreItd.down {
+    background: url(../images/icon_teacher_dropdown.png) no-repeat center;
+    background-size: 2rem 2rem;
+}
+
+.loadMoreItd.up {
+    background: url(../images/icon_teacher_dropup.png) no-repeat center;
+    background-size: 2rem 2rem;
+}
+
+#classList {
+    margin: 0.84rem auto 2.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #FFFFFF;
+}
+
+.classListItem {
+    position: relative;
+    padding: 0.833rem 1rem;
+    overflow: hidden;
+}
+
+.classListItem:after {
+    content: "";
+    border-bottom: 1px solid #F6F6F6;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+}
+
+.classItemImg {
+    float: left;
+    position: relative;
+    width: 9.167rem;
+    height: 11.167rem;
+    cursor: pointer;
+}
+
+.classItemImg:after {
+    content: "";
+    width: 1.66rem;
+    height: 1.66rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.video:after {
+    background: url(../images/icon_class_videostag@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.audio:after {
+    background: url(../images/icon_earphonetag@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.classItemCtn {
+    margin-left: 10.875rem;
+}
+
+.classItemTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: #333333;
+    font-size: 1.25rem;
+    line-height: 1.67rem;
+}
+
+.classItemSubTitle {
+    margin-top: .667rem;
+    color: #999999;
+    font-size: 1rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.classItemCount {
+    font-size: 0.834rem;
+    color: #B8B8B8;
+    display: inline-block;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    padding: 1px 6px;
+    margin-top: .667rem;
+}
+
+.classItemStudy {
+    position: absolute;
+    bottom: 1.1667rem;
+    left: 11.875rem;
+    right: 1rem;
+    color: #B8B8B8;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    height: 1.333333rem;
+    /*line-height: 1.67rem;*/
+}
+
+.cisCount {
+    font-size: 1rem;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    overflow: hidden;
+}
+
+.cisSts {
+    font-size: 1rem;
+    color: #F7A90C;
+    /*border: 1px solid #E0E0E0;*/
+    /*width: 3.833333rem;*/
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.cisSts:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto;
+    background-size: 100%;
+    background-image: url("../images/icon_list_teamlearning@3x.png");
+}
+
+.cisStatus, .cisPrice {
+    font-size: 1.5rem;
+    color: #F7A90C;
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transform: translateY(-20%);
+    /*font-size: 1rem;
+    width: 5rem;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    height: 1.67rem;
+    line-height: 1.667rem;*/
+}
+
+/*.cisStatus.nor{
+	color: #F7A90C;
+	border: 1px solid #F7A90C;
+}
+.cisStatus.sel{
+	color: #B8B8B8;
+	border: 1px solid #E0E0E0;
+}
+.cisStatus:after{
+	content: "";
+	position: absolute;
+	top: -0.3rem;
+	right: -0.3rem;
+	width: 1rem;
+	height: 1rem;
+}
+.cisStatus.sel:after{
+	background: url(../images/icon_addclass_sel@2x.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.cisStatus.nor:after{
+	background: url(../images/icon_addclass_nor@2x.png) no-repeat center;
+	background-size: 100% 100%;
+}*/

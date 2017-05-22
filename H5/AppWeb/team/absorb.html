@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="css/absorb.css?v=0.0.111">
+    <script src="../common/jquery.min.js"></script>
+    <script src="../common/angular.min.js"></script>
+    <script src="../common/util.js"></script>
+    <script src="js/absorb.js"></script>
+</head>
+<body ng-controller="rankingList">
+    <!-- 头 -->
+    <ul class="banner">
+		<li>{{ average | number:0}}%</li>
+		<li class="ban_text">	平均吸收率</li>
+	</ul>
+    <!-- 排行榜 -->
+    <ul class="lists">
+        <li class="list" ng-repeat="bar in bars" on-finish-render-filters="Bar" ng-cloak>
+	        <span class="lsNumber">{{ $index + 1 }}</span>
+	        <span class="lsPhoto lsPhoto{{$index}}" style="background-image: url({{ bar.avatar }});"></span>
+	        <span class="name">{{ bar.name }}</span>
+	       	<div class="lsCircle" id="{{ bar.avg_ticket | number:0 }}">
+		        <span class="circleText">{{ bar.avg_ticket | number:0 }}</span>
+		        <i>%</i>	
+	       	</div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@charset "utf-8";
+body{background-color: #FFFFFF;font-family: PingFangSC-Regular,"microsoft yahei";}
+.header{
+	padding: 1.833333rem 1.833333rem 0;
+}
+.logo{
+	width: 6.916666rem;
+	height: 1.666666rem;
+}
+.userInfo{
+	margin-top: 4rem;
+	text-align: center;
+}
+.userAvatar>img{
+	border: 2px solid rgba(0,0,0,.16);
+	border-radius: 50%;
+	width: 5.333333rem;
+	height: 5.333333rem;
+}
+.userName{
+	font-size: 1.166666rem;
+	color: #000000;
+	margin-top: 0.833333rem;
+}
+.countMsg{
+	position: relative;
+	overflow: hidden;
+	margin-top: 2.833333rem;
+}
+.countMsg:after{
+	content: " ";
+	width: 0;
+	height: 2.5rem;
+	border-right: 1px solid #D8D8D8;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cmItem{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.cmiTitle{
+	font-size: 1.333333rem;
+	line-height: 1.333333rem;
+	color: #B8B8B8;
+}
+.cmiCount{
+	margin-top: 1.166666rem;
+	font-family: PingFangSC-Semibold,"microsoft yahei";
+	/*font-size: 2.083333rem;*/
+	font-size: 2.166666rem;
+	line-height: 2.5rem;
+	color: #333333;
+}
+.cmiCount.noRanking{
+	font-size: 1.833333rem;
+	color: #B8B8B8;
+}
+.cmiCount>span{
+	font-size: 1.333333rem;
+	font-family: PingFangSC-Regular,"microsoft yahei";
+}
+.footer{
+	width: 100%;
+	background-color: #EFF6FF;
+	border-radius: 8px 8px 0 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.footerCtn{
+	height: 4.5rem;
+	margin: 1.833333rem;
+}
+.footerCtn>div{
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+}
+.fcLogo{
+	width: 4.5rem;
+	height: 100%;
+	background: url(../images/logo_hdk.png) no-repeat center;
+	background-size: 100% 100%;
+	border-radius: 8px;
+}
+.appLink{
+	float: right;
+	/*position: absolute;
+	right: 1.833333rem;*/
+}
+.app-download{
+	display: inline-block;
+	width: 7.916666rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	text-align: center;
+	color: #3573B3;
+	text-decoration: none;
+	margin: 1rem 0;
+}
+.fcTxt{
+	margin-left: 1.25rem;
+	font-size: 1.166666rem;
+	color: #333333;
+	line-height: 1.5rem;
+}
+.fct1{
+	font-family: PingFangSC-Medium,"microsoft yahei";
+	margin-top: 0.5rem;
+}
+.fct2{
+	margin-top: 0.416666rem;
+}
+/*图表*/
+@media (max-width: 320px){
+	.chart{
+		margin-top: 0!important;
+	}
+	.footerCtn{
+		margin: 0.833333rem;
+	}
+}
+.chart{
+	height: 12.5rem;
+	margin: 2rem 1rem 11rem;
+	border-bottom: 3px solid #E8F0FB;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-align: end;
+	-webkit-box-align: end;
+	box-align: end;
+}
+.ub-f1{
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+.item{
+	width: 2.5rem;
+	position: relative;
+	bottom: -2.583333rem;
+	text-align: center;
+	/*margin-left: 0;
+	margin-right: 1.666666rem;*/
+}
+.item1{margin-left: 0.833333rem;}
+.item7{margin-right: 0.833333rem;}
+.item>.rect{
+	background-color: #E8F0FB;
+	height: 0;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+/*.item1>.rect{height: 9.583333rem;}
+.item2>.rect{height: 7.5rem;}
+.item3>.rect{height: 6.25rem;}
+.item4>.rect{height: 5rem;}
+.item5>.rect{height: 3.75rem;}
+.item6>.rect{height: 2.5rem;}
+.item7>.rect{height: 1.25rem;}*/
+.item>.txt{
+	font-family: PingFangSC-Semibold,"microsoft yahei";
+	font-size: 1rem;
+	height: 1.333333rem;
+	line-height: 1.333333rem;
+	margin-top: 1.25rem;
+	color: #E0E0E0;
+}
+.item.cur>.rect{
+	background-color: #AED0FF;
+	position: relative;
+}
+.item.cur>.txt{
+	color: #3573B3;
+}
+.item.cur>.rect:before{
+	content: " ";
+	position: absolute;
+	width: 2.083333rem;
+	height: 2.083333rem;
+	top: -2.75rem;
+	left: 0.208333rem;
+	border-radius: 50%;
+}

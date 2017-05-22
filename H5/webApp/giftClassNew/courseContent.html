@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<title>简章页面</title>
+		<script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<style>
+	        body {
+	        		margin: 0!important;
+	            padding: 0!important;
+	        }
+			#content {
+				overflow: hidden;
+				margin: 18px!important;
+				padding: 8px 0 5rem!important;
+				max-width: 750px!important;
+			}
+			.title {
+	            padding: 2.4rem 1.25rem 0rem;
+	            font-size: 1.8rem;
+	            font-weight: 400;
+	        }
+	        #enroll {
+			    width: 100%;
+			    height: 4.166666rem;
+			    font-size: 1.25rem;
+			    text-align: center;
+			    background-color: #FFFFFF;
+			    color: #ffffff;
+			    position: fixed;
+			    bottom: 0;
+			    z-index: 99999;
+			    cursor: pointer;
+			    border-top: 1px solid #EBEBEB;
+			}
+			#enroll>div{
+				margin: .5rem 1.5rem;
+				height: 3.166666rem;
+				line-height: 3.166666rem;
+				border-radius: 4px;
+			    background-color: #F7A90C;
+			}
+	        img{
+	        		max-width: 100%!important;
+	        		height: auto;
+	        }
+	        a{
+	        		display: none!important;
+	        }
+		</style>
+	</head>
+
+	<body>
+		<div class="title" id="title"></div>
+		<div id="content" style="font-size: 16px"></div>
+	    <div id="enroll">
+	        <div>验证学霸身份</div>
+	    </div>
+		<script>
+			var courseId = request('courseId');
+			var employeeId = request('employeeId');
+			getAjaxData('findWebOfflineCourseInfo', {
+				'client_version': '1',
+                'device_id': '1',
+                'platform': 'web',
+                'courseId': courseId
+			}, function(data) {
+				var courseName = data.data.title.split(/｜|丨|\|/g)[0];
+				$('#title').html(courseName);
+				$('#content').html(data.data.content);
+			});
+			$('#enroll').click(function(){
+				window.location.href = 'index.html?courseId='+courseId+'&employeeId='+employeeId;
+			});
+			//获取简章详情
+//			var params = {
+//				page: '1',
+//				courseType: '1',
+//				newtype: '0',
+//				courseId: courseId
+//			}
+//			getAjaxData('findOfflineCourseContent', params, function(data) {
+//				$('#content').html(data.data);
+//			});
+		</script>
+	</body>
+
+</html>

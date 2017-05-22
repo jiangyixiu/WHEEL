@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>首页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css?v=1.0.4">
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script src="js/headerFooter.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js?v=1.0.2"></script>
+    <script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script>
+    <script type="text/javascript" src="js/index.js?v=1.0.3"></script>
+</head>
+
+<body style="overflow-x: hidden" data-include="header,footer">
+    <div class="banner"></div>
+    <div class="headline">WELCOME</div>
+
+    <!--app下载-->
+    <div class="download">
+        <p class="h3">插坐学院</p>
+        <p class="h5" style="margin: 1.1rem 0;">每个人都有一颗向好之心</p>
+        <p class="text">插坐学院是国内领先的企业新媒体教育培训机构，创办于2014年10月，2016年4月获得真格基金和新榜联合投资的Pre-A轮融资。<span style="height:1.1rem;display:block;"></span>
+            插坐学院专注为1000万企业新媒体运营人员提供实操、落地的课程培训服务，涵盖线下课程、线上课程以及企业课程。截至2016年底，已培养20000+企业新媒体学员，签约讲师150余位。</p>
+        <div class="btn-box" style="margin:1.9rem 0 3.16rem;">
+            <span class="h6">官方学习平台“好多课”App</span>
+            <a id="Android" style="display: none;" class="btn btn-primary" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">立即下载</a>
+            <!--<a id="IOS" style="display: none;"  class="btn btn-primary" href="https://itunes.apple.com/cn/app/hao-duo-ke/id1116383904?mt=8">立即下载</a>-->
+            <a id="IOS" class="btn btn-primary" style="display: none;">立即下载</a>
+        </div>
+    </div>
+
+    <!--讲师团队-->
+    <div class="lecturer">
+        <span class="titleEn">Faculty</span><br />
+        <span class="titleZh">讲师团队</span><br />
+        <span class="line"></span>
+        <div class="lecturerBox" id="lecturerBox">
+            <!--<div class="lecturerShow">-->
+                <!--<span class="photo"></span>-->
+                <!--<span class="name"></span>-->
+                <!--<span class="info"></span>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+
+    <!--线下名师讲座-->
+    <div class="speech">
+        <span class="titleEn">Offline Courses</span><br />
+        <span class="titleZh">线下课程</span><br />
+        <span class="line"></span>
+
+        <div class="speechBox" id="speechBox">
+        </div>
+    </div>
+
+    <!--线上课程-->
+    <div class="onlineCourse">
+        <span class="titleEn">Online Courses</span><br />
+        <span class="titleZh">线上课程</span><br />
+        <span class="line"></span>
+        <div id="onlineCourseBox">
+        </div>
+    </div>
+
+    <!--自学教程-->
+    <div class="selfLearning">
+        <span class="titleEn">Self-learning courses</span><br />
+        <span class="titleZh">自学教程</span><br />
+        <span class="line"></span>
+        <div class="selfLearningBox" id="selfLearningBox">
+        </div>
+    </div>
+
+    <!--同学录-->
+    <div class="classmate">
+        <span class="titleEn">Alumni</span><br />
+        <span class="titleZh">同学录</span><br />
+        <span class="line"></span>
+        <div class="classmateBox" id="classmateBox">
+            <div class="more"><a href="classmate.html">查看更多同学</a></div>
+
+        </div>
+    </div>
+
+    <!--点击讲师/同学展示-->
+    <div class="shade" id="shade">
+
+        <ul class="lecturerClickBox">
+            <li  id="shadeRemove" ><i class="icon-remove"></i></li>
+            <li class="photo"></li>
+            <li class="name">小马宋</li>
+            <!--<li class="profile" id="profile">北京 | 金融P2P</li>-->
+            <li class="job">暴风创意合伙人</li>
+            <li class="achieve">罗辑思维创意顾问 <br />
+                前暴风魔镜创意合伙人 <br />
+                《一个广告文案的自白》系列作者 <br />
+                著有《那些让文案绝望的文案》</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        _IsIOS();
+        function _IsIOS() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/iPhone\sOS/i) == "iphone os"||navigator.userAgent.indexOf("iPad") != -1) {
+                $("#IOS").show();
+                $("#Android").hide();
+//              if(isSafari=navigator.userAgent.indexOf("Safari")<0) {
+//                  $("#IOS").click(function(){
+//                      alert('请在Safari中打开^_^');
+//                  });
+//              }
+                return;
+            } else if (ua.match(/Android/i) == "android"){
+                $("#IOS").hide();
+                $("#Android").show();
+                return;
+            }
+        }
+    </script>
+
+    <!--分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="netWork/publicShare.js?v=1.0.2"></script>
+    <script type="text/javascript">
+        $(function() {
+            var title = '我正在插坐学院上课，你也一起吧！';
+            var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+            var linkUrl = window.location.href;
+            var imageUrl = 'http://www.chazuomba.com/files/hehe/webApp/images/logo-01.png';
+            courseShare(title, descText, linkUrl, imageUrl);
+            new Mlink({
+				mlink: "Aamv",
+				button: $("a#IOS")[0],
+				params: {
+					key: 'hdk_main'
+				}
+			});
+        });
+    </script>
+</body>
+</html>
