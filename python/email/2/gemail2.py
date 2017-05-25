@@ -10,47 +10,51 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from PIL import Image,ImageDraw,ImageFont
+from log import *
 import os
 import logging
-from log import *
+#import thread
+import threading
+import time
+
 
 mail_host="smtp.exmail.qq.com"  #设置服务器
 mail_user="notice@ichazuo.cn"   #用户名
 mail_pass="Chazuo123"   		#口令 
 sender = 'notice@ichazuo.cn'	#发件人邮箱
 
-def ShowInfo():  
-	url = 'https://www.chazuomba.com/iserver/app/queryMemberListByCourseIdForEmail'
-	data = {'courseId': '1850'} 
-	data = urllib.urlencode(data) # 把参数进行编码 
-	url2 = urllib2.Request(url,data) # 用.Request来发送POST请求，指明请求目标是之前定义过的url，请求内容放在data里
-	response = urllib2.urlopen(url2)  # 用.urlopen打开上一步返回的结果，得到请求后的响应内容
-	apicontent = response.read()  #将响应内容用read()读取出来
-	emailList=json.loads(apicontent)
-	print len(emailList['data'])  #打印读取到的内容
+def showInfo(courseId): 
+	#url = 'https://www.chazuomba.com/iserver/app/queryMemberListByCourseIdForEmail'
+	#data = {'courseId': '2190'} 
+	#data = urllib.urlencode(data) # 把参数进行编码 
+	#url2 = urllib2.Request(url,data) # 用.Request来发送POST请求，指明请求目标是之前定义过的url，请求内容放在data里
+	#response = urllib2.urlopen(url2)  # 用.urlopen打开上一步返回的结果，得到请求后的响应内容
+	#apicontent = response.read()  #将响应内容用read()读取出来
+	#emailList=json.loads(apicontent)
+	#print len(emailList['data'])  #打印读取到的内容
 
 
 
-	email_l = emailList['data']
+	#email_l = emailList['data']
 	# print email_l
 	
-	#email_l = [
+	email_l = [
 			 #{"name":"Sophia","email":"jiangxiaoyong@ichazuo.cn"},
 			 #{"name":"舒畅","email":"17744490130@163.com"},
 			 #{"name":"王舒畅","email":"15727378086m@sina.cn"},
 			 #{"name":"哈哈哈哈","email":"18610500240@sina.cn"},
-			#{"name":"小咏","email":"jiangyixiu418@163.com"},
+	         #{"name":"小咏","email":"jiangyixiu418@163.com"},
+	         {"name":"李娟","email":"vickylijuan1991@126.com"},
 			#{u'name': u'\u8bb8\u6587\u8273', u'email': u'222'},
-			#{u'name': u'\u5f90\u654f', u'email': u'2227006164@qq.com'},
+			#{u'name': u'\u5f90\u654f', u'email': u'liye@tongshang.com'},
 			#{u'name': u'Sophia', u'email': u'2227006164@qq.com'},
-		#]
-	
+		]
 	for i,x in enumerate(email_l):
 		try:
-			naem_x = x['name'].encode('utf8')
-			email_x = x['email'].encode('utf8')
-			#naem_x = x['name']
-			#email_x = x['email']		
+			#name_x = x['name'].encode('utf8')
+			#email_x = x['email'].encode('utf8')
+			name_x = x['name']
+			email_x = x['email']
 
 			# 第三方 SMTP 服务
 			import re
@@ -70,13 +74,13 @@ def ShowInfo():
 			smtpObj = smtplib.SMTP() 
 			smtpObj.connect(mail_host, 25)    # 25 为 SMTP 端口号
 			smtpObj.login(mail_user,mail_pass)
-			smtpObj.sendmail(sender, email_x,mailData(naem_x, email_x, sender))
+			smtpObj.sendmail(sender, email_x,mailData(name_x, email_x, sender))
 			
-			logging.info("邮件发送成功"+ naem_x + ':' + email_x + '\n')
+			logging.info("邮件发送成功"+ name_x + ':' + email_x + '\n')
 			
 		except smtplib.SMTPException, e:
 			logging.warning(e)
-			logging.info( "无法发送邮件=======>>>" + naem_x + ':' + email_x + '\n' )
+			logging.info( "无法发送邮件=======>>>" + name_x + ':' + email_x + '\n' )
 		
 
 def mailData(userName,userEmail,sender):
@@ -98,7 +102,7 @@ def mailData(userName,userEmail,sender):
 	#图片加文字
 	ttfont = ImageFont.truetype("msyh.ttf",34)
 	ttfont_small = ImageFont.truetype("msyh.ttf",22)	# 字体路径/Library/Fonts/
-	im = Image.open("zzl423.png").resize((750, 1333),Image.ANTIALIAS)
+	im = Image.open("zs_yzl.png").resize((750, 1333),Image.ANTIALIAS)
 	draw = ImageDraw.Draw(im) 
 
 	def is_chinese(uchar):
@@ -159,5 +163,19 @@ def mailData(userName,userEmail,sender):
 
  
 if __name__ == "__main__":  
-
-	ShowInfo()
+	
+	current_t = time.time()
+	end_t = "2017-04-25 13:00:00"
+	#将其转换为时间数组
+	end_t = time.strptime(end_t, "%Y-%m-%d %H:%M:%S")
+	#转换为时间戳:
+	end_t = int(time.mktime(end_t))
+	
+	while (current_t < end_t):
+		time.sleep(1)
+		current_t += 1
+		print current_t	
+	
+	t = threading.Thread(target=showInfo,args=("lien-1",))
+	t.start()
+	

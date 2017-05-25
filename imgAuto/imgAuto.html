@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        .input-bg {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 425px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .input-bg2 {
+            display: block;
+            width: 100%;
+            background: #ccc;
+        }
+
+        .input-footer {
+            height: 660px;
+            overflow: hidden;
+            color: #9b9b9b;
+        }
+
+        .input {
+            margin: 20px;
+            width: 360px;
+            height: 60px;
+            border: 1px solid #999;
+            border-radius: .133333rem;
+            display: block;
+        }
+
+        .btn-generate {
+            border-radius: 2.666667rem;
+            background: #ffe311;
+            border: 1px solid #b59807;
+            font-size: 14px;
+            color: #000;
+            padding: 10px 40px;
+            margin-top: 20px;
+            margin-left: 280px;
+            float: left;
+        }
+
+        .wrap {
+            float: left;
+            position: relative;
+            width: 650px;
+            height: 650px;
+        }
+
+        .cover {
+            position: absolute;
+            bottom: 0;
+            right: .2rem;
+            height: 260px;
+        }
+
+        .paint {
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .paintfile {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .paintCut {
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            /*z-index: 1000;*/
+            left: 32px;
+            /*border: 3px solid #fff;*/
+            /*border-width: 3px 3px 0 3px;*/
+            background: #999;
+            width: 190px;
+            height: 391px;
+        }
+
+        .paintfile {
+            z-index: 1000;
+        }
+
+        .paintCut span:nth-child(1){
+            left: 0;
+            width: 3px;
+            height: 100%;
+        }
+        .paintCut span:nth-child(2){
+            right: 0;
+            width: 3px;
+            height: 100%;
+        }
+        .paintCut span:nth-child(1),.paintCut span:nth-child(2),.paintCut span:nth-child(3){
+            position: absolute;
+            top: 0;
+            z-index: 1001;
+            display: block;
+            background-color: #fff;
+        }
+        .paintCut span:nth-child(3){
+            left: 0;
+            width: 100%;
+            height: 3px;
+        }
+        .qrcode {
+            width: 184px;
+            height: 191px;
+            border: 3px solid #888;
+            border-width: 0 3px 3px 3px;
+            background: #999;
+            /*background-image: url(zzl.png);*/
+            background-size: cover;
+            float: left;
+            margin-left: 32px;
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        .qrfile {
+            width: 184px;
+            height: 191px;
+            border: 3px solid #888;
+            border-width: 0 3px 3px 3px;
+            background: #999;
+            /*background-image: url(zzl.png);*/
+            background-size: cover;
+            float: left;
+            margin-left: 32px;
+            position: relative;
+            z-index: 1000
+        }
+        /*文字样式*/
+
+        .input-text {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 370px;
+            height: 100%;
+        }
+
+        .p1 {
+            margin-top: 100px;
+            font-size: 22px;
+            width: 100%;
+            color: #fff;
+            line-height: 2;
+        }
+
+        .p2 {
+            font-size: 16px;
+            text-align: right;
+            width: 100%;
+            color: #ffe311;
+            line-height: 2;
+        }
+
+        .p3 {
+            font-size: 22px;
+            color: #333;
+            position: absolute;
+            top: 440px;
+        }
+
+        .p4 {
+            font-size: 22px;
+            color: #333;
+            position: absolute;
+            top: 480px;
+        }
+
+        .p5 {
+            font-size: 16px;
+            color: #333;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .pa {
+            padding: 5px;
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+            display: inline-block;
+        }
+        canvas {
+            zoom: .6;
+        }
+    </style>
+    <script type="text/javascript" src="http://www.chazuomba.com/files/webApp/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="rgbaster.min.js"></script>
+</head>
+
+<body>
+    <div class='pa pa1'></div>
+    <div class='pa pa2'></div>
+    <div class='pa pa3'></div>
+    <div class='pa pa4'></div>
+    <div class='pa pa5'></div>
+    <input type="text" id="colorBg" ng-model="colorBg" placeholder="自定义背景色例：#ff7700">
+
+    <div class="wrap" id="wrap">
+        <div class="input-bg" style="background-color:{{colorBg}}">
+            <div class="paintCut">
+                <span></span><span></span><span></span>
+                <input type="file" id="cImage" class="cImage paintfile">
+                <img src="" class="paint" id="paint">
+            </div>
+        </div>
+        <input type="file" class="cImage qrfile" style="border-color:{{colorBg}}">
+        <img src="" class="qrcode" style="border-color:{{colorBg}}">
+
+        <div class="input-text">
+            <p class="p1">{{text1}}</p>
+            <p class="p2">{{text2}}</p>
+            <p class="p3">{{text3}}</p>
+            <p class="p4">{{text4}}</p>
+            <p class="p5">识别二维码，了解成详情</p>
+        </div>
+        <!-- <p class="input-text">{{ text }}</p> -->
+    </div>
+
+
+    <div class="input-footer">
+        <textarea class="input" placeholder="点我输入文字" ng-model="text1"></textarea>
+        <textarea class="input" placeholder="点我输入文字" ng-model="text2"></textarea>
+        <textarea class="input" placeholder="点我输入文字" ng-model="text3"></textarea>
+        <textarea class="input" placeholder="点我输入文字" ng-model="text4"></textarea>
+        <a class="btn-generate">生成</a>
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".btn-generate").on("click", function(event) {
+                event.preventDefault();
+                html2canvas(document.getElementById('wrap'), {
+                    allowTaint: true,
+                    taintTest: false,
+                    onrendered: function(canvas) {
+                        canvas.id = "mycanvas";
+                        document.body.appendChild(canvas);
+                    }
+                });
+            });
+
+
+            $(".cImage").on("change", function() {
+                var srcs = getObjectURL(this.files[0]); //获取路径
+                $(this).nextAll("img").show(); //fireBUg查看第二次换图片不起做用
+                $(this).nextAll("img").attr("src", srcs); //this指的是input
+                $(this).val('').css('opacity', '0'); //必须制空
+                // alert($(this) == $("#cImage"))
+
+                if ($(this).attr("id") == "cImage") {
+                    setTimeout(function() {
+                        $('.paint').css('left',-($('.paint').width() - $('#cImage').width())/2)
+                        getImgColor(srcs);
+                    },600);
+                }
+            });
+
+
+            $('.pa').on('click', function() {
+                var color = $(this).css('backgroundColor')
+                $('.input-bg').css('backgroundColor', color)
+                $('.qrcode').css('borderColor', color)
+                $('.qrfile').css('borderColor', color)
+            });
+        });
+
+        function getImgColor(src) {
+            RGBaster.colors(src, {
+                success: function(payload) {
+                    $('.input-bg').css('backgroundColor', payload.palette[5])
+                    $('.qrcode').css('borderColor', payload.palette[5])
+                    $('.qrfile').css('borderColor', payload.palette[5])
+                    $('.pa0').css('backgroundColor', payload.palette[0])
+                    $('.pa1').css('backgroundColor', payload.palette[1])
+                    $('.pa2').css('backgroundColor', payload.palette[2])
+                    $('.pa3').css('backgroundColor', payload.palette[3])
+                    $('.pa4').css('backgroundColor', payload.palette[4])
+                    $('.pa5').css('backgroundColor', payload.palette[5])
+                    // console.log(payload.dominant);
+                    // console.log(payload.secondary);
+                    // console.log(payload.palette);
+                }
+            });
+        }
+
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) {
+                url = window.createObjectURL(file)
+            } else if (window.URL != undefined) {
+                url = window.URL.createObjectURL(file)
+            } else if (window.webkitURL != undefined) {
+                url = window.webkitURL.createObjectURL(file)
+            }
+            return url
+        };
+    </script>
+</body>
+
+</html>

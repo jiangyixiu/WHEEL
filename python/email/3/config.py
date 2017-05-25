@@ -1,0 +1,1 @@
+CONFIG_LOCAL_LOGFILE = '/Users/xyloveqx/WHEEL/python/email/3/debuglog.log'
