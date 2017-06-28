@@ -1,0 +1,69 @@
+.preview-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    zoom: .8;
+}
+
+.preview {
+    position: absolute;
+    right: 12em;
+    top: 45em;
+    padding: 6px 21px;
+    border-radius: 7em;
+    border: none;
+    background: #388acc;
+    color: #fff;
+}
+
+.mobile-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    float: left;
+    width: 432px;
+    height: 868px;
+    background-color: transparent;
+    background-image: url(../images/iPhone6.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.mobile-preview::after {
+    content: '关闭';
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.preview-close {
+
+}
+.mobile-cover {
+    margin: 98px 29px;
+    width: 87%;
+    height: 76.8%;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mobile-content {
+    padding: 0 13px;
+    padding-top: 18px;
+    /*padding-right: 38px;*/
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

@@ -40,7 +40,7 @@
             'insertorderedlist',
             'lineheight','|',
             'justifyleft','justifycenter', 'justifyright','justifyjustify','|',
-            'insertimage','|','indent','undo','redo','|','source'
+            'insertimage','|','indent','undo','redo','|','source','link'
             // 'fullscreen', 'source', '|', 'undo', 'redo', '|',
             // 'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
             // 'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',

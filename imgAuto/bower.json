@@ -1,0 +1,17 @@
+{
+  "name": "imgAuto",
+  "homepage": "https://github.com/jiangyixiu/WHEEL",
+  "authors": [
+    "jiangyixiu <2227006164@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

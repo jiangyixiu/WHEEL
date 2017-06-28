@@ -1,0 +1,200 @@
+@charset "utf-8";
+.dpflexaic {
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.toper{
+    width: 100%;
+    height: 6.666666rem;
+    background-color: #3573B3;
+    padding: 0 1.666666rem;
+    color: #FFFFFF;
+}
+.icon_paysuccess {
+	width: 3.333333rem;
+	height: 3.333333rem;
+	margin-right: 1rem;
+}
+.orderSts {
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+	font-size: 1rem;
+}
+.orderSts1 {
+	font-family: "PingFangSC-Medium", "Microsoft YaHei";
+	font-size: 1.583333rem;
+	line-height: 1;
+	margin-top: 0.208333rem;
+}
+#notice {
+	font-family: "PingFangSC-Semibold", "Microsoft YaHei";
+	font-size: 1.166666rem;
+	padding-right: 1.333333rem;
+	background: url(../images/btn_arrow_white.png) no-repeat right center;
+	background-size: .8rem;
+}
+.ccTitle{
+	font-family: PingFangSC-Semibold, "Microsoft YaHei";
+	font-size: 1.333333rem;
+	color: #333333;
+	line-height: 3.75rem;
+	padding-left: 1.666666rem;
+}
+.splitLine {
+	height: 1px;
+	background-color: #EBEBEB;
+	-webkit-transform: scaleY(.5);
+	-moz-transform: scaleY(.5);
+	-ms-transform: scaleY(.5);
+	transform: scaleY(.5);
+}
+.classCtn {
+	height: 9.666666rem;
+	padding: 0 1.666666rem;
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+}
+.ccCourseImg {
+	width: 6.75rem;
+	height: 6.75rem;
+	margin-right: 1.25rem;
+	font-size: 1.166666rem;
+}
+.ccCourseName {
+	font-family: "PingFangSC-Medium", "Microsoft YaHei";
+	color: #4A4A4A;
+	line-height: 1.333333rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ccCourstTips {
+	font-size: 1rem;
+	color: #666666;
+	line-height: 1.333333rem;
+	margin-top: 0.75rem;
+}
+.ccCoursePrice {
+	color: #333333;
+	line-height: 1;
+	margin-top: 1.333333rem;
+}
+.priceCtn {
+	height: 3.75rem;
+	padding: 0 1.666666rem;
+}
+.pcLeft {
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+	font-size: 1.166666rem;
+	color: #333333;
+}
+.pcPrice {
+	font-family: "PingFangSC-Semibold", "Microsoft YaHei";
+	font-size: 1.5rem;
+	color: #FF8B00;
+	flex: 1;
+	margin-left: 0.833333rem;
+	text-align: right;
+}
+#receipt {
+	opacity: 0.9;
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+	font-size: 1.166666rem;
+	color: #3573B3;
+	padding-right: 1.5rem;
+	background: url(../images/btn_arrow_blue.png) no-repeat right center;
+	background-size: 0.833333rem;
+}
+.splitBlock {
+	height: 0.833333rem;
+	background-color: #F5F5F5;
+}
+.bmxx {
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+	font-size: 1.166666rem;
+	line-height: 1;
+	color: #333333;
+	padding: 1.5rem 1.666666rem;
+}
+.bmxxName {
+	margin-bottom: 1rem;
+}
+.xxxzCtn {
+	padding: 1.5rem 1.666666rem;
+	font-family: "PingFangSC-Regular", "Microsoft YaHei";
+	font-size: 1.166666rem;
+	color: #333333;
+	line-height: 1.75rem;
+}
+
+.foot{
+    width: 100%;
+    height: 5rem;
+    /*background-image: url("../images/pay/bg_pay_bottom.png");
+    background-size: 100% 100%;*/
+   background-color: #362511;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    padding: 0 1rem;
+}
+.foot .appLogo{
+    width: 3.6rem;
+    height: auto;
+}
+.mid_title{
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.mid_text{
+    font-size: 0.83rem;
+    line-height: 1;
+    margin-top: 0.583333rem;
+}
+.dowBtm{
+    margin-top: 1.16rem;
+    padding: 1.25rem 1.83rem;
+    background-color: #3573B3;
+    font-size: 1.08rem;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+/*二维码*/
+.QR{
+    width: 6.5rem;
+    height: auto;
+    margin-top: 1rem;
+    display: none;
+    margin-left: -0.25rem;
+}
+.hrefBtn{
+    margin: 1rem 1rem;
+    line-height: 4rem;
+    padding: 0 0.9rem;
+    border: 1px solid #EBEBEB;
+}
+.hrefBtn:active{
+    background-color: #F3F3F3;
+}
+.hrefBtn .icon1{
+    height: 1.8rem;
+    width: auto;
+}
+.hrefBtn .icon2{
+    height: 1.2rem;
+    float: right;
+    margin: 1.3rem 0;
+}
+.hrefBtn span{
+    color: #425D78;
+    font-size: 1.2rem;
+    padding-left: 0.4rem;
+}
+#receiptFp{
+	margin: 1rem 0 1rem 1.33rem;
+	font-size: 1.25rem;
+	line-height: 1.8rem;
+	color: #425D78;
+	text-decoration: underline;
+}

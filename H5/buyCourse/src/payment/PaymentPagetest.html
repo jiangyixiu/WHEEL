@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="screen-orientation"content="portrait">
+    <meta name="x5-orientation"content="portrait">
+    <meta name="format-detection" content="telephone=no">
+    <title>报名信息</title>
+
+    <!--测试-->
+    <link rel="stylesheet" href="/bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/testcss/common.css">
+    <link rel="stylesheet" href="/testcss/reset.css?v=1.0.3">
+    <link rel="stylesheet" href="/testcss/PaymentPage.css?v=1.1.3">
+    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/testjs/main.js"></script>
+    <script type="text/javascript" src="/testjs/PaymentPage.js?v=1.13689"></script>
+    <script src="/src/js/jquery-form.js"></script>
+</head>
+<body style="background-color: #f8f8f8;">
+
+<form action="" class="form" id="form">
+    <!-- 需要提交的东西 -->
+    <input type="hidden" name="client_version" value="1">
+    <input type="hidden" name="device_id" value="1">
+    <input type="hidden" name="platform" value="web">
+    <input type="hidden" id="courseId" name="courseId" value="<{$courseId}>" >
+    <input type="hidden" id="unionId" name="unionId" value="<{$user['unionid']}>" >
+    <input type="hidden" id="openid" name="openid" value="<{$user['openid']}>" >
+    <input type="hidden" id="number" name="number" value="1" >
+    <input type="hidden" id="wxName" name="wxName" value="<{$user['nickname']}>" >
+    <input type="hidden" id="weixinSex" name="weixinSex" value="<{$user['sex']}>" >
+    <input type="hidden" id="avatar" name="avatar" value="<{$user['headimgurl']}>" >
+    <input type="hidden" id="ip" name="ip" >
+
+    <div class="title"></div>
+    <div class="livetitle">
+    	<div></div>
+    	<span>直播课程</span>
+    </div>
+
+    <ul class="userinfoBg userinfoBg1">
+        <li class="remind" id="remind" style="color: #ff4343">＊必填</li>
+        <li class="nickname">
+            <span class="item">姓名</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="text" name="username" id="userName">
+            </div>
+        </li>
+        <li class="mobile">
+            <span class="item">手机</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="tel" name="mobile"  id="userPhone" maxlength="11" placeholder="请正确填写，确保收到短信">
+            </div>
+        </li>
+
+        <li class="email">
+            <span class="item">邮箱</span>
+            <div class="inputSts">
+                <i class="icon-ok" class="cue" style="display: none;"></i>
+                <input type="text" name="mobile"  id="userEmail" placeholder="请正确填写，确保收到录取通知">
+            </div>
+        </li>
+        <!--<li class="select sex" id="_sex">-->
+        <!--<span class="item">性别</span>　 　-->
+        <!--<span class="right">-->
+        <!--<i class="icon-circle blue" id="sexMan" sex="man">男</i>-->
+        <!--<i class="icon-circle" id="sexWoman" sex="woman">女</i>-->
+        <!--</span>-->
+        <!--</li>-->
+        <!--<li class="weixin">-->
+        <!--<span class="item">微信-->
+        <!--<i class="icon-ok" class="cue" style="display: none;"></i>-->
+        <!--</span>　-->
+        <!--<input type="text" name="userWeiXin"  id="userWeiXin">-->
+        <!--</li>-->
+
+        </div>
+    </ul>
+    <ul class="userinfoBg">
+        <li class="remind">＊选填</li>
+        <li class="userCompany">
+            <span class="item">公司</span>　
+            <input type="text" name="work" id="userCompany"></li>
+        <li class="userJob">
+            <span class="item">职位</span>　
+            <input type="text" id="_userJob"></li>
+        <!--<li class="cause">-->
+        <!--<span class="item">参课原因</span>-->
+        <!--<span  id="cause">-->
+        <!--<span class="option selectBlue">自我提升</span>-->
+        <!--<span class="option">外部跳槽</span>-->
+        <!--<span class="option">内部提升</span>-->
+        <!--</span>-->
+        <!--</li>-->
+        <li class="ask">
+            <span class="item">提问</span>　
+            <input type="text" name="content" placeholder="你最想解决的实际工作问题是…" id="ask">
+        </li>
+    </ul>
+
+    <style>
+        .youhui-warp{
+            height: 5rem;
+            margin-top: 0.85rem;
+            width: 100%;
+            line-height: 5rem;
+            padding: 0 0 0 1.66rem;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+        #check{
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 1rem;
+            display: block;
+            float: right;
+            width: 1.75rem;
+            height: 1.75rem;
+            color: #7ED321;
+            border: 1px solid #E0E0E0;
+            border-radius: .333333rem;
+        }
+        #check::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1.3rem;
+            display: inline-block;
+            font-size: 1.4rem;
+            height: 1.3rem;
+        }
+        .couponBalance{
+            display: flex;
+            align-items: center;
+        }
+        .redpacket{
+            margin-right: 1.25rem;
+            height: 1.791667rem;
+            display: inline-block;
+            align-items: flex-end;
+        }
+        #item{
+            font-family: PingFangSC-Semibold;
+            font-size: 1.333333rem;
+            color: #FF8B00;
+            line-height: 45px;
+            flex: 1
+        }
+    </style>
+    <ul class="youhui-warp" id="checkCoupon" style="height: 6rem;display: none;">
+
+        <li style="margin-bottom: -.4rem;line-height: 1;padding-top: 10px;font-family: PingFangSC-Regular;font-size: 1rem;color: #B8B8B8;">使用奖学金</li>
+        <li class="couponBalance">
+            <img class="redpacket" src="http://www.chazuomba.com/files/activity/fenxiao/images/redpacket@3x.png" alt="">
+            <span class="havemoney"></span>
+            <span id="item"></span>
+            <span id="subtract" style="font-family: PingFangSC-Regular;font-size: 1rem;color: #FF8B00;"></span>
+            <span id="check" tog="true" class="icon-ok"></span>
+        </li>
+    </ul>
+	<!--<div class="userinfoBg classSpecCtn" style="display: none;display: -webkit-flex;display: flex;padding: 1.08rem 1.66rem;">
+		<div class="classSpec" id="singleClass" courseId="2454" style="margin-right: 1rem;">单品</div>
+		<div class="classSpec" id="packageClass" courseId="2455">组合</div>
+	</div>-->
+	<!--<div class="userinfoBg classSpecCtn" style="display: none;padding-top: 1.08rem;color: #4A4A4A;">
+        <div style="font-size: 1.16rem;line-height: 3.6rem;">购买类型</div>
+        <div class="inputSts" style="display: -webkit-flex;display: flex;">
+			<div class="classSpec" id="singleClass" courseId="2454" style="margin-right: 1.5rem;">98元/年 单品</div>
+			<div class="classSpec" id="packageClass" courseId="2455">198元+1元/年 组合</div>
+		</div>
+	</div>-->
+	
+    <ul id="additional" class="userinfoBg" style="padding-left: 0;margin-top: 1.7rem;padding-bottom: 1.2rem;display: none">
+        <li class="QRtitle">支付失败？尝试微信扫码支付</li>
+        <li class="QRtitle2">
+            向&nbsp; <span class="czBlue" style="font-family: PingFangSC-Medium,'microsoft yahei';font-size:1.5833rem ;">插坐学院</span> &nbsp;付款
+        </li>
+        <li id="newQrcode"></li>
+        <li class="reminder">长按图片，识别图中二维码</li>
+    </ul>
+
+    <div class="telephone">如有疑问，请咨询：<span style="color: #0530f3;">400-801-5751</span></div>
+
+</form>
+<!-- 支付按钮 -->
+<div  id="showPayDiv" style="position: fixed;bottom: 0;"></div>
+
+
+<!-- 等待框 loading toast -->
+<div id="loadingToast" class="weui_loading_toast" style="display:none;">
+    <div class="weui_mask_transparent"></div>
+    <div class="weui_toast">
+        <div class="weui_loading">
+            <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+        </div>
+        <p class="weui_toast_content">支付加载中</p>
+    </div>
+</div>
+
+<!--分享-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="/src/js/publicShare.js?v=1.0.2"></script>
+<script type="text/javascript">
+    var imageUrl = 'http://www.chazuomba.com/files/webApp/images/logo-01.png';
+    var title = '我正在插坐学院上课，你也一起吧！';
+    var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+    var linkUrl = "http://www.chazuomba.com/files/webApp/";
+    courseShare(title, descText, linkUrl, imageUrl);
+</script>
+</body>
+</html>
+
+</html>

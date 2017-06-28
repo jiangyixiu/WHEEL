@@ -9,3 +9,117 @@
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:36:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 11:36:06 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 11:36:06 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 11:36:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:36:08 gemail2.py[line:87]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+21 Jun 2017 11:47:17 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 11:47:17 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 11:47:17 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 11:47:17 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:47:17 poster.py[line:62]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+21 Jun 2017 11:51:44 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 11:51:44 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 11:51:44 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 11:51:44 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:51:45 poster.py[line:61]INFO 海报生成成功Sophia:2227006164@qq.com
+
+21 Jun 2017 11:54:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 11:54:06 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 11:54:06 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 11:54:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:54:19 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 11:54:19 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 11:54:19 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 11:54:19 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 11:54:20 poster.py[line:55]INFO 海报生成成功Sophia:2227006164@qq.com
+
+21 Jun 2017 12:03:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 12:03:06 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 12:03:06 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 12:03:06 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 12:03:07 poster.py[line:56]INFO 海报生成成功江晓咏:jiangyixiu418@163.com
+
+21 Jun 2017 14:17:15 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 14:17:15 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 14:17:15 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 14:17:15 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 14:17:16 poster.py[line:35]INFO 海报生成成功江晓咏
+
+21 Jun 2017 14:36:51 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 14:36:51 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 14:36:51 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 14:36:51 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 14:36:51 poster.py[line:35]INFO 海报生成成功江晓咏
+
+21 Jun 2017 15:12:16 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:12:16 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:12:16 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:12:16 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:12:16 poster.py[line:31]INFO 海报生成成功江洋大盗
+
+21 Jun 2017 15:14:29 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:14:29 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:14:29 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:14:29 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:14:30 poster.py[line:29]INFO 海报生成成功:江洋大盗
+
+21 Jun 2017 15:30:23 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:30:23 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:30:23 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:30:23 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:31:14 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:31:14 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:31:14 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:31:14 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:32:49 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:32:49 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:32:49 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:32:49 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:35:54 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:35:54 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:35:54 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:35:54 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:36:45 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:36:45 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:36:45 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:36:45 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:37:07 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:37:07 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:37:07 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:37:07 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:38:56 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:38:56 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:38:56 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:38:56 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+21 Jun 2017 15:39:41 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+21 Jun 2017 15:39:41 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+21 Jun 2017 15:39:41 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+21 Jun 2017 15:39:41 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+28 Jun 2017 12:11:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+28 Jun 2017 12:11:57 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+28 Jun 2017 12:11:57 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+28 Jun 2017 12:11:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+28 Jun 2017 15:51:35 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+28 Jun 2017 15:51:35 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+28 Jun 2017 15:51:35 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+28 Jun 2017 15:51:35 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+28 Jun 2017 15:52:18 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+28 Jun 2017 15:52:18 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+28 Jun 2017 15:52:18 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+28 Jun 2017 15:52:18 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+28 Jun 2017 15:52:18 poster.py[line:29]INFO 海报生成成功:江洋大盗
+
+28 Jun 2017 15:53:39 poster.py[line:29]INFO 海报生成成功:江洋大盗
+
+28 Jun 2017 15:54:10 poster.py[line:29]INFO 海报生成成功:江洋大盗
+
+28 Jun 2017 15:54:25 poster.py[line:29]INFO 海报生成成功:江洋大盗
+
+28 Jun 2017 15:54:47 poster.py[line:29]INFO 海报生成成功:江晓咏
+
+28 Jun 2017 15:57:09 poster.py[line:29]INFO 海报生成成功:江晓咏
+

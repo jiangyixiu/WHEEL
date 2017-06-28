@@ -44,7 +44,7 @@ def showInfo(courseId):
 			 #{"name":"王舒畅","email":"15727378086m@sina.cn"},
 			 #{"name":"哈哈哈哈","email":"18610500240@sina.cn"},
 	         #{"name":"小咏","email":"jiangyixiu418@163.com"},
-	         {"name":"李娟","email":"vickylijuan1991@126.com"},
+	         #{"name":"李娟","email":"vickylijuan1991@126.com"},
 			#{u'name': u'\u8bb8\u6587\u8273', u'email': u'222'},
 			#{u'name': u'\u5f90\u654f', u'email': u'liye@tongshang.com'},
 			#{u'name': u'Sophia', u'email': u'2227006164@qq.com'},

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    	<link rel="stylesheet" href="paySuccess.css?v=1">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script src="https://static.mlinks.cc/scripts/dist/mlink.min.js?v=1"></script><!--IOS直接打开app-->
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="paySuccess.js?v=1.1.8"></script>
+</head>
+<body>
+
+    <div class="toper dpflexaic">
+        <img src="../images/icon_paysuccess.png" class="icon_paysuccess" />
+        <div style="flex: 1;">
+        		<div class="orderSts">订单状态：</div>
+        		<div class="orderSts1">支付成功</div>
+        </div>
+        <div id="notice" style="display: none;">查看录取通知书</div>
+    </div>
+    <div>
+    		<div class="ccTitle">课程信息</div>
+    		<div class="splitLine"></div>
+    		<div class="classCtn dpflexaic">
+    			<div style="flex: 1;overflow: hidden;margin-top: 0.25rem;">
+	    			<div class="ccCourseName"></div>
+	    			<div class="ccCourstTips">插坐学院线上课程</div>
+	    			<div class="ccCoursePrice"></div>
+    			</div>
+    		</div>
+    		<div class="splitLine" style="margin: 0 1.666666rem;"></div>
+    		<div class="priceCtn dpflexaic">
+    			<div class="pcLeft">实付金额：</div>
+    			<div class="pcPrice"></div>
+        		<div id="receipt" style="display: none;">索要发票</div>
+    		</div>
+    </div>
+    <div class="splitBlock"></div>
+    <div>
+    		<div class="ccTitle">报名信息</div>
+    		<div class="splitLine"></div>
+    		<div class="bmxx">
+    			<div class="bmxxName">姓名：<span></span></div>
+    			<div class="bmxxTel">手机：<span></span></div>
+    		</div>
+    </div>
+    <div class="splitBlock"></div>
+    <div>
+    		<div class="ccTitle">学习须知</div>
+    		<div class="splitLine"></div>
+    		<div class="xxxzCtn">
+    			<p class="textCtn">1. 如果购买线上课程，请下载「好多课App」，初始账号和密码已以短信形式发送至你的手机；</p>
+    			<p class="textCtn" style="margin-top: 0.333333rem;">2. 如有其他问题，可长按识别二维码联系我们。</p>
+	    		<!--二维码-->
+	    		<img class="QR" id="QR" src="" alt=""/>
+    		</div>
+    </div>
+    <div style="height: 5rem;"></div>
+
+
+    <div class="foot dpflexaic">
+		<img class="appLogo" src="../images/pay/icon_pay_bottom.png?v=1.0.0" alt=""/>
+		<div style="flex: 1;margin-left: 0.833333rem;color: #FFFFFF;">
+            <div class="mid_title">插坐学院官方App</div>
+            <div class="mid_text">50000+人正在使用</div>
+        </div>
+        <div>
+            <a id="Android" style="display: none;font-size: 1rem;background-color: #3573B3" class="btn btn-primary" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.chazuo.college.enterprise">立即下载</a>
+            <a id="IOS" style="display: none;font-size: 1rem;background-color: #3573B3"  class="btn btn-primary" href="###">立即下载</a>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+
+        _IsIOS();
+        function _IsIOS() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/iPhone\sOS/i) == "iphone os"||navigator.userAgent.indexOf("iPad") != -1) {
+                $("#IOS").show();
+                $("#Android").hide();
+//                if(isSafari=navigator.userAgent.indexOf("Safari")<0) {
+//                    $("#IOS").click(function(){
+//                        alert('请在Safari中打开^_^');
+//                    });
+//                }
+                return;
+            } else if (ua.match(/Android/i) == "android"){
+                $("#IOS").hide();
+                $("#Android").show();
+                return;
+            }
+        }
+
+    </script>
+
+<!--分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../netWork/publicShare.js?v=1.0.2"></script>
+<script type="text/javascript">
+    var imageUrl = 'http://www.chazuomba.com/files/webApp/images/logo-01.png';
+    var title = '我正在插坐学院上课，你也一起吧！';
+    var descText = '插坐学院是国内最大的企业新媒体学习与分享平台，专注为400万＋企业新媒体负责人提供系统、鲜活、实用的运营教程。';
+    var linkUrl = "http://www.chazuomba.com/files/webApp/";
+    courseShare(title, descText, linkUrl, imageUrl);
+    new Mlink({
+        mlink: "Aamv",
+        button: $("a#IOS")[0],
+        params: {
+            key: 'hdk_main'
+        }
+    });
+</script>
+</body>
+</html>

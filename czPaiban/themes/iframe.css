@@ -1,0 +1,32 @@
+/*可以在这里添加你自己的css*/
+fieldset
+{
+	border:0px;
+	padding:0;
+}
+blockquote{
+	margin: 0;
+    border-left: 3px solid #999999;
+    padding:3px 0px 3px 10px;
+    background: #f3f3f3;
+    line-height: 1.25;
+}
+.view{
+    height: 90%!important;
+}
+/*解决编辑器与微信样式不匹配的问题*/
+.view *{
+   box-sizing: border-box !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+}
+
+fieldset, legend, textarea, input, button {
+    padding: 0;
+}
+
+/**/
+body, button, input, select, textarea {
+    font: 12px/160% Arial,Helvetica,sans-serif,"微软雅黑","Microsoft YaHei";
+    color: #525252;
+}
