@@ -1,0 +1,11 @@
+02 May 2017 17:38:11 Image.py[line:397]DEBUG Importing XVThumbImagePlugin
+02 May 2017 17:39:46 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+02 May 2017 17:39:46 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+02 May 2017 17:39:46 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+02 May 2017 17:39:46 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+02 May 2017 17:39:48 gemail2.py[line:87]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
