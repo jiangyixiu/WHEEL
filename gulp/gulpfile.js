@@ -7,11 +7,11 @@ var app = {
     devPath: 'build/',
     prdPath: 'dist/'
 };
-// gulp.task('default', function () {
-//     return gulp.src('css/*.css')
-//         .pipe(rev())
-//         .pipe(gulp.dest('dist'));
-// });
+gulp.task('default', function () {
+    return gulp.src('css/*.css')
+        .pipe(rev())
+        .pipe(gulp.dest('dist'));
+});
 gulp.task('lib', function() {
     gulp.src('bower_components/**/*.js')
         .pipe(gulp.dest(app.devPath + 'vendor'))
