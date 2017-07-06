@@ -1,26 +1,19 @@
-/*导入需要用到的nodejs库*/
 var http = require('http');
 var url = require('url');
+var fs = require('fs');
 var qs = require('querystring');
 
-/**
- * 简单配置个路由 用来检测无用的请求 仅符合路由规则的才能被接受
- * 自己可以按照需要定义
- * @type {{/: string, favicon: string, user: string, login: string, biz: string}}
- */
+var app = require('./lib/app.js')
+var gm = require('gm').subClass({ imageMagick: true });
+
+
+// 配置个路由
 var route = {
     '/': "/",
-    'favicon': '/favicon.ico',
-    'user': '/user',
-    'login': '/user/login',
-    'biz': '/biz'
+    'invitationCard': '/invitationCard',
 };
 
-/**
- * 上述路由的简单判断规则
- * @param reqPath
- * @returns {boolean}
- */
+// 判断路由是否存在
 var isValid = function (reqPath) {
     for (var key in route) {
         if (route[key] == reqPath) {
@@ -30,30 +23,40 @@ var isValid = function (reqPath) {
     return false;
 };
 
-/**
- * 照样输出json格式的数据
- * @param query
- * @param res
- */
+// 生成邀请卡，输出数据
 var writeOut = function (query, res) {
-    res.write(JSON.stringify(query));
-    res.end();
+    // 生成邀请卡
+    app.getPoster(query);
+    // 邀请卡添加username
+    app.getPoster.prototype.poster = function (key, nickname) {
+        gm('public/poster/output.jpg')
+            .fill('#FFFFFF')
+            .font('public/commons/font/msyh.ttf', 26)
+            .drawText(0, -160, nickname, 'center')
+            .write('public/poster/' + key + ".png", function (err) {
+                if (!err) {
+                    console.log('生成成功：'+this.outname);
+                    // 输出数据
+                    fs.createReadStream(this.outname).pipe(res);
+                }
+                else
+                    console.log(err)
+            });
+    }
+
+    // res.write(JSON.stringify(query));
+    //res.end();
 }
 
-/**
- * 启用http创建一个端口为8124的服务
- * createServer内侧为回调函数：
- * ...可看作java servlet中的 onService(HttpRequest,HttpResponse)
- * ...或者（doGet、doPost）
- */
+// 启用http创建端口为8080的服务 createServer为回调函数
 http.createServer(function (req, res) {
 
     if (!isValid(url.parse(req.url).pathname)) {
-        res.writeHead(404, {'Content-Type': 'text/plain;charset=utf-8'});
-        res.write("{'errcode':404,'errmsg':'404 页面不见啦'}");
+        res.writeHead(404, { 'Content-Type': 'text/plain;charset=utf-8' });
+        res.write("{'status':404,'msg':'请求的资源不可用'}");
         res.end();
     } else {
-        res.writeHead(200, {'Content-Type': 'text/plain;charset=utf-8'});
+        res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
         if (req.method.toUpperCase() == 'POST') {
             var postData = "";
             /**
@@ -64,9 +67,8 @@ http.createServer(function (req, res) {
             req.addListener("data", function (data) {
                 postData += data;
             });
-            /**
-             * 这个是如果数据读取完毕就会执行的监听方法
-             */
+            
+            // 这个是如果数据读取完毕就会执行的监听方法
             req.addListener("end", function () {
                 var query = qs.parse(postData);
                 writeOut(query, res);
@@ -85,6 +87,6 @@ http.createServer(function (req, res) {
         }
     }
 
-}).listen(8124, function () {
-    console.log("listen on port 8124");
+}).listen(8080, function () {
+    console.log("listen on port 8080");
 });
