@@ -5,11 +5,13 @@
 var request = require("request");
 var http = require('http');
 var fs = require('fs');
+var querystring = require('querystring');
 var qr = require('qr-image');
 var im = require('images');
 var gm = require('gm').subClass({ imageMagick: true });
 
 var url = 'http://www.chazuomba.com/files/activity/fenxiao/card.html?2=2&id=2488&key=3401&from=20170000'
+var key = '3401';
 var avatar = "http://wx.qlogo.cn/mmopen/SWjyVRS5k2qSWUawoWlHk6e3icrCgYAR3XNtN8ausjf7axjswNyfyjVOkqTUeGx5mO3kVwpHcGXtypAnHkZxZR1V5nmsCVy84/0";
 var nickname = "江晓咏";
 
@@ -45,10 +47,10 @@ function poster() {
         .fill('#FFFFFF')
         .font('public/commons/font/msyh.ttf', 26)
         .drawText(0, -160, nickname, 'center')
-        .write("public/poster/poster.png", function (err) {
+        .write("public/poster/" + key + ".png", function (err) {
             if (!err) {
                 console.log('done');
-                // upload()
+                //upload()
             }
             else
                 console.log(err)
@@ -105,26 +107,45 @@ function upload() {
 }
 
 
-function aa() {
-    var server = http.createServer(function (req, res) {
-        // 如果你发一个GET到http://127.0.0.1:9000/test
-        var url_info = require('url').parse(req.url, true);
-        // 检查是不是给/test的request
-        if (url_info.pathname === '/test') {
-            res.writeHead(200, { 'Content-Type': 'text/plain' });
-        }
-        // 这个是用来回复上面那个post的，显示post的数据以表示成功了。你要是有别的目标，自然不需要这一段。
-        else {
-            req.pipe(res);
-        }
-    });
-    server.listen(9000, '127.0.0.1');
-    // 在server关闭的时候也关闭mysql连接
-    server.on('close', function () {
-    //
-    });
-    console.log('listening on port  9000');
-}
+
+var server = http.createServer(function (req, res) {
+    var url_info = require('url').parse(req.url, true);
+    // 检查是不是给/test的request
+    if (url_info.pathname === '/test') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        var arg = querystring.parse(require('url').parse(req.url).query);
+        var url = arg.url
+        var key = arg.key;
+        var avatar = arg.avatar;
+        var nickname = arg.nickname;
+        console.log(arg)
+        fs.createReadStream('./public/poster/3401.png').pipe(res);
+    }
+    else {  // 这个是用来回复上面那个post的，显示post的数据以表示成功了。你要是有别的目标，自然不需要这一段。
+        req.pipe(res);
+    }
+});
+// server.listen(9000, '127.0.0.1');
+server.on('close', function () {
+    // server关闭
+});
+console.log('listening on port  9000');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // var fs = require('fs'),
 //     PNG = require('pngjs').PNG;
