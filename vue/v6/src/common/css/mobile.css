@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+body {
+  max-width: 750px;
+  margin: 0 auto !important;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  background-size: 100% auto;
+}
+
+@media screen and (max-width:24em) {
+  body {
+    font-size: .8em;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}

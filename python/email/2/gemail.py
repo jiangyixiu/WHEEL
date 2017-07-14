@@ -155,7 +155,7 @@ def mailData(userName,userEmail,sender):
 	img.add_header('Content-ID', 'image1')
 	msgRoot.attach(img)
 
-	return msgRoot.as_string()
+	#return msgRoot.as_string()
 
  
 if __name__ == "__main__":  

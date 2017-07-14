@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.图形叠加</title>
+</head>
+<body>
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	 var canvas = cvs.getContext("2d");
+	 //线性渐变
+	 var linear = canvas.createLinearGradient(0,0,150,0);
+	 //linear模子
+	 linear.addColorStop(0,"red");
+	 linear.addColorStop(0.5,"yellow");
+	 linear.addColorStop(1,"green");
+
+	 // canvas.fillStyle = linear;
+	 // canvas.fillRect(0,0,300,200);
+
+	 // canvas.strokeStyle = linear;
+	 // canvas.lineWidth = 40;
+	 // canvas.strokeRect(0,0,300,200);
+
+
+	 //圆形渐变
+	 var rad = canvas.createRadialGradient(250,250,50,150,150,200);
+	 rad.addColorStop(0,"red");
+	 rad.addColorStop(0.5,"yellow");
+	 rad.addColorStop(1,"green");
+
+	 canvas.fillStyle = rad;
+	 canvas.fillRect(0,0,500,500);
+	</script>
+</body>
+</html>

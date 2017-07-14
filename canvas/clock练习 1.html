@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clock练习1</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		canvas{
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	var canvas = cvs.getContext("2d");
+
+	canvas.beginPath();
+	canvas.lineWidth = 6;
+	canvas.arc(250,250,200,0,Math.PI*2,false);
+	canvas.stroke();
+	canvas.closePath();
+
+	// canvas.beginPath();
+	canvas.lineWidth = 10;
+	//把坐标原点移动到比较舒服的位置
+	canvas.translate(250,250);
+
+	for(var i=0;i<12;i++){
+		canvas.beginPath();
+		canvas.save();
+		canvas.rotate(i*30*Math.PI/180);
+		//注意1：要在绘图开始前设置好变形属性即（先改变坐标系再画）
+		canvas.lineTo(0,200);
+		canvas.lineTo(0,180);
+		canvas.stroke();
+		canvas.restore();
+		canvas.closePath();
+		//注意2：除了画strokeRect fillRect都要注意开始路径和闭合路径，即（避免连笔问题）
+	}
+
+
+	
+	canvas.stroke();
+	// canvas.closePath();
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper" style="height:300rpx;" >
+<!--swiper-item只能包含一个节点再多会自动删除-->
+ <swiper-item>
+ <view style="background: red; height: 300rpx"></view>
+ </swiper-item>
+ <swiper-item>
+  <view style="background: green; height: 300rpx"></view>
+ </swiper-item>
+ <swiper-item>
+  <view style="background: blue; height: 300rpx"></view>
+ </swiper-item> 
+</swiper>
+<view class="wrap">
+    <view class="box" wx:for="{{arr}}" wx:for-index='ind' wx:for-item="dd">
+        <view class="box_top" style="height:350rpx;">
+            <view class="box_img">
+                <image mode="center" src='{{dd.src}}'></image>
+            </view>
+            <view class="box_content">
+                <view class="box_name">{{dd.name}}</view>
+                <view class="box_time">
+                    <image mode="aspectFit"  src="/style/images/index_gametime_icon_new.png"></image>
+                    <view>{{dd.time}}</view>
+                </view>
+                <view class="box_city">
+                    <image mode="aspectFit" src="/style/images/game_place.png"></image>
+                    <view class="">{{dd.city}}</view>
+                </view>
+            </view> 
+        </view>
+        <view class="box_bottom"></view>
+    </view>
+</view>
+<view class="">{{name}}</view>
+<view class="btn" style="width:100rpx;height:100rpx;background:blue;" bindtap="changename"></view>

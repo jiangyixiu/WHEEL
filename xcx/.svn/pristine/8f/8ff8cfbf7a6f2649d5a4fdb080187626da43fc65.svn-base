@@ -1,0 +1,154 @@
+@import "../../wxParse/wxParse.wxss";
+page{
+    background: white;
+}
+.head_wrap{
+    width: 100%;
+    height: 88rpx;
+    position: relative;
+}
+.head_line{
+    width: 80%;
+    height: 2rpx;
+    background: #888;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.head_title{
+    width: 40%;
+    height: 100%;
+    line-height: 88rpx;
+    text-align: center;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.trip_head{
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30rpx;
+    padding-left: 10rpx;
+    height: 100rpx;
+}
+.head_left{
+    width: 50rpx;
+    height: 100%;
+    float: left;
+}
+.race_type{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    background: rgb(255, 147, 32);
+    font-size: 24rpx;
+    color: white;
+    text-align: center;
+    line-height: 40rpx;
+}
+.trip_name{
+    font-size: 34rpx;
+    font-weight: bold;
+    color: #3e3e3e;
+    line-height: 45rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.trip_overtime{
+    font-size: 30rpx;
+    color: #888;
+    line-height: 50rpx;
+    margin-right: 100rpx;
+}
+.trip_money{
+    font-size: 30rpx;
+    color: #888;
+    line-height: 50rpx;
+}
+.day_wrap{
+    margin-bottom: 30rpx;
+    box-sizing: border-box;
+    padding: 0 30rpx 0 10rpx;
+    position: relative;
+    overflow: hidden;
+}
+.day_left{
+    float: left;
+    width: 50rpx;
+    height: 100%;
+}
+.day_time{
+    width: 45rpx;
+    height: 45rpx;
+    background: #0398ff;
+    font-size: 30rpx;
+    line-height: 45rpx;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+.day_line{
+    width: 2rpx;
+    height: 100%;
+    background: url('http://weixin.zx-tour.com/static/xcx_img/dotted_line.JPG')repeat-y left center;
+    margin-left: 20rpx;
+    position: absolute;
+}
+.day_right_head{
+    color: #0398ff;
+    line-height: 40rpx;
+    font-weight: bold;
+    font-size: 30rpx;
+}
+.day_right{
+    box-sizing: border-box;
+    padding-left: 1rpx;
+    overflow: hidden;
+}
+.day_right_time{
+    line-height: 45rpx;
+}
+.day_week{
+    margin-left: 30rpx;
+}
+.day_des{
+    overflow: hidden;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+.day_img_wrap{
+    display: flex;
+    /*justify-content: space-around;*/
+}
+.day_flex{
+    flex: 1;
+    position: relative;
+    margin-right: 10rpx;
+}
+.day_imgeverywrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden; 
+}
+/*.day_imgevery{
+        
+}*/
+.day_img{
+    width: 100%;
+    height: 100%;
+}

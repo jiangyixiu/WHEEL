@@ -1,0 +1,241 @@
+// pages/Matchinfo/Matchinfo.js
+var WxParse = require('../../wxParse/wxParse.js')
+Page({
+  data:{
+    ////////////banner信息//////
+    image_src:[
+      'http://download.zx-tour.com/public/image/20160622/20160622102310_52672.jpg',
+      'http://download.zx-tour.com/public/image/20160622/20160622110331_97028.jpg',
+      'http://download.zx-tour.com/public/image/20161214/20161214111112_96749.jpg',
+      'http://download.zx-tour.com/public/image/20161214/20161214111229_89858.jpg'
+    ],
+    title_image:[
+      'http://download.zx-tour.com/public/image/20160622/20160622102208_33357.png'
+    ],
+    current:'1',
+    image_length:'',
+    ////////////赛事信息//////////////
+    
+    //////赛事套餐介绍/////////////////
+    dis_or_meal:true,
+    //////////////////meal////
+    meal:{"6878": ["北京", { "6879": { "id": "6879", "g_mid": "595", "g_name": "三晚大瀑布景观房双人间", "g_type": "2", "g_des": "<p class=\"MsoNormal\">\r\n\t包含三晚皇冠假日酒店瀑布景观房＋赛事手册<span>+</span>保险<span>&nbsp; </span><span style=\"color:#E53333;\">拍此套餐默认您选择同性别拼房入住。如截止报名前仍然无法拼房，客服会电话通知您，确认是否同意补交单房差住宿单间。</span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t酒店介绍：<span>Niagara Falls Crowne Plaza</span>，大瀑布四星酒店，酒店位于尼亚加拉瀑布，与<span>Casino Niagara</span>赌场和<span>Fallsview Indoor Water Park</span>水上公园相连。我们为您预定的是瀑布景观房，足不出户享受大瀑布美景。<span></span>\r\n</p>", "g_room": "2", "g_currprice": "3699.00", "g_price": "3899.00", "g_priceinfo": "<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用包含</span><span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√住宿：包含三晚皇冠假日酒店瀑布景观房。（价格为双人间一个人费用，同性别拼房，有特殊要求请注明，如果您想单人住，请选择单人套餐，不含早餐）<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√专业：<span>2017</span>尼亚加拉大瀑布马拉松知行合逸专属赛事手册。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√保险：专业海外旅行保险。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√注意：报名需要支付全款，取消不退款。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用不包含</span><span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√不含酒店早餐。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√您的出发地到比赛地的往返交通费用；<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√签证费用。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√马拉松报名费单列，按您的需求选择。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√未提及的一切个人费用。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√因交通延阻、罢工、天气、飞机、机器故障、航班取消或更改时间等不可抗力原因所导致的额外费用；<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√当地参加的自费以及以上<span>“</span>费用包含<span>”</span>中不包含的其它项目。<span></span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√报名需要支付全款，因个人原因取消不退款。\r\n</p>", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "早鸟价", "g_order": "10", "g_stockleft": "-1", "g_notice": "<p>1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。</p>\n<p>2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。</p>\n<p>3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。</p>\n<p>4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。</p>\n<p>5. 报名需要支付全款，取消不退款。</p>\n<p>6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。</p>\n<p>7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。</p>\n<p>8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。</p>\n<p>9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。</p>\n<p>10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。</p>", "g_hasplaces": "0", "g_isroom": "0", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null }, "6880": { "id": "6880", "g_mid": "595", "g_name": "赛事单独报名", "g_type": "2", "g_des": "知行合逸是2017尼亚加拉大瀑布马拉松的中国区合作伙伴，我们致力于为中国跑友提供高效便捷的报名渠道和比赛沟通渠道。", "g_room": "1", "g_currprice": "0.00", "g_price": "0.00", "g_priceinfo": "<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#FF9900;\">√包含：全马和半马的报名费已包含从Crowne Plaza酒店到比赛起点的摆渡车费用。</span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√包含：仅包含2017尼亚加拉大瀑布马拉松您所选的官方赛事名额费用。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√包含：知行合逸尼亚加拉大瀑布马拉松中文版赛事手册。（我们将在您出发前1-2周发送至您的邮箱，请确保邮箱信息准确有效）\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√注意：由于马拉松报名的特殊性，报名需要支付全款，取消不退款。\r\n</p>", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "早鸟价", "g_order": "6", "g_stockleft": "997", "g_notice": "<p>\r\n\t1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。\r\n</p>\r\n<p>\r\n\t2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。\r\n</p>\r\n<p>\r\n\t3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。\r\n</p>\r\n<p>\r\n\t4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。\r\n</p>\r\n<p>\r\n\t5. 报名需要支付全款，取消不退款。\r\n</p>\r\n<p>\r\n\t6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。\r\n</p>\r\n<p>\r\n\t7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。\r\n</p>\r\n<p>\r\n\t8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。\r\n</p>\r\n<p>\r\n\t9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。\r\n</p>\r\n<p>\r\n\t10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。\r\n</p>", "g_hasplaces": "0", "g_isroom": "0", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null }, "6896": { "id": "6896", "g_mid": "595", "g_name": "三晚大瀑布景观房单人间", "g_type": "2", "g_des": "<p class=\"MsoNormal\">\r\n\t<p class=\"MsoNormal\">\r\n\t\t包含三晚皇冠假日酒店瀑布景观房单人间＋赛事手册+保险&nbsp; <span style=\"color:#E53333;\">拍此套餐默认您要求单人间住宿，不与他人拼房，注意单人间只能一个人入住哦。</span>\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t酒店介绍：Niagara Falls Crowne Plaza，大瀑布四星酒店，酒店位于尼亚加拉瀑布，与Casino Niagara赌场和Fallsview Indoor Water Park水上公园相连。我们为您预定的是瀑布景观房，足不出户享受大瀑布美景。\r\n\t</p>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span></span><span></span><span></span><span></span> \r\n</p>", "g_room": "1", "g_currprice": "6599.00", "g_price": "6799.00", "g_priceinfo": "<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">\r\n\t<p class=\"MsoNormal\">\r\n\t\t<span style=\"background-color:#337FE5;\">费用包含</span>\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√住宿：包含三晚皇冠假日酒店瀑布景观房单人间。（单人间只能住一个人，不含早餐）\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√专业：2017尼亚加拉大瀑布马拉松知行合逸专属赛事手册。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√保险：专业海外旅行保险。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√注意：报名需要支付全款，取消不退款。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t<span style=\"background-color:#337FE5;\">费用不包含</span>\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√不含酒店早餐。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√您的出发地到比赛地的往返交通费用。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√签证费用。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√马拉松报名费单列，按您的需求选择。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√未提及的一切个人费用。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√因交通延阻、罢工、天气、飞机、机器故障、航班取消或更改时间等不可抗力原因所导致的额外费用；\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√当地参加的自费以及以上“费用包含”中不包含的其它项目。\r\n\t</p>\r\n\t<p class=\"MsoNormal\">\r\n\t\t√报名需要支付全款，因个人原因取消不退款。\r\n\t</p>\r\n</span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<br />\r\n</p>", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "早鸟价", "g_order": "9", "g_stockleft": "-1", "g_notice": "<p>1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。</p>\n<p>2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。</p>\n<p>3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。</p>\n<p>4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。</p>\n<p>5. 报名需要支付全款，取消不退款。</p>\n<p>6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。</p>\n<p>7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。</p>\n<p>8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。</p>\n<p>9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。</p>\n<p>10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。</p>", "g_hasplaces": "0", "g_isroom": "0", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null }, "6897": { "id": "6897", "g_mid": "595", "g_name": "三晚皇冠假日套餐双人间", "g_type": "2", "g_des": "<p class=\"MsoNormal\">\r\n\t包含三晚皇冠假日酒店标准间＋赛事手册<span>+</span>保险<span>&nbsp; </span><span style=\"color:#E53333;\">拍此套餐默认您选择同性别拼房入住。如截止报名前仍然无法拼房，客服会电话通知您，确认是否同意补交单房差住宿单间。</span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t酒店介绍：<span>Niagara Falls Crowne Plaza</span>，大瀑布四星酒店，酒店位于尼亚加拉瀑布，与<span>Casino Niagara</span>赌场和<span>Fallsview Indoor Water Park</span>水上公园相连。我们为您预定的是标准间，如果您想入住瀑布景观房，请选择瀑布景观房套餐。\r\n</p>", "g_room": "2", "g_currprice": "2999.00", "g_price": "3199.00", "g_priceinfo": "<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用包含</span><span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√住宿：包含三晚皇冠假日酒店标准间。（价格为双人间一个人费用，同性别拼房，有特殊要求请注明，如果您想单人住，请选择单人套餐，不含早餐）<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√专业：<span>2017</span>尼亚加拉大瀑布马拉松知行合逸专属赛事手册。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√保险：专业海外旅行保险。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√注意：报名需要支付全款，取消不退款。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用不包含</span><span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√不含酒店早餐。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√您的出发地到比赛地的往返交通费用；<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√签证费用。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√马拉松报名费单列，按您的需求选择。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√未提及的一切个人费用。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√因交通延阻、罢工、天气、飞机、机器故障、航班取消或更改时间等不可抗力原因所导致的额外费用；<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√当地参加的自费以及以上<span>“</span>费用包含<span>”</span>中不包含的其它项目。<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√报名需要支付全款，因个人原因取消不退款。\r\n</p>", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "早鸟价", "g_order": "8", "g_stockleft": "1", "g_notice": "<p>1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。</p>\n<p>2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。</p>\n<p>3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。</p>\n<p>4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。</p>\n<p>5. 报名需要支付全款，取消不退款。</p>\n<p>6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。</p>\n<p>7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。</p>\n<p>8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。</p>\n<p>9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。</p>\n<p>10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。</p>", "g_hasplaces": "0", "g_isroom": "0", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null }, "6898": { "id": "6898", "g_mid": "595", "g_name": "三晚皇冠假日套餐单人间", "g_type": "2", "g_des": "<p class=\"MsoNormal\">\r\n\t<br />\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t包含三晚皇冠假日酒店单人标准间＋赛事手册+保险&nbsp; <span style=\"color:#E53333;\">拍此套餐默认您要求单人间住宿，不与他人拼房，注意单人间只能一个人入住哦。</span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t酒店介绍：Niagara Falls Crowne Plaza，大瀑布四星酒店，酒店位于尼亚加拉瀑布，与Casino Niagara赌场和Fallsview Indoor Water Park水上公园相连。我们为您预定的是标准间，如果您想入住瀑布景观房，请选择瀑布景观房套餐。\r\n</p>\r\n<p>\r\n\t<br />\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span></span><span></span><span></span><span></span> \r\n</p>", "g_room": "1", "g_currprice": "5299.00", "g_price": "5499.00", "g_priceinfo": "<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\"> </span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用包含</span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√住宿：包含三晚皇冠假日酒店单人标准间。（单人间只能住一个人，不含早餐）\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√专业：2017尼亚加拉大瀑布马拉松知行合逸专属赛事手册。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√保险：专业海外旅行保险。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√注意：报名需要支付全款，取消不退款。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<span style=\"background-color:#337FE5;\">费用不包含</span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√不含酒店早餐。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√您的出发地到比赛地的往返交通费用。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√签证费用。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√马拉松报名费单列，按您的需求选择。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√未提及的一切个人费用。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√因交通延阻、罢工、天气、飞机、机器故障、航班取消或更改时间等不可抗力原因所导致的额外费用；\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√当地参加的自费以及以上“费用包含”中不包含的其它项目。\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t√报名需要支付全款，因个人原因取消不退款。\r\n</p>\r\n<p>\r\n\t<br />\r\n</p>\r\n<p class=\"MsoNormal\">\r\n\t<br />\r\n</p>", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "早鸟价", "g_order": "7", "g_stockleft": "1", "g_notice": "<p>1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。</p>\n<p>2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。</p>\n<p>3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。</p>\n<p>4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。</p>\n<p>5. 报名需要支付全款，取消不退款。</p>\n<p>6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。</p>\n<p>7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。</p>\n<p>8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。</p>\n<p>9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。</p>\n<p>10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。</p>", "g_hasplaces": "0", "g_isroom": "0", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null } }, "1000"], "10160": ["上海", { "10161": { "id": "10161", "g_mid": "595", "g_name": "5555", "g_type": "2", "g_des": "广发华福", "g_room": "1", "g_currprice": "77.00", "g_price": "88.00", "g_priceinfo": "教育局", "g_priceinfowithout": "", "g_singleprice": "0.00", "g_tips": "9", "g_order": "1000", "g_stockleft": "10", "g_notice": "<p>\r\n\t1. 双人间套餐，为同性别拼房。如果在预定的时候，你是单人并选择同性别拼房，我们将会为您安排一位同性的旅行者合住。但是如果无法协调，您需要额外支付单间差。我们会根据报名的先后顺序安排。如果你希望拥有自己独立的房间，请选择单人间套餐。如果您有同行伙伴想要住在一间房，请备注说明，或致电知行合逸客服，否则我们将根据性别任意调配。实际入住后，请互相体谅陌生同伴的性格或生活习惯。如果您是情侣报名要求大床房，我们只能尽量协调，无法保证，请谅解。\r\n</p>\r\n<p>\r\n\t2. 单人间套餐，我们会尽量为您安排大床房，但是大多数酒店单人间就是单人床，同时也有部分酒店为双人间单人住，请知悉。单人间只能入住一个人。\r\n</p>\r\n<p>\r\n\t3. 如果您要携带家属，请您分别报名双人间套餐，单人间只允许入住一个人，携带家属无法报名单人间套餐。\r\n</p>\r\n<p>\r\n\t4. 知行合逸仅提供行程或者套餐内所含酒店住宿安排，如有额外需求请联系客服单独预定，套餐酒店如无特别说明，均为标准双人间或者标准单人间，如有客人需要升级房型或者其他特殊需要，也请在预定前告知客服。\r\n</p>\r\n<p>\r\n\t5. 报名需要支付全款，取消不退款。\r\n</p>\r\n<p>\r\n\t6. 知行合逸采用集体报名方式，报名信息将分批上传给赛事组委会，所以在此之前赛事官网上无法查询您的信息是正常情况，请不要担心。海外马拉松的确认函，通常只会在比赛前1-2周才发送给您，我们将通过邮件发送确认函，请确保您的预留邮箱准确有效。\r\n</p>\r\n<p>\r\n\t7.预定海外赛事酒店套餐的跑友请注意，知行合逸通常会在比赛前一个月左右建立赛事微信群，建群的目的是方便跑友互相交流沟通目的地信息。知行合逸也将会在赛前1-2周前，给您邮件发送中文版赛事手册。\r\n</p>\r\n<p>\r\n\t8. 预定海外赛事酒店套餐的跑友请注意，如果您办理签证需要酒店预订单，请单独联系客服。由于我们的酒店套餐通常是组委会打包提供，所以无法立刻为您提供单独预订单，需要提前申请，有签证用预订单需求请务必提前告知。请注意，办理个人旅游签不需要参赛确认函。\r\n</p>\r\n<p>\r\n\t9. 大多数海外赛事在领取赛手包时需要本人携带护照原件，海外酒店入住也需要护照原件，一旦预定提交后我们无法为您更改名字，请勿私下转让名额。\r\n</p>\r\n<p>\r\n\t10. 如果有问题咨询，您可以拨打客服电话：4000842195 （仅工作日09：00-19：00接听），或者添加客服微信(海外赛事咨询您可以添加微信号: zxhy04，国内赛事咨询您可以添加微信号zxhy02)， 注明您的真实姓名+咨询赛事名称，我们将很快和您联系。\r\n</p>", "g_hasplaces": "0", "g_isroom": "1", "g_sell_out": "0", "g_packageflow": null, "g_firstavailable": null } }, "1000"] },
+    ///////////////////////meal结束///////////////
+    ///////////////赛程////////////////////////////
+meal_course: { "error": 0, "msg": "ok", "data": [{ "id": "6876", "g_name": "全马", "g_stockleft": "999991", "g_type": "1", "g_des": "", "g_currprice": "700.00", "g_price": "830.00", "g_tips": "早鸟价", "g_isroom": "1" }, { "id": "6873", "g_name": "半马", "g_stockleft": "999994", "g_type": "1", "g_des": "", "g_currprice": "600.00", "g_price": "700.00", "g_tips": "早鸟价", "g_isroom": "1" }, { "id": "6874", "g_name": "10公里", "g_stockleft": "999995", "g_type": "1", "g_des": "", "g_currprice": "500.00", "g_price": "600.00", "g_tips": "早鸟价", "g_isroom": "1" }, { "id": "6875", "g_name": "5公里成人", "g_stockleft": "999996", "g_type": "1", "g_des": "", "g_currprice": "450.00", "g_price": "550.00", "g_tips": "早鸟价", "g_isroom": "1" }, { "id": "6872", "g_name": "5公里少年", "g_stockleft": "999997", "g_type": "1", "g_des": "", "g_currprice": "350.00", "g_price": "350.00", "g_tips": "特惠价", "g_isroom": "0" }, { "id": "6899", "g_name": "观赛", "g_stockleft": "999998", "g_type": "1", "g_des": "", "g_currprice": "0.00", "g_price": "0.00", "g_tips": "早鸟价", "g_isroom": "0" }] },
+///////////////赛程////////////////////////////
+//////附加优质服务//////////////////////////////
+service: { "error": 0, "msg": "ok", "data": [{ "id": "10157", "g_name": "\u5927\u5df4", "g_stockleft": "10", "g_type": "3", "g_des": "", "g_currprice": "66.00", "g_price": "77.00", "g_tips": "", "g_isroom": "0" }, { "id": "10158", "g_name": "yyewq", "g_stockleft": "19", "g_type": "3", "g_des": "", "g_currprice": "99.00", "g_price": "88.00", "g_tips": "", "g_isroom": "1" }, { "id": "10159", "g_name": "kk", "g_stockleft": "5", "g_type": "3", "g_des": "", "g_currprice": "88.00", "g_price": "333.00", "g_tips": "", "g_isroom": "0" }] },
+show:{},
+replyArr:[],
+priceExplan:[],
+introduce: '<div class="rules">※参赛者须同意以下规定所载事项之后方可报名。<br >1.主办者在遇到发生疾病、遗失以及其他事故时，除了采取相应的应急措施之外，不承担其他的任何责任。<br >2.在报名申请后，不能由于各自的原因而取消报名。如果出现由于天灾、事件、事故等原因所造成的大会规模缩小、中止等情况时，参加费将不予退还。<br>3.请得到家长或监护人（参赛者为未成年者时）、团队其他成员（代表者报名申请时）的同意后，报名参加本次大会。不得进行年龄、性别等的虚假申报，以及申请者本人之外的参赛(代跑) 。如被发现将取消其参赛资格。<br>4.同意在大会的影像、照片、报道、记录等资料中使用的姓名、年龄、性别、地址（国名、都道府县名以及市町村名）、记录、肖像等，在报纸、电视（包括商业广告）、杂志、因特网、宣传手册等媒体上，被报道、刊载及使用，也同意其刊载权归于主办者，不行使肖像权。<br>※ 参赛者除了要遵守上述报名申请规定事项之外，还必须遵守主办者另外制定的各项大会规则。出场时必须提交誓约书方可参赛。<br><p>全马关门时间（暂定）：</p>< p ><img src="http://download.zx-tour.com/public/image/20170303/20170303161658_32995.png" alt= "" ></p>< p >赛手包领取时间：<br>8 / 25（星期五）13：00~20:00 < br >8 / 26（星期六）10：00~20:00 < br >全马参赛奖：赠送大会特制纪念T恤 < br >全马完赛奖：1，完赛奖牌2，完赛纪念毛巾3，当日完赛记录证书（记载每5KM的时间点）。</p></div>',
+more:{special:false,konw:false,rule:false,rute:false}
+  },
+  banner:function(e){
+    var current=e.detail.current+1
+    this.setData({current:current})
+  },
+  //////介绍与套餐选择切换
+  discript_title:function(){
+    this.setData({dis_or_meal:true})
+  },
+  meal_title:function(){
+    this.setData({dis_or_meal:false})
+  },
+  //////////出发城市///////////////////
+  go_city:function(){
+    var go_city=[],city_id=[]
+    var obj=this.data.meal
+    for(var key in obj){
+      go_city.push({value:obj[key][0],id:key})
+      go_city[0].checked=true
+    }
+    this.setData({go_city:go_city})
+  },
+  city_select:function(e){
+    var meal_id=e.detail.value
+    var changed={}
+    for(var i=0;i<this.data.go_city.length;i++){
+      if (this.data.go_city[i].id==meal_id){
+        changed['go_city[' + i + '].checked']=true
+        }else{
+        changed['go_city[' + i + '].checked'] = false
+        }
+    }
+    this.setData({ replyArr: [], priceExplan:[]})
+    // this.data.replyArr.push(meal_info[i]['g_des'])
+    // this.data.priceExplan.push(meal_info[i]['g_priceinfo'])
+    this.setData(changed)
+    this.meal_list(meal_id)
+  },
+  /////拿对应出发城市里面的数据/////////////////
+  meal_list:function(city_id){
+    var meallist = this.data.meal[city_id][1]
+    console.log(city_id)
+// /////套餐排序
+    var meallisttmp=[]
+    var meal_info=[]
+    console.log(meallist)
+    for (var key in meallist) {
+      /////价格去零////
+      meallist[key]['g_currprice'] = parseFloat(meallist[key]['g_currprice'])
+      meallist[key]['g_price'] = parseFloat(meallist[key]['g_price'])
+      //////单人间双人间///////
+      if (meallist[key].g_isroom=='1'){
+        meallist[key].g_isroom=false
+      }else{
+        meallist[key].g_isroom=true
+      }
+      if (parseInt(meallist[key].g_room) == 1 && meallist[key].g_name.substring(meallist[key].g_name.length - 2) != '定金' && meallist[key].g_name.substring(meallist[key].g_name.length - 2) != '预约') {
+        meallist[key].g_room = '单人间';
+      } else if (parseInt(meallist[key].g_room) == 2 && meallist[key].g_name.substring(meallist[key].g_name.length - 2) != '定金' && meallist[key].g_name.substring(meallist[key].g_name.length - 2) != '预约') {
+        meallist[key].g_room = '双人间';
+      }
+    //////单人间双人间///////
+///////////////价格标签///////////
+      if (meallist[key].g_tips==''){
+          meallist[key].g_tips=false
+      }
+      ///////////////价格标签///////////
+      var g_mealid = this.buquan(meallist[key]['id'], 5);
+      if (parseInt(meallist[key]['g_stockleft']) <= 0 || meallist[key]['g_sell_out'] == '1') {
+        meallisttmp['1' + meallist[key]['g_order'] + g_mealid] = meallist[key];
+      } else if (meallist[key]['g_order'].length < 4) {
+        var g_order = this.buquan(meallist[key]['g_order'], 4);
+        meallisttmp['2' + g_order + g_mealid] = meallist[key];
+      } else {
+        meallisttmp['2' + meallist[key]['g_order'] + g_mealid] = meallist[key];
+      }
+      
+
+    }
+    for(var key in meallisttmp){
+      meal_info.unshift(meallisttmp[key])
+    }
+    for(var i=0;i<meal_info.length;i++){
+      this.data.replyArr.push(meal_info[i]['g_des'])
+      this.data.priceExplan.push(meal_info[i]['g_priceinfo'])
+    }
+    this.setData({ meal_info: meal_info})
+    ///////////富文本///////
+    var replyArr = this.data.replyArr
+    var that = this
+    for (let i = 0; i < replyArr.length; i++) {
+      WxParse.wxParse('reply' + i, 'html', replyArr[i], that);
+      if (i === replyArr.length - 1) {
+        WxParse.wxParseTemArray("replyTemArray", 'reply', replyArr.length, that)
+      }
+    }
+    var priceExplan = this.data.priceExplan
+    for (let i = 0; i < priceExplan.length; i++) {
+      WxParse.wxParse('priceE' + i, 'html', priceExplan[i], that);
+      if (i === priceExplan.length - 1) {
+        WxParse.wxParseTemArray("priceArray", 'priceE', priceExplan.length, that)
+      }
+    }
+  },
+  buquan:function(s, Length) {
+    var s= '0' + s;
+    if(s.length>=Length) {
+      s.substring(0, Length)
+      return s;
+    }else{
+      return this.buquan(s, Length);	
+    }
+  },
+  /////////////////赛程///////////////////
+  match_course:function(){
+    var match_course=this.data.meal_course.data
+    console.log(match_course)
+    var minprice=10000000
+    for(var i=0;i<match_course.length;i++){
+      match_course[i].g_price = parseFloat(match_course[i].g_price)
+      match_course[i].g_currprice = parseFloat(match_course[i].g_currprice)
+      if (minprice > match_course[i].g_currprice && match_course[i].g_currprice>0){
+          minprice = match_course[i].g_currprice
+      }
+
+    }
+    if (minprice != 10000000){
+        this.setData({minprice:minprice})
+    }
+    this.setData({ meal_course_data: match_course})
+
+  },
+  ////////点击显示下拉/////
+  meal_select:function(e){
+    var show=this.data.show
+    var index = e.currentTarget.dataset.index
+    console.log(index)
+    if (show[index]==true){
+        show[index]=false
+    }else{
+      show[index]=true
+    }
+    this.setData({show:show})
+  },
+  ///////////////////附加优质服务/////////////
+  add_service:function(){
+    var obj=this.data.service
+    console.log(obj)
+    if(obj.data.length>0){
+      for (var i = 0; i < obj.data.length;i++){
+        obj.data[i].g_currprice = parseFloat(obj.data[i].g_currprice)
+        obj.data[i].g_price = parseFloat(obj.data[i].g_price)
+        }
+      this.setData({service_data:obj.data})
+    }
+
+  },
+  /////////////优质服务点击///
+  clk_service:function(){
+    var service = this.data.service_hidden
+    if (service==true){
+      service = false
+    }else{
+      service = true
+    }
+    this.setData({service_hidden:service})
+  },
+introduce:function(e){
+  console.log(e)
+},
+//////////点击展开更多//////////////
+more:function(e){
+  var value = e.currentTarget.dataset.type
+  var _more = this.data.more
+    if(_more[value]==false){
+        _more[value]=true
+    }else{
+        _more[value] = false
+    }
+    this.setData({more:_more})
+    console.log(this.data.more)
+},
+  onLoad:function(options){
+    // 页面初始化 options为页面跳转所带来的参数
+    // var image_length=this.data.image_src.length
+    this.setData({image_length:this.data.image_src.length})
+    console.log(this.data.meal)
+    this.go_city()
+    this.meal_list(this.data.go_city[0].id)
+    this.match_course()
+    this.add_service()
+    var that=this
+    var introduce = this.data.introduce
+    WxParse.wxParse("introduce", 'html', introduce, that, 0)
+  },
+  onReady:function(){
+    // 页面渲染完成
+  },
+  onShow:function(){
+    // 页面显示
+  },
+  onHide:function(){
+    // 页面隐藏
+  },
+  onUnload:function(){
+    // 页面关闭
+  }
+})

@@ -1,0 +1,112 @@
+<!--payorder.wxml-->
+<view class="wrap">
+<!--///////////////支付时间////////////////////-->
+    <view class="pay_time">
+        <view class="flex-wrp">
+            <view class="time_icon"></view>
+            <view class="time_text">已为您锁定名额，30分钟内未支付名额将自动释放</view>
+        </view>
+        <view class="flex-wrp time_countdown">
+            <view class="time_countdown_bg">{{h0}}</view>
+            <view class="time_countdown_bg">{{h1}}</view>
+            <view class="" style="color:#4c4c4c;">:</view>
+            <view class="time_countdown_bg">{{m0}}</view>
+            <view class="time_countdown_bg">{{m1}}</view>
+            <view class="" style="color:#4c4c4c;">:</view>
+            <view class="time_countdown_bg">{{s0}}</view>
+            <view class="time_countdown_bg">{{s1}}</view>
+        </view>
+    </view>
+    <!--//////////////////////订单信息//////////////////////-->
+    <view class="order_info">
+        <view class="order_title flex-wrp">
+            <view class="classname">订单信息</view>
+            <navigator url="/pages/enroll/enroll">返回选择套餐</navigator>
+        </view>
+        <view style="padding: 0 30rpx 0;">
+            <view class="info_conmon flex-wrp" style="margin-top:30rpx;">
+                <view class="classname">产品类型:</view>
+                <view class="classname">{{info_data.type}}</view>
+            </view>
+            <view class="info_conmon flex-wrp">
+                <view class="classname">订单编号:</view>
+                <view class="classname">{{info_data.orderid}}</view>
+            </view>
+            <view class="info_conmon flex-wrp">
+                <view class="classname">报名赛事:</view>
+                <view class="classname">{{info_data.m_name}}</view>
+            </view>
+            <view class="info_conmon flex-wrp">
+                <view class="classname">套餐选择:</view>
+                <view class="classname">{{info_data.meals}}</view>
+            </view>
+            <view class="info_conmon flex-wrp">
+                <view class="classname">赛事组别:</view>
+                <view class="classname">{{info_data.course}}</view>
+            </view>
+            <view wx:if="{{info_data.attach==''?false:true}}" class="info_conmon flex-wrp" style="padding-bottom:49rpx;border-bottom: 2rpx solid #e8e8e8;">
+                <view class="classname">配套服务:</view>
+                <view class="classname">{{info_data.attach}}</view>
+            </view>
+        </view>
+
+        <view class="order_price">
+            <view class="">订单金额：{{info_data.payprice}}</view>
+        </view>
+    </view>
+    <!--//////////////////优惠券////////////////////-->
+    <view class="youhui" wx:if="{{false}}">
+        <view class="flex-wrp youhui_conmon">
+            <view class="classname">优惠券</view>
+            <view class="has_youhui">0张可用</view>
+            <view style="flex:1;text-align:right;color:#848484;">未使用</view>
+            <view class="youhui_icon"></view>
+        </view>
+        <view class="youhui_conmon flex-wrp">
+            <view style="flex:1;">
+              <text>账户余额：￥</text>
+              <text style="font-size:32rpx;">1000</text>
+            </view>
+            <switch type="switch" />
+        </view>
+        <view class="youhui_conmon flex-wrp">
+            <view style="flex:1;">可用100知行积分抵扣¥10.00</view>
+            <switch type="switch" />
+        </view>
+        <view class="youhui_conmon" style="text-align:right;padding-right:24rpx;border-bottom:none;">
+            <text>实付：</text>
+            <text style="color:#000000;">￥</text>
+            <text style="font-size:40rpx;color:#000000;">{{price}}</text>
+        </view>
+    </view>
+    <!--////////////////////支付方式////////////-->
+    <view class="pay_way">
+        <view class="pay_way_conmon" style="font-size:32rpx;">支付方式</view>
+        <view class=" flex-wrp" style="padding:12rpx 0;border-bottom: 2rpx solid #e8e8e8;margin-left:19rpx;">
+            <view class="wx_icon"></view>
+            <view class="pay_wx_text" style="flex:1;">
+                <view class="classname">微信支付</view>
+                <view class="classname">推荐已安装微信的用户使用</view>
+            </view>
+            <view class="classname" style="margin-right:40rpx;margin-top:8rpx;">
+              <icon type="success_no_circle" />
+            </view>
+        </view>
+        <navigator url="/pages/other/other?orderid={{info_data.orderid}}" class="pay_way_conmon flex-wrp">
+            <view style="font-size:30rpx;color:#0398ff;margin-left:5rpx;">其它支付方式</view>
+            <view class=""></view>
+        </navigator>    
+        <view class="zhifu_tishi">
+            <view class="classname">支付小贴士：因跑步赛事的特殊性，报名需以支付款为准，取消 不退款，名额无法转让，敬请您谅解。</view>
+            <view class="flex-wrp">
+                 <navigator url="/pages/pay_agreement/pay_agreement">《报名须知与服务协议》</navigator>
+                 <switch bindchange="agreement" checked="{{agreement}}" type="switch" />
+            </view>
+        </view>        
+    </view>
+    <!--///////////////在线支付//////////-->
+    <navigator url="/pages/index/index" open-type="redirect">12313</navigator>
+    <view class="now_pay">
+        <view class="classname" catchtap="pay">在线支付</view>
+    </view>
+</view>

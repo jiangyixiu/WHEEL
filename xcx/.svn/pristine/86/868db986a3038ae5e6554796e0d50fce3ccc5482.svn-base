@@ -1,0 +1,90 @@
+<!--index.wxml
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<block wx:if="{{sign_ok}}">
+  <block wx:if="{{order_list}}">
+    <view class="head_wrap">
+      <view class="img_wrap">
+        <image src="http://weixin.zx-tour.com/static/xcx_img/order_empty.png" class="head_img"></image>
+        <view class="head_title">您还没有报名过比赛</view>
+      </view>
+    </view>
+    <view class="btn_wrap">
+      <button class="go_index" bindtap="taptoindex" type="primary">去看看赛事</button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="tab_head">
+      <view class="order_tap" id="{{AllOrder_id}}" bindtap="all_order">全部订单</view>
+      <view class="order_tap" id="{{NopayOrder_id}}" bindtap="nopay_order">未支付</view>
+      <view class="order_tap" id="{{NoperfectOrder_id}}" bindtap="noperfect_order">未完善资料</view>
+    </view>
+    <view class="list_container">
+      <view class="loop_container" wx:for-index="orderid"  wx:for="{{list_data.data}}">
+        <navigator url="../orderinfo/orderinfo?orderid={{item.orderid}}" hover-class="navigator-hover">
+          <view class="list_wrap" wx:if="{{item.paystats != show_order3 && item.paystats != show_order5 &&item.paystats != show_order10}}">
+            <view class="list_head">
+              <view class="list_type">赛</view>
+              <view class="list_name">{{item.m_name}}</view>
+              <view wx:if="{{item.paystats == '10'}}" class="list_statu list_statu_success">报名成功</view>
+              <view wx:elif="{{item.paystats == '5'}}" class="list_statu">未支付</view>
+              <view wx:elif="{{item.paystats == '3'}}" class="list_statu">支付过期</view>
+              <view wx:elif="{{item.paystats == '1'}}" class="list_statu">未完善资料</view>
+            </view>
+            <view class="img_intr_wrap">
+              <image src="{{item.m_img}}" class="list_img"></image>
+              <view class="intr_wrap">
+                <view class="list_intrname">订单编号：<text class="list_realnumber">{{item.orderid}}</text></view>
+                <view class="list_intrname">{{item.info}}</view>
+                <view class="list_intrname">开赛时间：<text class="list_realtime">{{item.m_GameTime}}</text></view>
+              </view>
+            </view>
+            <view class="list_foot">
+              <view class="list_needpay">实付:<view class="list_realmoneyicon">￥<text class="list_realmoney">{{item.payprice-item.discount}}</text></view></view>
+              <view class="list_pre" wx:if="{{item.platform == '代报名' || item.enroll_type == '1'}}">代</view>
+              <button wx:if="{{item.paystats == '10'&&item.gametime_over > 0 &&item.trip}}" class="list_btn" data-meal-id="{{item.meal.goodsid}}" type="primary" catchtap="go_trip">查看行程</button>
+              <button wx:if="{{item.paystats == '1' && item.gametime_over > 0}}" class="list_btn btn_orange" type="primary" data-orderid="{{item.orderid}}" catchtap="go_perfect">完善资料</button>
+              <button wx:if="{{item.paystats == '5'}}" class="list_btn btn_orange" type="primary" data-orderid="{{item.orderid}}" catchtap="go_pay">去支付</button>
+              <button wx:if="{{item.paystats == '3' && item.m_placesleft > 0 && item.gametime_over > 0 && item.sign_over > 0}}" class="list_btn btn_orange" type="primary" data-mid="{{item.mid}}" catchtap="re_sign">重新报名</button>
+              <button wx:if="{{item.paystats != '5' && item.gametime_over < 0}}" class="list_btn btn_gray" type="primary">赛事结束</button>
+              <button wx:if="{{item.paystats == '3' &&item.gametime_over > 0 && item.sign_over < 0}}" class="list_btn btn_gray" type="primary">报名截止</button>
+              <button wx:if="{{item.paystats =='3' && item.m_placesleft <= 0 && item.gametime_over > 0 && item.sign_over > 0}}" class="list_btn btn_gray" type="primary">名额已满</button>
+              <view wx:if="{{item.paystats == '10' && item.gametime_over > 0}}" class="race_statu">等待开赛</view>
+              <view wx:if="{{item.paystats == '5'}}" data-id="{{orderid}}" class="race_statu nopay_orange">付款倒计时：<text>{{item.dietime}}</text></view>
+              <view wx:if="{{item.paystats == '3'}}" class="race_statu nopay_orange">已过期</view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+</block>
+<block wx:else>
+    <view class="white_wrap" wx:if="{{!data_ready}}"></view>
+    <view class="no_signwrap">
+      <image src="http://weixin.zx-tour.com/static/xcx_img/no_signicon.png" class="no_sign_img"></image>
+      <view class="no_sign_title">登录后可查看订单</view>
+      <navigator url="/pages/landing/landing" open-type="redirect" class="go_landing">去登陆</navigator>
+    </view>
+</block>
+<!--<view class="footer flex-wrp">
+    <navigator url="/pages/index/index" open-type="redirect"  class="foot_conmon">
+        <view class="match" style="background-position:-85rpx -10rpx!important"></view>
+        <view class="classname">赛事</view>
+    </navigator>
+    <navigator url="/pages/order/order" open-type="redirect" class="foot_conmon">
+        <view class="order" style="background-position:-160rpx -10rpx!important"></view>
+        <view class="classname" style="color:#0398ff;">订单</view>
+    </navigator>
+        <navigator url="/pages/userinfo/userinfo" open-type="redirect"    class="foot_conmon">
+        <view class="info"></view>
+        <view class="classname">资料</view>
+    </navigator>
+</view>-->

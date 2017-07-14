@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		ul,ol{list-style: none}
+		body{
+			background: url("img/bg.jpg") no-repeat 0 0;
+			background-size: 100%;
+			-webkit-perspective:700px;
+		}
+		#box{
+			width: 200px;
+			height: 200px;
+			margin: 180px auto;
+			position: relative;
+			-webkit-transform: rotateX(0deg);
+			-webkit-transform-style:preserve-3d;
+			-webkit-animation:Auto 8s linear infinite;
+		}
+		#minbox{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+			-webkit-transform-style:preserve-3d;		
+			-ms-transform-style:preserve-3d;			
+		}
+		#minbox li{
+			position: absolute;
+			z-index: 99;
+			width: 100px;
+			height: 100px;
+			background-size: 100%;
+		}
+		#minbox li:nth-child(1){
+			-webkit-transform: translateZ(50px);
+		}
+		#minbox li:nth-child(2){
+			-webkit-transform: translateZ(-50px);
+		}
+		#minbox li:nth-child(3){
+			-webkit-transform: translateY(-50px) rotateX(90deg);
+		}
+		#minbox li:nth-child(4){
+			-webkit-transform: translateY(50px) rotateX(-90deg);
+		}
+		#minbox li:nth-child(5){
+			-webkit-transform: translateX(50px) rotateY(90deg);
+		}
+		#minbox li:nth-child(6){
+			-webkit-transform: translateX(-50px) rotateY(-90deg);
+		}
+		
+		#maxbox{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			-webkit-transform-style:preserve-3d;		
+		}
+		#box:hover #maxbox li:nth-child(1){
+			-webkit-transform: translateZ(300px);
+		}
+		#box:hover #maxbox li:nth-child(2){
+			-webkit-transform: translateZ(-300px);
+		}
+		#box:hover #maxbox li:nth-child(3){
+			-webkit-transform: translateX(-300px) rotateY(90deg);
+		}
+		#box:hover #maxbox li:nth-child(4){
+			-webkit-transform: translateX(300px) rotateY(90deg);
+		}
+		#box:hover #maxbox li:nth-child(5){
+			-webkit-transform: translateY(-300px) rotateX(90deg);
+		}
+		#box:hover #maxbox li:nth-child(6){
+			-webkit-transform: translateY(300px) rotateX(90deg);
+		}
+		#maxbox li{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			z-index: 99;
+			left: 0;
+			top: 0;
+			background: #fff;
+			box-shadow: 0 0 10px 0px rgba(0,0,0,0.4)inset;
+			opacity: 0.15;
+			filter: alpha(opacity=15);
+			-webkit-transition:all 0.5s linear;
+		}
+		#maxbox li:nth-child(1){/*前*/
+			-webkit-transform: translateZ(100px);
+		}
+		#maxbox li:nth-child(2){/*后*/
+			-webkit-transform: translateZ(-100px);
+		}
+		#maxbox li:nth-child(3){/*左*/
+			-webkit-transform: translateX(-100px) rotateY(90deg);
+		}
+		#maxbox li:nth-child(4){/*右*/
+			-webkit-transform: translateX(100px) rotateY(90deg);
+		}
+		#maxbox li:nth-child(5){/*上*/
+			-webkit-transform: translateY(-100px) rotateX(90deg);
+		}
+		#maxbox li:nth-child(6){/*下*/
+			-webkit-transform: translateY(100px) rotateX(90deg);
+		}
+		@-webkit-keyframes Auto{
+			0%{-webkit-transform:rotateX(0deg) rotateY(0deg);}
+			100%{-webkit-transform:rotateX(-360deg) rotateY(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<ul id="minbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul id="maxbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script>
+		var lis = document.getElementById('minbox').getElementsByTagName('li');
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].style.backgroundImage = "url(img/0"+(i+1)+".png)";
+		};
+        try{
+        }catch(e){
+        }
+	</script>
+</body>
+</html>

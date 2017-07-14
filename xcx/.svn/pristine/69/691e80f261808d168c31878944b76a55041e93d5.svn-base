@@ -1,0 +1,58 @@
+<view class="head_wrap" style="background-color:{{head_background}}">
+   <view wx:if="{{_data.data.paystats == '10'}}" class="head_titleicon_success"></view>
+   <view wx:else class="head_titleicon_nosuccess"></view>
+   <view class="head_title">{{pay_status}}</view>
+   <view wx:if="{{_data.data.paystats == '5'}}" class="count_time">付款倒计时：<text>{{count_time}}</text></view>
+   <image wx:if="{{_data.data.paystats == '10'}}" src="http://weixin.zx-tour.com/static/xcx_img/orderinfo_successicon.png" class="success_righticon"></image>
+   <view wx:else class="nosuccess_righticon {{righticon_pic}}"></view>
+</view>
+<navigator url="paysuccess">
+<view class="race_wrap">
+    <view class="img_info_wrap">
+        <image src="{{_data.data.m_img}}" class="race_img"></image>
+        <view class="info_wrap">
+            <view class="race_info race_name">{{_data.data.m_name}}</view>
+            <view class="race_info">{{_data.data.m_des}}</view>
+            <view class="race_info">开赛时间：<text>{{begin_time}}</text></view>
+        </view>
+    </view>
+    <view class="race_foot">
+        <view class="race_statu">{{race_status}}</view>
+        <button wx:if="{{_data.data.paystats == '10' && !game_over}}" type="primary" data-meal-id="{{_data.data.mid}}" class="all_bt" catchtap="go_trip">参考行程</button>
+        <button wx:if="{{_data.data.paystats == '1' && !game_over}}" type="primary" class="all_bt">补充资料</button>
+        <button wx:if="{{_data.data.paystats == '3' && !game_over && !user_full && !over_sign }}" type="primary" class="all_bt">重新报名</button>
+        <button wx:if="{{_data.data.paystats == '5'}}" type="primary" class="all_bt">去支付</button>
+    </view>
+</view>
+</navigator>
+<navigator url="userinfo">
+<view class="already_wrap">
+    <view class="already_info">
+        <view class="alreay_name">报名赛事：<text class="already_realinof">{{_data.data.m_name}}</text></view>
+        <view class="alreay_name">套餐选择：<text class="already_realinof">{{meal_name}}</text></view>
+        <view class="alreay_name">赛事组别：<text class="already_realinof">{{race_group}}</text></view>
+        <view class="alreay_name">配套服务：<text class="already_realinof">{{add_service}}</text></view>
+    </view>
+    <view class="already_money">
+        <view class="already_sign_money">
+            <view class="already_ordermoney">订单价格：￥<text>{{_data.data.payprice}}</text></view>
+            <view class="already_copmoney">优惠券：￥<text>{{_data.data.discount}}</text></view>
+        </view>
+        <view class="already_paymoney">实付金额：￥<text>{{_data.data.payprice - _data.data.discount}}</text></view>
+    </view>
+</view>
+</navigator>
+<navigator url="runner">
+<view class="go_namelist">
+    <view class="first_name">参赛者：<text>{{show_user}}</text></view>
+    <view class="more_title">参赛人信息<text class="more_left">></text></view>
+</view>
+</navigator>
+<view class="qa_phone_wrap">
+    <view class="qa_container"><text class="qa_title">有疑问?可以 </text><button type="primary" class="qa_phone" bindtap="call_phone">电话咨询</button></view>
+</view>
+<view class="orderinfo_foot">
+    <view class="foot_name">订单编号：<text>{{_data.data.orderid}}</text></view>
+    <view class="foot_name">创建时间：<text>{{_data.data.ctime}}</text></view>
+    <view class="foot_name">最后更改时间：<text>{{_data.data.utime}}</text></view>    
+</view>

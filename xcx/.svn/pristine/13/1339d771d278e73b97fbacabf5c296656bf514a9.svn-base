@@ -1,0 +1,26 @@
+.wrap{min-height: 100%;width: 100%;background: #f6f6f6;box-sizing: border-box;padding: 0 20rpx;padding-bottom: 30rpx; overflow: hidden;font-family: '微软雅黑','Microsoft YaHei';}
+.conmon{height: 360rpx;float: left;background: #ffffff;text-align: center;flex: 1;margin-top: 20rpx;box-shadow: 0 3rpx 7rpx rgba(0, 0, 0, 0.08);}
+.conmon view:nth-child(1),.type_conmon{background: url(http://weixin.zx-tour.com/static/xcx_img/index_icon1.png) no-repeat;background-size: 1500rpx 250rpx;margin: 58rpx auto 37rpx;}
+.conmon view:nth-child(2){font-size: 42rpx;line-height: 42rpx;color: #0398ff;}
+.broad{width: 159rpx;height: 159rpx;background-position: -122rpx -46rpx!important;}
+.china{width: 180rpx;height: 157rpx;background-position: -386rpx -52rpx!important;}
+.malsong{width: 134rpx;height: 154rpx;background-position: -681rpx -52rpx!important;margin-top: 30rpx;}
+.yueye{width: 148rpx;height: 137rpx;background-position: -948rpx -52rpx!important;margin-top: 30rpx;}
+.huanle{width: 148rpx;height: 146rpx;background-position: -1220rpx -48rpx!important;margin-top: 30rpx;}
+
+.type{width: 100%;margin-top: 20rpx;background: #ffffff;height: 214rpx;box-shadow: 0 3rpx 7rpx rgba(0, 0, 0, 0.08)}
+.img{width: 352rpx;}
+.text view:first-child{font-size: 42rpx;line-height: 42rpx;color: #0398ff;flex: 1;margin-top: 56rpx;}
+.text view:last-child{font-size: 28rpx;color: #999999;line-height: 28rpx;margin-top: 34rpx;}
+
+
+/*///////////////////////底部导航条//////////////////*/
+.footer{height: 98rpx;width: 100%;background: #ffffff;position: fixed;bottom: 0;left: 0;border-top: 2rpx solid #eaeaea;}
+.foot_conmon{flex: 1;text-align: center;font-size: 22rpx;}
+.foot_conmon view:nth-child(1){background: url(http://weixin.zx-tour.com/static/xcx_img/nav_icon.png) no-repeat;background-size: 421rpx 63rpx;margin-top: 14rpx;}
+.foot_conmon view:nth-child(2){line-height: 22rpx;color: #808080;}
+.match{width: 48rpx;height: 44rpx;margin: 0 auto 0;background-position: -10rpx -10rpx!important;margin-bottom: 11rpx;}
+.order{width: 45rpx;height: 43rpx;margin: 0 auto 0;background-position: -231rpx -10rpx!important;margin-bottom: 13rpx;}
+.info{width: 42rpx;height: 46rpx;margin: 0 auto 0;background-position: -370rpx -10rpx!important;margin-bottom: 9rpx;}
+/*/////////////////底部付款//////////////////*/
+.footer{width: 100%;box-sizing: border-box;position: fixed;left: 0;bottom: 0;}

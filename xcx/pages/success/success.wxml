@@ -1,0 +1,26 @@
+<view class="wrap">
+    <view class="head_wrap">
+      <image class="head_img" src="{{head_img}}"></image>
+    </view>
+</view>
+<view wx:if="{{perfect_ok}}" class="success_wrap">
+    <view class="success_desc">
+      <text>获取赛事报名提醒、比赛天气预报、订单变动通知、下载赛事相关资料等赛事服务，强烈建议关注！</text>
+    </view>
+    <view class="success_code_wrap">
+        <image src="http://weixin.zx-tour.com/static/xcx_img/servicecode.jpg" class="success_code"></image>
+    </view>
+    <view class="code_des">长按识别关注知行合逸服务号</view>
+    <view class="success_btn_wrap">
+        <button type="primary" class="go_orderinfo" bindtap="go_orderinfo">查看订单</button>
+    </view>
+</view>
+<view wx:else class="lack_wrap">
+    <view class="lack_des">
+     <text>请尽快提供<text class="spc_color">完赛证明、健康证明，护照号信息</text> 您可以在"我的订单"中完善！</text>
+    </view>
+    <view class="lack_btn_wrap">
+        <button class="lack_btn later_finish" type="primary" bindtap="later_finish">稍晚填写</button>
+        <button class="lack_btn" type="primary" bindtap="go_finish">马上填写</button>
+    </view>
+</view>

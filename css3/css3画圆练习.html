@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.边框</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+		}
+		div:nth-child(1){
+			width: 100px;
+			height: 100px;
+			/*border-top-left-radius: 10px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 5px;*/
+			/*border-radius: 10px 20px 5px 30px;*/
+			border-radius: 16px;
+			background: blue;
+			/*顺序左上 右上 右下 左下*/
+		}
+		div:nth-child(2){
+			background: yellow;
+			border-radius: 50%;
+		}
+		div:nth-child(3){
+			background: red;
+			border-radius: 46px 0px;
+		}
+		div:nth-child(4){
+			background: #f80;
+			border-radius: 50px 0px 50px 50px;
+		}
+		div:nth-child(5){
+			background:blue;
+			border-radius: 0px 0px 0px 50px;
+		}
+		div:nth-child(6){
+			background: black;
+			width: 200px;
+			border-radius: 50%;
+		}
+		div:nth-child(7){
+			/*border-radius: 40px/20px;*/
+			border-radius: 10px 20px 5px / 40px;
+			/*border-top-left-radius:40px / 20px;*/
+			background: green;
+
+			/*lt 10/40
+			rt 20/40
+			rb 5/40
+			lb 10/40*/
+		}
+		div:nth-child(8){
+			width: 0px;
+			height: 0px;
+			border: 50px solid gray;
+			border-right-color:transparent;
+			border-radius: 50%; 
+		}
+		div:nth-child(9){
+			width: 0px;
+			height: 0px;
+			border: 50px solid transparent;
+			border-radius: 50%;
+			border-top-color: red;
+			border-bottom-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div onclick="fn1();">A</div>
+	<div>B</div>
+	<div>C</div>
+	<div>D</div>
+	<div>E</div>
+	<div>F</div>
+	<div>G</div>
+	<div>H</div>
+	<div>I</div>
+	
+	</script>
+</body>
+</html>

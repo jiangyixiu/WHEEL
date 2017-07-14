@@ -1,20 +1,21 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
-import smtplib 
-import cStringIO
 import urllib2,urllib 
+import cStringIO
+import smtplib 
 import json
-from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 from email.header import Header
 from PIL import Image,ImageDraw,ImageFont
+
 from log import *
-import os
-import logging
-#import thread
 import threading
+import logging
+
+import os
 import time
 
 
@@ -23,7 +24,8 @@ mail_user="notice@ichazuo.cn"   #用户名
 mail_pass="Chazuo123"   		#口令 
 sender = 'notice@ichazuo.cn'	#发件人邮箱
 
-def showInfo(courseId): 
+def showInfo(courseId):
+	## 请求数据
 	#url = 'https://www.chazuomba.com/iserver/app/queryMemberListByCourseIdForEmail'
 	#data = {'courseId': '2190'} 
 	#data = urllib.urlencode(data) # 把参数进行编码 
@@ -39,12 +41,13 @@ def showInfo(courseId):
 	# print email_l
 	
 	email_l = [
-			 #{"name":"Sophia","email":"jiangxiaoyong@ichazuo.cn"},
-			 #{"name":"舒畅","email":"17744490130@163.com"},
-			 #{"name":"王舒畅","email":"15727378086m@sina.cn"},
-			 #{"name":"哈哈哈哈","email":"18610500240@sina.cn"},
-	         #{"name":"小咏","email":"jiangyixiu418@163.com"},
-	         {"name":"李娟","email":"vickylijuan1991@126.com"},
+			#{"name":"Sophia","email":"jiangxiaoyong@ichazuo.cn"},
+			#{"name":"舒畅","email":"17744490130@163.com"},
+			#{"name":"王舒畅","email":"15727378086m@sina.cn"},
+			#{"name":"哈哈哈哈","email":"18610500240@sina.cn"},
+	        {"name":"江小咏","email":"2227006164@qq.com"},
+			#{"name":"小咏","email":"jiangyixiu418@163.com"},
+			#{"name":"李娟","email":"vickylijuan1991@126.com"},
 			#{u'name': u'\u8bb8\u6587\u8273', u'email': u'222'},
 			#{u'name': u'\u5f90\u654f', u'email': u'liye@tongshang.com'},
 			#{u'name': u'Sophia', u'email': u'2227006164@qq.com'},
@@ -159,7 +162,7 @@ def mailData(userName,userEmail,sender):
 	img.add_header('Content-ID', 'image1')
 	msgRoot.attach(img)
 
-	return msgRoot.as_string()
+	#return msgRoot.as_string()
 
  
 if __name__ == "__main__":  

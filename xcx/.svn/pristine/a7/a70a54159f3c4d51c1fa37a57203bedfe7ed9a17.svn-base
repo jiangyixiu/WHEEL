@@ -1,0 +1,45 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="head_wrap">
+    <view class="head_line"></view>
+    <view class="head_title">参考行程</view>
+</view>
+<view class="name_wrap">
+    <view class="trip_head">
+       <view class="head_left">
+          <view class="race_type">{{race_type}}</view>
+       </view>
+       <view class="head_right">
+          <view class="trip_name">{{race_name}}</view>
+          <view class="trip_des">
+           <text class="trip_overtime">截止时间:{{over_time}}</text><text class="trip_money">￥{{money}}元/人</text>
+          </view>
+       </view>
+    </view>
+</view>
+<view class="wrap">
+    <view class="day_wrap" wx:for="{{trip}}" wx:for-index="day_index">
+        <view class="day_left">
+            <view class="day_time">D{{day_index+1}}</view>
+            <view class="day_line"></view>
+        </view>
+        <view class="day_right">
+            <view class="day_right_head">
+                <view class="day_right_time"><text>{{item.trip_date}}</text><text class="day_week">星期{{day_week[day_index]}}</text></view>
+                <view class="day_title">{{item.trip_title}}</view>
+            </view>
+            <view class="day_des">
+                <template is="wxParse" data="{{wxParseData:htmlarr[day_index]}}"></template>
+            </view>
+            <view wx:if="{{item.trip_img}}" class="day_img_wrap">
+                <block wx:for="{{item.trip_img}}" wx:for-item="img_item">
+                    <view class="day_flex">
+                        <view style="margin-top:75%"></view>
+                        <view class="day_imgeverywrap">
+                            <image class="day_img" src="{{img_item}}"></image>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

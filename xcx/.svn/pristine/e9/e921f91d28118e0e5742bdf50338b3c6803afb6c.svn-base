@@ -1,0 +1,334 @@
+<view class="wrap">
+<view hidden="{{search_or_list}}" style="height:100%;background:#f6f6f6;">
+    <view class="search flex-wrp">
+    <!--条件筛选-->
+        <view class="flex-item flex-wrp">
+            <view class="flex-item search_title">
+                <view class="conmon_title flex-wrp" catchtap="search_kind" id="type">
+                    <view id="type" class="">类型</view>
+                    <view id="type" class="run_select_icon {{select_show._type? 'run_select_icon_1':''}}"></view>
+                </view>
+                <view class="drop_content type" wx:if="{{select_show._type}}" bindtap="drop_hid">
+                    <view class="conmon_outbox" catchtap="true">
+                        <view class="type_innerbox conmon">
+                            <checkbox-group bindchange="match_type">
+                                <view wx:for="{{match_type}}" class="type_text conmon_box">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <checkbox hidden="true" value="{{item.value}}" checked="{{item.checked}}" />
+                                    </label>
+                                </view>
+                            </checkbox-group>
+                        </view>
+                        <view class="type_btn flex-wrp">
+                            <view class="reset flex-item" id="reset_type" bindtap="reset">重置</view>
+                            <view bindtap="add" class="success flex-item" id="success_type" bindtap="success">完成</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="flex-item search_title">
+                <view class="conmon_title flex-wrp" catchtap="search_kind" id="area">
+                    <view id="area" class="">地区</view>
+                    <view id="area" class="run_select_icon {{select_show._area? 'run_select_icon_1':''}}"></view>
+                </view>
+                <view class="drop_content area" wx:if="{{select_show._area}}" bindtap="drop_hid">
+                    <view class="conmon_outbox" catchtap="true">
+                    <!--分类-->
+                        <view class="area_innerbox conmon">
+                            <radio-group bindchange="title_radio">
+                                <view class="type_text item conmon_box" wx:for="{{title_radio}}">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <radio style="display:none;" value="{{item.value}}" checked="{{item.checked}}" />
+                                    </label>
+                                </view>
+                            </radio-group>
+                        </view>
+                        <!--热门-->
+                        <scroll-view style="max-height:400rpx;" scroll-y="true" class="area_innerbox conmon" wx:if="{{area_show.hot}}">
+                            <checkbox-group bindchange="hots_checkbox">
+                                <view class="type_text item conmon_box" wx:for="{{hots_checkbox}}">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <checkbox style="display:none;" value="{{item.value}}"  />
+                                    </label>
+                                </view>
+                            </checkbox-group>
+                        </scroll-view>
+                        <!--国内-->
+                        <scroll-view style="max-height:400rpx;" scroll-y="true" class="area_innerbox conmon" wx:if="{{area_show.guonei}}">
+                            <checkbox-group bindchange="guonei_checkbox" >
+                                <view class="type_text item conmon_box" wx:for="{{guonei_checkbox}}">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <checkbox style="display:none;" value="{{item.value}}" checked="{{item.checked}}" />
+                                    </label>
+                                </view>
+                            </checkbox-group>
+                        </scroll-view>
+                        <!--海外-->
+                        <!--<scroll-view></scroll-view>-->
+                        <scroll-view style="max-height:400rpx;" scroll-y="true" class="area_innerbox conmon" wx:if="{{area_show.guoji}}">
+                            <checkbox-group bindchange="guoji_checkbox">
+                                <view class="type_text item conmon_box" wx:for="{{guoji_checkbox}}">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <checkbox style="display:none;" value="{{item.value}}" checked="{{item.checked}}" />
+                                    </label>
+                                </view>
+                            </checkbox-group>
+                        </scroll-view>
+                        <!--洲际-->
+                        <view class="area_innerbox conmon" wx:if="{{area_show.zhouji}}">
+                            <checkbox-group bindchange="zhouji_checkbox">
+                                <view class="type_text item conmon_box" wx:for="{{zhouji_checkbox}}">
+                                    <view class="type_name">{{item.value}}</view>
+                                    <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                        <checkbox style="display:none;" value="{{item.value}}" checked="{{item.checked}}" />
+                                    </label>
+                                </view>
+                            </checkbox-group>
+                        </view>
+                        <view class="type_btn flex-wrp">
+                            <view class="reset flex-item" id="reset_area" bindtap="reset">重置</view>
+                            <view bindtap="add" class="success flex-item" id="success_area" bindtap="success">完成</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!--时间内容-->
+            <view class="flex-item search_title">
+                <view class="conmon_title flex-wrp" catchtap="search_kind" id="time">
+                    <view id="time" class="">时间</view>
+                    <view id="time" class="run_select_icon {{select_show._time? 'run_select_icon_1':''}}"></view>    
+                </view>
+                <view class="drop_content time" wx:if="{{select_show._time}}" bindtap="drop_hid">
+                    <block>
+                        <view class="conmon_outbox" catchtap="true">
+                            <radio-group bindchange="time_title">
+                                <view class="type_innerbox conmon">
+                                    <view wx:for="{{match_recent}}" class="type_text conmon_box">
+                                        <view class="type_name">{{item.value}}</view>
+                                        <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                            <radio hidden="true" value="{{item.value}}" checked="{{item.checked}}"/>
+                                        </label>
+                                    </view>
+                                </view>
+                            </radio-group>
+                            <radio-group bindchange="time_year">
+                                <view class="type_innerbox conmon" wx:if="{{time_show.time_year}}">
+                                    <view wx:for="{{match_year}}" class="type_text conmon_box">
+                                        <view class="type_name">{{item.value}}</view>
+                                        <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                            <checkbox hidden="true" value="{{item.value}}" checked="{{item.checked}}"/>
+                                        </label>
+                                    </view>
+                                </view>
+                            </radio-group>
+                            <checkbox-group bindchange="recent_info">
+                                <view class="type_innerbox conmon" wx:if="{{time_show.recent_info}}">
+                                    <view wx:for="{{match_recent_info}}" class="type_text conmon_box">
+                                        <view class="type_name">{{item.value}}</view>
+                                        <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                            <checkbox hidden="true" value="{{item.value}}" checked="{{item.checked}}" />
+                                        </label>
+                                    </view>
+                                </view>
+                            </checkbox-group>
+                            <checkbox-group bindchange="time_mounth">
+                                <view class="type_innerbox conmon" wx:if="{{time_show.time_mounth}}">
+                                    <view wx:for="{{match_mounth}}" class="type_text conmon_box">
+                                        <view class="type_name">{{item.value}}月</view>
+                                        <label class="select_icon_1 {{item.checked ? 'select_icon':''}}">
+                                            <checkbox hidden="true" value="{{item.value}}" checked="{{item.checked}}"/>
+                                        </label>
+                                    </view>
+                                </view>
+                            </checkbox-group>
+                            <view class="type_btn flex-wrp">
+                                <view class="reset flex-item" id="reset_time" bindtap="reset">重置</view>
+                                <view bindtap="add" class="success flex-item"id="success_time" bindtap="success">完成</view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+        <!--搜索框切换列表-->
+        <view class="line"></view>
+        <view class="search_bar flex-wrp">
+            <view class="" catchtap="search">
+                <view class="run_search_icon"></view>
+            </view>
+            <view class="" catchtap="qiehuan">
+                <view class="{{qiehuan?'run_qiehuan':'run_qiehuan_2'}}"></view>
+            </view>
+        </view>
+    </view>
+    <!--筛选结果带出的条件-->
+    <view class="search_condition flex-wrp" wx:if="{{show_condition}}">
+        <view class="search_condition_left flex-item" style="width:650rpx;">
+        <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;height:70rpx;line-height:70rpx;">
+        <view class="close_search_out">
+            <view class="select_condition">已选:</view>
+            <view class="close_search_inner">
+                <block wx:if="{{type_condition.length>0}}">
+                    <view data-text="{{item.value}}" wx:for="{{type_condition}}" class="close_search" catchtap="close_condition">
+                        <view class="close_text">{{item.value}}</view>
+                        <view class="close"></view>
+                    </view>
+                </block>
+                <block wx:if="{{area_condition.length>0}}">
+                    <view wx:for="{{area_condition}}" class="close_search" catchtap="close_condition" data-text="{{item.value}}">
+                        <view class="close_text">{{item.value}}</view>
+                        <view class="close"></view>
+                    </view>
+                </block>
+                <block wx:if="{{time_condition.length>0}}">
+                    <view wx:for="{{time_condition}}" class="close_search" catchtap="close_condition" data-text="{{item.value}}">
+                        <view class="close_text">{{item.value=='2018'||item.value=='2017'||item.value=='未来三周'||item.value=='未来三个月'?item.value:item.value+'月'}}</view>
+                        <view class="close"></view>
+                    </view>
+                </block>
+            </view>
+            </view>
+            </scroll-view>
+        </view>
+        <view class="search_condition_line"></view>
+        <view class="search_condition_right" catchtap="clear_condition">清空</view>
+    </view>
+    <!--筛选结果赛事列表-->
+    <view class="search_result" style="{{show_condition ? '':'padding-top:88rpx;'}}" hidden="{{!qiehuan}}">
+        <view class="search_result_out">
+            <navigator url="/pages/Matchinfo/Matchinfo?m_id={{dataList[d].id}}" class="box" wx:for="{{dataList}}" wx:for-index="d" wx:if="{{d<_length}}">
+                <view class="box_top" style="{{dataList[d].state=='报名截止'||dataList[d].state=='比赛结束'?'background:#f3f3f3;':''}}">
+                    <view class="box_top_time" style="{{dataList[d].state=='报名截止'||dataList[d].state=='比赛结束'?'background:#dbdbdb;':''}}">{{dataList[d].stop}}</view>
+                    <view class="box_top_city">{{dataList[d].city}}</view>
+                </view>
+                <view class="box_center flex-wrp">
+                    <view class="box_center_right item">
+                        <view class="images">
+                            <image mode="scaleToFill" src="{{dataList[d].m_img}}"></image>
+                        </view>
+                        <view wx:if="{{dataList[d].state=='即将截止'? true:false}}" class="tag">即将截止</view>
+                        <view wx:if="{{dataList[d].state=='报名截止'||dataList[d].state=='比赛结束'}}" class="mask">{{dataList[d].state}}</view>
+                    </view>
+                    <view class="box_center_left item">
+                        <view class="box_center_title">
+                            <text>{{dataList[d].m_name}}</text>
+                        </view>
+                        <view class="box_center_des">
+                            <text>{{dataList[d].m_des}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="box_bottom">
+                    <view wx:if="{{dataList[d].dandu_price}}" class="dandu flex-wrp">
+                        <view class="dandu_title flex-wrp">
+                            <view class="classname"></view>
+                            <view class="classname">赛事报名</view>
+                        </view>
+                        <view class="dandu_price flex-wrp">
+                            <view class="classname">￥</view>
+                            <view class="classname">{{dataList[d].dandu_price}}</view>
+                            <view class="classname">元</view>
+
+                        </view>
+                        <view wx:if="{{dataList[d].dandu_m==true}}" class="dandu_tag">名额紧张</view>
+                    </view>
+                    <view wx:if="{{dataList[d].taocan_price && dataList[d].dandu_price}}" style="width100%;margin: 0 12rpx;border-top: 2rpx dashed #e7e7e7;"></view>
+                    <view wx:if="{{dataList[d].taocan_price}}" class="dandu flex-wrp">
+                        <view class="dandu_title flex-wrp">
+                            <view class="classname"></view>
+                            <view class="classname">旅行套餐</view>
+                        </view>
+                        <view class="dandu_price flex-wrp">
+                            <view class="classname">￥</view>
+                            <view class="classname">{{dataList[d].taocan_price}}</view>
+                            <view class="classname">元</view>
+
+                        </view>
+                        <view wx:if="{{dataList[d].taocan_m==true}}" class="dandu_tag">名额紧张</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view class="search_result" style="{{show_condition ? '':'padding-top:88rpx;'}}" hidden="{{qiehuan}}">
+        <view class="search_result_out">
+            <navigator class="box_2" url="/pages/Matchinfo/Matchinfo?m_id={{dataList[d].id}}" open-type="redirect" wx:for="{{dataList}}" wx:for-index="d" style="{{d!=0?'margin-top:28rpx;':''}}" wx:if="{{d<_length}}">
+                <view class="box_2_top">
+                    <view class="box2_img">
+                        <image mode="aspectFill" src="{{dataList[d].m_img}}"></image>
+                    </view>
+                    <view class="box2_mask">
+                        <view class="box2_title">{{dataList[d].m_name}}</view>
+                        <view class="box2_time flex-wrp">
+                            <view class="classname"></view>
+                            <view class="classname">{{dataList[d].stop}}</view>
+                        </view>
+                        <view class="box2_city flex-wrp">
+                            <view class=""></view>
+                            <view class="">{{dataList[d].city}}</view>
+                        </view>
+                    </view>
+                </view>
+                                <view class="box2_bottom">
+                    <view class="box2_des">
+                      <text>{{dataList[d].m_des}}</text>
+                    </view>
+                    <view wx:if="{{dataList[d].state=='报名截止'||dataList[d].state=='比赛结束'}}" class="box2_info flex-wrp" style="color:#333333;font-size:30rpx;">
+                        {{dataList[d].state}}
+                    </view>
+                     <view wx:else class="box2_info flex-wrp">
+                        <view class="box2_info_time flex-wrp">距报名截止还有
+                            <view class="day">{{arr_day[d].day}}</view>
+                            天
+                            <view class="day">{{arr_day[d].hour}}</view>
+                            时
+                            <view class="day">{{arr_day[d].minute}}</view>
+                            分
+                        </view>
+                        <view class="box2_info_price">{{dataList[d].dandu_or_taocan}}<text class="classname">元起</text></view>
+                    </view>
+                </view> 
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="keyward_search" hidden="{{!search_or_list}}">
+    <view class="keyward_searchbar flex-wrp">
+        <view class="keyward_close" catchtap="keyward_close">
+            <view class=""></view>
+        </view>
+        <view class="search_cicle">
+            <input class="keyward_input" bindfocus="keyward_focus" bindblur="keyward_blur" bindinput="keyward_input" />
+            <view hidden="{{input_string}}" class="input_style_blue flex-wrp" style="{{input_place.focus? '':'justify-content: center;'}}">
+                <view class="classname"></view>
+                <view class="classname">{{input_place.value}}</view>
+            </view>
+        </view>
+        <view class="keyward_searchgo" catchtap="keyward_searchgo">搜索</view>
+    </view>
+    <view class="hot">
+        <view class="history" hidden="{{loc_search.length>0?false:true}}">
+            <view class="history_title flex-wrp">
+                <view class="">历史搜索</view>
+                <view class="" catchtap="delet_locsearch">
+                    <view class=""></view>
+                </view>
+            </view>
+            <view class="history_box flex-wrp">
+                <view wx:for="{{loc_search}}" class="hots_conmon">{{item}}</view>
+            </view>
+        </view>
+        <view class="hots">
+        <view class="hots_title">热门搜索推荐</view>
+        <view class="hots_box">
+              <view wx:for="{{hotwd}}" class="hots_conmon">{{item}}</view>
+        </view>
+        </view>
+    </view>
+</view>
+</view>

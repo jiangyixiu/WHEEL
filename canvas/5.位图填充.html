@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5.位图填充</title>
+</head>
+<body>
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	 var canvas = cvs.getContext("2d");
+
+	 var imgs = new Image();
+	 imgs.src = "liji222.jpg";
+	 imgs.onload = function(){
+	 	//预加载
+	 	var pat = canvas.createPattern(imgs,"no-repeat");
+
+	 	canvas.lineWidth = 40;
+	 	canvas.strokeStyle = pat;
+	 	canvas.strokeRect(50,50,300,200);
+	 }
+	</script>
+</body>
+</html>

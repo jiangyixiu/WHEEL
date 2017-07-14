@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Matchinfo/Matchinfo",
+    "pages/run/run",
+    "pages/other/other",
+    "pages/payorder/payorder",
+    "pages/enroll/enroll",
+    "pages/landing/landing",
+    "pages/agreement/agreement",
+    "pages/zx-index/zx-index",
+    "pages/logs/logs",
+    "pages/pay_agreement/pay_agreement",
+    "pages/search/search",
+    
+
+    
+    "pages/order/order",
+    "pages/orderinfo/orderinfo",
+    "pages/runner/runner",
+    "pages/paysuccess/paysuccess",
+    "pages/success/success",
+    "pages/perfect/perfect",
+    "pages/userinfo/userinfo",
+    "pages/hengxing/hengxing",
+    "pages/trip/trip"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6"
+  }
+}

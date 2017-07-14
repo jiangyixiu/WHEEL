@@ -1,0 +1,48 @@
+/* enroll.wxss */
+.wrap,.bz_mask{background: #f6f6f6;min-height: 100%;width: 100%;font-family: '微软雅黑','Microsoft YaHei';overflow: hidden;}
+.select{height: 86rpx;border-top: 0.5rpx solid #e8e8e8;border-bottom: 0.5rpx solid #e8e8e8;background: #ffffff;line-height: 86rpx;font-size: 30rpx;color: #777777;box-sizing: border-box;}
+.select view:nth-child(1){padding-left: 24rpx;flex: 1;}
+.select view:nth-child(3){width: 10rpx;height: 19rpx;background: url(http://weixin.zx-tour.com/static/xcx_img/enroll_icon.png) no-repeat;background-size: 100%;margin: 34rpx 24rpx 0 25rpx;}
+.select view:nth-child(2){color: #333333;}
+/*/////////////套餐选择*/
+.select_meal{height: 56rpx;width: 100%;color: #7a7a7a;font-size: 24rpx;border-bottom: 0.5rpx solid #e8e8e8;}
+.select_meal view{line-height: 30rpx;padding-top: 20rpx;margin-left: 24rpx;}
+/*/////////////////////套餐费用//////////////////////////////////*/
+.meal_price{height: 86rpx;font-size: 26rpx;color: #848484;overflow: hidden;padding-right: 24rpx;line-height: 86rpx;background: #ffffff;border-bottom: 0.5rpx solid #e8e8e8;}
+/*/////////////广告////////////////*/
+.advert{font-size: 30rpx;color: #888888;width: 100%;box-sizing: border-box;padding-left: 24rpx;margin-top: 30rpx;line-height: 30rpx;display: block;}
+.advert_top view{width: 30rpx;height: 30rpx;background-size: 100%;margin-right: 13rpx;}
+.advert_select{background: url(http://weixin.zx-tour.com/static/xcx_img/enroll_adver.png) no-repeat;}
+.advert_noselect{background: url(http://weixin.zx-tour.com/static/images/icon_14.png) no-repeat;}
+.advert navigator{color: #0398ff;}
+.advert_bottom{margin-top: 17rpx;margin-left: 30rpx;}
+/*/////////////////底部付款//////////////////*/
+.footer{width: 100%;box-sizing: border-box;position: fixed;left: 0;bottom: 0;padding: 0 24rpx;height: 97rpx;border-top: 0.5rpx solid #e8e8e8;background: #ffffff;line-height: 97rpx;}
+.foot_all,.foot_realy{flex: 1;}
+.foot_all view:nth-child(1){font-size: 26rpx;}
+.foot_all view:nth-child(2){font-size: 24rpx;}
+.foot_all view:nth-child(3){font-size: 30rpx;font-weight: bold;}
+.foot_realy view:nth-child(1){font-size: 26rpx;}
+.foot_realy view:nth-child(2){font-size: 24rpx;color: #0398ff;}
+.foot_realy view:nth-child(3){font-size: 40rpx;font-weight: bold;color: #0398ff;margin-top: -4rpx;}
+.btn{width: 186rpx;height: 72rpx;border-radius: 5rpx;background: #0398ff;text-align: center;line-height: 72rpx;color: #ffffff;font-size: 30rpx;font-weight: bold;margin-top: 12rpx;}
+/*////////////////////备注弹出样式////////////////////*/
+.bz_text{box-sizing: border-box;overflow: hidden;width: 100%;height: 290rpx;padding: 30rpx;background: #ffffff;border-top: 0.5rpx solid #e8e8e8;border-bottom: 0.5rpx solid #e8e8e8;}
+.bz_text textarea{height: 100%;width: 100%;border: 0.5rpx solid #dddddd;border-radius: 10rpx;font-size: 30rpx;padding: 15rpx;box-sizing: border-box;}
+/*.bz_place{color: #999999;font-size: 30rpx;}*/
+.bz_btn,.bz_fanhui{box-sizing: border-box;width: 100%;height: 88rpx;text-align: center;line-height: 88rpx;font-size: 34rpx;color: #ffffff;padding: 0 30rpx;margin-top: 30rpx;}
+.bz_btn view,.bz_fanhui view{background: #bbbbbb;border-radius: 4rpx;}
+.bz_fanhui view{background: #1ebc20;}
+/*//////////////优质服务弹出样式*/
+.service_mask{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);z-index: 100;}
+.content_all{background: #ffffff;position: absolute;bottom: 0;left: 0;width: 100%;font-size: 30rpx;font-weight: bold;}
+.service_title{height: 81rpx;line-height: 81rpx;text-align: center;border-bottom: 0.5rpx solid #e8e8e8;font-size: 30rpx;position: relative;}
+.service_title>view:nth-child(1){height: 81rpx;position: absolute;width: 81rpx;}
+.service_title>view:nth-child(1) view{width: 25rpx;height: 25rpx;background: url(http://weixin.zx-tour.com/static/xcx_img/service_close.png) no-repeat;background-size: 100%;margin: 31rpx 0 0 26rpx;}
+.service_box{box-sizing: border-box;width: 100%;padding: 0 24rpx;height: 62rpx;line-height: 62rpx;border-bottom: 0.5rpx solid #e8e8e8;}
+.service_name{flex: 1;}
+.service_icon{width: 25rpx;height: 25rpx;border-radius: 50%;border: 0.5rpx solid #b7b7b7;margin-top: 16rpx;margin-left: 18rpx;box-sizing: border-box;}
+.service_icon_select{background: url(http://weixin.zx-tour.com/static/xcx_img/enroll_adver.png) no-repeat;background-size: 100%;border: none;border-radius: 0;}
+.service_btn{width: 100%;box-sizing: border-box;padding: 36rpx 24rpx 18rpx;text-align: center;}
+.service_btn view{text-align: center;width: 100%;height: 88rpx;line-height: 88rpx;color: #ffffff;background: #0398ff;border-radius: 4rpx;}
+

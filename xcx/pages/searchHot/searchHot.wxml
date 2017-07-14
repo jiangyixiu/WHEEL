@@ -1,0 +1,42 @@
+<!--/pages/searchHot/searchHot.wxml-->
+<view class="wrap" style="{{input_string?'background:#f6f6f6;':'background:#ffffff;'}}">
+    <view class="keyward_search">
+        <view class="keyward_searchbar flex-wrp">
+            <!--<view class="keyward_close" catchtap="keyward_close">
+                <view class=""></view>
+            </view>-->
+            <view class="search_cicle flex-wrp">
+            <view class="search_img"></view>
+                <input class="keyward_input" bindfocus="keyward_focus" bindblur="keyward_blur" bindinput="keyward_input" focus="true" placeholder="搜索全球跑步赛事" placeholder-class="search_place" confirm-type="搜索" bindconfirm="keyward_searchgo" value="{{input_value}}" />
+                <view class="clear_inputVal" hidden="{{!input_string}}" catchtap="clear_inputVal"></view>
+                <!--<view hidden="{{input_string}}" class="input_style_blue flex-wrp" style="{{input_place.focus? '':'justify-content: center;'}}">
+                    <view class="classname"></view>
+                    <view class="classname">{{input_place.value}}</view>
+                </view>-->
+            </view>
+            <view class="keyward_close" catchtap="keyward_close">取消</view>
+        </view>
+        <view class="keyward_mask" hidden="{{!input_string}}">
+            <view catchtap="keyward_searchgo">{{input_value}}</view>
+        </view>
+        <view class="hot" hidden="{{input_string}}">
+            <view class="history" hidden="{{loc_search.length>0?false:true}}">
+                <view class="history_title flex-wrp">
+                    <view class="">历史搜索</view>
+                    <view class="" catchtap="delet_locsearch">
+                        <view class=""></view>
+                    </view>
+                </view>
+                <view class="history_box">
+                    <navigator url="/pages/search/search?ws={{item}}" open-type="redirect" wx:for="{{loc_search}}" class="hots_conmon">{{item}}</navigator>
+                </view>
+            </view>
+            <view class="hots">
+            <view class="hots_title">热门搜索推荐</view>
+            <view class="hots_box">
+                  <navigator url="/pages/search/search?ws={{item}}" open-type="redirect" wx:for="{{hotwd}}" class="hots_conmon">{{item}}</navigator>
+            </view>
+            </view>
+        </view>
+    </view>
+</view>

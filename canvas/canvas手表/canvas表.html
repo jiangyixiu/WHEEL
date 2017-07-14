@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0;padding: 0;}
+	#DW{
+		margin: 80px;
+		background: #FDF5E8;
+	}
+	</style>
+</head>
+<body>
+	<canvas width="800" height="500" id="DW"></canvas>
+
+	<script>
+	var canvas = DW.getContext('2d');
+	move();	
+	function move(){
+		canvas.clearRect(0,0,800,500)
+		//表边框
+		canvas.beginPath();
+		canvas.fillStyle = '#E0B690';
+		canvas.arc(400,250,129,0,Math.PI*2,false)	
+		canvas.fill();	
+		canvas.closePath();
+
+		//表盘背景
+		canvas.beginPath();
+		canvas.fillStyle = '#FDFAF3';
+		canvas.arc(400,250,124,0,Math.PI*2,false)
+		canvas.fill();
+		canvas.closePath();
+
+		//表盘
+		canvas.beginPath();
+		canvas.strokeStyle = '#E0B690';
+		canvas.lineWidth = 1;
+		for (var i = 0; i < 60; i++) {
+			canvas.beginPath();
+			canvas.save();
+			canvas.translate(400,250)//***
+			canvas.rotate(i*6*Math.PI/180);
+			canvas.lineTo(0,112)
+			canvas.lineTo(0,122);
+			canvas.restore();//***			
+			canvas.stroke();
+			canvas.closePath();
+		};
+		canvas.closePath();
+
+		canvas.beginPath();
+		canvas.strokeStyle = '#AA918A';
+		canvas.lineWidth = 1;
+		for (var i = 0; i < 12; i++) {
+			canvas.beginPath();
+			canvas.save();
+			canvas.translate(400,250)//***
+			canvas.rotate(i*30*Math.PI/180);
+			canvas.lineTo(0,92)
+			canvas.lineTo(0,122);
+			canvas.restore();//***
+			canvas.stroke();
+			canvas.closePath();
+		};
+		canvas.closePath();
+
+		canvas.lineCap = 'round';//圆角指针
+		
+		var t = new Date();
+		var h = t.getHours();
+		var m = t.getMinutes();
+		var s = t.getSeconds();
+		canvas.save();
+		canvas.translate(400,250)//***
+		canvas.strokeStyle = '#AA918A';
+
+		//时针
+		if (h>12) {h=h-12};
+		console.log(s,m,h)
+		canvas.beginPath();
+		canvas.save();
+		canvas.rotate(h*30*Math.PI/180+(30/60*m*Math.PI/180));
+		canvas.lineWidth = 5;
+		canvas.lineTo(0,0);
+		canvas.lineTo(0,-60);
+		canvas.stroke();
+		canvas.restore();
+		canvas.closePath();
+
+		//分针
+		canvas.beginPath();
+		canvas.lineWidth = 3;
+		canvas.save();
+		canvas.rotate(m*6*Math.PI/180);
+		canvas.lineTo(0,0);
+		canvas.lineTo(0,-80);
+		canvas.stroke();
+		canvas.restore();
+		canvas.closePath();
+
+		// 秒针
+		canvas.beginPath();
+		canvas.strokeStyle = 'red';
+		canvas.lineWidth = 1;
+		canvas.save();
+		canvas.rotate(s*6*Math.PI/180);
+		canvas.lineTo(0,30);
+		canvas.lineTo(0,-110);
+		canvas.stroke();
+		canvas.restore();
+		canvas.closePath();
+
+		//圆心点
+		canvas.beginPath();
+		canvas.fillStyle = '#CFA285';
+		canvas.arc(0,0,6.5,0,Math.PI*2,false)
+		canvas.fill();
+		// canvas.globalCompositeOperation = "destination-over";
+		canvas.closePath();
+
+		canvas.beginPath();
+		canvas.fillStyle = '#AA918A';
+		canvas.arc(0,0,3,0,Math.PI*2,false)
+		canvas.fill();
+		canvas.closePath();
+
+		canvas.restore();//***
+	}
+
+	//计时器
+	
+	setInterval(move,1000);
+
+	
+
+
+	
+
+
+	</script>
+</body>
+</html>

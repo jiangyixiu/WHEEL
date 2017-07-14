@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Matchinfo/Matchinfo",
+    "pages/run/run",
+    "pages/search/search",
+    "pages/landing/landing",
+    "pages/enroll/enroll",
+    "pages/payorder/payorder",
+    "pages/other/other",
+    "pages/agreement/agreement",
+    "pages/zx-index/zx-index",
+    "pages/logs/logs",
+    "pages/pay_agreement/pay_agreement"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,52 @@
+page{
+    background: rgb(243, 246, 245);
+}
+.head_wrap {
+  width: 100%;
+  height: 168rpx;
+  text-align: center;
+}
+
+.head_img {
+  width: 690rpx;
+  height: 100rpx;
+  margin-top: 36rpx;
+}
+.dis_wrap{
+    background: white;
+    width: 100%;
+    height: 560rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.discription{
+    width: 520rpx;
+    height: 108rpx;
+    font-size: 34rpx;
+    color: #888;
+    font-weight: bold;
+}
+.spc_dis{
+    color: #0398ff;
+}
+.bt_wrap{
+    background: white;
+}
+.go_next{
+    background: #0398ff!important;
+    width: 634rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    font-size: 36rpx;
+}
+.btn_dec{
+    background: white;
+    padding: 30rpx 35rpx;
+    text-align: justify;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #999;
+    line-height: 45rpx;
+}

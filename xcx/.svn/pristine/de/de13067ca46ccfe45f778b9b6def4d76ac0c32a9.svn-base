@@ -1,0 +1,202 @@
+<view class="wrap">
+  <view class="head_wrap">
+    <view class="text">
+      <text>您的信息将仅用于跑步赛事的报名使用， 知行平台会保障您的信息安全</text>
+    </view>
+    <image src="http://weixin.zx-tour.com/static/xcx_img/userinfo_headicon.png" class="head_img"></image>
+  </view>
+</view>
+<view class="msg_wrap">
+  <view class="import_wrap">
+    <button type="primary" class="btn_import" catchtap="import_msg">导入最近一次报名赛事资料填充</button>
+  </view>
+  <view class="msg">
+    <form id="user_msg" bindsubmit="formSubmit">
+      <view class="input_wrap">
+        <text class="input_name">真实姓名</text>
+        <input type="text" value="{{userdata.name}}" data-name="name" bindblur="bindmsg" class="input_msg" placeholder="在您报名时使用" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">国籍</text>
+        <view class="pick_show" catchtap="country_choice">{{userdata.broad_country}}</view>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">身份证</text>
+        <input type="idcard" data-name="sfz_code" bindblur="bindmsg" value="{{userdata.sfz_code}}" class="input_msg" placeholder="确认后将加密处理" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">手机号</text>
+        <view class="pick_show show_phone">{{userdata.phone}}</view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">生日</text>
+        <picker class="mode_select" mode="date" start="1900-01-01" end="2100-01-01" value="{{userdata.birth}}" bindchange="birthday_change">
+          <text>{{userdata.birth}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">性别</text>
+        <picker mode="selector" class="mode_select" range="{{sexyarr}}" value="{{sexyindex}}" bindchange="sexy_change">
+          <text>{{sexyarr[sexyindex]}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">血型</text>
+        <picker mode="selector" class="mode_select" range="{{bloodtype}}" value="{{bloodindex}}" bindchange="blood_change">
+          <text>{{bloodtype[bloodindex]}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">地区</text>
+        <view class="pick_show" catchtap="area_choice">{{userdata.area}}</view>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">详细地址</text>
+        <input type="text" data-name="addr" bindblur="bindmsg" value="{{userdata.addr}}" class="input_msg" placeholder="请输入详细地址" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">邮编</text>
+        <input type="text" data-name="postcode" bindblur="bindmsg" value="{{userdata.postcode}}" class="input_msg" placeholder="请输入邮政编码" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">邮箱</text>
+        <input type="text" data-name="e_mail" bindblur="bindmsg" value="{{userdata.e_mail}}" class="input_msg" placeholder="用于接收赛事信息和通知" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">服装尺码</text>
+        <picker mode="selector" class="mode_select" range="{{clothsize}}" value="{{clothindex}}" bindchange="cloth_change">
+          <text>{{clothsize[clothindex]}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">紧急联系人</text>
+        <input type="text" data-name="contact_name" bindblur="bindmsg" value="{{userdata.contact_name}}" class="input_msg" placeholder="请输入紧急联系人姓名" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">联系人电话</text>
+        <input type="number" data-name="contact_phone" bindblur="bindmsg" value="{{userdata.contact_phone}}" class="input_msg" placeholder="请输入紧急联系人手机号码" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">护照号码</text>
+        <input type="text" data-name="pass_code" bindblur="bindmsg" value="{{userdata.pass_code}}" class="input_msg" placeholder="国际赛事需要，填写后简化报名" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">中文姓拼音</text>
+        <input type="text" data-name="surname" bindblur="bindmsg" value="{{userdata.surname}}" class="input_msg" placeholder="请以护照姓拼音为准" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">中文名拼音</text>
+        <input type="text" data-name="en_name" bindblur="bindmsg" value="{{userdata.en_name}}" class="input_msg" placeholder="请以护照名拼音为准" />
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">签发日期</text>
+        <picker class="mode_select" mode="date" start="1900-01-01" end="2100-01-01" value="{{userdata.issue_date}}" bindchange="issue_date_change">
+          <text>{{userdata.issue_date}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap">
+        <text class="input_name">有效期至</text>
+        <picker class="mode_select" mode="date" start="1900-01-01" end="2100-01-01" value="{{userdata.expiry_date}}" bindchange="expiry_date_change">
+          <text>{{userdata.expiry_date}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <view class="input_wrap input_wrap_twoline">
+        <text class="input_name">是否参加过马拉松</text>
+        <picker mode="selector" class="mode_select" range="{{isattended}}" value="{{isattendedindex}}" bindchange="isattended_change">
+          <text>{{isattended[isattendedindex]}}</text>
+        </picker>
+        <view class="go_down_icon"></view>
+      </view>
+      <block wx:if="{{isattendedindex == 1}}">
+        <view class="input_wrap input_wrap_twoline">
+          <text class="input_name">马拉松最好成绩</text>
+          <input value="{{userdata.personbest}}" data-name="personbest" bindblur="bindmsg" type="text" class="input_msg" placeholder="请输入个人最好成绩" />
+        </view>
+        <view class="input_wrap input_wrap_twoline">
+          <text class="input_name">最好成绩赛事名称</text>
+          <input type="text" data-name="personbestmatch" bindblur="bindmsg" value="{{userdata.personbestmatch}}" class="input_msg" placeholder="请输入最好成绩赛事" />
+        </view>
+      </block>
+      <view class="input_wrap input_wrap_twoline">
+        <text class="input_name">全马预期完赛时间</text>
+        <view class="pick_show" catchtap="finish_choice">{{userdata.wishfinish}}</view>
+        <view class="go_down_icon"></view>
+      </view>
+      <view wx:if="{{pick_mask}}" class="pick_mask">
+        <view wx:if="{{finish_pick}}" class="finish_picker_wrap">
+          <view class="btn_wrap">
+            <text catchtap="mask_hide">取消</text>
+            <text class="pick_sure" catchtap="finish_sure">确定</text>
+          </view>
+          <picker-view indicator-style="height:50px" class="pick_wrap" value="{{finish_value}}" bindchange="finish_change">
+            <picker-view-column>
+              <view wx:for="{{finish_hour}}" style="line-height: 50px;text-align:center">{{item}}小时</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{finish_minute}}" style="line-height: 50px;text-align:center">{{item}}分钟</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{finish_seconde}}" style="line-height: 50px;text-align:center">{{item}}秒</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+        <view wx:if="{{country_pick}}" class="finish_picker_wrap">
+          <view class="btn_wrap">
+            <text catchtap="mask_hide">取消</text>
+            <text class="pick_sure" catchtap="country_sure">确定</text>
+          </view>
+          <picker-view indicator-style="height:50px" class="pick_wrap" value="{{country_value}}" bindchange="country_change">
+            <picker-view-column>
+              <view wx:for="{{country_continent}}" style="line-height: 50px;text-align:center">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{show_country}}" style="line-height: 50px;text-align:center">{{item}}</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+        <view wx:if="{{area_pick}}" class="finish_picker_wrap">
+          <view class="btn_wrap">
+            <text catchtap="mask_hide">取消</text>
+            <text class="pick_sure" catchtap="area_sure">确定</text>
+          </view>
+          <picker-view indicator-style="height:50px" class="pick_wrap" value="{{area_value}}" bindchange="area_change">
+            <picker-view-column>
+              <view wx:for="{{area_province}}" style="line-height: 50px;text-align:center">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{show_city}}" style="line-height: 50px;text-align:center">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{show_area}}" style="line-height: 50px;text-align:center">{{item}}</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
+<view class="tj_wrap">
+    <button type="primary" class="tj_btn" bindtap="save_msg">保存</button>
+</view>
+<view class="footer flex-wrp">
+        <navigator url="/pages/index/index" open-type="redirect" class="foot_conmon">
+            <view class="match" style="background-position:-85rpx -10rpx!important"></view>
+            <view class="classname">赛事</view>
+        </navigator>
+        <navigator url="/pages/order/order" open-type="redirect" class="foot_conmon">
+            <view class="order"></view>
+            <view class="classname">订单</view>
+        </navigator>
+        <navigator class="foot_conmon" url="/pages/userinfo/userinfo" open-type="redirect">
+            <view class="info" style="background-position:-301rpx -10rpx!important"></view>
+            <view class="classname" style="color:#0398ff;">资料</view>
+        </navigator>
+    </view>

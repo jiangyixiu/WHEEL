@@ -1,0 +1,14 @@
+<view class="wrap">
+    <view class="head_wrap">
+      <image class="head_img" src="http://weixin.zx-tour.com/static/xcx_img/process_pay.png"></image>
+    </view>
+</view>
+<view class="dis_wrap">
+    <view class="discription">感谢您的报名！但<text class="spc_dis">报名还未完成</text>，需要您继续完善资料！</view>
+</view>
+<view class="bt_wrap">
+    <button type="primary" class="go_next" bindtap="go_perfect">下一步</button>
+</view>
+<view class="btn_dec">
+<text>我们的报名以付款成功和完善资料为准,我们的数据库中暂无您的相关信息,请您完善,否则将无法成功报名。</text>
+</view>

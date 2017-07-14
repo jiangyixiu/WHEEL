@@ -28,20 +28,46 @@ var writeOut = function (query, res) {
     // 生成邀请卡
     app.getPoster(query);
     // 邀请卡添加username
-    app.getPoster.prototype.poster = function (key, nickname) {
-        gm('public/poster/output.jpg')
-            .fill('#FFFFFF')
-            .font('public/commons/font/msyh.ttf', 26)
-            .drawText(0, -160, nickname, 'center')
-            .write('public/poster/' + key + ".png", function (err) {
-                if (!err) {
-                    console.log('生成成功：'+this.outname);
-                    // 输出数据
-                    fs.createReadStream(this.outname).pipe(res);
-                }
-                else
-                    console.log(err)
-            });
+    app.getPoster.prototype.poster = function () {
+
+        fs.exists('public/poster/' + query.courseId + '/', function (exists) {
+            if (!exists) {
+                console.log('课程ID目录 ===> 不存在')
+                fs.mkdir('public/poster/' + query.courseId, function () {
+                    console.log('课程ID目录 ===> 创建成功')
+                })
+            } else {
+                console.log('课程ID目录 ===> 存在')
+            }
+        })
+
+        fs.exists('public/poster/' + query.courseId + '/' + query.key + '.png', function (exists) {
+            if (!exists) {
+                gm('public/poster/output.jpg')
+                    .fill('#FFFAE2')
+                    .font('public/commons/font/msyh.ttf', 26)
+                    .drawText(0, -160, query.nickname, 'center')
+                    .fontSize(37)
+                    .drawText(0, -30, '《 ' + query.synopsis + ' 》', 'center')
+                    .fontSize(30)
+                    .drawText(0, 180, query.share.replace(/\\n/g, '\n'), 'center')
+                    .write('public/poster/' + query.courseId + '/' + query.key + ".png", function (err) {
+                        if (!err) {
+                            console.log('邀请卡 ===> 创建成功：' + this.outname);
+                            fs.createReadStream(this.outname).pipe(res);   // 输出数据
+                            console.log('======= 返回邀请卡 ======')
+                        }
+                        else
+                            console.log(err)
+                    });
+            }
+            else
+                fs.createReadStream('public/poster/' + query.courseId + '/' + query.key + '.png').pipe(res);
+                console.log('=======================================>返回邀请卡')
+            console.log(exists ? "邀请卡 ===> 存在" : "邀请卡 ===> 不存在");
+        })
+
+
     }
 
     // res.write(JSON.stringify(query));
@@ -67,7 +93,7 @@ http.createServer(function (req, res) {
             req.addListener("data", function (data) {
                 postData += data;
             });
-            
+
             // 这个是如果数据读取完毕就会执行的监听方法
             req.addListener("end", function () {
                 var query = qs.parse(postData);
@@ -87,6 +113,6 @@ http.createServer(function (req, res) {
         }
     }
 
-}).listen(8080, function () {
-    console.log("listen on port 8080");
+}).listen(9076, function () {
+    console.log("listen on port 9076");
 });

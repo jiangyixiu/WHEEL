@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.图形叠加</title>
+</head>
+<body>
+
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	 var canvas = cvs.getContext("2d");
+
+	 //画圆
+	 // canvas.globalCompositeOperation = "destination-over";
+
+
+	 canvas.beginPath();
+	 canvas.fillStyle = "Red";
+	 canvas.arc(150,150,100,0,Math.PI*Math.PI/10);
+	 canvas.fill();
+	 canvas.closePath();
+
+	 //画方形
+	 //globalCompositeOperation是作用于新图形的
+	 // canvas.globalCompositeOperation = "source-in";
+	 // canvas.globalCompositeOperation = "source-out";
+	 // canvas.globalCompositeOperation = "source-atop";
+
+	 // canvas.globalCompositeOperation = "destination-in";
+	 // canvas.globalCompositeOperation = "destination-out";
+	 // canvas.globalCompositeOperation = "destination-atop";
+
+	 // canvas.globalCompositeOperation = "lighter";
+	 // canvas.globalCompositeOperation = "xor";
+	 // canvas.globalCompositeOperation = "copy";
+	 
+	 // canvas.fillStyle="green";
+	 // canvas.fillRect(150,150,200,160);
+
+
+
+	</script>
+</body>
+</html>

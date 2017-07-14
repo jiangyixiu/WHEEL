@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.变形</title>
+</head>
+<body>
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	 var canvas = cvs.getContext("2d");
+	 // canvas.strokeRect(0,0,200,100);
+	 canvas.translate(100,100);
+	 canvas.strokeRect(0,0,200,100);
+	 canvas.fillRect(-100,-100,200,100);
+	 //canvas的变形属性都是先改变坐标轴的,然后按照新的轴线绘制图形
+
+	 canvas.rotate(45);
+	 canvas.fillStyle = "tomato";
+	 canvas.fillRect(0,0,200,100);
+
+	 canvas.scale(0.5,0.5);
+	 canvas.fillStyle = "gold";
+	 canvas.fillRect(300,200,200,100);
+
+
+	</script>
+</body>
+</html>

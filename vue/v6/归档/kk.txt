@@ -1,0 +1,51 @@
+流量统计
+<script src="https://s4.cnzz.com/z_stat.php?id=1260417509&web_id=1260417509" language="JavaScript"></script>
+
+今日头条下载事件
+https://fireye.sythealth.com/ws/fireye/v2/event/saveevent?eventid=5966d3ab3ef8b009f8b14689 
+
+今日头条下载事件
+
+安卓的下载地址需要动态获取的
+<a class="down" v-android-download-link>
+              <img v-lazy="getLazyLoadImgObj('/assets/img/web_home_ic_android.png')">
+              <div>Android 下载</div>
+            </a>
+用全局指令获取
+
+http://file.sythealth.com/app/info/toutiao/com.sythealth.fitness.json 
+
+ 要用ajax下载这个json文件，获取里面的downloadUrl字段放到a 标签的href
+
+1、功能分布
+主体为静态页面，相关页面文案以效果图（切图）为准，可参考附件Word《【今日头条】页面文案》；
+页面内无任何二次跳转业务，唯一的动效用于页面中的“轻友名单”、“奖金挑战获奖名单”，UA动效见附件MP4《【今日头条】名单滚动示例》；
+接上条，完整名单见附件Word《【今日头条】相关名单》；
+内部包含一条视频，视频地址：http://file2.sythealth.com/plancenter/veido/v2/ad/ota_20170612/1499832572931/ota_20170612.mp4
+底部悬浮栏①，点击“立即下载”，直接触发下载；
+底部悬浮栏②，点击“打开”，直接拉起轻加应用，link地址：https://applink.sythealth.com/
+2、下载引导
+iOS，点击下载，拉起App Store并跳转至轻加详情页，store地址：https://itunes.apple.com/us/app/%E8%BD%BB%E5%8A%A0-%E8%96%84%E8%8D%B7%E9%A5%AE%E9%A3%9F%E8%B0%B1%E7%98%A6%E8%BA%AB%E8%BD%AF%E4%BB%B6/id665855293?mt=8&uo=4
+Android，应刘叔要求，支持在当前页面直接下载，点击下载后，弹窗确认后直接下载，下载地址：正在测试中，今日提供。
+3、行为统计
+页面流量统计，包括PV、UV；
+页面事件统计，只有一个——下载按键。
+Android直接下载地址：http://file.sythealth.com/app/info/toutiao/com.sythealth.fitness.json
+
+unction _IsIOS() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/iPhone\sOS/i) == "iphone os"||navigator.userAgent.indexOf("iPad") != -1) {
+                $("#IOS").show();
+                $("#Android").hide();
+//              if(isSafari=navigator.userAgent.indexOf("Safari")<0) {
+//                  $("#IOS").click(function(){
+//                      alert('请在Safari中打开^_^');
+//                  });
+//              }
+                return;
+            } else if (ua.match(/Android/i) == "android"){
+                $("#IOS").hide();
+                $("#Android").show();
+                return;
+            }
+        }

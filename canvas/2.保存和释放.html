@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2.保存和释放</title>
+</head>
+<body>
+	<canvas width="500" height="500" id="cvs"></canvas>
+	<script>
+	 var canvas = cvs.getContext("2d");
+	 // canvas.strokeRect(0,0,200,100);
+	
+	//在原坐标的基础上，创建了一个新的坐标系
+	canvas.save();
+	canvas.translate(100,0);
+	canvas.rotate(45);
+	canvas.fillRect(50,50,100,60);
+	canvas.restore();
+
+	canvas.fillRect(50,50,100,60);
+
+	</script>
+</body>
+</html>

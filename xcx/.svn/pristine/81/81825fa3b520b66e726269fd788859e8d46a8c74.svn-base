@@ -1,0 +1,56 @@
+<view class="wrap">
+    <view class="" style="background:#ffffff;padding-bottom:20rpx;margin-top:26rpx;">
+        <view class="title">1.致电知行合逸电话客服</view>
+        <view class="phone flex-wrp">
+            <view class="phone_number">400-084-2195</view>
+            <view class="call flex-wrp" catchtap="call">
+                <view class="classname"></view>
+                <view class="">拨打电话</view>
+            </view>
+        </view>
+        <view class="" style="padding:20rpx 0;color:#888888;font-size:30rpx;text-align:center;">告知客服订单编号、服务项目等信息</view>
+        <view class="b_info">
+              <view class="flex-wrp">
+                  <view class="classname">订单编号：</view>
+                  <view class="classname">{{info_data.orderid}}</view>
+              </view>
+              <view class="flex-wrp">
+                  <view class="classname">支付金额：</view>
+                  <view class="classname">￥{{info_data.payprice}}</view>
+              </view>
+              <view class="flex-wrp">
+                  <view class="classname">套餐选择：</view>
+                  <view class="classname">{{info_data.meals}}</view>
+              </view>
+              <view class="flex-wrp">
+                  <view class="classname">报名赛事：</view>
+                  <view class="classname">￥{{info_data.m_name}}</view>
+              </view>
+        </view>
+    </view>
+    <view class="" style="background:#ffffff;margin-top:26rpx;">
+        <view class="title">2.双方达成一致后，需要您付款</view>
+        <view class="bank flex-wrp">
+            <view class="bank_img"></view>
+            <view class="bank_info">
+                <view class="" style="font-size:30rpx;color:#000000;">转账到银行账户</view>
+                <view class="classname">户名：北京知行合逸文化传播有限公司</view>
+                <view class="classname">开户行：招商银行北京大运村支行</view>
+                <view class="classname">帐号：1109 1011 5810 803</view>
+                <view class="classname">金额：￥123</view>
+            </view>
+        </view>
+    </view>
+    <view class="classname" style="background:#ffffff;margin-top:26rpx;">
+        <view class="title">3.付款成功后，再次致电客服</view>
+        <view class="phone flex-wrp">
+            <view class="phone_number">400-084-2195</view>
+            <view class="call flex-wrp" catchtap="call">
+                <view class="classname"></view>
+                <view class="">拨打电话</view>
+            </view>
+        </view>
+        <view class="" style="padding: 20rpx 30rpx;font-size:28rpx;color:#888888;text-align:center;">客服会将您的订单修改为支付成功状态</view>
+    </view>
+    <view class="classname" style="padding:44rpx 0;text-align:center;font-size:28rpx;color:#888888;">感谢您的参与，祝您生活愉快</view>
+</view>

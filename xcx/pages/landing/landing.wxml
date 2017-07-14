@@ -1,0 +1,17 @@
+<!--landing.wxml-->
+<view class="wrap">
+      <view class="flex-wrp phone" style="border-bottom:2rpx solid #e8e8e8;">
+          <input class="" placeholder="手机号" placeholder-class="placeH" bindinput="check" />
+          <view class="play_test" style="{{lck?'':'background:#dbdbdb;'}}" catchtap="play_test">{{test}}</view>
+      </view>
+      <view class="phone">
+          <input bindinput="check_num" placeholder="验证码" placeholder-class="placeH" />
+      </view>
+      <view class="warn">
+          <text>温馨提示：未注册过知行合逸账号的手机号，登录时将自动注册，且代表您已同意</text>
+          <navigator style="display:inline-block;color:#0398ff;" url="/pages/agreement/agreement">《用户注册协议》</navigator>
+      </view>
+      <view class="landing_btn">
+          <view class="classname" catchtap="landing_btn">登录</view>
+      </view>
+</view>

@@ -1,0 +1,328 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="wrap">
+    <view class="banner">
+        <swiper style="height:350rpx;" autoplay="true" circular="true" bindchange="banner">
+            <block wx:for="{{image_src}}">
+                <swiper-item>
+                    <view class="classname">
+                        <image mode="aspectFill"  src="{{item}}" style="width:100%;height:350rpx;" class="slide-image"/>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="tag flex-wrp" style="{{m_auth[0]=='rz_log'?'bottom:96rpx;':''}}">
+            <view wx:for="{{m_auth}}" class="{{item}}"></view>
+        </view>
+        <view class="title flex-wrp">
+            <view class="title_img" wx:if="{{info.m_ptype=='海外'}}">
+                <image mode="scaleToFill" src="{{info.m_icon}}"></image>
+            </view>
+            <view class="title_text">
+                <view class="{{info.m_ptype=='海外'?'china':'china2'}}">
+                    <text class="">{{info.m_name}}</text>
+                </view>
+                <view class="eng" wx:if="{{info.m_ptype=='海外'}}">
+                    <text class="">{{info.m_enName}}</text>
+                </view>
+            </view>
+            <view class="image_percent">
+                <view class="part">{{current}}</view>
+                <view class="line_dip"></view>
+                <view class="all">{{image_src.length}}</view>
+            </view>
+        </view>
+
+        <!--///////标签////-->
+        <view class="tag"></view>
+        <!--/////////-->
+    </view>
+    <view class="match_info flex-wrp">
+        <view class="match_type flex-wrp">
+            <image style="height: 40rpx;width: 32rpx;"mode="scaleToFill" src="/style/images/match_type.png"></image>
+            <view class="">{{info.m_mtypes_class}}</view>
+        </view>
+        <view class="match_location flex-wrp">
+            <image style="width:28rpx;height:40rpx;" src="/style/images/match_location.png"></image>
+            <scroll-view scroll-x="true" style="width:354rpx;height:109rpx;line-height:109rpx;">
+                <view  style="white-space: nowrap;">
+                    <view style="display:inline-block;">{{info.m_country}}--{{info.m_city}}--{{info.m_area}}</view>
+                    <view style="width:20rpx;background:red;opacity:0;display:inline-block;"></view>
+                </view>
+            </scroll-view>
+            <view class="mask_match_location"></view>
+        </view>
+    </view>
+    <view class="match_time flex-wrp">
+        <view class="start_time">
+            <view class="start_time_image {{time_state==0?'blue_start_image':''}}"></view>
+            <view class=" start_time_text" style="{{time_state==0?'color:#0398ff;':''}}">开始报名</view>
+            <view class="start_day" style="{{time_state==0?'color:#0398ff;':''}}">{{show_start}}</view>
+        </view>
+        <image class="match_time_image" mode="aspectFit" src="/style/images/match_time.png"></image>
+        <view class="start_time">
+            <view class="stop_time_image {{time_state==1?'blue_stop_image':''}}"></view>
+            <view class=" start_time_text" style="{{time_state==1?'color:#0398ff;':''}}">报名截止</view>
+            <view class="start_day" style="{{time_state==1?'color:#0398ff;':''}}">{{show_stop}}</view>
+        </view>
+        <image class="match_time_image" mode="aspectFit" src="/style/images/match_time.png"></image>
+        <view class="start_time">
+            <view class="kaisai_time_image {{time_state==2?'blue_kaisai_image':''}}"></view>
+            <view class="start_time_text" style="{{time_state==2?'color:#0398ff;':''}}">比赛开始</view>
+            <view class="start_day" style="{{time_state==2?'color:#0398ff;':''}}">{{show_matchStart}}</view>
+        </view>
+    </view>
+<!--/////////////套餐和赛事介绍-->
+    <view class="content_title">
+        <view class="content_line_1 {{dis_or_meal ? '':'trs_form'}}"></view>
+        <view class="classname flex-wrp">
+            <view class="discript_title {{dis_or_meal ? '':'bottom_line'}}" catchtap="discript_title">赛事介绍</view>
+            <view style="height:84rpx;width:2rpx;background:#d9d9d9;"></view>
+            <view class="meal_title {{dis_or_meal ? 'bottom_line':''}}" catchtap="meal_title">套餐选择</view>
+        </view>
+    </view>
+    <!--///////////////////套餐部分//////////////-->
+      <!--/////出发城市//////-->
+      <radio-group bindchange="city_select" hidden="{{dis_or_meal||city_hidden?true:false}}">
+        <view class="city_box">
+            <view class="go_city_title">行程选择:</view>
+            <view class="city {{item.checked?'city_curr':''}}" wx:for="{{go_city}}">
+            {{item.value}}
+                <label class="city_select">
+                  <radio id="{{item.id}}" hidden="true" value="{{item.id}}" checked="{{item.checked}}" />
+                </label>
+            </view>
+        </view>
+      </radio-group>
+      <!--///////套餐详情-->
+      <view class="meal_box" hidden="{{dis_or_meal}}">
+          <view class="conmon" wx:for="{{meal_info}}" wx:for-index="l">
+              <view class="conmon_title flex-wrp" catchtap="meal_select" data-index="{{item.id}}" style="{{show[item.id]?'border-bottom: 2rpx dashed #efeef3;':''}} {{l==0?'border-top:none;':''}}">
+                  <view class="{{item.g_sell_out==1||item.g_stockleft<=0? 'conmon_title_tag_grey':'conmon_title_tag'}}">{{item.g_name=='赛事单独报名'?'赛':'旅'}}</view>
+                  <view class="conmon_title_text">
+                    <text>{{item.g_name}}</text>
+                  </view>
+                  <view class="conmon_title_price">
+                    <view class="conmon_title_price_top_grey" wx:if="{{item.g_sell_out==1||item.g_stockleft<=0}}">已售罄</view>
+                    <view class="conmon_title_price_top" wx:else>￥{{item.g_name=='赛事单独报名'?minprice:item.g_currprice}}起</view>
+                    <view class="conmon_title_price_bottom" style="{{item.g_sell_out==1||item.g_stockleft<=0? 'background:#bbbbbb;':''}}">查看详情</view>
+                  </view>
+                  <view class="conmon_title__icon {{show[item.id]?'more_trs':''}}"></view>
+              </view>
+              <view class="conmon_info" hidden="{{show[item.id]?false:true}}">
+                  <view class="room flex-wrp" wx:if="{{item.g_name=='赛事单独报名'?false:true}}">
+                      <view class="tip" wx:if="{{item.g_tips}}">
+                          <view class="tip_icon"></view>
+                          <view class="tip_text">{{item.g_tips}}</view>
+                          <view class=""></view>
+                      </view>
+                      <view class="is_room" wx:if="{{item.g_isroom}}">{{item.g_room}}</view>
+                      <view class="room_price flex-wrp" style="margin-right:20rpx;">
+                          <view class="" style="font-size:;">￥</view>
+                          <view class="">{{item.g_currprice}}</view>
+                          <view class="">元</view>
+                      </view>
+                      <view style="{{item.g_currprice>=item.g_price?'':'text-align: left;padding-left:10rpx;text-decoration: line-through;color: #999999;font-size:24rpx;line-height:52rpx;'}}">{{item.g_currprice>=item.g_price?'':item.g_price}}</view>
+                  </view>
+                  <view class="room_explan" wx:if="{{item.g_name=='赛事单独报名'?false:true}}">
+                      <view class="classname">不含赛程名额，购买时还需选择赛程</view>
+                      <view class="classname">该赛事赛程价格如下</view>
+                  </view>
+                  <view class="conmon_match_course flex-wrp">
+                        <view style="color: #3E3E3E;font-weight: bold;" class="conmon_course">赛程</view>
+                        <view class="course_line"></view>
+                        <view style="color: #3E3E3E;font-weight: bold;" class="conmon_course">报名费</view>
+                  </view>
+                  <view class="conmon_match_course flex-wrp" wx:for="{{meal_course_data}}" wx:for-item="c" wx:if="{{c.g_name!='观赛'||c.g_currprice>0? true:false}}">
+                        <view class="conmon_course flex-wrp">
+                            <view class="tip" style="margin-right:0;margin-top:10rpx;" wx:if="{{c.g_tips!=''?true:false}}">
+                                <view class="tip_icon"></view>
+                                <view class="tip_text">{{c.g_tips}}</view>
+                                <view class=""></view>
+                            </view>
+                            <view class="classname" style="flex:1;">{{c.g_name}}</view>
+                        </view>
+                        <view class="course_line"></view>
+                        <view class="conmon_course flex-wrp">
+                            <view style="flex:1;{{c.g_price>c.g_currprice && c.g_stockleft>0? 'text-align: right;padding-right:10rpx;':''}}" class="">{{c.g_stockleft>0? '￥'+c.g_currprice+'元':'已报满'}}</view>
+                            <view wx:if="{{c.g_price>c.g_currprice && c.g_stockleft>0? true:false}}" style="flex:1;{{c.g_price>c.g_currprice? 'text-align: left;padding-left:10rpx;text-decoration: line-through;color: #999999;': ''}}" class="">￥{{c.g_price}}</view>
+                        </view>
+                  </view>
+                      <view style="font-size:28rpx;line-height:56rpx;color:#3e3e3e;margin-top:18rpx;" wx:for="{{replyTemArray}}" wx:key-for="index" wx:if="{{index == l}}">
+                          <template is="wxParse" data="{{wxParseData:replyTemArray[l]}}"/>
+                      </view>
+                  <view wx:if="{{priceExplan[l]!=''}}" class="price_explan">
+                      <view class="price_explan_img"></view>
+                      <view style="font-size:28rpx;line-height:56rpx;color:#3e3e3e;margin-top:18rpx;" wx:for="{{priceArray}}" wx:key-for="index" wx:if="{{index == l}}">
+                          <template is="wxParse" data="{{wxParseData:priceArray[l]}}"/>
+                      </view>
+                  </view>
+                  <!--//////////////////////参考行程/////////////-->
+                  <view hidden="{{!have_trip[l]}}" class="reference_march flex-wrp">
+                      <view class="">参考行程</view>
+                      <view class="">点击查看详情</view>
+                      <view class=""></view>
+                  </view>
+                  <!--/////////////////////重要提示/////////////////////-->
+                  <view catchtap="notice" data-notice="{{l}}" class="reference_march flex-wrp">
+                      <view class="">重要提示</view>
+                      <view class="">点击查看详情</view>
+                      <view class=""></view>
+                  </view>             
+<!--///////////////////////////end////////////////-->
+                      <view class="notice_mask" data-notice="{{l}}" hidden="{{!notice_hid[l]}}" style="font-size:28rpx;line-height:56rpx;color:#3e3e3e;" wx:for="{{noticeArray}}" wx:key-for="index" wx:if="{{index == l}}">
+                          <view class="notice">
+                              <view class="notice_header">
+                                  <view class="notice_line"></view>
+                                  <view class="notice_text">重要提示</view>
+                                  <view data-notice="{{l}}" catchtap="notice_close" class="notice_close"></view>
+                              </view>
+                              <scroll-view class="" style="height:1090rpx;;" scroll-y="true">
+                                  <template is="wxParse" data="{{wxParseData:noticeArray[l]}}"/>  
+                              </scroll-view>
+                          </view>
+                      </view>
+              </view>
+          </view>
+          <!--///////优质服务//////-->
+          <view class="conmon" wx:if="{{service==true?false:true}}">
+              <view class="conmon_title flex-wrp" catchtap="clk_service">
+                  <view class="{{item.g_sell_out==1||item.g_stockleft<=0? 'conmon_title_tag_grey':'conmon_title_tag'}}">附</view>
+                  <view class="conmon_title_text">
+                    <text>赛事优质服务（选购）</text>
+                  </view>
+                  <view class="conmon_title_price">
+                    <view class="conmon_title_price_top">{{service_data.length}}项</view>
+                    <view class="conmon_title_price_bottom">查看详情</view>
+                  </view>
+                  <view class="conmon_title__icon"></view>
+              </view>
+              <view class="conmon_info" hidden="{{service_hidden?false:true}}">
+                    <view style="margin-top: 18rpx;" wx:for="{{service_data}}">
+                        <view class="room flex-wrp">
+                            <view class="tip" wx:if="{{item.g_tips}}">
+                                <view class="tip_icon"></view>
+                                <view class="tip_text">{{item.g_tips}}</view>
+                                <view class=""></view>
+                            </view>
+                            <view class="is_room">{{item.g_name}}</view>
+                            <view class="room_price flex-wrp" style="margin-right:24rpx;">
+                                <view class="" style="font-size:;">￥</view>
+                                <view class="">{{item.g_currprice}}</view>
+                                <view class="">元</view>
+                            </view>
+                      <view style="text-align: left;padding-left:10rpx;text-decoration: line-through;color: #999999;font-size:24rpx;line-height:52rpx;">{{item.g_price}}</view>
+                        </view>
+                        <text></text>
+                    </view>
+              </view>
+          </view>
+           <!--///////优质服务//////-->
+      </view>
+    <!--////////////////////////////赛事介绍////////////////-->
+    <view class="introduce" hidden="{{!dis_or_meal}}">
+    <!--//////////////////赛事特色////////////////////-->
+        <view class="introduce_box" wx:if="{{info.m_special!=''}}" catchtap="introduce">
+            <view class="introduce_conmon m_special"></view>
+            <view class="wxParse" style="background: #FFFFFF;color: #3e3e3e;font-size: 28rpx;line-height: 56rpx;overflow:hidden;{{more.m_special? 'height: auto;':'max-height: 600rpx;'}}">
+                <template is="wxParse" data="{{wxParseData:m_special.nodes}}"></template>
+            </view>
+            <view class="more flex-wrp" catchtap="more" data-type="m_special">
+                <view class="">{{more.m_special?'收起':'展开更多'}}</view>
+                <view class="{{more.m_special?'more_trs':''}}"></view>
+            </view>
+        </view>
+        <view class="introduce_box" wx:if="{{info.m_info!=''}}" catchtap="introduce">
+            <view class="introduce_conmon m_info"></view>
+            <view class="wxParse" style="background: #FFFFFF;color: #3e3e3e;font-size: 28rpx;line-height: 56rpx;overflow:hidden;{{more.m_info? 'height: auto;':'max-height: 600rpx;'}}">
+                <template is="wxParse" data="{{wxParseData:m_info.nodes}}"></template>
+            </view>
+            <view class="more flex-wrp" catchtap="more" data-type="m_info">
+                <view class="">{{more.m_info?'收起':'展开更多'}}</view>
+                <view class="{{more.m_info?'more_trs':''}}"></view>
+            </view>
+        </view>
+        <view class="introduce_box" wx:if="{{info.m_rules!=''}}" catchtap="introduce">
+            <view class="introduce_conmon m_rules"></view>
+            <view class="wxParse" style="background: #FFFFFF;color: #3e3e3e;font-size: 28rpx;line-height: 56rpx;overflow:hidden;{{more.m_rules? 'height: auto;':'max-height: 600rpx;'}}">
+                <template is="wxParse" data="{{wxParseData:m_rules.nodes}}"></template>
+            </view>
+            <view class="more flex-wrp" catchtap="more" data-type="m_rules">
+                <view class="">{{more.m_rules?'收起':'展开更多'}}</view>
+                <view class="{{more.m_rules?'more_trs':''}}"></view>
+            </view>
+        </view>
+        <view class="introduce_box" wx:if="{{info.m_route!=''}}" catchtap="introduce">
+            <view class="introduce_conmon m_route"></view>
+            <view class="wxParse" style="background: #FFFFFF;color: #3e3e3e;font-size: 28rpx;line-height: 56rpx;overflow:hidden;{{more.m_route? 'height: auto;':'max-height: 600rpx;'}}">
+                <template is="wxParse" data="{{wxParseData:m_route.nodes}}"></template>
+            </view>
+            <view class="more flex-wrp" catchtap="more" data-type="m_route">
+                <view class="">{{more.m_route?'收起':'展开更多'}}</view>
+                <view class="{{more.m_route?'more_trs':''}}"></view>
+            </view>
+        </view>
+    </view>
+    <!--////////////////////////////赛事介绍////////////////-->
+    <!--////////////////////////报名提醒///////////////////-->
+    <view class="attend_mask" hidden="{{attend_mask}}">
+        <view class="attend_content">
+            <view class="classname" style="padding: 48rpx 44rpx 0;">
+                <view class="attend_title">报名提醒</view>
+                <checkbox-group bindchange="attend_select">
+                    <label class="attend_select flex-wrp" wx:for="{{attend_warn}}" wx:for-index="k">
+                          <image style="width:24rpx;height:24rpx;" src="{{item.checked?'http://weixin.zx-tour.com/static/images/icon_13.png':'http://weixin.zx-tour.com/static/images/icon_14.png'}}"></image>
+                          <view style="margin-left:14rpx;" class="classname">{{item.value}}</view>
+                          <checkbox hidden="{{true}}" value="{{item.value}}" checked="{{item.checked}}" />
+                    </label>
+                    <!--<label class="attend_select">
+                          <view class="classname">名额紧张时短信提醒我</view>
+                          <checkbox hidden="{{true}}" value="value" checked="false" />
+                    </label>
+                    <label class="attend_select">
+                          <view class="classname">报名截止前一周短信提醒我</view>
+                          <checkbox hidden="{{true}}" value="value" checked="false" />
+                    </label>-->
+                </checkbox-group>
+            </view>
+            <view class="attend_btn flex-wrp">
+                  <view catchtap="attend_sure" class="">确定</view>
+                  <view catchtap="attend_concle" class="classname">取消</view>
+            </view>
+        </view>
+    </view>
+
+    
+    <!--///////////////////底部导航///////////////-->
+    <view class="footer flex-wrp">
+        <view catchtap="back_list" class="match_list">
+            <view class="match_list_image"></view>
+            <view class="footer_text">赛事列表</view>
+        </view>
+        <view class="remind" catchtap="remind">
+            <view class="match_remind_image"></view>
+            <view class="footer_text">报名提醒</view>
+        </view>
+        <view class="kefu">
+            <view class="match_kefu_image"></view>
+            <view class="footer_text">客服咨询</view>
+        </view>
+        <block wx:if="{{time_state==0?true:false}}">
+            <block wx:if="{{info.info.m_placesleft<=0}}">
+                <view class="btn" style="background:#cccccc;">名额已满</view>
+            </block>
+            <block wx:else>
+                <block wx:if="{{info.m_enterMode == 'remote'}}">
+                    <!--<navigator url="{{info.m_enterurl}}"><view class="btn">前往官网报名</view></navigator>  -->
+                </block>
+                <block wx:else>
+                    <navigator url="/pages/enroll/enroll?m_id={{info.id}}"><view class="btn">立即报名</view></navigator>  
+                </block>
+            </block>
+        </block>
+
+        <view wx:elif="{{time_state==2?true:false}}" class="btn" style="background:#cccccc;">比赛结束</view>
+        <view class="btn" wx:elif="{{time_state==3?true:false}}">敬请期待</view>
+        <view class="btn" wx:else style="background:#cccccc;">名额已满</view>
+    </view>
+</view>
+

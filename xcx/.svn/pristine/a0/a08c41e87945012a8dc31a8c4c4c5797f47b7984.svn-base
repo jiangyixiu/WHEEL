@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/enroll/enroll",
+    "pages/Matchinfo/Matchinfo",
+    "pages/landing/landing",
+    "pages/other/other",
+    "pages/payorder/payorder",
+    "pages/run/run",
+    "pages/agreement/agreement",
+    "pages/zx-index/zx-index",
+    "pages/logs/logs",
+    "pages/pay_agreement/pay_agreement"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

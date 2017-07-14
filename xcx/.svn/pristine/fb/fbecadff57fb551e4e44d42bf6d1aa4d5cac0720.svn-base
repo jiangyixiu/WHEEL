@@ -1,0 +1,94 @@
+.race_name{
+    width: 100%;
+    height: 54rpx;
+    line-height: 54rpx;
+    text-align: center;
+    font-size: 34rpx;
+    color: #3e3e3e;
+    font-weight: bold;
+    margin-top: 28rpx;
+}
+.runner_num_wrap{
+    width: 100%;
+    height: 44rpx;
+    position: relative;
+	margin:30rpx 0;
+}
+.back_line{
+    width: 80%;
+    height: 2rpx;
+    background: rgb(217, 217, 217);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto auto;
+}
+.runner_num{
+    width: 40%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto auto;
+    font-size: 32rpx;
+    color: #3e3e3e;
+    text-align: center;
+    line-height: 44rpx;
+    height: 44rpx;
+    font-weight: bold;
+}
+.show_msg{
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	width: 100%;
+	height: 84rpx;
+	line-height: 84rpx;
+	font-size: 28rpx;
+	color: #3e3e3e;
+	margin-top: 4rpx;
+}
+.show_name{
+	width: 224rpx;
+	text-align: center;
+	margin-right: 4rpx;
+	display: inline-block;
+	background: rgb(248,248,248);
+}
+.real_data{
+	width: 460rpx;
+	text-align: center;
+	display:inline-block;
+	background: rgb(248,248,248);
+}
+.img_wrap{
+	margin-top: 10rpx;
+	width: 45%;
+	height: 340rpx;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	margin-left:26rpx;
+
+}
+.img{
+	width: 330rpx;
+	height: 252rpx;
+	background: red;
+	display: inline-block
+}
+.img_name{
+	font-size: 28rpx;
+	color: #888888;
+	margin-top: 10rpx;
+}
+.go_back_btn{
+	background: #0398ff!important;
+	width: 90%;
+	height: 84rpx;
+	margin-top: 20rpx;
+	margin-bottom: 30rpx;
+}

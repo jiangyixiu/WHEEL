@@ -1,20 +1,22 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-import smtplib 
-import cStringIO
 import urllib,urllib2 
+import cStringIO
+import smtplib 
 import json
-from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 from email.header import Header
 from PIL import Image,ImageDraw,ImageFont
-from log import *
-import os
-import logging
+
 import threading
+import logging
+from log import *
+
 import time
+import os
 
 
 mail_host="smtp.exmail.qq.com"  #设置服务器
