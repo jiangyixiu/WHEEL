@@ -34,12 +34,10 @@ var writeOut = function (query, res) {
 
         fs.exists('public/poster/' + query.courseId + '/', function (exists) {
             if (!exists) {
-                console.log('课程ID目录 ===> 不存在')
+                console.log('课程目录不存在')
                 fs.mkdir('public/poster/' + query.courseId, function () {
-                    console.log('课程ID目录 ===> 创建成功')
+                    console.log('创建成功课程目录')
                 })
-            } else {
-                console.log('课程ID目录 ===> 存在')
             }
         })
 

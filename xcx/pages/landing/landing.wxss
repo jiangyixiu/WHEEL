@@ -1,9 +1,0 @@
-/* landing.wxss */
-.wrap{background: #f6f6f6;min-height: 100%;padding-top: 20rpx;font-family: '微软雅黑','Microsoft YaHei';}
-.phone{height: 90rpx;line-height: 90rpx;box-sizing: border-box;padding: 0 30rpx;background: #ffffff;}
-.phone input{flex: 1;height: 90rpx;line-height: 90rpx;font-size: 32rpx;color: #333333；}
-.placeH{color: #858585;font-size: 30rpx;}
-.play_test{width: 170rpx;height: 64rpx;font-size: 26rpx;line-height: 64rpx;color: #ffffff;background: #0398ff;text-align: center;border-radius: 4rpx;margin-top: 13rpx;}
-.warn{color: #b2b2b2;font-size: 24rpx;padding: 18rpx 30rpx;line-height: 36rpx;}
-.landing_btn{box-sizing: border-box;width: 100%;padding: 0 30rpx;margin-top: 20rpx;}
-.landing_btn view{text-align: center;color: #ffffff;height: 88rpx;line-height: 88rpx;font-size: 32rpx;background: #0398ff;border-radius: 4rpx;}

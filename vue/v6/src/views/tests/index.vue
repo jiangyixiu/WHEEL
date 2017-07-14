@@ -148,7 +148,6 @@
       height="100%" 
       x-webkit-airplay="true" 
       playsinline="true" 
-      poster="./views/tests/img/video_pic.png" 
       src="http://vkpakamai.video.gtimg.com/flv/2/247/z0397ng0jpk.mp4?vkey=740ECAE2BC62287F4D609A00289EDE7DFE8C6C32C01685E6652A15963EF2CB89845AE8A533184F35B9713DEF826457B3F2B8A32588BCF0F2465A77B17563B70F9E592F642D475016179C445A9689B1913E0410F38C9591CB&br=60&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=693d8c6cb74c6e6dcc6c340c039039e5">
     </video>
     <img class="videoPlay" @click='this.videoPlay' src="./img/playBtn.png"/>
@@ -399,10 +398,10 @@ export default {
   created () {
     this.useRem()
     this.scroll()
-    document.getElementById('videoElement').poster = require('./img/video_pic.png')
   },
   mounted () {
     this.userdevice()
+    document.getElementById('videoElement').poster = require('./img/video_pic.png')
   }
 }
 </script>

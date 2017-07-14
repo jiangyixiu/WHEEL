@@ -1,5 +1,0 @@
-/* pay_agreement.wxss */
-#agreementBox{background: #f6f6f6;font-size: 56rpx;font-family: '微软雅黑','Microsoft YaHei';}
-#agreementBox .weui_msg_title{text-align: center;/*margin-top: 21px;*/font-size: 1.428571rem;color: #000000;}
-#agreementBox .weui_msg_desc{padding: 26rpx 44rpx;line-height: 56rpx;font-size: 28rpx;color: #888888;}
-#agreementBox .weui_msg_desc span{color: #000000;}

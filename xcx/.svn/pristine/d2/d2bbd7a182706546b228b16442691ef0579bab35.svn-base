@@ -1,4 +1,0 @@
-/* agreement.wxss */
-	.wrap{width: 100%;box-sizing: border-box;overflow-y: scroll;padding-bottom: 60rpb;font-size: 24rpx;background: #f6f6f6;}
-	.agreement_msg_title{font-weight: bold;font-size: 28rpx;}
-	.agreement_msg_content{text-align: justify;text-indent: 2em;line-height: 50rpx;font-size: 24rpx;}
