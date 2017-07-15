@@ -34,15 +34,15 @@ var hotMiddleware = require('webpack-hot-middleware')(compiler, {
   log: () => {}
 })
 // force page reload when html-webpack-plugin template changes
-compiler.plugin('compilation', function (compilation) {
-  compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
+compiler.plugin('compilation', function(compilation) {
+  compilation.plugin('html-webpack-plugin-after-emit', function(data, cb) {
     hotMiddleware.publish({ action: 'reload' })
     cb()
   })
 })
 
 // proxy api requests
-Object.keys(proxyTable).forEach(function (context) {
+Object.keys(proxyTable).forEach(function(context) {
   var options = proxyTable[context]
   if (typeof options === 'string') {
     options = { target: options }
@@ -53,14 +53,14 @@ Object.keys(proxyTable).forEach(function (context) {
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
 
-/*app.use(require('connect-history-api-fallback')({
+/* app.use(require('connect-history-api-fallback')({
   rewrites: [
     { from: /\/center\/index$/, to: '/views/center.html'},
     { from: /\/center\/collect$/, to: '/views/center.html'},
     { from: /\/destination$/, to: '/views/destination.html'},
     { from: /\/destination\/search\/\*!/, to: '/views/destination.html'}
   ]
-}))*/
+})) */
 
 // serve webpack bundle output
 app.use(devMiddleware)
@@ -70,10 +70,14 @@ app.use(devMiddleware)
 app.use(hotMiddleware)
 
 // serve pure static assets
-var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+var staticPath = path.posix.join(
+  config.dev.assetsPublicPath,
+  config.dev.assetsSubDirectory
+)
 app.use(staticPath, express.static('./static'))
 
-var uri = 'http://localhost:' + port + '/' + config.moduleName + '/home.html'
+var uri =
+  'http://localhost:' + port + '/' + config.moduleName + '/today_news.html'
 
 var _resolve
 var readyPromise = new Promise(resolve => {
