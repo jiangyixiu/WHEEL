@@ -140,7 +140,7 @@ function saveCompletion(employeeId, courseId, code, poster_url) {
             body += data;
         }).on('end', function () {
             var content = JSON.parse(body);//获取到网页内容
-            console.log(content)
+            console.log('上传成功',content)
         });
     }).on('error', function (e) {
         console.log("error: " + e.message);

@@ -25,109 +25,111 @@ var isValid = function (reqPath) {
 
 // 生成邀请卡，输出数据
 var writeOut = function (query, res) {
-    query.code = parseInt(Math.random() * 100000000 + 10000);
-    console.log(query.code)
-    // 生成邀请卡
-    app.getPoster(query);
-    // 邀请卡添加username
-    app.getPoster.prototype.poster = function () {
-
-        fs.exists('public/poster/' + query.courseId + '/', function (exists) {
-            if (!exists) {
-                console.log('课程目录不存在')
-                fs.mkdir('public/poster/' + query.courseId, function () {
-                    console.log('创建成功课程目录')
-                })
+    fs.exists('public/poster/' + query.courseId + '/', function (exists) {
+        if (!exists) {
+            console.log('课程目录不存在')
+            fs.mkdir('public/poster/' + query.courseId, function () {
+                console.log('创建成功课程目录')
+            })
+        }
+    })
+    fs.exists('public/poster/' + query.courseId + '/' + query.key + '.png', function (exists) {
+        if (!exists) {
+            query.code = parseInt(Math.random() * 100000000 + 10000);
+            // var rectangle_base_x = 555 - (query.nickname.length*30);
+            if (query.nickname.length <= '5') {
+                var rectangle_base_x = 417;
+                var rectangle_base_x_ = 417 + 240;
+            } else if (query.nickname.length < '10') {
+                var rectangle_base_x = 334;
+                var rectangle_base_x_ = 334 + 420;
+            } else if (query.nickname.length < '15') {
+                var rectangle_base_x = 307;
+                var rectangle_base_x_ = 307 + 470;
+            } else {
+                var rectangle_base_x = 267;
+                var rectangle_base_x_ = 267 + 550;
             }
-        })
+            var rectangle_base_y = 713;
+            var circle_base_x = 541;
+            var circle_base_y = 559;
+            console.log(query.nickname.length)
 
-        fs.exists('public/poster/' + query.courseId + '/' + query.key + '.png', function (exists) {
-            if (!exists) {
-                // var rectangle_base_x = 555 - (query.nickname.length*30);
-                if (query.nickname.length <= '5') {
-                    var rectangle_base_x = 417;
-                    var rectangle_base_x_ = 417 + 240;
-                } else if (query.nickname.length < '10') {
-                    var rectangle_base_x = 337;
-                    var rectangle_base_x_ = 337 + 420;
-                } else if (query.nickname.length < '15') {
-                    var rectangle_base_x = 307;
-                    var rectangle_base_x_ = 307 + 470;
-                }
-                var rectangle_base_y = 713;
-                var circle_base_x = 541;
-                var circle_base_y = 559;
-                console.log(query.nickname.length)
+            var lenth = parseInt(Math.random() * 5000 + 10000);
 
+            console.log(query.code)
+            // 生成邀请卡
+            app.getPoster(query);
+            // 邀请卡添加username
+            app.getPoster.prototype.poster = function () {
+                // var data = {
+                //     employeeId: query.key,
+                //     catalogId: '71'
+                // };
 
-                var data = {
-                    employeeId: query.key,
-                    catalogId: '71'
-                };
+                // var qHref = "http://sslapi.chazuomba.com/Web/getCommentByEmployee?employeeId=" + query.key + '&catalogId=71';//设置被查询的目标网址
+                // var req = http.get(qHref, function (res) {
+                //     var pageData = "";
+                //     res.setEncoding('utf8');
+                //     res.on('error', function (errget) {
+                //         //出错处理
+                //     });
+                //     res.on('data', function (chunk) {
+                //         pageData += chunk;
+                //     });
+                //     console.log(pageData)
+                //     res.on('end', function () {
+                //         var content = JSON.parse(pageData);//获取到网页内容
 
-                var qHref = "http://sslapi.chazuomba.com/Web/getCommentByEmployee?employeeId=" + query.key + '&catalogId=71';//设置被查询的目标网址
-                var req = http.get(qHref, function (res) {
-                    var pageData = "";
-                    res.setEncoding('utf8');
-                    res.on('error', function (errget) {
-                        //出错处理
-                    });
-                    res.on('data', function (chunk) {
-                        pageData += chunk;
-                    });
-                    console.log(pageData)
-                    res.on('end', function () {
-                        var content = JSON.parse(pageData);//获取到网页内容
+                //         console.log(content.data)
+                //         var lenth = content.data.lenth;
+                //         // var count = content.data.count;
 
-                        console.log(content.data)
-                        var lenth = content.data.lenth;
-                        // var count = content.data.count;
-                        var lenth = parseInt(Math.random()*5000+10000);
-
-                        gm('public/poster/output' + query.key + '.jpg')
-                            .fill('#FFFAE2')
-                            .font('public/commons/font/msyh.ttf', 30)
-                            .drawText(0, -213, query.nickname, 'center')
-                            .font('public/commons/font/PingFang.ttc', 34)
-                            .fill('#f2c852')
-                            .drawText(242, 90, lenth, 'center')
-                            // .drawText(-15, 162, count, 'center')
-                            .fill("#ffffff00")
-                            // .stroke("#283451", 10)
-                            .stroke("#f2c852", 3)
-                            // .drawCircle(circle_base_x, circle_base_y, circle_base_x + 70, circle_base_y + 70)
-                            .stroke("#f2c852", 2)
-                            .drawRectangle(rectangle_base_x, rectangle_base_y, rectangle_base_x_, rectangle_base_y + 70, 36)
-                            .stroke()
-                            .fill('#ffffff')
-                            .font('public/commons/font/PingFang.ttc', 32)
-                            .drawText(0, 890, 'NO: NM17-' + query.code, 'center')
-                            .write('public/poster/' + query.courseId + '/' + query.key + ".png", function (err) {
-                                if (!err) {
-                                    console.log('邀请卡 ===> 创建成功：' + this.outname);
-                                    // fs.createReadStream(this.outname).pipe(res);   // 输出数据
-                                    console.log('======= 返回邀请卡 ======')
-                                    app.getPoster.prototype.upload(query.courseId, query.key, query.code);
-                                }
-                                else
-                                    console.log(err)
-                            });
-
+                gm('public/poster/output' + query.key + '.jpg')
+                    .fill('#FFFAE2')
+                    .font('public/commons/font/msyh.ttf', 30)
+                    .drawText(0, -213, query.nickname, 'center')
+                    .font('public/commons/font/PingFang.ttc', 34)
+                    .fill('#f2c852')
+                    .drawText(242, 90, lenth, 'center')
+                    .fill("#ffffff00")
+                    // .stroke("#283451", 10)
+                    .stroke("#f2c852", 3)
+                    .drawCircle(circle_base_x, circle_base_y, circle_base_x + 70, circle_base_y + 70)
+                    .stroke("#f2c852", 2)
+                    .drawRectangle(rectangle_base_x, rectangle_base_y, rectangle_base_x_, rectangle_base_y + 70, 36)
+                    .stroke()
+                    .fill('#ffffff')
+                    .font('public/commons/font/PingFang.ttc', 32)
+                    .drawText(0, 890, 'NO: NM17-' + query.code, 'center')
+                    .write('public/poster/' + query.courseId + '/' + query.key + ".png", function (err) {
+                        if (!err) {
+                            console.log('邀请卡 ===> 创建成功：' + this.outname);
+                            // fs.createReadStream(this.outname).pipe(res);   // 输出数据
+                            console.log('======= 返回邀请卡 ======')
+                            app.getPoster.prototype.upload(query.courseId, query.key, query.code);
+                        }
+                        else
+                            console.log(err)
                     });
 
-                });
+                //         });
+
+                //     });
 
             }
-            else
-                // fs.createReadStream('public/poster/' + query.courseId + '/' + query.key + '.png').pipe(res);
+            // else
+            // fs.createReadStream('public/poster/' + query.courseId + '/' + query.key + '.png').pipe(res);
 
-            console.log('=======================================>返回邀请卡')
-            console.log(exists ? "邀请卡 ===> 存在" : "邀请卡 ===> 不存在");
-        })
+            // console.log('=======================================>返回邀请卡')
+            // console.log(exists ? "邀请卡 ===> 存在" : "邀请卡 ===> 不存在");
 
 
-    }
 
+        } else {
+            console.log('已存在' + query.key);
+        }
+    })
     res.write('ok');
     res.end();
 }

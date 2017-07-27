@@ -4,11 +4,11 @@ function printIt() {
   console.log(c)
 }
 
-function plus() {
+function plus(callback) {
   setTimeout(function () {
     c++
+    callback()
   }, 1000)
 }
 
-plus()
-printIt()
+plus(printIt)

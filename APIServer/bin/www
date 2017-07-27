@@ -1,0 +1,90 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.模块依赖关系
+ */
+
+var app = require('../app');
+var debug = require('debug')('apiserver:server');
+var http = require('http');
+
+/**
+ * Get port from environment and store in Express.  从环境获取港口并存储在快递
+ */
+
+var port = normalizePort(process.env.PORT || '9099');
+app.set('port', port);
+
+/**
+ * Create HTTP server.创建HTTP服务器。
+ */
+
+var server = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.  在提供的端口上侦听所有网络接口。
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.  将端口规范化为数字，字符串或false。
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe 命名管道
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number  端口号
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.  HTTP服务器事件侦听器“错误”事件。
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages  用友好的信息处理特定的听错误
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event. HTTP服务器“侦听”事件的事件侦听器。
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}

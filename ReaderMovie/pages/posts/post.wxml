@@ -1,0 +1,28 @@
+<view class="container">
+  <swiper interval="5000" indicator-dots autoplay circular>
+    <swiper-item>
+      <image src="/images/banner-1.jpeg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner-2.jpeg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner-3.jpeg"></image>
+    </swiper-item>
+  </swiper>
+  <view class="post-container">
+    <view class="">
+      <image src="/images/timg.jpeg"></image>
+      <text>Nov: 25 2017</text>
+      <text>正是虾肥蟹壮时</text>
+      <image src="/images/iqiyi.png"></image>
+      <text>菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥菊黄蟹肥</text>
+      <view>
+        <image src="/images/icon/chat.png"></image>
+        <text>92</text>
+        <image src="/images/icon/view.png"></image>
+        <text>65</text>
+      </view>
+    </view>
+  </view>
+</view>

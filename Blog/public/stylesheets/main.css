@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header .top-banner {
+  margin-bottom: 20px;
+  height: .597222rem;
+  text-align: center;
+  background: #00a0d8;
+}
+header .logo {
+  position: absolute;
+  width: 1.527778rem;
+  height: .729167rem;
+  left: .166667rem;
+  top: .381944rem;
+  background: transparent no-repeat left center;
+  z-index: 100;
+}
+.title-line {
+  width: 6.805556rem;
+  height: .194444rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: .194444rem;
+}
+.title-line .tit {
+  width: .833333rem;
+  height: .326389rem;
+  margin: 0 auto;
+  display: block;
+  font-size: .277778rem;
+  background: #fff;
+  text-align: center;
+}
+.login-box {
+  position: relative;
+  width: 980px;
+  height: 325px;
+  margin: 0 auto;
+}
+.login-box .login-right {
+  float: right;
+  padding-right: 35px;
+}
+.login-box .login-right .input-box {
+  padding-top: 20px;
+}
+.login-box .login-right .item input {
+  width: 2.847222rem;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #aaa;
+  font-size: .097222rem;
+  padding: .069444rem;
+  height: .225rem;
+  vertical-align: middle;
+  border-radius: .027778rem;
+}
+.login-box .login-right .btn-login {
+  border: 1px solid #0381aa;
+  color: #fff;
+  background-color: #00a7de;
+}
+.login-box .login-right .btn {
+  margin-right: .2rem;
+  color: #555;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 184px;
+  height: .25rem;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+.login-box .login-right .btn-login,
+.login-box .login-right .btn-reg {
+  border: 1px solid #0381aa;
+  color: #fff;
+  background-color: #00a7de;
+}
+.login-box .login-right .btn-login:hover {
+  background: #00bee7;
+}
+.login-box .login-right .line input {
+  width: 388px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #aaa;
+  font-size: 14px;
+  padding: 10px;
+  height: 38px;
+  vertical-align: middle;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#login {
+  display: none;
+}
