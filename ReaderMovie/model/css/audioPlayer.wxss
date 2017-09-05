@@ -1,0 +1,45 @@
+.audioPlayerContainer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.audioPlayer {
+  height: 100rpx;
+  background-color: rgba(248, 248, 248, .9);
+  padding: 0 30rpx;
+}
+.audioName {
+  font-size: 28rpx;
+  color: #333333;
+  letter-spacing: 0.1rpx;
+  margin-bottom: 10rpx;
+  line-height: 1;
+}
+.audioSinger {
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0.09rpx;
+}
+.apController {
+  font-size: 60rpx;
+  margin-right: 20rpx;
+  color: #666666;
+}
+.apController.pause::after {
+  content: '\e610'
+}
+.apController.play::after {
+  content: '\e60f'
+}
+.audioListMenu {
+  font-size: 44rpx;
+  margin-left: 20rpx;
+  color: #999999;
+}
+/* .audioListMenu.menu::after {
+  content: '\e608'
+} */
+.audioListMenu.close::after {
+  content: '\e611'
+}

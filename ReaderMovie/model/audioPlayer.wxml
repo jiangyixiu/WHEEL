@@ -1,0 +1,25 @@
+<!--
+  **** 音频播放器
+  **** 使用页面：
+  **** 1. 选课页面列表
+  ****
+  **** 所需参数：
+  **** music 当前播放的背景音频
+  **** process 音频当前播放进度
+  **** play 音频播放状态 true播放，false暂停
+  **** hasBg 是否有音频正在播放 true有，false没有
+  **** showPlayer 是否显示播放器 true显示，false不显示
+-->
+<template name="audioPlayer">  
+  <view class="audioPlayerContainer thinBorderb" wx:if="{{hasBg && showPlayer}}">
+    <progress class="audioPlayerProgress" percent="{{process}}" stroke-width="2" activeColor="#3573b3" backgroundColor="#f0f0f0" />
+    <view class="audioPlayer df dfaic">
+      <view class="apController iconfont {{play?'pause':'play'}}" bindtap="playPause"></view>
+      <view class="audioDetails df1">
+        <view class="audioName toellipsis">{{music.songname}}</view>
+        <view class="audioSinger">{{music.singername}}</view>
+      </view>
+      <!-- <view class="audioListMenu iconfont close" bindtap="hidePlayer"></view> -->
+    </view>
+  </view>
+</template>

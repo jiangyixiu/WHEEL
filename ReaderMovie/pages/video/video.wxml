@@ -1,0 +1,13 @@
+<!--video.wxml-->
+<view class="section tc">
+  <video id="myVideo" controls="{{false}}" src="http://ugcbsy.qq.com/flv/142/240/n035774eepn.m701.mp4?vkey=79E907A7101C41921D4F368A0575D937DBA36C5DDD5FC0A5774D1A0E1F617F4AD010C95DCB6986F55F4002FCDDD865EF07C451E91431F38E1D682E3E4D77757CAB96EEA464BFC1C6C26C099FC38CAE0A1319945D4BFEECBB223CFF2A8CF3CB2BCBCA667B94AD5749C4714579BD5DA9145E05453A83E580BA&br=29&platform=2&fmt=auto&level=0&sdtfrom=v3010&guid=693d8c6cb74c6e6dcc6c340c039039e5"></video>
+  <view class="btn-area">
+    <view class="iconfont {{isPlayPause==='1'?'icon-btn_miniplay_pause-':'icon-btn_miniplayer_play'}}"></view>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+    <button bindtap="playPause" data-name="{{isPlayPause}}">暂停/播放</button>
+    <button bindtap="playbackRate">设置倍速播放</button>
+    <button bindtap="requestFullScreen">进入全屏</button>
+    <button bindtap="exitFullScreen">退出全屏</button>
+  </view>
+</view>

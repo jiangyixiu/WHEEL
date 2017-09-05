@@ -1,56 +1,650 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
-  <link rel="stylesheet" href="/public/stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="/public/stylesheets/main.css">
+  <meta charset="utf-8" />
+  <title>哔哩哔哩动画DIY</title>
+  <link rel="stylesheet" type="text/css" href="/public/stylesheets/indexstyle.css" />
+  <link rel="icon" type="image/x-icon" href="/public/images/icon3.ico" />
+  <script src="/public/javascripts/jquery.min.js"></script>
+  <script src="/public/javascripts/index.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="top-banner"><img src="/public/images/rl_top.35edfde.png" alt=""></div>
-    <!--<div class="logo"><img src="/public/images/logo.png" alt=""></div>-->
-  </header>
-  <article>
-    <div class="title-line">
-      <span class="tit">登陆</span>
-    </div>
-    <div class="login-box clearfix">
-      <div class="login-right">
-        <div class="form-login">
-          <div class="input-box">
-            <ul class="wrap-r" id="login">
-              <li class="line"><span class="col-dark"></span><input placeholder="用户名" type="text"></li>
-              <li class="line"><span class="col-dark"></span><input placeholder="密码" type="text"></li>
-              <li class="line">
-                <a href="javasciprt:;" class="btn btn-login">登陆</a> 还没注册？
-                <a href="javascript:;">马上注册</a>
-              </li>
-            </ul>
-            <ul class="wrap-r" id="register">
-              <li class="line"><span class="col-dark"></span><input placeholder="昵称（例：哔哩哔哩）" name="username" type="text"></li>
-              <li class="line"><span class="col-dark"></span><input placeholder="密码（6-16个字符组成，区分大小写）" name="password" type="text"></li>
-              <li class="line"><span class="col-dark"></span><input placeholder="再次确认密码" name="repasswerd" type="text"></li>
-              <li class="line">
-                <span class="col-dark">
-                  <a href="javascript:;"  class="btn btn-reg" id="regSubmit">注册</a>
-                  </span>
-              </li>
-            </ul>
+  <div class="topBg"><a href="javascript:;"></a></div>
+  <div class="topNavBg"></div>
+  <div class="box">
+    <ul class="topNav">
+      <li class="Home"><i></i>
+        <a href="javascript:;">　主站</a>
+      </li>
+      <li class="huaYou">
+        <a href="javascript:;">画友</a>
+      </li>
+      <li class="YXZX">
+        <a href="javascript:;">游戏中心</a>
+        <div class="box">
+          <div class="left">
+            <div class="photo"></div>
+            <div class="downBox">
+              <a href="javascript:;" class="down">
+                    				<img src="/public/images/759bb8a216cb37363d81e2f46c7fa677.png" />
+                    			</a>
+              <a href="javascript:;" class="down">
+                    				<img src="/public/images/2f3c2d8ccb871d2e43f5c6e7aa6692b0.png" />
+                    			</a>
+              <a href="javascript:;" class="down">
+                    				<img src="/public/images/f8bca63ccae94e6be6dec1dd6bb74ebf.png" />
+                    			</a>
+            </div>
+          </div>
+          <div class="right">
+            <a href="javascript:;" class="_right">游戏论坛</a>
+            <div class="_box">
+              <a href="javascript:;">
+                    				<img src="/public/images/7c8383b99150862afe2d6f3d75dc18e2.png"/>
+                    				<span>战舞幻想曲</span>
+                    			</a>
+              <a href="javascript:;">                    				
+                    				<img src="/public/images/5aadc65c786a25f4976e4a722831d3d6.png"/>
+                    				<span>战舞幻想曲</span>
+                    			</a>
+              <a href="javascript:;">                    				
+                    				<img src="/public/images/fc426c1436c9bdf83c4bafc744567085.png"/>
+                    				<span>战舞幻想曲</span>
+                    			</a>
+            </div>
           </div>
         </div>
-      </div>
+      </li>
+      <li class="zhiBo">
+        <a href="javascript:;">直播</a>
+      </li>
+      <li class="zhouBian">
+        <a href="javascript:;">周边</a>
+      </li>
+      <li class="touGao">
+        <a href="javascript:;">投稿</a>
+      </li>
+    </ul>
+    <div class="topNavR">
+      {% if userInfo._id %}
+      <a href="javascript:;" class="bg">{{userInfo.username}}</a>
+      {% else %}
+      <a href="javascript:;" class="bg">登录</a>
+      <span></span>
+      <a href="javascript:;" class="bg">注册</a>
+      {% endif %}
+      <a href="javascript:;" class="Rred">投稿</a>
     </div>
+    <a href="javascript:;" class="logo"></a>
+    <!--↓↓↓搜索框-->
+    <ul class="GO">
+      <li class="L">
+        <a href="javascript:;">排行榜</a>
+      </li>
+      <li class="R">
+        <input type="text" value="你好，请问你听过彩虹小马吗?" id="GO" />
+      </li>
+      <a href="javascript:;" class="action"></a>
+    </ul>
+    <!--↑↑↑搜索框-->
+  </div>
+  <!--↓↓↓头部导航2-->
+  <div class="top2Nav_box">
+    <ul class="all">
+      <li class="zy">
+        <a href="javascript:;">
+          <div class="_num num1">　</div>
+          <span>主页</span>
+        </a>
+      </li>
+      <li class="dh">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>动画</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="fb">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>番播</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>野生技术协会</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
 
-  </article>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="yy">
+        <a href="javascript:;">
+          <div class="_num">32</div>
+          <span>音乐</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="wd">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>舞蹈</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="yx">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>游戏</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="kj">
+        <a href="javascript:;">
+          <div class="_num">999+</div>
+          <span>科技</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="yl">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>娱乐</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="gc">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>鬼畜</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dy">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>电影</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dsj">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>电视剧</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="ss">
+        <a href="javascript:;">
+          <div class="_num">332</div>
+          <span>时尚</span>
+        </a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>MD.3D</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>短片·手书·配合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>综合</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <li class="square">
+        <a href="javascript:;" class="title-a">
+						<span class="title">广场</span>
+					</a>
+        <ul class="h_num max">
+          <li class="box">
+            <ul>
+              <li>
+                <a href="javascript:;" class="icons1">
+										<span>MAD.AMV</span> 
+									</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="icons2">
+										<span>MD.3D</span> 
+									</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="icons3">
+										<span>短片·手书·配合</span> 
+									</a>
+              </li>
+              <li>
+                <a href="javascript:;" class="icons4">
+										<span>综合</span> 
+									</a>
+              </li>
+            </ul>
+          </li>
+          <li class="right"><img src="/public/images/oYYBAFaFDgyAZyE2AABHpHzMnHs000.jpg" /></li>
+        </ul>
+      </li>
+      <li class="square">
+        <a href="javascript:;" class="title-a">
+						<span class="title">直播</span>
+					</a>
+        <ul class="h_num">
+          <li>
+            <a href="javascript:;">
+								<span>MAD.AMV</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>萌宅推荐</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+          <li>
+            <a href="javascript:;">
+								<span>手机直播</span> 
+								<i class="i_right"></i>
+							</a>
+          </li>
+        </ul>
+      </li>
+      <div class="client">
+        <a href="javascript:;" class="photo"></a>
+        <a href="javascript:;" class="app_link"></a>
+        <div class="box">
+          <img src="/public/images/app-box.png" alt="" />
+          <a href="javascript:;" class="QR"></a>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="play">
+    <div class="left">
+      <ul class="roll" id="roll">
+        <li class="rollInner" id="rollInner">
+          <img src="/public/images/oYYBAFdLsG-ACCXgAADB-gDyi8o547.jpg" alt="" />
+          <img src="/public/images/oYYBAFdGiK6AFu7kAADYcS6VPSA913.jpg" alt="" />
+          <img src="/public/images/oYYBAFdHsA2AeHLfAAHEEB61CEQ372.jpg" alt="" />
+          <img src="/public/images/oYYBAFc8KAKAcMnbAAIJwj3Aamg702.jpg" alt="" />
+          <img src="/public/images/oYYBAFdINsiAPjV_AALYKwIL_8A175.jpg" alt="" />
+          <img src="/public/images/oYYBAFdJrVGAclNUAAGvTydV_A8445.jpg" alt="" />
+          <img src="/public/images/oYYBAFdLAAyAYHkdAAFjNi6Q_Gc764.jpg" alt="" />
+          <img src="/public/images/oYYBAFdLsG-ACCXgAADB-gDyi8o547.jpg" alt="" />
+        </li>
+      </ul>
+      <ul class="mate">
+        <li class="P" id="P">
+          <span class="yeMa"></span>
+          <span class="hover"></span>
+          <span class="hover"></span>
+          <span class="hover"></span>
+          <span class="hover"></span>
+          <span class="hover"></span>
+          <span class="hover"></span>
+        </li>
+        <li class="more">
+          <a href="javascript:;">这里的LoveLive！有点不一样！</a>
+          <a href="javascript:;" class="mor">更多></a>
+        </li>
+      </ul>
+    </div>
+    <ul class="right">
+      <li>
+
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </body>
-
-<script src="/public/javascripts/util.js"></script>
-<script src="/public/javascripts/jquery.min.js"></script>
-<script src="/public/javascripts/index.js"></script>
 
 </html>

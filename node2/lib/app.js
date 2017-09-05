@@ -116,6 +116,8 @@ function saveCompletion(employeeId, courseId, code, poster_url) {
         employeeId: employeeId,
         courseId: courseId,
         code: 'NM17_' + code,
+        type: 0,
+        catalogId: 0,
         imgAddress: poster_url
     };
     console.log(data)
@@ -124,7 +126,9 @@ function saveCompletion(employeeId, courseId, code, poster_url) {
     console.log(data)
     var opt = {
         host: 'www.chazuomba.com',
-        port: '8082',
+        // port: '8082',
+        // host: 'test.chazuomba.com',
+        // port: '8080',
         method: 'POST',
         path: '/iserver/app/saveCompletion',
         headers: {

@@ -1,0 +1,99 @@
+/* video.wxss */
+
+.icon-btn_miniplay_pause-::after{
+  content: '\e60f';
+  font-size: 60rpx;
+}
+.icon-btn_miniplayer_play::after{
+  content: '\e610';
+  font-size: 60rpx;
+}
+
+
+
+
+
+
+
+page {font-family: PingFangSC-Regular, "microsoft yahei";background-color: #fff;}
+
+/*清除默认样式*/
+image {margin: 0;padding: 0;vertical-align: middle;}
+
+/*flex样式*/
+.df {display: -webkit-box;display: -webkit-flex;display: flex;}
+.df1 {-webkit-box-flex: 1;flex: 1;overflow: hidden}
+.dfaic {-webkit-box-align: center;align-items: center;} /*垂直居中*/
+.dfaie {-webkit-box-align: end;align-items: flex-end;}
+.dfjce {-webkit-box-pack: end;justify-content: flex-end;} /*水平方向右对齐*/
+.dfdir {-webkit-box-orient: vertical;flex-direction: column;} /*垂直方向*/
+
+/*格式化wxParse样式*/
+.wxParse-br { height: 64rpx;}
+.wxParse-img {max-width: 100%;}
+.wxParse-inline, .wxParse-span{display: inline;}
+
+.iconfont{
+  font-family: iconfont!important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*文字一行溢出显示省略号*/
+.toellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*0.5px边框*/
+.thinBorder, .thinBorderb {
+  position: relative;
+}
+.thinBorder:after {
+  content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	border: 1px solid #E6ECF1;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  border-radius: 4rpx;
+}
+/*0.5px的底边线*/
+.thinBorderb::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #E6ECF1;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+/*tabbar添加虚拟边线*/
+.tabbarline {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #E6ECF1;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+/* 图标库 */
+@font-face {
+  font-family: 'iconfont';  /* project id 352215 */
+  src: url('//at.alicdn.com/t/font_352215_taeh1584k6ueg66r.eot');
+  src: url('//at.alicdn.com/t/font_352215_taeh1584k6ueg66r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_352215_taeh1584k6ueg66r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_352215_taeh1584k6ueg66r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_352215_taeh1584k6ueg66r.svg#iconfont') format('svg');
+}

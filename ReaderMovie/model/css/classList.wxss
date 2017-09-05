@@ -1,0 +1,83 @@
+.classList {
+  padding-left: 32rpx;
+}
+.classItem {
+  padding: 32rpx;
+  padding-left: 0;
+  font-size: 24rpx;
+}
+.cileft {
+  width: 160rpx;
+  height: 214rpx;
+  border: 1px solid rgba(44, 114, 188, 0.1);
+  box-sizing: border-box;
+  border-radius: 4rpx;
+  margin-right: 24rpx;
+  position: relative;
+}
+.cileft>image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4rpx;
+}
+.cileft:after {
+  content: "";
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 12rpx;
+  bottom: 12rpx;
+}
+.audio:after {
+  background: url(http://www.chazuomba.com/files/webApp/app/images/icon_earphonetag@2x.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.video:after {
+  background: url(http://www.chazuomba.com/files/webApp/app/images/icon_class_videostag@2x.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.free::before {
+  content: '免费';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4rpx 0 16rpx 0;
+  background-color: #F7A90C;
+  min-width: 66rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #FFFFFF;
+}
+.cirname {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #343d46;
+  line-height: 30rpx;
+  margin-top: 14rpx;
+}
+.cirmsg {
+  color: #666f78;
+  line-height: 1;
+  margin: 24rpx 0;
+}
+.teacherName {
+  margin-right: 24rpx;
+}
+.total {
+  color: #909ba8;
+  line-height: 1;
+  margin-bottom: 32rpx;
+}
+.listenCount {
+  color: #909ba8;
+}
+.price {
+  font-size: 28rpx;
+  color: #ff8b00;
+  line-height: 1;
+}
+.classItem.thinBorderb:last-child::after {
+  border-bottom-color: rgba(0, 0, 0, 0);
+}

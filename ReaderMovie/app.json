@@ -1,5 +1,6 @@
 {
-  "pages":[
+  "pages": [
+    "pages/video/video",
     "pages/posts/post",
     "pages/welcome/welcome"
   ],

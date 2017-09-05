@@ -46,17 +46,17 @@ header .logo {
   margin: 0 auto;
 }
 .login-box .login-right {
-  float: right;
-  padding-right: 35px;
+  margin: .2rem auto 0;
+  width: 2.847222rem;
 }
 .login-box .login-right .input-box {
   padding-top: 20px;
 }
 .login-box .login-right .item input {
-  width: 2.847222rem;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 2px;
-  color: #aaa;
+  color: #777;
   font-size: .097222rem;
   padding: .069444rem;
   height: .225rem;
@@ -87,21 +87,51 @@ header .logo {
   color: #fff;
   background-color: #00a7de;
 }
+.login-box .login-right .btn-reg {
+  width: 100%;
+}
 .login-box .login-right .btn-login:hover {
   background: #00bee7;
 }
+.login-box .login-right .line {
+  position: relative;
+}
 .login-box .login-right .line input {
-  width: 388px;
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 42px;
   border: 1px solid #ddd;
   border-radius: 2px;
-  color: #aaa;
-  font-size: 14px;
-  padding: 10px;
-  height: 38px;
+  outline: none;
+  font-size: 13px;
   vertical-align: middle;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
-#login {
+.login-box .login-right .line .col-dark {
+  position: absolute;
+  right: -112px;
+  top: 10px;
+  bottom: 0;
+  margin: auto;
+  color: #ff3030;
+}
+#register {
   display: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #aaa;
 }

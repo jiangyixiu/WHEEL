@@ -1,0 +1,33 @@
+<!--
+  **** 课程列表模板
+  **** 使用页面：
+  **** 1. 选课页面列表
+  **** 2. 列表页面
+  **** 参数：
+  **** 1. list 课程列表
+  **** 2. free 0 不免费，1 免费
+-->
+<template name="list1">  
+  <view class="classList">
+    <view class="classItem thinBorderb df" wx:for="{{list}}" wx:key="$index" data-id="{{item.target_id}}" data-flag="{{item.flag}}" data-free="{{item.isFree}}" bindtap="toClassDetails">
+      <view class="cileft {{item.type=='0'||item.type=='1'?'audio':(item.type=='2'||item.type=='3'?'video':'')}}">
+        <image src="{{item.target_img}}" class="cileftImg"></image>
+      </view>
+      <view class="ciright df1">
+        <view class="cirname toellipsis">{{item.target_name}}</view>
+        <view class="cirmsg df">
+          <view class="teacherName" wx:if="{{item.teacherName}}">{{item.teacherName}}</view>
+          <view class="subtitle toellipsis df1">{{item.subtitle || item.target_subtitle}}</view>
+        </view>
+        <view class="total" wx:if="{{item.courseUpdateStatus=='1'}}">更新至{{item.courseCount}}节</view>
+        <view class="total" wx:if="{{item.courseUpdateStatus=='2'}}">共{{item.courseCount}}节课</view>
+        <view class="df">
+          <view class="listenCount df1" wx:if="{{free=='1'}}">{{item.studyCount}}人已学</view>
+          <view class="listenCount df1" wx:if="{{free=='0'}}">{{item.buyCount}}人购买</view>
+          <view class="price" wx:if="{{item.price > 0}}">￥{{item.price}}/年</view>
+          <view class="price" wx:if="{{item.price == 0}}">免费</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

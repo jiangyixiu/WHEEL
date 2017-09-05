@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var swig = require('swig');
-
 var main = require('./routes/main');
+var home = require('./routes/home');
+var User = require('./models/User');
 var api = require('./routes/api');
 
 var app = express();
@@ -20,6 +21,7 @@ app.set('view engine', 'html');
 // 开发过程中取消模版缓存
 swig.setDefaults({ cache: false });
 
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -28,7 +30,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use('/public', express.static(path.join(__dirname, 'public'))); // 静态文件托管
 
+// 设置cookie
+app.use(function(req, res, next){
+ // 解析用户登录cookie
+  if (req.cookies) {
+    try {
+      req.userInfo = JSON.parse(req.cookies.userInfo);
+    } catch (error) { req.userInfo = {} }
+  }
+  next()
+})
 app.use('/', main);
+app.use('/home', home);
 app.use('/api', api);
 
 // catch 404 and forward to error handler
