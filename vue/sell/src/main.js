@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import axios from 'axios';
 import App from './App';
 import goods from './components/goods/goods.vue';
 import ratings from './components/ratings/ratings.vue';
@@ -9,7 +10,7 @@ import seller from './components/seller/seller.vue';
 
 import './common/style/index.less';
 
-Vue.use(VueRouter);
+Vue.use(VueRouter, axios);
 
 let router = new VueRouter({
   // mode: 'history',

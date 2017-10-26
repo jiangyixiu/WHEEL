@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "homepage": "https://github.com/jiangyixiu/WHEEL",
+  "authors": [
+    "jiangyixiu <2227006164@qq.com>"
+  ],
+  "description": "angularjs",
+  "main": "",
+  "keywords": [
+    "angular",
+    "webapp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}

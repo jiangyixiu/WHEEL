@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-header></v-header>
+    <v-header :seller="seller"></v-header>
     <!--导航-->
     <ul class="tab border-1px">
       <li class="tab-item">
@@ -18,11 +18,26 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 
   import header from './components/header/header.vue';
+  import axios from 'axios';
+  const ERR_OK = 0;
 
   export default {
+    data () {
+      return {
+        seller: {}
+      };
+    },
+    created () {
+      axios.get('/api/seller').then((response) => {
+        response = response.data;
+        if (response.errno === ERR_OK) {
+          this.seller = response.data;
+        }
+      });
+    },
     components: {
       'VHeader': header
     }
@@ -32,6 +47,7 @@
 
 <style lang="less" rel="stylesheet/less">
   @import "./common/style/index.less";
+
   .tab {
     display: flex;
     line-height: 40px;

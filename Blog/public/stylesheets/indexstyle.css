@@ -550,7 +550,15 @@ img{
 	background: #EEEEEE;
 }
 
-
+/* 退出 */
+.logout{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.username:hover .logout{
+	display: inline-block;
+}
 
 
 

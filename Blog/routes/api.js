@@ -104,4 +104,10 @@ router.post('/user/login', function (req, res, next) {
 
 });
 
+// 退出登录
+router.get('/user/logout', function (req, res, next) {
+  res.cookie('userInfo', null);
+  res.json(responseData);
+})
+
 module.exports = router;

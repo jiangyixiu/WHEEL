@@ -57,24 +57,22 @@
           </div>
         </div>
       </li>
-      <li class="zhiBo">
-        <a href="javascript:;">直播</a>
+      {%for category in categories%}
+      <li>
+        <a href="javascript:;">{{category.name}}</a>
       </li>
-      <li class="zhouBian">
-        <a href="javascript:;">周边</a>
-      </li>
-      <li class="touGao">
-        <a href="javascript:;">投稿</a>
-      </li>
+      {%endfor%}
     </ul>
     <div class="topNavR">
       {% if userInfo._id %}
-      <a href="javascript:;" class="bg">{{userInfo.username}}</a>
+      <a href="javascript:;" class="username bg">
+        <div>{{userInfo.username}}</div>
+        <div class="logout">退出</div>
+      </a>
       {% else %}
       <a href="javascript:;" class="bg">登录</a>
       <span></span>
-      <a href="javascript:;" class="bg">注册</a>
-      {% endif %}
+      <a href="javascript:;" class="bg">注册</a> {% endif %}
       <a href="javascript:;" class="Rred">投稿</a>
     </div>
     <a href="javascript:;" class="logo"></a>

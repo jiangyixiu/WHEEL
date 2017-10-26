@@ -110,4 +110,15 @@ $(function () {
     };
   } YeMa();
 
+  $('.logout').on('click', function () {
+    $.ajax({
+      url: '/api/user/logout',
+      success: function (res) {
+        if (!res.code) {
+          window.location.reload();
+        }
+      }
+    });
+  });
+
 });
