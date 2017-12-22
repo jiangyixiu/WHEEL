@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ articles.title }}</h1>
+<br>
+<h4>{{ articles.content }}</h4>
+<br><br>
+<a href="{% url 'blog:edit_page' articles.id %}">修改文章</a>
+</body>
+</html>

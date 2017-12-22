@@ -16,25 +16,25 @@ from log import *
 
 mail_host="smtp.exmail.qq.com"  #设置服务器
 mail_user="notice@ichazuo.cn"   #用户名
-mail_pass="Chazuo123"   		#口令 
+mail_pass="Chazuo1234"   		#口令 
 sender = 'notice@ichazuo.cn'	#发件人邮箱
 
 def ShowInfo():  
-	url = 'https://www.chazuomba.com/iserver/app/queryMemberListByCourseIdForEmail'
-	data = {'courseId': '1850'} 
-	data = urllib.urlencode(data) # 把参数进行编码 
-	url2 = urllib2.Request(url,data) # 用.Request来发送POST请求，指明请求目标是之前定义过的url，请求内容放在data里
-	response = urllib2.urlopen(url2)  # 用.urlopen打开上一步返回的结果，得到请求后的响应内容
-	apicontent = response.read()  #将响应内容用read()读取出来
-	emailList=json.loads(apicontent)
-	print len(emailList['data'])  #打印读取到的内容
+	#url = 'https://www.chazuomba.com/iserver/app/queryMemberListByCourseIdForEmail'
+	#data = {'courseId': '1850'} 
+	#data = urllib.urlencode(data) # 把参数进行编码 
+	#url2 = urllib2.Request(url,data) # 用.Request来发送POST请求，指明请求目标是之前定义过的url，请求内容放在data里
+	#response = urllib2.urlopen(url2)  # 用.urlopen打开上一步返回的结果，得到请求后的响应内容
+	#apicontent = response.read()  #将响应内容用read()读取出来
+	#emailList=json.loads(apicontent)
+	#print len(emailList['data'])  #打印读取到的内容
 
 
 
-	email_l = emailList['data']
+	#email_l = emailList['data']
 	# print email_l
 	
-	#email_l = [
+	email_l = [
 			 #{"name":"Sophia","email":"jiangxiaoyong@ichazuo.cn"},
 			 #{"name":"舒畅","email":"17744490130@163.com"},
 			 #{"name":"王舒畅","email":"15727378086m@sina.cn"},
@@ -42,8 +42,8 @@ def ShowInfo():
 			#{"name":"小咏","email":"jiangyixiu418@163.com"},
 			#{u'name': u'\u8bb8\u6587\u8273', u'email': u'222'},
 			#{u'name': u'\u5f90\u654f', u'email': u'2227006164@qq.com'},
-			#{u'name': u'Sophia', u'email': u'2227006164@qq.com'},
-		#]
+			{u'name': u'Sophia', u'email': u'2227006164@qq.com'},
+		]
 	
 	for i,x in enumerate(email_l):
 		try:

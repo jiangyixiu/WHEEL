@@ -1,0 +1,92 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Battery	../car.py	/^class Battery():$/;"	kind:class	line:32
+Car	../car.py	/^class Car(): $/;"	kind:class	line:1
+Car	../electric_car.py	/^class Car():$/;"	kind:class	line:1
+Car	../my_car.py	/^from car import Car$/;"	kind:namespace	line:1
+Dog	../dog.py	/^class Dog():$/;"	kind:class	line:1
+ElectricCar	../car.py	/^class ElectricCar(Car):$/;"	kind:class	line:51
+ElectricCar	../electric_car.py	/^class ElectricCar(Car): $/;"	kind:class	line:25
+NamesTestCase	../test_name_function.py	/^class NamesTestCase(unittest.TestCase):$/;"	kind:class	line:4
+OrderedDict	../favorite_languages.py	/^from collections import OrderedDict$/;"	kind:namespace	line:1
+__init__	../car.py	/^    def __init__(self, battery_size=60):$/;"	kind:member	line:34
+__init__	../car.py	/^    def __init__(self, make, model, year):$/;"	kind:member	line:3
+__init__	../car.py	/^def __init__(self, make, model, year):$/;"	kind:function	line:53
+__init__	../dog.py	/^    def __init__(self, name, age):$/;"	kind:member	line:4
+__init__	../electric_car.py	/^    def __init__(self, make, model, year): $/;"	kind:member	line:3
+__init__	../electric_car.py	/^    def __init__(self, make, model, year):$/;"	kind:member	line:27
+age	../name.py	/^age = 24$/;"	kind:variable	line:24
+b	../pi.py	/^b = 10**w #算到小数点后w位$/;"	kind:variable	line:5
+birthday	../pi_string.py	/^birthday = input("Enter your birthday, in the form mmddyy: ")$/;"	kind:variable	line:22
+car.py	../car.py	1;"	kind:file	line:1
+counting.py	../counting.py	1;"	kind:file	line:1
+data	../counting.py	/^data = [randint(-10, 10) for _ in range(10)]$/;"	kind:variable	line:22
+describe_battery	../car.py	/^    def describe_battery(self):$/;"	kind:member	line:37
+dog.py	../dog.py	1;"	kind:file	line:1
+electric_car.py	../electric_car.py	1;"	kind:file	line:1
+favorite_language	../name.py	/^favorite_language = "   python    "$/;"	kind:variable	line:17
+favorite_languages	../favorite_languages.py	/^favorite_languages = OrderedDict()$/;"	kind:variable	line:3
+favorite_languages.py	../favorite_languages.py	1;"	kind:file	line:1
+file_reader.py	../file_reader.py	1;"	kind:file	line:1
+filename	../file_reader.py	/^filename = 'pi_digits.txt'$/;"	kind:variable	line:21
+filename	../pi_string.py	/^filename = 'pi_million_digits.txt'$/;"	kind:variable	line:14
+first	../names.py	/^    first = input("\\nPlease give me a first name: ")$/;"	kind:variable	line:5
+first_name	../name.py	/^first_name = "ada"$/;"	kind:variable	line:7
+formatted_name	../names.py	/^    formatted_name = get_formatted_name(first, last)$/;"	kind:variable	line:11
+full_name	../name.py	/^full_name = first_name + " " + last_name$/;"	kind:variable	line:9
+get_descriptive_name	../car.py	/^    def get_descriptive_name(self):$/;"	kind:member	line:10
+get_descriptive_name	../electric_car.py	/^    def get_descriptive_name(self):$/;"	kind:member	line:9
+get_formatted_name	../name_function.py	/^def get_formatted_name(first, last, middle=''):$/;"	kind:function	line:1
+get_formatted_name	../names.py	/^from name_function import get_formatted_name$/;"	kind:namespace	line:1
+get_formatted_name	../test_name_function.py	/^from name_function import get_formatted_name$/;"	kind:namespace	line:2
+get_range	../car.py	/^    def get_range(self):$/;"	kind:member	line:40
+greeter.py	../greeter.py	1;"	kind:file	line:1
+he	../pi.py	/^he = x1+x2 #求第一大项$/;"	kind:variable	line:11
+increment_odometer	../car.py	/^    def increment_odometer(self, miles):$/;"	kind:member	line:27
+increment_odometer	../electric_car.py	/^    def increment_odometer(self, miles):$/;"	kind:member	line:22
+last	../names.py	/^    last = input("Please give me a last name: ")$/;"	kind:variable	line:8
+last_name	../name.py	/^last_name = "lovelace"$/;"	kind:variable	line:8
+lines	../file_reader.py	/^    lines = file_object.readlines()$/;"	kind:variable	line:23
+lines	../pi_string.py	/^    lines = file_object.readlines()$/;"	kind:variable	line:16
+list.py	../list.py	1;"	kind:file	line:1
+message	../car.py	/^    message = "This car can go approximately " + str(range) $/;"	kind:variable	line:46
+message	../name.py	/^message = "Hello, " + full_name.title() + "!"$/;"	kind:variable	line:10
+message	../name.py	/^message = "happy " + str(age) + "rd Birthday!"$/;"	kind:variable	line:25
+my_car.py	../my_car.py	1;"	kind:file	line:1
+my_dog	../dog.py	/^my_dog = Dog('willie',6)$/;"	kind:variable	line:20
+my_new_car	../my_car.py	/^my_new_car = Car('audi', 'a4', 2018)$/;"	kind:variable	line:3
+my_tesla	../electric_car.py	/^my_tesla = ElectricCar('tesla', 'model s', 2016)$/;"	kind:variable	line:31
+n	../pi.py	/^n = int(raw_input('请键入想要计算到小数点后的位数n:')) #先键入字符串,再转化为整数$/;"	kind:variable	line:1
+name	../greeter.py	/^name = input(prompt)$/;"	kind:variable	line:3
+name	../list.py	/^name = input("your name:")$/;"	kind:variable	line:49
+name	../name.py	/^name = "ada lovelace"$/;"	kind:variable	line:1
+name.py	../name.py	1;"	kind:file	line:1
+name_function.py	../name_function.py	1;"	kind:file	line:1
+names.py	../names.py	1;"	kind:file	line:1
+pai	../pi.py	/^    pai = he*4 #求出π$/;"	kind:variable	line:25
+pi.py	../pi.py	1;"	kind:file	line:1
+pi_string	../file_reader.py	/^pi_string = ''$/;"	kind:variable	line:25
+pi_string	../pi_string.py	/^pi_string = '' $/;"	kind:variable	line:18
+pi_string.py	../pi_string.py	1;"	kind:file	line:1
+prompt	../greeter.py	/^prompt = "If you tell us who you are, we can personalize the messages you see."$/;"	kind:variable	line:1
+randint	../counting.py	/^from random import randint$/;"	kind:namespace	line:19
+read_odometer	../car.py	/^    def read_odometer(self):$/;"	kind:member	line:14
+read_odometer	../electric_car.py	/^    def read_odometer(self):$/;"	kind:member	line:13
+roll_over	../dog.py	/^    def roll_over(self):$/;"	kind:member	line:15
+sit	../dog.py	/^    def sit(self):$/;"	kind:member	line:10
+test_first_last_middle_name	../test_name_function.py	/^    def test_first_last_middle_name(self):$/;"	kind:member	line:12
+test_first_last_name	../test_name_function.py	/^    def test_first_last_name(self):$/;"	kind:member	line:7
+test_name_function.py	../test_name_function.py	1;"	kind:file	line:1
+timeit	../counting.py	/^import timeit$/;"	kind:namespace	line:20
+unittest	../test_name_function.py	/^import unittest$/;"	kind:namespace	line:1
+update_odometer	../car.py	/^    def update_odometer(self, mileage): $/;"	kind:member	line:17
+update_odometer	../electric_car.py	/^    def update_odometer(self, mileage):$/;"	kind:member	line:16
+w	../pi.py	/^w = n+9 #多计算10位，防止尾数取舍的影响$/;"	kind:variable	line:3
+x	../pi.py	/^    x = (x1+x2) \/\/ i #求两项之和$/;"	kind:variable	line:21
+x1	../pi.py	/^x1 = b*4\/\/5 #求含4\/5的首项$/;"	kind:variable	line:7
+x2	../pi.py	/^x2 = b\/\/ -239 #求含1\/239的首项$/;"	kind:variable	line:9
+your_dog	../dog.py	/^your_dog = Dog('lucy', 3)$/;"	kind:variable	line:26

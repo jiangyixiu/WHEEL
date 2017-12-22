@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>websocket</title>
+</head>
+
+<body>
+  <h1>Echo Test</h1>
+  <input type="text" id="sendText">
+  <button id="sendBtn">发送</button>
+  <div id="resv"></div>
+  <script>
+    var socket = new WebSocket('ws://echo.websocket.org/');
+    // 发起sockt
+    socket.onopen = function (res) {
+      console.log(res)
+      document.getElementById('resv').innerText = 'socket链接成功';
+    };
+    // 关闭socket
+    socket.onclose = function () {
+      console.log('websocket close!');
+    }
+    // 接收socket
+    socket.onmessage = function (event) {
+      document.getElementById('resv').innerText = event.data;
+    }
+    // 发送socket信息
+    document.getElementById('sendBtn').onclick = function () {
+      var text = document.getElementById('sendText').value;
+      socket.send(text)
+    }
+  </script>
+</body>
+
+</html>

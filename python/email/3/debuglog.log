@@ -9,3 +9,356 @@
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
 03 May 2017 14:51:57 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 10:50:20 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:50:20 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:50:50 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:50:50 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:52:37 gemail2.py[line:95]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:52:37 gemail2.py[line:96]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:52:49 gemail2.py[line:95]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:52:49 gemail2.py[line:96]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:55:47 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:55:47 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:56:25 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:56:25 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:56:35 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:56:35 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 10:57:32 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 10:57:32 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 11:01:12 gemail2.py[line:94]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:01:12 gemail2.py[line:95]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 11:03:28 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:03:28 gemail.py[line:78]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 11:03:57 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:03:57 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:07:33 gemail.py[line:78]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:07:33 gemail.py[line:79]INFO 无法发送邮件=======>>>Sophia:2227006164@qq.com
+
+18 Dec 2017 11:09:14 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:09:14 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:09:35 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:09:35 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:09:41 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:09:41 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:11:32 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:11:32 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:12:09 gemail.py[line:77]WARNING (535, 'Error: authentication failed, system busy')
+18 Dec 2017 11:12:09 gemail.py[line:78]INFO 无法发送邮件=======>>>徐敏:2227006164@qq.com
+
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:135]DEBUG STREAM 'pHYs' 41 9
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 62 14783
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:135]DEBUG STREAM 'cHRM' 14857 32
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:542]DEBUG 'cHRM' 14857 32 (unknown)
+18 Dec 2017 11:12:53 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 14901 985602
+18 Dec 2017 11:12:57 gemail.py[line:74]INFO 邮件发送成功徐敏:2227006164@qq.com
+
+18 Dec 2017 11:14:23 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 11:14:23 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 11:14:23 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 11:14:23 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 11:14:25 gemail2.py[line:91]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+18 Dec 2017 11:32:44 gemail2.py[line:94]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 11:32:54 gemail2.py[line:94]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 11:36:15 gemail2.py[line:94]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 11:36:53 gemail2.py[line:94]WARNING name 'urllib' is not defined
+18 Dec 2017 11:38:05 gemail2.py[line:94]WARNING name 'urllib' is not defined
+18 Dec 2017 11:38:42 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:38:42 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:38:42 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:38:42 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:38:43 gemail2.py[line:94]WARNING name 'io' is not defined
+18 Dec 2017 11:39:01 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:39:01 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:39:01 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:39:01 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:39:01 gemail2.py[line:94]WARNING name 'io' is not defined
+18 Dec 2017 11:41:27 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:41:27 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:41:27 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:41:27 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:41:27 gemail2.py[line:94]WARNING name 'io' is not defined
+18 Dec 2017 11:42:17 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:42:17 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:42:17 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:42:17 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:42:18 gemail2.py[line:94]WARNING name 'io' is not defined
+18 Dec 2017 11:44:02 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:44:02 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:44:02 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:44:02 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:44:02 gemail2.py[line:93]WARNING name 'io' is not defined
+18 Dec 2017 11:53:15 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:53:15 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:53:15 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:53:15 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:53:16 gemail2.py[line:93]WARNING 'Image' object has no attribute 'getvalue'
+18 Dec 2017 11:58:14 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 11:58:14 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 11:58:14 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 11:58:14 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 11:58:14 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:01:14 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:01:14 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:01:14 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:01:14 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:01:14 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:05:35 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:05:35 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:05:35 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:05:35 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:05:35 gemail2.py[line:93]WARNING 'Image' object has no attribute 'getvalue'
+18 Dec 2017 12:41:17 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 12:41:17 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 12:41:17 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 12:41:17 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 12:41:19 gemail2.py[line:91]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+18 Dec 2017 12:44:25 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:44:25 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:44:25 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:44:25 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:44:25 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:45:01 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:45:01 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:45:01 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:45:01 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:45:01 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:45:28 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:45:28 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:45:28 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:45:28 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:45:28 gemail2.py[line:93]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 12:46:06 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:46:06 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:46:06 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:46:06 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:46:06 gemail2.py[line:93]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 12:46:51 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:46:51 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:46:51 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:46:51 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:46:52 gemail2.py[line:93]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 12:48:00 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:48:00 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:48:00 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:48:00 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:48:00 gemail2.py[line:93]WARNING must be str, not bytes
+18 Dec 2017 12:48:44 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:48:44 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:48:44 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:48:44 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:48:44 gemail2.py[line:93]WARNING must be str, not bytes
+18 Dec 2017 12:51:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:51:37 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:51:37 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:51:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:51:37 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:52:31 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 12:52:31 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 12:52:31 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 12:52:31 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 12:52:33 gemail.py[line:91]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+18 Dec 2017 12:52:59 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 12:52:59 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 12:52:59 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 12:52:59 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 12:53:01 gemail.py[line:91]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+18 Dec 2017 12:53:15 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 12:53:15 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 12:53:15 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 12:53:15 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 12:53:18 gemail.py[line:91]INFO 邮件发送成功Sophia:2227006164@qq.com
+
+18 Dec 2017 12:53:58 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:53:58 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:53:58 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:53:58 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:53:59 gemail2.py[line:93]WARNING string argument expected, got 'bytes'
+18 Dec 2017 12:58:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 12:58:37 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 12:58:37 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 12:58:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 12:58:38 gemail2.py[line:97]WARNING must be str, not bytes
+18 Dec 2017 13:00:19 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:00:19 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:00:19 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:00:19 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:00:19 gemail2.py[line:97]WARNING must be str, not bytes
+18 Dec 2017 13:03:53 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:03:53 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:03:53 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:03:53 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:03:54 gemail2.py[line:97]WARNING must be str, not _io.BytesIO
+18 Dec 2017 13:04:17 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:04:17 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:04:17 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:04:17 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:04:17 gemail2.py[line:97]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 13:05:11 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:05:11 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:05:11 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:05:11 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:05:11 gemail2.py[line:97]WARNING name 'io' is not defined
+18 Dec 2017 13:05:23 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:05:23 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:05:23 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:05:23 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:05:23 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 13:07:53 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:07:53 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:07:53 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:07:53 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:07:54 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 13:08:11 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:08:11 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:08:11 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:08:11 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:08:11 gemail2.py[line:97]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 13:08:46 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:08:46 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:08:46 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:08:46 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:08:46 gemail2.py[line:97]WARNING initial_value must be str or None, not Image
+18 Dec 2017 13:09:05 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:09:05 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:09:05 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:09:05 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:09:05 gemail2.py[line:97]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 13:13:31 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:13:31 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:13:31 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:13:31 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:13:58 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:13:58 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:13:58 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:13:58 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:17:19 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:17:19 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:17:19 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:17:19 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:17:37 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:17:37 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:17:37 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:17:37 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:18:02 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:18:02 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:18:02 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:18:02 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:18:28 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 13:18:28 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 13:18:28 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 13:18:28 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 13:19:12 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:19:12 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:19:12 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:19:12 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:19:12 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 13:43:50 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 13:43:50 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 13:43:50 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 13:43:50 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 13:43:50 gemail2.py[line:97]WARNING startswith first arg must be str or a tuple of str, not bytes
+18 Dec 2017 14:04:55 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:04:55 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:04:55 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:04:55 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:04:56 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 14:26:25 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+18 Dec 2017 14:26:25 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+18 Dec 2017 14:26:25 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+18 Dec 2017 14:26:25 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+18 Dec 2017 14:27:03 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:27:03 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:27:03 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:27:03 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:27:03 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 14:28:57 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:28:57 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:28:57 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:28:57 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:28:57 gemail2.py[line:97]WARNING '_io.TextIOWrapper' object has no attribute 'getvalue'
+18 Dec 2017 14:29:43 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:29:43 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:29:43 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:29:43 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:29:43 gemail2.py[line:97]WARNING '_io.TextIOWrapper' object has no attribute 'date'
+18 Dec 2017 14:30:03 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:30:03 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:30:03 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:30:03 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:30:03 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 14:31:16 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:31:16 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:31:16 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:31:16 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:31:16 gemail2.py[line:97]WARNING string argument expected, got 'bytes'
+18 Dec 2017 14:39:33 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:39:33 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:39:33 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:39:33 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:39:33 gemail2.py[line:97]WARNING '_io.BufferedReader' object is not subscriptable
+18 Dec 2017 14:40:31 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:40:31 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:40:31 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:40:31 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:40:32 gemail2.py[line:97]WARNING '_io.BufferedReader' object is not subscriptable
+18 Dec 2017 14:40:50 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:40:50 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:40:50 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:40:50 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:40:51 gemail2.py[line:97]WARNING '_io.BufferedReader' object is not subscriptable
+18 Dec 2017 14:41:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:41:37 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:41:37 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:41:37 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:41:37 gemail2.py[line:97]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 14:42:09 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:42:09 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:42:09 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:42:09 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:42:09 gemail2.py[line:97]WARNING '_io.BufferedReader' object is not subscriptable
+18 Dec 2017 14:45:59 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:45:59 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:45:59 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:45:59 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:46:00 gemail2.py[line:97]WARNING cannot use a string pattern on a bytes-like object
+18 Dec 2017 14:46:46 PngImagePlugin.py[line:130]DEBUG STREAM b'IHDR' 16 13
+18 Dec 2017 14:46:46 PngImagePlugin.py[line:130]DEBUG STREAM b'tEXt' 41 25
+18 Dec 2017 14:46:46 PngImagePlugin.py[line:130]DEBUG STREAM b'iTXt' 78 888
+18 Dec 2017 14:46:46 PngImagePlugin.py[line:130]DEBUG STREAM b'IDAT' 978 102758
+18 Dec 2017 14:46:46 gemail2.py[line:97]WARNING object of type 'int' has no len()
+18 Dec 2017 18:39:48 certificate.py[line:16]INFO 邮件发送成功
+18 Dec 2017 18:40:40 certificate.py[line:18]INFO 邮件发送成功江小咏:['2227006164@qq.com']
+
+18 Dec 2017 18:41:08 certificate.py[line:18]INFO 邮件发送成功江小咏:['2227006164@qq.co']
+
+18 Dec 2017 18:48:13 send_email.py[line:22]INFO 初始化基本信息
+18 Dec 2017 18:48:16 certificate.py[line:19]INFO 邮件发送成功江小咏:['2227006164@qq.com']
+
+18 Dec 2017 18:51:13 send_email.py[line:22]INFO 初始化成功
+18 Dec 2017 18:51:32 send_email.py[line:22]ERROR 初始化成功
+18 Dec 2017 18:53:57 send_email.py[line:22]INFO 初始化成功
+18 Dec 2017 18:55:43 send_email.py[line:22]DEBUG debug message
+18 Dec 2017 18:55:43 send_email.py[line:23]INFO info message
+18 Dec 2017 18:55:43 send_email.py[line:24]WARNING warning message
+18 Dec 2017 18:55:43 send_email.py[line:25]ERROR error message
+18 Dec 2017 18:55:43 send_email.py[line:26]CRITICAL critical message

@@ -10,7 +10,7 @@ SNAPSHOT_PREFIX = 'snapshot:'
 BRICK_PREFIX = 'brick:'
 VOLUME_NFS = 'nfs'
 VOLUME_SAMBA = 'samba'
-VOLUME_ISCSI = 'iscsi' 
+VOLUME_ISCSI = 'iscsi'
 VOLUME_SWIFT = 'swift'
 
 # set object

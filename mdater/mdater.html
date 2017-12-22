@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>mdater</title>
+	<link rel="stylesheet" href="./mdater_files/zepto.mdater.css">
+
+	<!-- zepto版 -->
+	<!-- <script src="./mdater_files/zepto.js"></script> 
+	 <script src="./mdater_files/zepto.mdater.js"></script>  -->
+
+	<!-- jQuery版 -->
+	<script src="http://sslfile.ichazuo.cn/h5.jquery.min.js"></script>
+	<script src="./mdater_files/jquery.mdater.js"></script>
+	<style lang="text/css">
+		input {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 0;
+			margin: auto;
+			width: 200px;
+			height: 36px;
+			padding: 6px 10px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			background-color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<input id="in" type="text" readonly="" placeholder="选日期">
+
+	<script>
+		$('#in').mdater({
+			minDate: new Date(2017, 11, 10),
+			maxDate: new Date(2017, 11, 17)
+		});
+
+		window.onload = window.onresize = sy;
+		function sy() {
+			var Html = document.getElementsByTagName('html')[0];
+			var w = document.documentElement.clientWidth;
+			var scale = w / 375;
+			if (scale >= 2) { scale = 2 }
+			Html.style.fontSize = 12 * scale + 'px';
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="data7()">7天</button>
+  <button onclick="data30()">30天</button>
+  <div id="container" style="min-width: 310px; height: 220px; margin: 0 auto"></div>
+
+  <script src="bower_components/highcharts/highcharts.js"></script>
+  <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+  <!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+  <script>
+    var themeColor = '#1884d5';
+    var chartLineColor = '#a3ceee' // 折线颜色
+    var spotColor = '#73b5e6' // 点颜色
+    var data = {
+      max: 25,
+      min: 0,
+      // categories: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"],
+      categories: ['03.01', '03.02', '03.03', '03.04', '03.05', '03.06', '03.07'],
+      // data: [129, 110, 126, 129, 144, 176, 135],
+      data: [129, 110, 126, 129, 144, 172, 135],
+    };
+    // 突出最大值
+    data.data[5] = {
+      size: 20,
+      unread: true,
+      useHTML: true,
+      // selected: true,
+      y: data.data[5],
+      marker: {
+        fillColor: '#1884d5',
+        fill: '#1884d5',
+        fontSize: "12px",
+        fontWeight: '600',
+        radius: 5,
+        lineColor: '#a3ceee',  // 数据点颜色
+        lineWidth: 4,
+        symbol: 'circle', //曲线点类型："circle", "square", "diamond", "square","triangle-down"，默认是"circle"
+        // symbol: 'url(https://www.highcharts.com/demo/gfx/snow.png)'
+      },
+      dataLabels: {
+        borderRadius: 10,
+        backgroundColor: themeColor,
+        borderWidth: null,
+        padding: 4,
+        minWidth: '100px',
+        style: {
+          fontWeight: 'bold',
+          color: '#fff'
+        },
+        y: -14,
+      }
+    };
+
+    function data7() {
+      data.categories = ['03-01', '03-02', '03-03', '03-04', '03-05', '03-06', '03-07', '03-08', '03-09', '03-10', '03-11', '03-12', '03-13', '03-14', '03-15', '03-16', '03-17', '03-18', '03-19', '03-20', '03-21', '03-22', '03-23', '03-24'],
+        data.data = [9, 5.7, 7.5, 12.9, 14.2, 9.0, 16.6, 24.2, 10.3, 6.6, 14.2, 10.3, 6.6, 4.8, 3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, null, 4.8]
+    }
+    // data30()
+    function data30() {
+      data.categories = ['03-01', '03-02', '03-03', '03-04', '03-05', '03-06', '03-07', '03-08', '03-09', '03-10', '03-11', '03-12', '03-13', '03-14', '03-15', '03-16', '03-17', '03-18', '03-19', '03-20', '03-21', '03-22', '03-23', '03-24'],
+        data.data = [9, 5.7, 7.5, 12.9, 14.2, 9.0, 16.6, 24.2, 10.3, 6.6, 14.2, 10.3, 6.6, 4.8, 3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, null, 4.8]
+    }
+
+    var oChart = null;
+
+    //定义oChart的布局环境
+    //布局环境组成：X轴、Y轴、数据显示、图标标题
+
+    oChart = new Highcharts.Chart(container, {
+
+      //设置图表关联显示块和图形样式
+      chart: {
+        type: 'line', // areaspline、area、line
+        // panning: true,
+        // pinchType: 'x',
+        events: {
+          load: function () {
+            // set up the updating of the chart each second
+            var series = this.series[0],
+              chart = this;
+            // setInterval(function () {
+            //     console.log(chart)
+            // }, 1000);
+          }
+        },
+      },
+
+      //图标标题
+      title: {
+        // text: '人均学习时长'
+        text: null, //设置null则不显示标题
+      },
+
+      //x轴
+      xAxis: {
+        categories: data.categories,
+        scrollbar: {
+          enabled: true,
+        },
+        gridLineWidth: 0,
+        tickLength: 0,
+        minPadding: 0,
+        lineColor: '#ccc', // 轴线颜色
+        lineWidth: 1, // 轴线宽度
+      },
+
+      //y轴
+      yAxis: {
+        title: {
+          text: null
+        },
+        labels: {
+          enabled: false
+        }
+      },
+
+      //数据列
+      series: [{
+        name: null,
+        data: data.data,
+        color: chartLineColor,  // 折线颜色
+        marker: {
+          fillColor: '#fff',
+          radius: 5,
+          lineColor: spotColor,  // 数据点颜色
+          lineWidth: 2,
+          symbol: 'circle', //曲线点类型："circle", "square", "diamond", "square","triangle-down"，默认是"circle"
+          // symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)', // 自定义点
+        },
+        complete: function (options) {
+          console.log(options)
+          // activeLastPointToolip(options)
+        }
+      }],
+
+      // 提示框
+      tooltip: {
+        refresh: 1,
+        useHTML: true,
+        padding: 6,
+        followTouchMove: false,
+        backgroundColor: themeColor,   // 背景颜色
+        borderColor: 'black',         // 边框颜色
+        borderRadius: 20,             // 边框圆角
+        borderWidth: null,            // 边框宽度
+        shadow: false,                 // 是否显示阴影
+        animation: true,              // 是否启用动画效果
+        style: {                      // 文字内容相关样式
+          color: "#fff",
+          // fontSize: "12px",
+          fontWeight: "blod",
+          // fontFamily: "Courir new",
+        },
+        headerFormat: '',
+        pointFormatter: function () {
+          return '<span style="color:{' + this.series.color + '}">' + this.y + '</span>'
+        },
+      },
+
+      // 隐藏网址
+      credits: {
+        enabled: false
+      },
+
+      // 隐藏线的控件
+      legend: {
+        enabled: false,
+      },
+
+      plotOptions: {
+        line: {
+          dataLabels: {
+            useHTML: true,
+            enabled: true,          // 开启数据标签
+            style: {                      // 文字内容相关样式
+              fontSize: "12px",
+              fontWeight: '600',
+              fontFamily: "Courir new",
+              color: themeColor,
+            },
+            y: -6,
+          },
+          enableMouseTracking: false // 关闭鼠标跟踪，对应的提示框、点击事件会失效
+        },
+      },
+    }, function (chart) {
+      chart.xAxis[0].setExtremes(1, 5);
+      console.log(this)
+      // activeLastPointToolip(chart);
+    });
+
+    // oChart.showLoading();
+    // console.log(oChart.series[0].data)
+    // setTimeout(function () {
+    //   var data = [9, 5.7, 7.5, 12.9, 14.2, 9.0, 16.6, 24.2, 10.3, 6.6, 14.2, 10.3, 6.6, 4.8, 3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, null, 4.8]
+    //   oChart.series[0].data = data;
+
+    // }, 500)
+
+
+
+    // 初始化默认提示框
+    function activeLastPointToolip(chart) {
+      var points = chart.series[0].points;
+      // chart.tooltip.refresh(points[4]);  // 默认第几个显示提示
+      var min = 1000,
+        max = 0,
+        pointsToShow = [0, 0];
+      for (var p in points) {
+        if (points[p].y > max) {
+          pointsToShow[0] = points[p].index;
+          max = points[p].y;
+        }
+        if (points[p].y < min) {
+          pointsToShow[1] = points[p].index;
+          min = points[p].y;
+        }
+      }
+      render(chart, points[pointsToShow[0]]);  // 0最大，1最小
+    }
+
+    // 最大最小值
+    function render(chart, point) {
+      chart.renderer.label(point.y, point.plotX + chart.plotLeft - 19, point.plotY + chart.plotTop - 40, 'callout', point.plotX + chart.plotLeft, point.plotY + chart.plotTop)
+        .css({
+          color: '#FFFFFF',
+          align: 'center',
+          unread: true
+        })
+        .attr({
+          fill: themeColor,
+          padding: 6,
+          r: 22,
+          zIndex: 6,
+        })
+        .add();
+    }
+
+    // 平均值
+    function arrAverageNum(arr) {
+      var sum = 0;
+      for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+      };
+      return ~~(sum / arr.length * 100) / 100;
+    }
+  </script>
+</body>
+
+</html>

@@ -35,6 +35,10 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
+
+  
+  @import "../../common/style/mixin.less";
+
   .header {
     color: #fff;
     background-color: #333;
@@ -54,6 +58,11 @@
             display: inline-block;
             width: 30px;
             height: 18px;
+            .bg-image('/components/header/img/brand');
+            // .bg-image('./img/brand');
+            // background-image: url('./img/brand@2x.png');
+            // .bg-image('/static/img/brand');
+            background-size: 100% 100%;
           }
         }
       }
