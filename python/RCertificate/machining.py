@@ -19,9 +19,12 @@ class Machining:
                 for chunk in r.iter_content():
                     fd.write(chunk)
             return file_name
+
         if os.access(_bg, os.F_OK):
             im = Image.open(_bg).resize((750, 1333), Image.ANTIALIAS)
         else:
+            if not os.path.exists('./static/images'):
+                os.mkdir('./static/images')
             im = Image.open(save_image(self.url, _bg)).resize((750, 1333), Image.ANTIALIAS)
         draw = ImageDraw.Draw(im)
 

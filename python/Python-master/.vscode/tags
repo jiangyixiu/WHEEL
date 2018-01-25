@@ -1,0 +1,1102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+4 Digit Number Combinations.py	../4 Digit Number Combinations.py	1;"	kind:file	line:1
+BASE_URL	../prison_break_scrapper.py	/^BASE_URL = 'http:\/\/dl.funsaber.net\/serial\/Prison%20Break\/season%20'$/;"	kind:variable	line:11
+BOLD	../osinfo.py	/^    BOLD = '\\033[1m'$/;"	kind:variable	line:41
+BeautifulSoup	../Google Image Downloader/image grapper.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:5
+BeautifulSoup	../jee_result.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:1
+BeautifulSoup	../youtube.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:13
+COMMANDS	../get_info_remoute_srv.py	/^COMMANDS = ('uname -a', 'uptime')$/;"	kind:variable	line:15
+Client	../cricket_live_score.py	/^Client=uReq(my_url)$/;"	kind:variable	line:6
+Codes	../Organise.py	/^Codes = ['CPP', 'RB', 'PY', 'HTML', 'CSS', 'JS']$/;"	kind:variable	line:6
+Compressed	../Organise.py	/^Compressed = ['RAR', 'JAR', 'ZIP', 'TAR', 'MAR', 'ISO', 'LZ', '7ZIP', 'TGZ', 'GZ', 'BZ2']$/;"	kind:variable	line:7
+CountMillionCharacter.py	../CountMillionCharacter.py	1;"	kind:file	line:1
+CountMillionCharacters-2.0.py	../CountMillionCharacters-2.0.py	1;"	kind:file	line:1
+Cricket_score.py	../Cricket_score.py	1;"	kind:file	line:1
+DEFAULT_DIRECTORY	../Google Image Downloader/image grapper.py	/^DEFAULT_DIRECTORY = pardir + '\\\\Images'$/;"	kind:variable	line:121
+Dice	../diceV2_dynamic.py	/^class Dice():$/;"	kind:class	line:7
+Die	../dice.py	/^class Die(object):$/;"	kind:class	line:12
+Documents	../Organise.py	/^Documents = ['DOC', 'DOCX', 'PPT', 'PPTX', 'PAGES', 'PDF', 'ODT', 'ODP', 'XLSX', 'XLS', 'ODS', 'TXT', 'IN', 'OUT', 'MD']$/;"	kind:variable	line:8
+ENDC	../osinfo.py	/^    ENDC = '\\033[0m'$/;"	kind:variable	line:40
+EncryptionTool.py	../EncryptionTool.py	1;"	kind:file	line:1
+Executables	../Organise.py	/^Executables = ['LNK','DEB', 'EXE', 'SH', 'BUNDLE']$/;"	kind:variable	line:10
+FAIL	../osinfo.py	/^    FAIL = '\\033[91m'$/;"	kind:variable	line:39
+FTP	../ftp_send_receive.py	/^from ftplib import FTP$/;"	kind:namespace	line:11
+Fore	../magic8ball.py	/^from colorama import Fore, Style$/;"	kind:namespace	line:17
+Fore	../tf_idf_generator.py	/^from colorama import Fore, Style$/;"	kind:namespace	line:35
+FourDigitCombinations	../4 Digit Number Combinations.py	/^def FourDigitCombinations():$/;"	kind:function	line:2
+GREEN	../polygon.py	/^GREEN = (  0, 255,   0)$/;"	kind:variable	line:9
+Google_News.py	../Google_News.py	1;"	kind:file	line:1
+GroupSms_Way2.py	../GroupSms_Way2.py	1;"	kind:file	line:1
+HEADER	../osinfo.py	/^    HEADER = '\\033[95m'$/;"	kind:variable	line:35
+HOSTS	../get_info_remoute_srv.py	/^HOSTS = ('proxy1', 'proxy')$/;"	kind:variable	line:13
+Handler	../start-server.py	/^Handler = SimpleHTTPServer.SimpleHTTPRequestHandler$/;"	kind:variable	line:7
+Image	../meme_maker.py	/^from PIL import ImageDraw, ImageFont, Image$/;"	kind:namespace	line:3
+Image	../spotlight.py	/^from PIL import Image$/;"	kind:namespace	line:6
+ImageDraw	../meme_maker.py	/^from PIL import ImageDraw, ImageFont, Image$/;"	kind:namespace	line:3
+ImageFont	../meme_maker.py	/^from PIL import ImageDraw, ImageFont, Image$/;"	kind:namespace	line:3
+Images	../Organise.py	/^Images = ['JPG', 'JPEG', 'GIF', 'PNG', 'SVG']$/;"	kind:variable	line:9
+Import	../check_file.py	/^import os		# Import the Modules$/;"	kind:namespace	line:13
+Import	../check_file.py	/^import sys		# Import the Modules$/;"	kind:namespace	line:12
+Import	../create_dir_if_not_there.py	/^import os		# Import the OS module$/;"	kind:namespace	line:11
+Import	../dir_test.py	/^import os  # Import the OS Module$/;"	kind:namespace	line:10
+Import	../nmap_scan.py	/^import nmap			# Import the module$/;"	kind:namespace	line:11
+Import	../nmap_scan.py	/^import optparse		# Import the module$/;"	kind:namespace	line:12
+Import	../nslookup_check.py	/^import subprocess										# Import the subprocess module$/;"	kind:namespace	line:11
+Import	../password_cracker.py	/^    import crypt # Import the module$/;"	kind:namespace	line:15
+Import	../portscanner.py	/^from socket import *		# Import the module$/;"	kind:namespace	line:12
+Import	../portscanner.py	/^from threading import *		# Import the module$/;"	kind:namespace	line:13
+Import	../portscanner.py	/^import optparse				# Import the module$/;"	kind:namespace	line:11
+InvalidSyntax	../Assembler/assembler.py	/^class InvalidSyntax (Exception):$/;"	kind:class	line:31
+Library	../logs.py	/^import os                   # Load the Library Module$/;"	kind:namespace	line:12
+Library	../ping_servers.py	/^import os						  	# Load the Library Module$/;"	kind:namespace	line:11
+Library	../ping_servers.py	/^import subprocess				# Load the Library Module$/;"	kind:namespace	line:12
+Library	../ping_servers.py	/^import sys							# Load the Library Module$/;"	kind:namespace	line:13
+Library	../ping_subnet.py	/^import os						# Load the Library Module$/;"	kind:namespace	line:11
+Library	../ping_subnet.py	/^import subprocess			# Load the Library Module$/;"	kind:namespace	line:12
+Library	../ping_subnet.py	/^import sys						# Load the Library Module$/;"	kind:namespace	line:13
+Library	../powerdown_startup.py	/^import os				# Load the Library Module$/;"	kind:namespace	line:11
+Library	../powerdown_startup.py	/^import subprocess			# Load the Library Module $/;"	kind:namespace	line:12
+Library	../powerup_checks.py	/^import os							# Load the Library Module $/;"	kind:namespace	line:13
+Library	../powerup_checks.py	/^import sqlite3					# Load the Library Module 	$/;"	kind:namespace	line:12
+Library	../powerup_checks.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:14
+Library	../powerup_checks.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:11
+Library	../puttylogs.py	/^import os																	# Load the Library Module$/;"	kind:namespace	line:12
+Library	../puttylogs.py	/^import shutil																# Load the Library Module - 1.2$/;"	kind:namespace	line:13
+Library	../work_connect.py	/^import os							# Load the Library Module$/;"	kind:namespace	line:13
+Library	../work_connect.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:11
+Library	../work_connect.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:12
+Library	../work_connect.py	/^import time						# Load the Library Module$/;"	kind:namespace	line:14
+ListAvailablePorts	../serial_scanner.py	/^def ListAvailablePorts():$/;"	kind:function	line:15
+ListedColormap	../game_of_life/game_o_life.py	/^from matplotlib.colors import ListedColormap$/;"	kind:namespace	line:34
+Load	../backup_automater_services.py	/^import datetime                         # Load the library module$/;"	kind:namespace	line:11
+Load	../backup_automater_services.py	/^import os                               # Load the library module$/;"	kind:namespace	line:12
+Load	../backup_automater_services.py	/^import shutil							# Load the library module$/;"	kind:namespace	line:13
+Load	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+Load	../daily_checks.py	/^import platform		                # Load Modules$/;"	kind:namespace	line:15
+Load	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Load	../logs.py	/^import os                   # Load the Library Module$/;"	kind:namespace	line:12
+Load	../new_script.py	/^import datetime		# Load the library module$/;"	kind:namespace	line:13
+Load	../new_script.py	/^import os				# Load the library module$/;"	kind:namespace	line:11
+Load	../new_script.py	/^import sys				# Load the library module$/;"	kind:namespace	line:12
+Load	../ping_servers.py	/^import os						  	# Load the Library Module$/;"	kind:namespace	line:11
+Load	../ping_servers.py	/^import subprocess				# Load the Library Module$/;"	kind:namespace	line:12
+Load	../ping_servers.py	/^import sys							# Load the Library Module$/;"	kind:namespace	line:13
+Load	../ping_subnet.py	/^import os						# Load the Library Module$/;"	kind:namespace	line:11
+Load	../ping_subnet.py	/^import subprocess			# Load the Library Module$/;"	kind:namespace	line:12
+Load	../ping_subnet.py	/^import sys						# Load the Library Module$/;"	kind:namespace	line:13
+Load	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Load	../powerdown_startup.py	/^import os				# Load the Library Module$/;"	kind:namespace	line:11
+Load	../powerdown_startup.py	/^import subprocess			# Load the Library Module $/;"	kind:namespace	line:12
+Load	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+Load	../powerup_checks.py	/^import os							# Load the Library Module $/;"	kind:namespace	line:13
+Load	../powerup_checks.py	/^import sqlite3					# Load the Library Module 	$/;"	kind:namespace	line:12
+Load	../powerup_checks.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:14
+Load	../powerup_checks.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:11
+Load	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+Load	../puttylogs.py	/^import os																	# Load the Library Module$/;"	kind:namespace	line:12
+Load	../puttylogs.py	/^import shutil																# Load the Library Module - 1.2$/;"	kind:namespace	line:13
+Load	../recyclebin.py	/^from _winreg import *	# Load the Module$/;"	kind:namespace	line:13
+Load	../recyclebin.py	/^import optparse			# Load the Module$/;"	kind:namespace	line:12
+Load	../recyclebin.py	/^import os					# Load the Module$/;"	kind:namespace	line:11
+Load	../script_count.py	/^import os																					# Load the library module$/;"	kind:namespace	line:14
+Load	../script_listing.py	/^import os																		# Load the library module							$/;"	kind:namespace	line:12
+Load	../work_connect.py	/^import os							# Load the Library Module$/;"	kind:namespace	line:13
+Load	../work_connect.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:11
+Load	../work_connect.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:12
+Load	../work_connect.py	/^import time						# Load the Library Module$/;"	kind:namespace	line:14
+MESSAGE	../create_dir_if_not_there.py	/^MESSAGE = 'The directory already exists.'$/;"	kind:variable	line:12
+Module	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+Module	../dir_test.py	/^import os  # Import the OS Module$/;"	kind:namespace	line:10
+Module	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Module	../logs.py	/^import os                   # Load the Library Module$/;"	kind:namespace	line:12
+Module	../ping_servers.py	/^import os						  	# Load the Library Module$/;"	kind:namespace	line:11
+Module	../ping_servers.py	/^import subprocess				# Load the Library Module$/;"	kind:namespace	line:12
+Module	../ping_servers.py	/^import sys							# Load the Library Module$/;"	kind:namespace	line:13
+Module	../ping_subnet.py	/^import os						# Load the Library Module$/;"	kind:namespace	line:11
+Module	../ping_subnet.py	/^import subprocess			# Load the Library Module$/;"	kind:namespace	line:12
+Module	../ping_subnet.py	/^import sys						# Load the Library Module$/;"	kind:namespace	line:13
+Module	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Module	../powerdown_startup.py	/^import os				# Load the Library Module$/;"	kind:namespace	line:11
+Module	../powerdown_startup.py	/^import subprocess			# Load the Library Module $/;"	kind:namespace	line:12
+Module	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+Module	../powerup_checks.py	/^import os							# Load the Library Module $/;"	kind:namespace	line:13
+Module	../powerup_checks.py	/^import sqlite3					# Load the Library Module 	$/;"	kind:namespace	line:12
+Module	../powerup_checks.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:14
+Module	../powerup_checks.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:11
+Module	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+Module	../puttylogs.py	/^import os																	# Load the Library Module$/;"	kind:namespace	line:12
+Module	../puttylogs.py	/^import shutil																# Load the Library Module - 1.2$/;"	kind:namespace	line:13
+Module	../recyclebin.py	/^from _winreg import *	# Load the Module$/;"	kind:namespace	line:13
+Module	../recyclebin.py	/^import optparse			# Load the Module$/;"	kind:namespace	line:12
+Module	../recyclebin.py	/^import os					# Load the Module$/;"	kind:namespace	line:11
+Module	../work_connect.py	/^import os							# Load the Library Module$/;"	kind:namespace	line:13
+Module	../work_connect.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:11
+Module	../work_connect.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:12
+Module	../work_connect.py	/^import time						# Load the Library Module$/;"	kind:namespace	line:14
+Modules	../check_file.py	/^import os		# Import the Modules$/;"	kind:namespace	line:13
+Modules	../check_file.py	/^import sys		# Import the Modules$/;"	kind:namespace	line:12
+Modules	../daily_checks.py	/^import platform		                # Load Modules$/;"	kind:namespace	line:15
+Music	../Organise.py	/^Music = ['MP3', 'WAV', 'WMA', 'MKA', 'AAC', 'MID', 'RA', 'RAM', 'RM', 'OGG']$/;"	kind:variable	line:5
+OKBLUE	../osinfo.py	/^    OKBLUE = '\\033[94m'$/;"	kind:variable	line:36
+OKGREEN	../osinfo.py	/^    OKGREEN = '\\033[92m'$/;"	kind:variable	line:37
+OS	../create_dir_if_not_there.py	/^import os		# Import the OS module$/;"	kind:namespace	line:11
+OS	../dir_test.py	/^import os  # Import the OS Module$/;"	kind:namespace	line:10
+Organise.py	../Organise.py	1;"	kind:file	line:1
+PATH	../spotlight.py	/^    PATH = raw_input("Enter directory path:")$/;"	kind:variable	line:62
+PI	../EncryptionTool.py	/^PI=3.14159265358979323846264338327950288419716939937510$/;"	kind:variable	line:7
+PORT	../start-server.py	/^PORT = 8000 #This will serve at port 8080 $/;"	kind:variable	line:5
+PROGNAME	../sierpinski_triangle.py	/^PROGNAME = 'Sierpinski Triangle'$/;"	kind:variable	line:26
+Print_List_of_Even_Numbers.py	../Print_List_of_Even_Numbers.py	1;"	kind:file	line:1
+QuadraticCalc.py	../QuadraticCalc.py	1;"	kind:file	line:1
+ReceiveFile	../ftp_send_receive.py	/^def ReceiveFile():$/;"	kind:function	line:21
+Request	../Google Image Downloader/image grapper.py	/^from urllib.request import urlopen, Request$/;"	kind:namespace	line:6
+SendFile	../ftp_send_receive.py	/^def SendFile():$/;"	kind:function	line:33
+SimpleHTTPServer	../start-server.py	/^import SimpleHTTPServer$/;"	kind:namespace	line:2
+SimpleStopWatch.py	../SimpleStopWatch.py	1;"	kind:file	line:1
+SocketServer	../start-server.py	/^import SocketServer$/;"	kind:namespace	line:3
+Style	../magic8ball.py	/^from colorama import Fore, Style$/;"	kind:namespace	line:17
+Style	../tf_idf_generator.py	/^from colorama import Fore, Style$/;"	kind:namespace	line:35
+TAG	../tf_idf_generator.py	/^TAG = paint('TF-IDF-GENE\/','b')$/;"	kind:variable	line:64
+TESTDIR	../create_dir_if_not_there.py	/^TESTDIR = 'testdir'$/;"	kind:variable	line:13
+TTS.py	../TTS.py	1;"	kind:file	line:1
+TicTacToe.py	../TicTacToe.py	1;"	kind:file	line:1
+Time	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+Time	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Time	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+Time	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+Time	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+ToastNotifier	../Cricket_score.py	/^from  win10toast import ToastNotifier$/;"	kind:namespace	line:3
+Token	../Assembler/assembler.py	/^class Token():$/;"	kind:class	line:36
+Try	../password_cracker.py	/^       import fcrypt # Try importing the fcrypt module$/;"	kind:namespace	line:19
+UNDERLINE	../osinfo.py	/^    UNDERLINE = '\\033[4m'$/;"	kind:variable	line:42
+URL	../python_sms.py	/^import urllib      # URL functions$/;"	kind:namespace	line:11
+URL	../python_sms.py	/^import urllib2     # URL functions$/;"	kind:namespace	line:12
+Video	../Organise.py	/^Video = ['FLV', 'WMV', 'MOV', 'MP4', 'MPEG', '3GP', 'MKV','AVI']$/;"	kind:variable	line:11
+WALLPAPERS_KRAFT	../Google Image Downloader/image grapper.py	/^WALLPAPERS_KRAFT = 'https:\/\/wallpaperscraft.com\/search\/keywords?'$/;"	kind:variable	line:16
+WARNING	../osinfo.py	/^    WARNING = '\\033[93m'$/;"	kind:variable	line:38
+WHITE	../polygon.py	/^WHITE = (255, 255, 255)$/;"	kind:variable	line:8
+__author__	../batch_file_rename.py	/^__author__ = 'Craig Richards'$/;"	kind:variable	line:9
+__init__	../Assembler/assembler.py	/^    def __init__ (self):$/;"	kind:member	line:32
+__init__	../Assembler/assembler.py	/^    def __init__ (self, token, t):$/;"	kind:member	line:37
+__init__	../dice.py	/^  def __init__(self):$/;"	kind:member	line:14
+__init__	../diceV2_dynamic.py	/^    def __init__(self):$/;"	kind:member	line:8
+__judge_point	../game_of_life/game_o_life.py	/^def __judge_point(pt,neighbours):$/;"	kind:function	line:71
+__version__	../batch_file_rename.py	/^__version__ = '1.0'$/;"	kind:variable	line:10
+_platform	../password_cracker.py	/^from sys import platform as _platform$/;"	kind:namespace	line:11
+a	../QuadraticCalc.py	/^    a=second_difference[0]\/2$/;"	kind:variable	line:32
+accessToken	../get_likes_on_FB.py	/^accessToken = 'TOKENVALUE'  # YOUR ACCESS TOKEN GETS INSERTED HERE$/;"	kind:variable	line:6
+animation	../game_of_life/game_o_life.py	/^import matplotlib.animation as animation$/;"	kind:namespace	line:33
+appgroup	../ping_servers.py	/^      appgroup = 'dms'																	# Set the variable appgroup to dms$/;"	kind:variable	line:40
+appgroup	../ping_servers.py	/^      appgroup = 'swaps'																# Set the variable appgroup to swaps$/;"	kind:variable	line:42
+appgroup	../ping_servers.py	/^    appgroup = sys.argv[1]															# Set the variable appgroup as the first argument you supply$/;"	kind:variable	line:31
+argment	../multiplication_table.py	/^from sys import argv # import argment variable $/;"	kind:namespace	line:1
+argparse	../batch_file_rename.py	/^import argparse$/;"	kind:namespace	line:13
+argv	../ex20.py	/^from sys import argv$/;"	kind:namespace	line:1
+argv	../multiplication_table.py	/^from sys import argv # import argment variable $/;"	kind:namespace	line:1
+arrange_dir	../Organise.py	/^	arrange_dir = str(raw_input("Enter the Path of directory: "))$/;"	kind:variable	line:39
+article	../random-sentences.py	/^article = ["the", "a", "one", "some", "any"]$/;"	kind:variable	line:13
+assembler.py	../Assembler/assembler.py	1;"	kind:file	line:1
+b	../jee_result.py	/^b = mechanize.Browser()$/;"	kind:variable	line:6
+backup_automater_services.py	../backup_automater_services.py	1;"	kind:file	line:1
+backup_files	../Google Image Downloader/create_dir.py	/^def backup_files(name_dir, folder):$/;"	kind:function	line:49
+batch_file_rename.py	../batch_file_rename.py	1;"	kind:file	line:1
+batch_rename	../batch_file_rename.py	/^def batch_rename(work_dir, old_ext, new_ext):$/;"	kind:function	line:15
+bcolors	../osinfo.py	/^class bcolors:$/;"	kind:class	line:34
+begin	../timymodule.py	/^import timy # begin by importing timy$/;"	kind:namespace	line:8
+br	../psunotify.py	/^br=mechanize.Browser()$/;"	kind:variable	line:5
+bs	../Cricket_score.py	/^import bs4 as bs$/;"	kind:namespace	line:1
+bs	../prison_break_scrapper.py	/^from bs4 import BeautifulSoup as bs$/;"	kind:namespace	line:6
+bs4	../Google_News.py	/^import bs4$/;"	kind:namespace	line:1
+bs4	../cricket_live_score.py	/^import bs4$/;"	kind:namespace	line:1
+bs4	../google.py	/^import webbrowser, sys, pyperclip, requests, bs4$/;"	kind:namespace	line:10
+btn	../TTS.py	/^btn=Button(f,text="Speak",command=text2Speech)$/;"	kind:variable	line:24
+by	../timymodule.py	/^import timy # begin by importing timy$/;"	kind:namespace	line:8
+bye	../dice_rolling_simulator.py	/^def bye():$/;"	kind:function	line:22
+c	../game_of_life/game_o_life.py	/^            c = run(c)            $/;"	kind:variable	line:112
+c	../game_of_life/game_o_life.py	/^    c=create_canvas(canvas_size)$/;"	kind:variable	line:105
+calc	../calculator.py	/^def calc(term):$/;"	kind:function	line:28
+calculator.py	../calculator.py	1;"	kind:file	line:1
+canvas_size	../game_of_life/game_o_life.py	/^    canvas_size = int(sys.argv[1])$/;"	kind:variable	line:103
+cap	../webcam.py	/^cap = cv2.VideoCapture(0)$/;"	kind:variable	line:8
+change	../Organise.py	/^def change(direc):$/;"	kind:function	line:44
+chaos.py	../chaos.py	1;"	kind:file	line:1
+chdir	../Google Image Downloader/create_dir.py	/^from os import chdir$/;"	kind:namespace	line:17
+chdir	../Google Image Downloader/image grapper.py	/^from os import chdir$/;"	kind:namespace	line:3
+checkInput	../diceV2_dynamic.py	/^def checkInput(sides):$/;"	kind:function	line:26
+check_Code	../Organise.py	/^check_Code = False$/;"	kind:variable	line:66
+check_Compressed	../Organise.py	/^check_Compressed = False$/;"	kind:variable	line:67
+check_Docs	../Organise.py	/^check_Docs = False$/;"	kind:variable	line:69
+check_Exe	../Organise.py	/^check_Exe = False$/;"	kind:variable	line:65
+check_Img	../Organise.py	/^check_Img = False$/;"	kind:variable	line:68
+check_Music	../Organise.py	/^check_Music = False$/;"	kind:variable	line:63
+check_Video	../Organise.py	/^check_Video = False$/;"	kind:variable	line:64
+check_file.py	../check_file.py	1;"	kind:file	line:1
+check_for_sqlite_files.py	../check_for_sqlite_files.py	1;"	kind:file	line:1
+check_input.py	../check_input.py	1;"	kind:file	line:1
+check_internet_con.py	../check_internet_con.py	1;"	kind:file	line:1
+chicks_n_rabs.py	../chicks_n_rabs.py	1;"	kind:file	line:1
+choice	../Google Image Downloader/image grapper.py	/^    choice = input()$/;"	kind:variable	line:134
+choice	../game_of_life/game_o_life.py	/^choice = [0]*100 + [1]*10$/;"	kind:variable	line:38
+chooseRandomMoveFromList	../TicTacToe.py	/^def chooseRandomMoveFromList(board, movesList):$/;"	kind:function	line:77
+cj	../GroupSms_Way2.py	/^cj = cookielib.CookieJar()$/;"	kind:variable	line:21
+clear_screen	../daily_checks.py	/^def clear_screen():				# Function to clear the screen$/;"	kind:function	line:23
+clear_screen	../script_count.py	/^def clear_screen():																		# Function to clear the screen$/;"	kind:function	line:19
+cmap	../game_of_life/game_o_life.py	/^    cmap = ListedColormap(['w','k'])$/;"	kind:variable	line:109
+collections	../CountMillionCharacters-2.0.py	/^import collections$/;"	kind:namespace	line:10
+combination	../factorial_perm_comp.py	/^def combination(n,r):$/;"	kind:function	line:26
+commands	../pscheck.py	/^import commands, os, string$/;"	kind:namespace	line:11
+con	../sqlite_check.py	/^    con = lite.connect(master_db)$/;"	kind:variable	line:22
+con	../sqlite_check.py	/^con = None$/;"	kind:variable	line:19
+con	../sqlite_check.py	/^con = lite.connect(master_db)$/;"	kind:variable	line:40
+con	../sqlite_check.py	/^con = lite.connect(master_db)$/;"	kind:variable	line:47
+confdir	../backup_automater_services.py	/^confdir      = os.getenv("my_config")		  	   # Set the variable by getting the value from the OS setting$/;"	kind:variable	line:18
+confdir	../env_check.py	/^confdir = os.getenv("my_config")                # Set the variable confdir from the OS environment variable$/;"	kind:variable	line:13
+confdir	../new_script.py	/^confdir = os.getenv("my_config")$/;"	kind:variable	line:45
+confdir	../ping_servers.py	/^confdir = os.getenv("my_config")													# Set the variable confdir from the OS environment variable - 1.2$/;"	kind:variable	line:52
+conffile	../backup_automater_services.py	/^conffile     = ('services.conf') 					     # Set the variable as the name of the configuration file$/;"	kind:variable	line:20
+conffile	../env_check.py	/^conffile = 'env_check.conf'                     # Set the variable conffile$/;"	kind:variable	line:14
+conffile	../ping_servers.py	/^conffile = (appgroup + '_servers_' + site + '.txt')									# Set the variable conffile - 1.2$/;"	kind:variable	line:53
+conffilename	../backup_automater_services.py	/^conffilename = os.path.join(confdir, conffile) # Set the variable by combining the path and the file name$/;"	kind:variable	line:21
+conffilename	../env_check.py	/^conffilename = os.path.join(confdir, conffile)  # Set the variable conffilename by joining confdir and conffile together$/;"	kind:variable	line:15
+conffilename	../ping_servers.py	/^conffilename = os.path.join(confdir, conffile)									# Set the variable conffilename by joining confdir and conffile together - 1.2$/;"	kind:variable	line:54
+conffilename	../work_connect.py	/^conffilename=os.path.join(dropbox, rdpfile)			# Set the variable conffilename by joining confdir and conffile together$/;"	kind:variable	line:18
+config	../powerup_checks.py	/^config=os.getenv("my_config")														# Set the variable, by getting the value of the variable from the OS$/;"	kind:variable	line:19
+config	../sqlite_table_check.py	/^config      = os.getenv("my_config")$/;"	kind:variable	line:17
+config_file	../new_script.py	/^    config_file = "bash.cfg"$/;"	kind:variable	line:33
+config_file	../new_script.py	/^    config_file = "ksh.cfg"$/;"	kind:variable	line:36
+config_file	../new_script.py	/^    config_file = "python.cfg"$/;"	kind:variable	line:30
+config_file	../new_script.py	/^    config_file = "sql.cfg"$/;"	kind:variable	line:39
+config_file	../sqlite_table_check.py	/^config_file = os.path.join(config, listfile)$/;"	kind:variable	line:21
+conn	../python_sms.py	/^conn = sqlite3.connect(master_db)$/;"	kind:variable	line:27
+conn	../sqlite_table_check.py	/^  conn = sqlite3.connect(master_db)$/;"	kind:variable	line:38
+conn	../sqlite_table_check.py	/^conn   = sqlite3.connect(master_db)$/;"	kind:variable	line:24
+connScan	../portscanner.py	/^def connScan(tgtHost, tgtPort):		# Start of the function$/;"	kind:function	line:17
+constants	../fileinfo.py	/^import stat   # index constants for os.stat()$/;"	kind:namespace	line:16
+cookielib	../GroupSms_Way2.py	/^import cookielib$/;"	kind:namespace	line:4
+copytree	../Google Image Downloader/create_dir.py	/^from shutil import copytree$/;"	kind:namespace	line:15
+count	../fileinfo.py	/^        count = count + 1$/;"	kind:variable	line:26
+count	../fileinfo.py	/^    count = 0$/;"	kind:variable	line:24
+count	../get_youtube_view.py	/^count = int(input("Number of times to be repeated: "))$/;"	kind:variable	line:14
+count_files	../script_count.py	/^def count_files(path, extensions):     											# Start of the function to count the files in the scripts directory, it counts the extension when passed below$/;"	kind:function	line:25
+countchars	../CountMillionCharacters-Variations/variation1.py	/^def countchars(filename):$/;"	kind:function	line:4
+create_canvas	../game_of_life/game_o_life.py	/^def create_canvas(size):$/;"	kind:function	line:41
+create_dir.py	../Google Image Downloader/create_dir.py	1;"	kind:file	line:1
+create_dir_if_not_there.py	../create_dir_if_not_there.py	1;"	kind:file	line:1
+create_directory	../Google Image Downloader/create_dir.py	/^def create_directory(name):$/;"	kind:function	line:26
+create_directory	../Google Image Downloader/image grapper.py	/^from create_dir import create_directory$/;"	kind:namespace	line:13
+cricket_live_score.py	../cricket_live_score.py	1;"	kind:file	line:1
+crypt	../password_cracker.py	/^    import crypt # Import the module$/;"	kind:namespace	line:15
+ct	../jee_result.py	/^       ct = ct + 1;$/;"	kind:variable	line:41
+ct	../jee_result.py	/^   ct=0$/;"	kind:variable	line:26
+cur	../sqlite_check.py	/^    cur = con.cursor()$/;"	kind:variable	line:23
+cur	../sqlite_check.py	/^cur=con.cursor()$/;"	kind:variable	line:41
+cur	../sqlite_check.py	/^cur=con.cursor()$/;"	kind:variable	line:48
+curdir	../Google Image Downloader/image grapper.py	/^from os.path import curdir$/;"	kind:namespace	line:10
+current	../EncryptionTool.py	/^    current=chr(current)$/;"	kind:variable	line:87
+current	../EncryptionTool.py	/^    current=encryptChar(current)$/;"	kind:variable	line:81
+current	../EncryptionTool.py	/^    current=int(decryptChar(values[i]))$/;"	kind:variable	line:86
+current	../EncryptionTool.py	/^    current=ord(text[i])$/;"	kind:variable	line:80
+current_file	../ex20.py	/^current_file = open(input_file)$/;"	kind:variable	line:15
+current_line	../ex20.py	/^current_line = 1$/;"	kind:variable	line:24
+current_line	../ex20.py	/^current_line = current_line + 1$/;"	kind:variable	line:27
+current_line	../ex20.py	/^current_line = current_line + 1$/;"	kind:variable	line:30
+currentdate	../jee_result.py	/^currentdate = datetime.date(1997,3,10)$/;"	kind:variable	line:23
+cursor	../python_sms.py	/^cursor = conn.cursor()$/;"	kind:variable	line:28
+cursor	../sqlite_table_check.py	/^  cursor = conn.cursor()$/;"	kind:variable	line:39
+cursor	../sqlite_table_check.py	/^cursor = conn.cursor()$/;"	kind:variable	line:25
+cv2	../webcam.py	/^import cv2$/;"	kind:namespace	line:6
+d	../dice.py	/^d = Die()$/;"	kind:variable	line:30
+d1	../dice.py	/^d1 = Die()$/;"	kind:variable	line:31
+daily_checks.py	../daily_checks.py	1;"	kind:file	line:1
+data	../get_likes_on_FB.py	/^data = json.load(urllib.urlopen(url))$/;"	kind:variable	line:12
+data	../sqlite_check.py	/^    data = cur.fetchone()$/;"	kind:variable	line:25
+data	../sqlite_table_check.py	/^data = cursor.fetchone()$/;"	kind:variable	line:27
+date	../get_likes_on_FB.py	/^   date=item['created_time'][5:10]$/;"	kind:variable	line:19
+datetime	../backup_automater_services.py	/^import datetime                         # Load the library module$/;"	kind:namespace	line:11
+datetime	../jee_result.py	/^import datetime$/;"	kind:namespace	line:2
+datetime	../new_script.py	/^import datetime		# Load the library module$/;"	kind:namespace	line:13
+dbfile	../powerup_checks.py	/^dbfile=("Databases\/jarvis.db")															# Set the variable to the database$/;"	kind:variable	line:20
+dbfile	../python_sms.py	/^dbfile = ("database\/maindatabase.db")$/;"	kind:variable	line:20
+dbfile	../sqlite_check.py	/^dbfile=("Databases\\jarvis.db")$/;"	kind:variable	line:17
+dbfile	../sqlite_table_check.py	/^dbfile      = ("Databases\\jarvis.db")$/;"	kind:variable	line:18
+ddmmyyyy	../jee_result.py	/^   ddmmyyyy = yyyymmdd[8:] + "\/" + yyyymmdd[5:7] + "\/" +yyyymmdd[:4]$/;"	kind:variable	line:29
+dec_num	../dec_to_hex.py	/^dec_num=input('Enter the decimal number\\n')$/;"	kind:variable	line:1
+dec_to_hex.py	../dec_to_hex.py	1;"	kind:file	line:1
+decrypt	../EncryptionTool.py	/^def decrypt(enc_text):$/;"	kind:function	line:29
+decryptChar	../EncryptionTool.py	/^def decryptChar(target):$/;"	kind:function	line:16
+delete_directory	../Google Image Downloader/create_dir.py	/^def delete_directory(name):$/;"	kind:function	line:34
+destdir	../backup_automater_services.py	/^destdir      = os.path.join(dropbox, "My_backups" + "\/" +$/;"	kind:variable	line:23
+destfile	../backup_automater_services.py	/^    destfile = os.path.join(destdir, fname) 			      # Get the name of the destination file names$/;"	kind:variable	line:31
+dev_dir	../new_script.py	/^dev_dir = "Development"$/;"	kind:variable	line:47
+development	../script_count.py	/^def development():   																	# Start of the function just to count the files in the development directory$/;"	kind:function	line:43
+dice.py	../dice.py	1;"	kind:file	line:1
+dice12	../dice_rolling_simulator.py	/^def dice12():$/;"	kind:function	line:77
+dice6	../dice_rolling_simulator.py	/^def dice6():$/;"	kind:function	line:53
+dice8	../dice_rolling_simulator.py	/^def dice8():$/;"	kind:function	line:66
+diceV2_dynamic.py	../diceV2_dynamic.py	1;"	kind:file	line:1
+dice_rolling_simulator.py	../dice_rolling_simulator.py	1;"	kind:file	line:1
+dices	../diceV2_dynamic.py	/^dices = getDices()$/;"	kind:variable	line:73
+dir_test.py	../dir_test.py	1;"	kind:file	line:1
+download_files	../prison_break_scrapper.py	/^def download_files(links, idx):$/;"	kind:function	line:14
+drawBoard	../TicTacToe.py	/^def drawBoard(board):$/;"	kind:function	line:5
+driver	../get_youtube_view.py	/^driver = webdriver.Safari()$/;"	kind:variable	line:24
+dropbox	../backup_automater_services.py	/^dropbox      = os.getenv("dropbox") 					 # Set the variable by getting the value from the OS setting$/;"	kind:variable	line:19
+dropbox	../powerup_checks.py	/^dropbox=os.getenv("dropbox")															# Set the variable, by getting the value of the variable from the OS$/;"	kind:variable	line:18
+dropbox	../python_sms.py	/^dropbox = os.getenv("dropbox")$/;"	kind:variable	line:18
+dropbox	../script_count.py	/^dropbox = os.getenv("dropbox")													# Set the variable dropbox by getting the value from the OS environment variable dropbox$/;"	kind:variable	line:17
+dropbox	../sqlite_check.py	/^dropbox= os.getenv("dropbox")$/;"	kind:variable	line:16
+dropbox	../sqlite_table_check.py	/^dropbox     = os.getenv("dropbox")$/;"	kind:variable	line:16
+dropbox	../work_connect.py	/^dropbox = os.getenv("dropbox")							# Set the variable dropbox, by getting the values of the environment setting for dropbox$/;"	kind:variable	line:16
+dst	../move_files_over_x_days.py	/^dst = 'c:\\\\test'  # Set the destination directory$/;"	kind:variable	line:14
+e	../TTS.py	/^e=Entry(f,width=30)$/;"	kind:variable	line:22
+eax	../Assembler/assembler.py	/^eax = 0$/;"	kind:variable	line:7
+ebx	../Assembler/assembler.py	/^ebx = 0$/;"	kind:variable	line:8
+ecx	../Assembler/assembler.py	/^ecx = 0$/;"	kind:variable	line:9
+edx	../Assembler/assembler.py	/^edx = 0$/;"	kind:variable	line:10
+encrypt	../EncryptionTool.py	/^def encrypt(input_text):$/;"	kind:function	line:20
+encryptChar	../EncryptionTool.py	/^def encryptChar(target):$/;"	kind:function	line:11
+enddate	../jee_result.py	/^enddate = datetime.date(1998,4,1)$/;"	kind:variable	line:24
+endtime	../SimpleStopWatch.py	/^        endtime = time.time()$/;"	kind:variable	line:14
+env_check	../env_check.py	/^  env_check = env_check.strip()                 # Set the variable as itself, but strip the extra text out$/;"	kind:variable	line:18
+env_check.py	../env_check.py	1;"	kind:file	line:1
+errno	../spotlight.py	/^import errno$/;"	kind:namespace	line:4
+euroclear_docs	../daily_checks.py	/^def euroclear_docs():$/;"	kind:function	line:46
+ex20.py	../ex20.py	1;"	kind:file	line:1
+exists	../Google Image Downloader/create_dir.py	/^from os.path import exists$/;"	kind:namespace	line:18
+extension	../new_script.py	/^    extension = ".bash"$/;"	kind:variable	line:34
+extension	../new_script.py	/^    extension = ".ksh"$/;"	kind:variable	line:37
+extension	../new_script.py	/^    extension = ".py"$/;"	kind:variable	line:31
+extension	../new_script.py	/^    extension = ".sql"$/;"	kind:variable	line:40
+f	../TTS.py	/^f=Frame(tts,height=280,width=500,bg="#bebebe")$/;"	kind:variable	line:18
+f	../ping_servers.py	/^f = open(logfilename, "w")															# Open a logfile to write out the output$/;"	kind:variable	line:56
+f	../ping_subnet.py	/^    f = open('ping_' + subnet + '.log', 'w')															# Open a logfile$/;"	kind:variable	line:33
+f	../python_sms.py	/^f = open(scripts+'\/output\/student.txt','a')$/;"	kind:variable	line:23
+factorial	../factorial_perm_comp.py	/^def factorial(n):	$/;"	kind:function	line:12
+factorial	../primelib/primelib.py	/^def factorial(n):$/;"	kind:function	line:568
+factorial_perm_comp.py	../factorial_perm_comp.py	1;"	kind:file	line:1
+fcrypt	../password_cracker.py	/^       import fcrypt # Try importing the fcrypt module$/;"	kind:namespace	line:19
+fd	../jee_result.py	/^   fd = b.submit()$/;"	kind:variable	line:36
+fhand	../fileinfo.py	/^    fhand = open(file_name)$/;"	kind:variable	line:23
+fhand	../fileinfo.py	/^    fhand = open(file_name)$/;"	kind:variable	line:27
+fib	../primelib/primelib.py	/^def fib(n):$/;"	kind:function	line:586
+file	../psunotify.py	/^     file=open('psu2'+q+'.pdf','wb')$/;"	kind:variable	line:31
+file_info	../fileinfo.py	/^file_info = {$/;"	kind:variable	line:43
+file_name	../fileinfo.py	/^    file_name = input("Enter a file name: ")      # pick a file you have$/;"	kind:variable	line:22
+file_stats	../fileinfo.py	/^        file_stats = os.stat(file_name)$/;"	kind:variable	line:32
+fileinfo.py	../fileinfo.py	1;"	kind:file	line:1
+filename	../ping_servers.py	/^filename = sys.argv[0]																# Sets a variable for the script name$/;"	kind:variable	line:15
+filename	../ping_subnet.py	/^filename = sys.argv[0]																				# Sets a variable for the script name$/;"	kind:variable	line:15
+files1	../logs.py	/^		files1 = files + "." + strftime("%Y-%m-%d") + ".zip"    # Create the Variable files1, this is the files in the directory, then we add a suffix with the date and the zip extension$/;"	kind:variable	line:20
+files1	../puttylogs.py	/^		files1=files+"."+strftime("%Y-%m-%d")+".zip"		# Create the Variable files1, this is the files in the directory, then we add a suffix with the date and the zip extension$/;"	kind:variable	line:22
+findLinear	../QuadraticCalc.py	/^def findLinear(numbers):    ##find a & b of linear sequence$/;"	kind:function	line:6
+findRecycled	../recyclebin.py	/^def findRecycled(recycleDir):	# Start of the function, list the contents of the recyclebin$/;"	kind:function	line:33
+find_prime	../find_prime.py	/^def find_prime(num):$/;"	kind:function	line:29
+find_prime.py	../find_prime.py	1;"	kind:file	line:1
+find_tf_idf	../tf_idf_generator.py	/^def find_tf_idf(file_names=['.\/..\/test\/testdata'],prev_file_path=None, dump_path=None):$/;"	kind:function	line:65
+first_difference	../QuadraticCalc.py	/^first_difference=[]$/;"	kind:variable	line:17
+fname	../backup_automater_services.py	/^  fname = file_name.strip()													    # Strip out the blank lines from the configuration file$/;"	kind:variable	line:28
+folder_size.py	../folder_size.py	1;"	kind:file	line:1
+for	../fileinfo.py	/^import stat   # index constants for os.stat()$/;"	kind:namespace	line:16
+for	../primelib/primelib.py	/^    import math    # for function sqrt$/;"	kind:namespace	line:146
+for	../primelib/primelib.py	/^    import math # for function sqrt$/;"	kind:namespace	line:47
+from	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+from	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+from	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+from	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+from	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+ftp_send_receive.py	../ftp_send_receive.py	1;"	kind:file	line:1
+function	../primelib/primelib.py	/^    import math    # for function sqrt$/;"	kind:namespace	line:146
+function	../primelib/primelib.py	/^    import math # for function sqrt$/;"	kind:namespace	line:47
+functions	../python_sms.py	/^import urllib      # URL functions$/;"	kind:namespace	line:11
+functions	../python_sms.py	/^import urllib2     # URL functions$/;"	kind:namespace	line:12
+game	../magic8ball.py	/^def game():$/;"	kind:function	line:43
+game_o_life.py	../game_of_life/game_o_life.py	1;"	kind:file	line:1
+gcd	../primelib/primelib.py	/^def gcd(number1,number2):$/;"	kind:function	line:317
+getBoardCopy	../TicTacToe.py	/^def getBoardCopy(board):$/;"	kind:function	line:56
+getCodes	../Organise.py	/^def getCodes():$/;"	kind:function	line:20
+getCompressed	../Organise.py	/^def getCompressed():$/;"	kind:function	line:23
+getComputerMove	../TicTacToe.py	/^def getComputerMove(board, computerLetter):$/;"	kind:function	line:90
+getDices	../diceV2_dynamic.py	/^def getDices(): $/;"	kind:function	line:54
+getDivisors	../primelib/primelib.py	/^def getDivisors(n):$/;"	kind:function	line:492
+getDoc	../Organise.py	/^def getDoc():$/;"	kind:function	line:32
+getExe	../Organise.py	/^def getExe():$/;"	kind:function	line:29
+getImages	../Organise.py	/^def getImages():$/;"	kind:function	line:26
+getMid	../sierpinski_triangle.py	/^def getMid(p1,p2):$/;"	kind:function	line:37
+getMusic	../Organise.py	/^def getMusic():$/;"	kind:function	line:17
+getPlayerMove	../TicTacToe.py	/^def getPlayerMove(board):$/;"	kind:function	line:69
+getPrime	../primelib/primelib.py	/^def getPrime(n):$/;"	kind:function	line:419
+getPrimeNumbers	../primelib/primelib.py	/^def getPrimeNumbers(N):$/;"	kind:function	line:112
+getPrimesBetween	../primelib/primelib.py	/^def getPrimesBetween(pNumber1, pNumber2):$/;"	kind:function	line:451
+getStatus	../tweeter.py	/^def getStatus():$/;"	kind:function	line:11
+getVideo	../Organise.py	/^def getVideo():$/;"	kind:function	line:14
+get_info_remoute_srv.py	../get_info_remoute_srv.py	1;"	kind:file	line:1
+get_likes_on_FB.py	../get_likes_on_FB.py	1;"	kind:file	line:1
+get_parser	../batch_file_rename.py	/^def get_parser():$/;"	kind:function	line:36
+get_servers	../powerup_checks.py	/^def get_servers(query):																																# Function to get the servers from the database$/;"	kind:function	line:55
+get_spotlight_wallpapers	../spotlight.py	/^def get_spotlight_wallpapers(target_folder):$/;"	kind:function	line:28
+get_user_input	../check_input.py	/^def get_user_input(start,end):$/;"	kind:function	line:1
+get_youtube_view.py	../get_youtube_view.py	1;"	kind:file	line:1
+getpass	../GroupSms_Way2.py	/^from getpass import getpass$/;"	kind:namespace	line:5
+getsize	../check_for_sqlite_files.py	/^    from os.path import isfile, getsize$/;"	kind:namespace	line:15
+github	../script_count.py	/^def github():   																			# Start of the function just to count the files in the github directory$/;"	kind:function	line:32
+goldbach	../primelib/primelib.py	/^def goldbach(number):$/;"	kind:function	line:267
+google.py	../google.py	1;"	kind:file	line:1
+gradient	../QuadraticCalc.py	/^    gradient=first_difference[i+1]-first_difference[i]$/;"	kind:variable	line:28
+gradient	../QuadraticCalc.py	/^    gradient=sequence[i+1]-sequence[i]$/;"	kind:variable	line:25
+gray	../webcam.py	/^    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)$/;"	kind:variable	line:15
+greatestPrimeFactor	../primelib/primelib.py	/^def greatestPrimeFactor(number):$/;"	kind:function	line:187
+h	../psunotify.py	/^h=ht.read()$/;"	kind:variable	line:15
+hash	../python_sms.py	/^  hash = 'YOUR HASH YOU GET FROM YOUR ACCOUNT'$/;"	kind:variable	line:43
+hashlib	../spotlight.py	/^import hashlib$/;"	kind:namespace	line:5
+headers	../youtube.py	/^headers = {$/;"	kind:variable	line:15
+home	../create_dir_if_not_there.py	/^    home = os.path.expanduser("~")          # Set the variable home by expanding the user's set home directory$/;"	kind:variable	line:15
+ht	../psunotify.py	/^ht=br.open(p)$/;"	kind:variable	line:12
+html	../xkcd_downloader.py	/^from lxml import html$/;"	kind:namespace	line:13
+html_page	../cricket_live_score.py	/^html_page=Client.read()$/;"	kind:variable	line:8
+httpd	../start-server.py	/^httpd = SocketServer.TCPServer(("", PORT), Handler)$/;"	kind:variable	line:9
+id	../get_likes_on_FB.py	/^id=0$/;"	kind:variable	line:13
+image grapper.py	../Google Image Downloader/image grapper.py	1;"	kind:file	line:1
+image_grabber	../Google Image Downloader/image grapper.py	/^def image_grabber(ch):$/;"	kind:function	line:27
+import	../multiplication_table.py	/^from sys import argv # import argment variable $/;"	kind:namespace	line:1
+importing	../password_cracker.py	/^       import fcrypt # Try importing the fcrypt module$/;"	kind:namespace	line:19
+importing	../timymodule.py	/^import timy # begin by importing timy$/;"	kind:namespace	line:8
+index	../fileinfo.py	/^import stat   # index constants for os.stat()$/;"	kind:namespace	line:16
+initialize	../tweeter.py	/^def initialize():$/;"	kind:function	line:44
+inp	../QuadraticCalc.py	/^    inp=int(input("Enter term "+term+": "))$/;"	kind:variable	line:21
+inp	../fileinfo.py	/^    inp = fhand.read()$/;"	kind:variable	line:28
+input	../new_script.py	/^input = open(input_file, 'r')$/;"	kind:variable	line:58
+inputFile	../CountMillionCharacters-Variations/variation1.py	/^        inputFile = input_func("File Name : ")$/;"	kind:variable	line:24
+inputPlayerLetter	../TicTacToe.py	/^def inputPlayerLetter():$/;"	kind:function	line:15
+input_file	../new_script.py	/^input_file = os.path.join(confdir,config_file)$/;"	kind:variable	line:52
+input_func	../CountMillionCharacters-Variations/variation1.py	/^        input_func = input           # otherwise use 'raw_input'$/;"	kind:variable	line:16
+input_func	../CountMillionCharacters-Variations/variation1.py	/^        input_func = raw_input$/;"	kind:variable	line:18
+input_par	../meme_maker.py	/^def input_par():$/;"	kind:function	line:6
+int	../psunotify.py	/^    int=int+1$/;"	kind:variable	line:21
+int	../psunotify.py	/^int=0$/;"	kind:variable	line:17
+isBoardFull	../TicTacToe.py	/^def isBoardFull(board):$/;"	kind:function	line:126
+isEven	../primelib/primelib.py	/^def isEven(number):$/;"	kind:function	line:238
+isOdd	../primelib/primelib.py	/^def isOdd(number):$/;"	kind:function	line:252
+isPerfectNumber	../primelib/primelib.py	/^def isPerfectNumber(number):$/;"	kind:function	line:522
+isPrime	../primelib/primelib.py	/^def isPrime(number):$/;"	kind:function	line:42
+isSQLite3	../check_for_sqlite_files.py	/^def isSQLite3(filename):$/;"	kind:function	line:14
+isSpaceFree	../TicTacToe.py	/^def isSpaceFree(board, move):$/;"	kind:function	line:65
+isWinner	../TicTacToe.py	/^def isWinner(bo, le):$/;"	kind:function	line:44
+is_exist	../CountMillionCharacters-Variations/variation1.py	/^        is_exist = False            #Set False if File Name found$/;"	kind:variable	line:26
+is_exist	../CountMillionCharacters-Variations/variation1.py	/^is_exist=True$/;"	kind:variable	line:20
+isfile	../check_for_sqlite_files.py	/^    from os.path import isfile, getsize$/;"	kind:namespace	line:15
+jee_result.py	../jee_result.py	1;"	kind:file	line:1
+jession_id	../GroupSms_Way2.py	/^jession_id = str(cj).split('~')[1].split(' ')[0]$/;"	kind:variable	line:34
+json	../Google Image Downloader/image grapper.py	/^import json$/;"	kind:namespace	line:9
+json	../get_likes_on_FB.py	/^import json$/;"	kind:namespace	line:2
+json	../wiki_random.py	/^import requests, json, webbrowser$/;"	kind:namespace	line:17
+jumps	../Assembler/assembler.py	/^jumps = {}$/;"	kind:variable	line:21
+just	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+just	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+just	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+just	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+just	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+kgV	../primelib/primelib.py	/^def kgV(number1, number2):$/;"	kind:function	line:345
+kmp	../kmp_str_search.py	/^def kmp(pattern, text, len_p=None, len_t=None):$/;"	kind:function	line:10
+kmp_str_search.py	../kmp_str_search.py	1;"	kind:file	line:1
+koch curve.py	../Koch Curve/koch curve.py	1;"	kind:file	line:1
+l	../cricket_live_score.py	/^l = len(score_box)$/;"	kind:variable	line:16
+l	../find_prime.py	/^    l = find_prime(num)$/;"	kind:variable	line:41
+lbl	../TTS.py	/^lbl=Label(f,text="Enter your Text here : ")$/;"	kind:variable	line:20
+library	../backup_automater_services.py	/^import datetime                         # Load the library module$/;"	kind:namespace	line:11
+library	../backup_automater_services.py	/^import os                               # Load the library module$/;"	kind:namespace	line:12
+library	../backup_automater_services.py	/^import shutil							# Load the library module$/;"	kind:namespace	line:13
+library	../new_script.py	/^import datetime		# Load the library module$/;"	kind:namespace	line:13
+library	../new_script.py	/^import os				# Load the library module$/;"	kind:namespace	line:11
+library	../new_script.py	/^import sys				# Load the library module$/;"	kind:namespace	line:12
+library	../script_count.py	/^import os																					# Load the library module$/;"	kind:namespace	line:14
+library	../script_listing.py	/^import os																		# Load the library module							$/;"	kind:namespace	line:12
+limit	../get_likes_on_FB.py	/^limit=100$/;"	kind:variable	line:8
+line	../new_script.py	/^  line = line.replace(old_date, new_date)$/;"	kind:variable	line:65
+line	../new_script.py	/^  line = line.replace(old_text, new_text)$/;"	kind:variable	line:64
+lines	../Assembler/assembler.py	/^lines = [] # contains the lines of the file. $/;"	kind:variable	line:3
+link	../youtube.py	/^link = song['href']$/;"	kind:variable	line:29
+linux	../powerdown_startup.py	/^def linux():$/;"	kind:function	line:25
+linux	../powerup_checks.py	/^def linux():																																					# This is the function to run if it detects the OS is nix.$/;"	kind:function	line:46
+list_dir	../Organise.py	/^list_dir = os.listdir(os.getcwd())$/;"	kind:variable	line:58
+listcomprehension	../timymodule.py	/^def listcomprehension(): # the function whose execution time is calculated.$/;"	kind:function	line:11
+listcreator	../timymodule.py	/^def listcreator():$/;"	kind:function	line:31
+listfile	../powerup_checks.py	/^listfile=("startup_list.txt")																# File that will hold the servers$/;"	kind:variable	line:22
+listfile	../sqlite_table_check.py	/^listfile    = ("sqlite_master_table.lst")$/;"	kind:variable	line:19
+lite	../sqlite_check.py	/^import sqlite3 as lite$/;"	kind:namespace	line:12
+load	../wiki_random.py	/^def load():$/;"	kind:function	line:22
+loadFile	../Assembler/assembler.py	/^def loadFile(fileName):$/;"	kind:function	line:47
+loc_stmt	../python_sms.py	/^loc_stmt = 'SELECT name, number from table'$/;"	kind:variable	line:29
+log	../check_for_sqlite_files.py	/^log=open('sqlite_audit.txt','w')$/;"	kind:variable	line:31
+log	../script_listing.py	/^log = open(logfilename, 'w')												    # Set the variable log and open the logfile for writing$/;"	kind:variable	line:20
+logdir	../ping_servers.py	/^logdir = os.getenv("logs")															# Set the variable logdir by getting the OS environment logs$/;"	kind:variable	line:49
+logdir	../script_listing.py	/^logdir  = os.getenv("logs")												# Set the variable logdir by getting the value from the OS environment variable logs$/;"	kind:variable	line:14
+logfile	../ping_servers.py	/^logfile = 'ping_' + appgroup + '_' + site + '.log'										# Set the variable logfile, using the arguments passed to create the logfile$/;"	kind:variable	line:50
+logfile	../script_listing.py	/^logfile = 'script_list.log'													# Set the variable logfile$/;"	kind:variable	line:15
+logfilename	../ping_servers.py	/^logfilename = os.path.join(logdir, logfile)											# Set the variable logfilename by joining logdir and logfile together$/;"	kind:variable	line:51
+logfilename	../script_listing.py	/^logfilename = os.path.join(logdir, logfile)					  	# Set the variable logfilename by joining logdir and logfile together$/;"	kind:variable	line:19
+logs.py	../logs.py	1;"	kind:file	line:1
+logsdir	../logs.py	/^logsdir = "c:\\puttylogs"      # Set the Variable logsdir$/;"	kind:variable	line:15
+logsdir	../puttylogs.py	/^logsdir="c:\\logs\\puttylogs"											# Set the Variable logsdir$/;"	kind:variable	line:16
+magic8ball.py	../magic8ball.py	1;"	kind:file	line:1
+main	../Assembler/assembler.py	/^def main():$/;"	kind:function	line:1659
+main	../CountMillionCharacters-2.0.py	/^def main():$/;"	kind:function	line:13
+main	../batch_file_rename.py	/^def main():$/;"	kind:function	line:43
+main	../calculator.py	/^def main():$/;"	kind:function	line:86
+main	../chaos.py	/^def main():$/;"	kind:function	line:3
+main	../check_file.py	/^def main():$/;"	kind:function	line:31
+main	../daily_checks.py	/^def main():$/;"	kind:function	line:54
+main	../dir_test.py	/^def main():$/;"	kind:function	line:14
+main	../factorial_perm_comp.py	/^def main():$/;"	kind:function	line:30
+main	../google.py	/^def main():$/;"	kind:function	line:12
+main	../meme_maker.py	/^def main():$/;"	kind:function	line:17
+main	../merge.py	/^def main():$/;"	kind:function	line:34
+main	../nmap_scan.py	/^def main():																								# Main Program$/;"	kind:function	line:22
+main	../password_cracker.py	/^def main():$/;"	kind:function	line:37
+main	../portscanner.py	/^def main():$/;"	kind:function	line:49
+main	../powerup_checks.py	/^def main():																																					# Main Function$/;"	kind:function	line:69
+main	../prison_break_scrapper.py	/^def main():$/;"	kind:function	line:28
+main	../pscheck.py	/^def main():$/;"	kind:function	line:31
+main	../recyclebin.py	/^def main():$/;"	kind:function	line:42
+main	../tweeter.py	/^def main():$/;"	kind:function	line:57
+main	../xkcd_downloader.py	/^def main():$/;"	kind:function	line:17
+main_names	../Organise.py	/^main_names = ['Video','Folders','Images','Documents','Music','Codes','Executables','Compressed']$/;"	kind:variable	line:72
+makeMove	../TicTacToe.py	/^def makeMove(board, letter, move):$/;"	kind:function	line:41
+make_folder	../spotlight.py	/^def make_folder(folder_name):$/;"	kind:function	line:17
+makedirs	../Google Image Downloader/create_dir.py	/^from os import makedirs$/;"	kind:namespace	line:20
+master_db	../powerup_checks.py	/^master_db=os.path.join(dropbox, dbfile)											# Create the variable by linking the path and the file$/;"	kind:variable	line:21
+master_db	../python_sms.py	/^master_db = os.path.join(dropbox, dbfile)$/;"	kind:variable	line:21
+master_db	../sqlite_check.py	/^master_db=os.path.join(dropbox, dbfile)$/;"	kind:variable	line:18
+master_db	../sqlite_table_check.py	/^master_db   = os.path.join(dropbox, dbfile)$/;"	kind:variable	line:20
+math	../calculator.py	/^import math$/;"	kind:namespace	line:24
+math	../primelib/primelib.py	/^    import math    # for function sqrt$/;"	kind:namespace	line:146
+math	../primelib/primelib.py	/^    import math # for function sqrt$/;"	kind:namespace	line:47
+math	../tf_idf_generator.py	/^import os, math, pickle$/;"	kind:namespace	line:34
+matplotlib	../game_of_life/game_o_life.py	/^import matplotlib.animation as animation$/;"	kind:namespace	line:33
+md5	../spotlight.py	/^def md5(fname):$/;"	kind:function	line:8
+mechanize	../jee_result.py	/^import mechanize$/;"	kind:namespace	line:3
+mechanize	../psunotify.py	/^import mechanize$/;"	kind:namespace	line:1
+meme_maker.py	../meme_maker.py	1;"	kind:file	line:1
+merge	../merge.py	/^def merge():$/;"	kind:function	line:12
+merge.py	../merge.py	1;"	kind:file	line:1
+message	../GroupSms_Way2.py	/^message = "+".join(message.split(' '))$/;"	kind:variable	line:14
+message	../GroupSms_Way2.py	/^message = raw_input('Enter Message:')$/;"	kind:variable	line:10
+message	../python_sms.py	/^  message = (sname + ' There will be NO training tonight on the ' + tdate + ' Sorry for the late notice, I have sent a mail as well, just trying to reach everyone, please do not reply to this message as this is automated')$/;"	kind:variable	line:38
+minutes	../get_youtube_view.py	/^minutes = int(input("Minutes "))$/;"	kind:variable	line:18
+module	../backup_automater_services.py	/^import datetime                         # Load the library module$/;"	kind:namespace	line:11
+module	../backup_automater_services.py	/^import os                               # Load the library module$/;"	kind:namespace	line:12
+module	../backup_automater_services.py	/^import shutil							# Load the library module$/;"	kind:namespace	line:13
+module	../create_dir_if_not_there.py	/^import os		# Import the OS module$/;"	kind:namespace	line:11
+module	../new_script.py	/^import datetime		# Load the library module$/;"	kind:namespace	line:13
+module	../new_script.py	/^import os				# Load the library module$/;"	kind:namespace	line:11
+module	../new_script.py	/^import sys				# Load the library module$/;"	kind:namespace	line:12
+module	../nmap_scan.py	/^import nmap			# Import the module$/;"	kind:namespace	line:11
+module	../nmap_scan.py	/^import optparse		# Import the module$/;"	kind:namespace	line:12
+module	../nslookup_check.py	/^import subprocess										# Import the subprocess module$/;"	kind:namespace	line:11
+module	../password_cracker.py	/^       import fcrypt # Try importing the fcrypt module$/;"	kind:namespace	line:19
+module	../password_cracker.py	/^    import crypt # Import the module$/;"	kind:namespace	line:15
+module	../portscanner.py	/^from socket import *		# Import the module$/;"	kind:namespace	line:12
+module	../portscanner.py	/^from threading import *		# Import the module$/;"	kind:namespace	line:13
+module	../portscanner.py	/^import optparse				# Import the module$/;"	kind:namespace	line:11
+module	../script_count.py	/^import os																					# Load the library module$/;"	kind:namespace	line:14
+module	../script_listing.py	/^import os																		# Load the library module							$/;"	kind:namespace	line:12
+move	../Google Image Downloader/create_dir.py	/^from shutil import move$/;"	kind:namespace	line:16
+move_files_over_x_days.py	../move_files_over_x_days.py	1;"	kind:file	line:1
+move_folder	../Google Image Downloader/create_dir.py	/^def move_folder(filename, name_dir, folder):$/;"	kind:function	line:55
+multiplication_table.py	../multiplication_table.py	1;"	kind:file	line:1
+myPen	../sierpinski_triangle.py	/^myPen = turtle.Turtle()$/;"	kind:variable	line:30
+my_url	../cricket_live_score.py	/^my_url="http:\/\/www.cricbuzz.com\/"$/;"	kind:variable	line:5
+myping	../ping_servers.py	/^        myping = "ping -c 2 "															# This is the ping command$/;"	kind:variable	line:35
+myping	../ping_servers.py	/^        myping = "ping -n 2 "															# This is the ping command$/;"	kind:variable	line:37
+myping	../ping_subnet.py	/^        myping = "ping -c 2 "																			# This is the ping command$/;"	kind:variable	line:29
+myping	../ping_subnet.py	/^        myping = "ping -n 2 "																			# This is the ping command$/;"	kind:variable	line:31
+n	../Print_List_of_Even_Numbers.py	/^    n=input('Enter number of even numbers to print: ')$/;"	kind:variable	line:12
+n	../QuadraticCalc.py	/^        n=i+1$/;"	kind:variable	line:35
+nDigitCombinations	../nDigitNumberCombinations.py	/^def nDigitCombinations():$/;"	kind:function	line:2
+nDigitNumberCombinations.py	../nDigitNumberCombinations.py	1;"	kind:file	line:1
+new_date	../new_script.py	/^new_date = (" Created	: " + today.strftime("%d %B %Y"))$/;"	kind:variable	line:61
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Codes"$/;"	kind:variable	line:142
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Compressed"$/;"	kind:variable	line:156
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Documents"$/;"	kind:variable	line:128
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Executables"$/;"	kind:variable	line:170
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Folders"$/;"	kind:variable	line:185
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Images"$/;"	kind:variable	line:100
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Music"$/;"	kind:variable	line:114
+new_dir	../Organise.py	/^			new_dir = arrange_dir + "\\Video"$/;"	kind:variable	line:86
+new_script.py	../new_script.py	1;"	kind:file	line:1
+new_text	../new_script.py	/^new_text = (" Script Name	: " + output_file)$/;"	kind:variable	line:54
+newenv	../env_check.py	/^  newenv = os.getenv(env_check)                 # Set the variable newenv to get the settings from the OS what is currently set for the settings out the configfile$/;"	kind:variable	line:20
+newfile	../new_script.py	/^newfile = sys.argv[2]$/;"	kind:variable	line:48
+news	../Google_News.py	/^def news():$/;"	kind:function	line:5
+newscript	../new_script.py	/^newscript = open(script, 'w')$/;"	kind:variable	line:57
+nmap	../nmap_scan.py	/^import nmap			# Import the module$/;"	kind:namespace	line:11
+nmapScan	../nmap_scan.py	/^def nmapScan(tgtHost, tgtPort):									# Create the function, this fucntion does the scanning$/;"	kind:function	line:15
+nmap_scan.py	../nmap_scan.py	1;"	kind:file	line:1
+noun	../random-sentences.py	/^noun = ["boy", "girl", "dog", "town", "car"]$/;"	kind:variable	line:14
+now	../move_files_over_x_days.py	/^now = time.time()  # Get the current time$/;"	kind:variable	line:15
+np	../game_of_life/game_o_life.py	/^import numpy as np$/;"	kind:namespace	line:30
+np	../webcam.py	/^import numpy as np$/;"	kind:namespace	line:5
+nslookup_check.py	../nslookup_check.py	1;"	kind:file	line:1
+num	../GroupSms_Way2.py	/^num=x.split(',')$/;"	kind:variable	line:13
+num	../QuadraticCalc.py	/^        num=a*(n*n)$/;"	kind:variable	line:36
+num_like	../get_likes_on_FB.py	/^            num_like=0$/;"	kind:variable	line:30
+num_like	../get_likes_on_FB.py	/^            num_like=item['likes']['count']$/;"	kind:variable	line:28
+num_share	../get_likes_on_FB.py	/^    num_share=0$/;"	kind:variable	line:26
+num_share	../get_likes_on_FB.py	/^    num_share=item['shares']['count']$/;"	kind:variable	line:24
+numbers	../Print_List_of_Even_Numbers.py	/^    numbers=0$/;"	kind:variable	line:14
+numbers	../python_sms.py	/^  numbers = (snumber)$/;"	kind:variable	line:45
+numheads	../chicks_n_rabs.py	/^    numheads=35$/;"	kind:variable	line:18
+numlegs	../chicks_n_rabs.py	/^    numlegs=94$/;"	kind:variable	line:19
+old_date	../new_script.py	/^old_date = " Created	:"$/;"	kind:variable	line:60
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:113
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:127
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:141
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:155
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:169
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:184
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:85
+old_dir	../Organise.py	/^			old_dir = arrange_dir + "\\\\" + name$/;"	kind:variable	line:99
+old_text	../new_script.py	/^old_text = " Script Name	: "$/;"	kind:variable	line:53
+oneLineCombinations	../4 Digit Number Combinations.py	/^def oneLineCombinations():$/;"	kind:function	line:10
+opener	../GroupSms_Way2.py	/^opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))$/;"	kind:variable	line:22
+optparse	../nmap_scan.py	/^import optparse		# Import the module$/;"	kind:namespace	line:12
+optparse	../portscanner.py	/^import optparse				# Import the module$/;"	kind:namespace	line:11
+optparse	../recyclebin.py	/^import optparse			# Load the Module$/;"	kind:namespace	line:12
+os	../Organise.py	/^import os$/;"	kind:namespace	line:1
+os	../backup_automater_services.py	/^import os                               # Load the library module$/;"	kind:namespace	line:12
+os	../batch_file_rename.py	/^import os$/;"	kind:namespace	line:12
+os	../check_file.py	/^import os		# Import the Modules$/;"	kind:namespace	line:13
+os	../check_for_sqlite_files.py	/^import os$/;"	kind:namespace	line:12
+os	../create_dir_if_not_there.py	/^import os		# Import the OS module$/;"	kind:namespace	line:11
+os	../daily_checks.py	/^import os$/;"	kind:namespace	line:16
+os	../dir_test.py	/^import os  # Import the OS Module$/;"	kind:namespace	line:10
+os	../env_check.py	/^import os$/;"	kind:namespace	line:11
+os	../fileinfo.py	/^import os$/;"	kind:namespace	line:14
+os	../fileinfo.py	/^import stat   # index constants for os.stat()$/;"	kind:namespace	line:16
+os	../folder_size.py	/^import os$/;"	kind:namespace	line:11
+os	../get_likes_on_FB.py	/^import os$/;"	kind:namespace	line:4
+os	../logs.py	/^import os                   # Load the Library Module$/;"	kind:namespace	line:12
+os	../merge.py	/^import os$/;"	kind:namespace	line:6
+os	../move_files_over_x_days.py	/^import os$/;"	kind:namespace	line:12
+os	../new_script.py	/^import os				# Load the library module$/;"	kind:namespace	line:11
+os	../ping_servers.py	/^import os						  	# Load the Library Module$/;"	kind:namespace	line:11
+os	../ping_subnet.py	/^import os						# Load the Library Module$/;"	kind:namespace	line:11
+os	../powerdown_startup.py	/^import os				# Load the Library Module$/;"	kind:namespace	line:11
+os	../powerup_checks.py	/^import os							# Load the Library Module $/;"	kind:namespace	line:13
+os	../prison_break_scrapper.py	/^import os$/;"	kind:namespace	line:7
+os	../pscheck.py	/^import commands, os, string$/;"	kind:namespace	line:11
+os	../puttylogs.py	/^import os																	# Load the Library Module$/;"	kind:namespace	line:12
+os	../python_sms.py	/^import os$/;"	kind:namespace	line:13
+os	../recyclebin.py	/^import os					# Load the Module$/;"	kind:namespace	line:11
+os	../script_count.py	/^import os																					# Load the library module$/;"	kind:namespace	line:14
+os	../script_listing.py	/^import os																		# Load the library module							$/;"	kind:namespace	line:12
+os	../spotlight.py	/^import os$/;"	kind:namespace	line:2
+os	../sqlite_check.py	/^import os$/;"	kind:namespace	line:14
+os	../sqlite_table_check.py	/^import os$/;"	kind:namespace	line:14
+os	../tf_idf_generator.py	/^import os, math, pickle$/;"	kind:namespace	line:34
+os	../tweeter.py	/^import tweepy, os$/;"	kind:namespace	line:9
+os	../work_connect.py	/^import os							# Load the Library Module$/;"	kind:namespace	line:13
+os	../xkcd_downloader.py	/^import os$/;"	kind:namespace	line:15
+os	../youtube.py	/^import os$/;"	kind:namespace	line:9
+osinfo.py	../osinfo.py	1;"	kind:file	line:1
+output	../EncryptionTool.py	/^output=open("encrypted.txt","w")$/;"	kind:variable	line:92
+output_file	../new_script.py	/^output_file = (newfile + extension)$/;"	kind:variable	line:49
+outputdir	../new_script.py	/^outputdir = os.path.join(scripts,dev_dir)$/;"	kind:variable	line:50
+outputfile	../powerup_checks.py	/^outputfile=('server_startup_'+strftime("%Y-%m-%d-%H-%M")+'.log')$/;"	kind:variable	line:24
+p	../psunotify.py	/^p=urllib2.Request('https:\/\/www.google.co.in\/search?q=gate+psu+2017+ext:pdf&start='+page)$/;"	kind:variable	line:11
+page	../psunotify.py	/^page=raw_input('Enter Page No:')$/;"	kind:variable	line:9
+page_count	../wiki_random.py	/^page_count = 10$/;"	kind:variable	line:19
+paint	../tf_idf_generator.py	/^def paint(str,color='r'):$/;"	kind:function	line:47
+pardir	../Google Image Downloader/create_dir.py	/^from os.path import pardir$/;"	kind:namespace	line:19
+pardir	../Google Image Downloader/image grapper.py	/^from os.path import pardir$/;"	kind:namespace	line:12
+parser	../Assembler/assembler.py	/^def parser():$/;"	kind:function	line:932
+passwd	../GroupSms_Way2.py	/^passwd = getpass()$/;"	kind:variable	line:9
+passwd	../work_connect.py	/^    passwd = sys.argv[2] 									# Set the variable passwd as the second argument passed, in this case my login password$/;"	kind:variable	line:34
+password_cracker.py	../password_cracker.py	1;"	kind:file	line:1
+path	../script_count.py	/^path = os.getenv("scripts") 															# Set the variable path by getting the value from the OS environment variable scripts$/;"	kind:variable	line:16
+path	../script_listing.py	/^path    = os.getenv("scripts")												# Set the varable path by getting the value from the OS environment variable scripts - 1.2$/;"	kind:variable	line:16
+patt	../psunotify.py	/^patt=re.compile(text)$/;"	kind:variable	line:14
+pattern	../kmp_str_search.py	/^    pattern = "ABABX"$/;"	kind:variable	line:48
+pattern	../kmp_str_search.py	/^    pattern = "abc1abc12"$/;"	kind:variable	line:42
+permutation	../factorial_perm_comp.py	/^def permutation(n,r):$/;"	kind:function	line:21
+pickNumber	../diceV2_dynamic.py	/^def pickNumber(item, questionString, lowerlimit): $/;"	kind:function	line:41
+pickle	../tf_idf_generator.py	/^import os, math, pickle$/;"	kind:namespace	line:34
+ping_servers.py	../ping_servers.py	1;"	kind:file	line:1
+ping_subnet.py	../ping_subnet.py	1;"	kind:file	line:1
+pl	../osinfo.py	/^import platform as pl$/;"	kind:namespace	line:14
+plain_text	../youtube.py	/^plain_text = source_code.text$/;"	kind:variable	line:23
+platform	../daily_checks.py	/^import platform		                # Load Modules$/;"	kind:namespace	line:15
+playAgain	../TicTacToe.py	/^def playAgain():$/;"	kind:function	line:36
+playloop	../magic8ball.py	/^def playloop():$/;"	kind:function	line:55
+plt	../game_of_life/game_o_life.py	/^from matplotlib import pyplot as plt$/;"	kind:namespace	line:32
+points	../sierpinski_triangle.py	/^points = [[-175,-125],[0,175],[175,-125]] #size of triangle$/;"	kind:variable	line:35
+polygon.py	../polygon.py	1;"	kind:file	line:1
+portScan	../portscanner.py	/^def portScan(tgtHost, tgtPorts):	# Start of the function$/;"	kind:function	line:33
+portscanner.py	../portscanner.py	1;"	kind:file	line:1
+postdata	../python_sms.py	/^  postdata = urllib.urlencode(values)$/;"	kind:variable	line:63
+powerdown_startup.py	../powerdown_startup.py	1;"	kind:file	line:1
+powerup_checks.py	../powerup_checks.py	1;"	kind:file	line:1
+pprint	../CountMillionCharacters-2.0.py	/^import pprint$/;"	kind:namespace	line:9
+preposition	../random-sentences.py	/^preposition = ["to", "from", "over", "under", "on"]$/;"	kind:variable	line:16
+primeFactorization	../primelib/primelib.py	/^def primeFactorization(number):$/;"	kind:function	line:140
+primelib.py	../primelib/primelib.py	1;"	kind:file	line:1
+print_a_line	../ex20.py	/^def print_a_line(line_count, f):$/;"	kind:function	line:12
+print_all	../ex20.py	/^def print_all(f):$/;"	kind:function	line:5
+print_docs	../daily_checks.py	/^def print_docs():							# Function to print the daily checks automatically$/;"	kind:function	line:30
+print_function	../check_file.py	/^from __future__ import print_function$/;"	kind:namespace	line:11
+print_function	../check_for_sqlite_files.py	/^from __future__ import print_function$/;"	kind:namespace	line:11
+print_function	../dir_test.py	/^from __future__ import print_function$/;"	kind:namespace	line:9
+print_function	../fileinfo.py	/^from __future__ import print_function$/;"	kind:namespace	line:13
+print_function	../start-server.py	/^from __future__ import print_function$/;"	kind:namespace	line:1
+printed	../Print_List_of_Even_Numbers.py	/^    printed=0$/;"	kind:variable	line:13
+prison_break_scrapper.py	../prison_break_scrapper.py	1;"	kind:file	line:1
+profile	../osinfo.py	/^profile = [$/;"	kind:variable	line:16
+ps	../pscheck.py	/^def ps():$/;"	kind:function	line:13
+pscheck.py	../pscheck.py	1;"	kind:file	line:1
+psunotify.py	../psunotify.py	1;"	kind:file	line:1
+putty_sessions	../daily_checks.py	/^def putty_sessions(conffilename):						# Function to load the putty sessions I need$/;"	kind:function	line:36
+puttylogs.py	../puttylogs.py	1;"	kind:file	line:1
+pygame	../polygon.py	/^import pygame, sys, time$/;"	kind:namespace	line:1
+pyperclip	../google.py	/^import webbrowser, sys, pyperclip, requests, bs4$/;"	kind:namespace	line:10
+python_sms.py	../python_sms.py	1;"	kind:file	line:1
+q	../psunotify.py	/^     q=temp[len(temp)-1]$/;"	kind:variable	line:26
+query	../youtube.py	/^query = input('Enter the song to be played: ')$/;"	kind:variable	line:17
+query	../youtube.py	/^query = query.replace(' ', '+')$/;"	kind:variable	line:18
+r	../psunotify.py	/^         r=urllib2.urlopen("http:\/\/"+url)$/;"	kind:variable	line:30
+r	../psunotify.py	/^         r=urllib2.urlopen(url)$/;"	kind:variable	line:28
+randint	../magic8ball.py	/^from random import randint$/;"	kind:namespace	line:16
+random	../TicTacToe.py	/^import random$/;"	kind:namespace	line:3
+random	../dice.py	/^import random$/;"	kind:namespace	line:11
+random	../diceV2_dynamic.py	/^import random$/;"	kind:namespace	line:5
+random	../dice_rolling_simulator.py	/^import random$/;"	kind:namespace	line:8
+random	../game_of_life/game_o_life.py	/^import random, time, sys$/;"	kind:namespace	line:31
+random	../random-sentences.py	/^import random$/;"	kind:namespace	line:11
+random-sentences.py	../random-sentences.py	1;"	kind:file	line:1
+random_int	../random-sentences.py	/^def random_int():$/;"	kind:function	line:18
+random_sentence	../random-sentences.py	/^def random_sentence():$/;"	kind:function	line:21
+rdp_sessions	../daily_checks.py	/^def rdp_sessions():$/;"	kind:function	line:41
+rdpfile	../work_connect.py	/^rdpfile = ("remote\\\\workpc.rdp")							# Set the variable logfile, using the arguments passed to create the logfile$/;"	kind:variable	line:17
+re	../psunotify.py	/^import re$/;"	kind:namespace	line:2
+readAndDecrypt	../EncryptionTool.py	/^def readAndDecrypt(filename):$/;"	kind:function	line:37
+readAndDecryptAndSave	../EncryptionTool.py	/^def readAndDecryptAndSave(inp_file,out_file):$/;"	kind:function	line:72
+readAndEncrypt	../EncryptionTool.py	/^def readAndEncrypt(filename):$/;"	kind:function	line:53
+readAndEncryptAndSave	../EncryptionTool.py	/^def readAndEncryptAndSave(inp_file,out_file):$/;"	kind:function	line:65
+readfile	../check_file.py	/^def readfile(filename):$/;"	kind:function	line:23
+recyclebin.py	../recyclebin.py	1;"	kind:file	line:1
+refreshrate	../get_youtube_view.py	/^refreshrate = minutes * 60 + seconds$/;"	kind:variable	line:22
+registerLabels	../Assembler/assembler.py	/^def registerLabels():$/;"	kind:function	line:1623
+remote	../work_connect.py	/^remote = (r"c:\\windows\\system32\\mstsc.exe ")	# Set the variable remote with the path to mstsc$/;"	kind:variable	line:19
+removedirs	../Google Image Downloader/create_dir.py	/^from os import removedirs$/;"	kind:namespace	line:21
+rename	../Google Image Downloader/create_dir.py	/^from os import rename$/;"	kind:namespace	line:22
+rename_directory	../Google Image Downloader/create_dir.py	/^def rename_directory(direct, name):$/;"	kind:function	line:39
+req	../prison_break_scrapper.py	/^import requests as req$/;"	kind:namespace	line:5
+req	../python_sms.py	/^  req = urllib2.Request(url, postdata)$/;"	kind:variable	line:64
+request	../Cricket_score.py	/^from urllib import request$/;"	kind:namespace	line:2
+request	../xkcd_downloader.py	/^import urllib.request$/;"	kind:namespace	line:14
+requests	../Google Image Downloader/image grapper.py	/^import requests$/;"	kind:namespace	line:4
+requests	../google.py	/^import webbrowser, sys, pyperclip, requests, bs4$/;"	kind:namespace	line:10
+requests	../wiki_random.py	/^import requests, json, webbrowser$/;"	kind:namespace	line:17
+requests	../xkcd_downloader.py	/^import requests$/;"	kind:namespace	line:12
+requests	../youtube.py	/^import requests$/;"	kind:namespace	line:12
+res	../sqlite_table_check.py	/^  res = cursor.fetchone()$/;"	kind:variable	line:41
+resetInterpreter	../Assembler/assembler.py	/^def resetInterpreter():$/;"	kind:function	line:1634
+response	../magic8ball.py	/^response = [$/;"	kind:variable	line:20
+response	../python_sms.py	/^    response = urllib2.urlopen(req)$/;"	kind:variable	line:70
+response_url	../python_sms.py	/^    response_url = response.geturl()$/;"	kind:variable	line:71
+result	../calculator.py	/^def result(term):$/;"	kind:function	line:76
+result	../dice_rolling_simulator.py	/^def result():$/;"	kind:function	line:26
+result	../get_info_remoute_srv.py	/^    result = []$/;"	kind:variable	line:18
+resultfile	../merge.py	/^resultfile = 'result.csv'$/;"	kind:variable	line:9
+results	../Cricket_score.py	/^results = []$/;"	kind:variable	line:13
+ret	../ping_servers.py	/^    ret = subprocess.call(myping + server, shell=True, stdout=f, stderr=subprocess.STDOUT)	# Run the ping command for each server in the list.$/;"	kind:variable	line:58
+ret	../ping_subnet.py	/^        ret = subprocess.call(myping + str(subnet) + "." + str(ip) ,$/;"	kind:variable	line:35
+returnDir	../recyclebin.py	/^def returnDir():			# Start of the function to search through the recyclebin$/;"	kind:function	line:25
+returnStack	../Assembler/assembler.py	/^returnStack = []$/;"	kind:variable	line:27
+reverse	../EncryptionTool.py	/^reverse=list()$/;"	kind:variable	line:10
+rewind	../ex20.py	/^def rewind(f):$/;"	kind:function	line:9
+roll	../dice.py	/^  def roll(self):$/;"	kind:member	line:27
+roll	../diceV2_dynamic.py	/^    def roll(self):$/;"	kind:member	line:17
+rollOutput	../diceV2_dynamic.py	/^    rollOutput = rollOutput + str(dice.roll()) + ", "$/;"	kind:variable	line:81
+rollOutput	../diceV2_dynamic.py	/^rollOutput = ""$/;"	kind:variable	line:78
+rollOutput	../diceV2_dynamic.py	/^rollOutput = rollOutput[:-2]$/;"	kind:variable	line:83
+row	../python_sms.py	/^  row = cursor.fetchone()	$/;"	kind:variable	line:32
+row	../sqlite_check.py	/^  row = cur.fetchone()$/;"	kind:variable	line:51
+rows	../sqlite_check.py	/^rows = cur.fetchall()$/;"	kind:variable	line:43
+run	../Google Image Downloader/image grapper.py	/^    run = image_grabber(int(choice))$/;"	kind:variable	line:135
+run	../Google Image Downloader/image grapper.py	/^run = True$/;"	kind:variable	line:112
+run	../game_of_life/game_o_life.py	/^def run(canvas):$/;"	kind:function	line:50
+sauce	../Cricket_score.py	/^sauce = request.urlopen(url).read()$/;"	kind:variable	line:9
+scan	../Assembler/assembler.py	/^def scan():$/;"	kind:function	line:920
+scanner	../Assembler/assembler.py	/^def scanner(string):$/;"	kind:function	line:58
+score	../Cricket_score.py	/^score = []$/;"	kind:variable	line:12
+score_box	../cricket_live_score.py	/^score_box=soup_page.findAll("div",{"class":"cb-col cb-col-25 cb-mtch-blk"})$/;"	kind:variable	line:15
+screenLock	../portscanner.py	/^screenLock = Semaphore(value=1)		# Prevent other threads from preceeding$/;"	kind:variable	line:15
+script	../new_script.py	/^script = os.path.join(outputdir, output_file)$/;"	kind:variable	line:51
+script_count.py	../script_count.py	1;"	kind:file	line:1
+script_listing.py	../script_listing.py	1;"	kind:file	line:1
+scripts	../new_script.py	/^scripts = os.getenv("scripts")$/;"	kind:variable	line:46
+scripts	../python_sms.py	/^scripts = os.getenv("scripts")$/;"	kind:variable	line:19
+second_difference	../QuadraticCalc.py	/^second_difference=[]$/;"	kind:variable	line:18
+seconds	../get_youtube_view.py	/^seconds  = int(input("Seconds "))$/;"	kind:variable	line:19
+seed	../game_of_life/game_o_life.py	/^def seed(canvas):$/;"	kind:function	line:45
+send_sms_url	../GroupSms_Way2.py	/^send_sms_url = 'http:\/\/site24.way2sms.com\/smstoss.action?'$/;"	kind:variable	line:35
+sender	../python_sms.py	/^  sender = 'WHO_IS_SENDING_THE_MAIL'$/;"	kind:variable	line:41
+sequence	../QuadraticCalc.py	/^sequence=[]$/;"	kind:variable	line:16
+serial	../serial_scanner.py	/^import serial$/;"	kind:namespace	line:1
+serial_scanner.py	../serial_scanner.py	1;"	kind:file	line:1
+serverfile	../powerup_checks.py	/^serverfile=os.path.join(config,listfile)													# Create the variable by linking the path and the file$/;"	kind:variable	line:23
+setSides	../diceV2_dynamic.py	/^    def setSides(self, sides):$/;"	kind:member	line:11
+set_sides	../dice.py	/^  def set_sides(self, sides_change):$/;"	kind:member	line:19
+set_working_directory	../Google Image Downloader/create_dir.py	/^def set_working_directory():$/;"	kind:function	line:44
+shell	../get_info_remoute_srv.py	/^                               shell=False,$/;"	kind:variable	line:21
+shutil	../Organise.py	/^import shutil$/;"	kind:namespace	line:3
+shutil	../backup_automater_services.py	/^import shutil							# Load the library module$/;"	kind:namespace	line:13
+shutil	../move_files_over_x_days.py	/^import shutil$/;"	kind:namespace	line:9
+shutil	../puttylogs.py	/^import shutil																# Load the Library Module - 1.2$/;"	kind:namespace	line:13
+shutil	../spotlight.py	/^import shutil$/;"	kind:namespace	line:3
+sid2user	../recyclebin.py	/^def sid2user(sid):		# Start of the function to gather the user$/;"	kind:function	line:15
+sierpinski_triangle.py	../sierpinski_triangle.py	1;"	kind:file	line:1
+sieveEr	../primelib/primelib.py	/^def sieveEr(N):$/;"	kind:function	line:74
+simplifyFraction	../primelib/primelib.py	/^def simplifyFraction(numerator, denominator):$/;"	kind:function	line:544
+site	../ping_servers.py	/^      site = '155'																			# Set the variable site to 155$/;"	kind:variable	line:45
+site	../ping_servers.py	/^      site = 'bromley'																	# Set the variable site to bromley$/;"	kind:variable	line:47
+site	../ping_servers.py	/^    site = sys.argv[2]																	# Set the variable site as the second argument you supply$/;"	kind:variable	line:32
+sleep	../magic8ball.py	/^from time import sleep$/;"	kind:namespace	line:15
+smallestPrimeFactor	../primelib/primelib.py	/^def smallestPrimeFactor(number):$/;"	kind:function	line:213
+sms_sent_page	../GroupSms_Way2.py	/^        sms_sent_page = opener.open(send_sms_url,send_sms_data)$/;"	kind:variable	line:42
+sname	../python_sms.py	/^  sname = row[0]$/;"	kind:variable	line:35
+snowflake	../Koch Curve/koch curve.py	/^def snowflake(lengthSide, levels):$/;"	kind:function	line:7
+snumber	../python_sms.py	/^  snumber = row[1]$/;"	kind:variable	line:36
+solutions	../chicks_n_rabs.py	/^    solutions=solve(numheads,numlegs)$/;"	kind:variable	line:21
+solve	../chicks_n_rabs.py	/^def solve(numheads,numlegs):$/;"	kind:function	line:9
+song	../youtube.py	/^song = songs[0].contents[0].contents[0].contents[0]$/;"	kind:variable	line:28
+songs	../youtube.py	/^songs = soup.findAll('div', {'class': 'yt-lockup-video'})$/;"	kind:variable	line:27
+soup	../Cricket_score.py	/^soup = bs.BeautifulSoup(sauce,"lxml")$/;"	kind:variable	line:10
+soup	../Google_News.py	/^from bs4 import BeautifulSoup as soup$/;"	kind:namespace	line:2
+soup	../cricket_live_score.py	/^from bs4 import BeautifulSoup as soup$/;"	kind:namespace	line:2
+soup	../jee_result.py	/^   soup = BeautifulSoup(fd.read(),'html.parser')$/;"	kind:variable	line:38
+soup	../youtube.py	/^soup = BeautifulSoup(plain_text, "html.parser")$/;"	kind:variable	line:24
+soup_page	../cricket_live_score.py	/^soup_page=soup(html_page,"html.parser")$/;"	kind:variable	line:12
+source_code	../youtube.py	/^source_code = requests.get(url, headers=headers, timeout=15)$/;"	kind:variable	line:22
+sourcedir	../backup_automater_services.py	/^sourcedir    = os.path.expanduser('~\/Library\/Services\/')	 # Source directory of where the scripts are located$/;"	kind:variable	line:22
+sourcefile	../backup_automater_services.py	/^    sourcefile = os.path.join(sourcedir, fname)		      # Get the name of the source files to backup$/;"	kind:variable	line:30
+spotlight.py	../spotlight.py	1;"	kind:file	line:1
+sqlite3	../powerup_checks.py	/^import sqlite3					# Load the Library Module 	$/;"	kind:namespace	line:12
+sqlite3	../python_sms.py	/^import sqlite3$/;"	kind:namespace	line:15
+sqlite3	../sqlite_table_check.py	/^import sqlite3 $/;"	kind:namespace	line:12
+sqlite_check.py	../sqlite_check.py	1;"	kind:file	line:1
+sqlite_table_check.py	../sqlite_table_check.py	1;"	kind:file	line:1
+sqrt	../primelib/primelib.py	/^    from math import sqrt        $/;"	kind:namespace	line:501
+sqrt	../primelib/primelib.py	/^    import math    # for function sqrt$/;"	kind:namespace	line:146
+sqrt	../primelib/primelib.py	/^    import math # for function sqrt$/;"	kind:namespace	line:47
+src	../move_files_over_x_days.py	/^src = 'u:\\\\test'  # Set the source directory$/;"	kind:variable	line:13
+ssh	../get_info_remoute_srv.py	/^        ssh = subprocess.Popen(["ssh", "%s" % host, command],$/;"	kind:variable	line:20
+stack	../Assembler/assembler.py	/^stack = []$/;"	kind:variable	line:18
+start	../dice_rolling_simulator.py	/^def start():$/;"	kind:function	line:14
+start-server.py	../start-server.py	1;"	kind:file	line:1
+starttime	../SimpleStopWatch.py	/^        starttime = time.time()$/;"	kind:variable	line:10
+stat	../fileinfo.py	/^import stat   # index constants for os.stat()$/;"	kind:namespace	line:16
+stderr	../get_info_remoute_srv.py	/^                               stderr=subprocess.PIPE)$/;"	kind:variable	line:23
+stdout	../get_info_remoute_srv.py	/^                               stdout=subprocess.PIPE,$/;"	kind:variable	line:22
+story	../random-sentences.py	/^story = (". ").join(list(map(lambda x: random_sentence(), range(0, 20))))$/;"	kind:variable	line:37
+strftime	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+strftime	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+strftime	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+strftime	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+strftime	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+strftime	../python_sms.py	/^from time import strftime$/;"	kind:namespace	line:14
+string	../pscheck.py	/^import commands, os, string$/;"	kind:namespace	line:11
+subnet	../ping_subnet.py	/^    subnet = sys.argv[1]																				# Set the variable subnet as the three octets you pass it$/;"	kind:variable	line:26
+subprocess	../daily_checks.py	/^import subprocess$/;"	kind:namespace	line:17
+subprocess	../get_info_remoute_srv.py	/^import subprocess$/;"	kind:namespace	line:11
+subprocess	../nslookup_check.py	/^import subprocess										# Import the subprocess module$/;"	kind:namespace	line:11
+subprocess	../ping_servers.py	/^import subprocess				# Load the Library Module$/;"	kind:namespace	line:12
+subprocess	../ping_subnet.py	/^import subprocess			# Load the Library Module$/;"	kind:namespace	line:12
+subprocess	../powerdown_startup.py	/^import subprocess			# Load the Library Module $/;"	kind:namespace	line:12
+subprocess	../powerup_checks.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:14
+subprocess	../prison_break_scrapper.py	/^import subprocess$/;"	kind:namespace	line:8
+subprocess	../work_connect.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:11
+subprocess	../youtube-downloader fast.py	/^import subprocess$/;"	kind:namespace	line:7
+subs_diff	../QuadraticCalc.py	/^    subs_diff=[]$/;"	kind:variable	line:33
+switcher	../tf_idf_generator.py	/^switcher = {$/;"	kind:variable	line:37
+sys	../Assembler/assembler.py	/^import sys$/;"	kind:namespace	line:1
+sys	../CountMillionCharacters-Variations/variation1.py	/^import sys$/;"	kind:namespace	line:1
+sys	../GroupSms_Way2.py	/^import sys$/;"	kind:namespace	line:6
+sys	../Organise.py	/^import sys$/;"	kind:namespace	line:2
+sys	../Print_List_of_Even_Numbers.py	/^import sys$/;"	kind:namespace	line:4
+sys	../calculator.py	/^import sys$/;"	kind:namespace	line:25
+sys	../check_file.py	/^import sys		# Import the Modules$/;"	kind:namespace	line:12
+sys	../daily_checks.py	/^import sys$/;"	kind:namespace	line:18
+sys	../dir_test.py	/^import sys$/;"	kind:namespace	line:11
+sys	../fileinfo.py	/^import sys$/;"	kind:namespace	line:15
+sys	../find_prime.py	/^import sys$/;"	kind:namespace	line:27
+sys	../game_of_life/game_o_life.py	/^import random, time, sys$/;"	kind:namespace	line:31
+sys	../get_likes_on_FB.py	/^import sys$/;"	kind:namespace	line:3
+sys	../google.py	/^import webbrowser, sys, pyperclip, requests, bs4$/;"	kind:namespace	line:10
+sys	../meme_maker.py	/^import sys$/;"	kind:namespace	line:1
+sys	../move_files_over_x_days.py	/^import sys$/;"	kind:namespace	line:10
+sys	../new_script.py	/^import sys				# Load the library module$/;"	kind:namespace	line:12
+sys	../ping_servers.py	/^import sys							# Load the Library Module$/;"	kind:namespace	line:13
+sys	../ping_subnet.py	/^import sys						# Load the Library Module$/;"	kind:namespace	line:13
+sys	../polygon.py	/^import pygame, sys, time$/;"	kind:namespace	line:1
+sys	../powerup_checks.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:11
+sys	../python_sms.py	/^import sys$/;"	kind:namespace	line:16
+sys	../serial_scanner.py	/^import sys$/;"	kind:namespace	line:2
+sys	../sierpinski_triangle.py	/^import sys$/;"	kind:namespace	line:25
+sys	../sqlite_check.py	/^import sys$/;"	kind:namespace	line:13
+sys	../sqlite_table_check.py	/^import sys$/;"	kind:namespace	line:13
+sys	../work_connect.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:12
+sys	../youtube-downloader fast.py	/^import sys$/;"	kind:namespace	line:8
+t_char	../fileinfo.py	/^    t_char = len(inp) $/;"	kind:variable	line:29
+table	../multiplication_table.py	/^def table(rows, columns):$/;"	kind:function	line:6
+tablelist	../sqlite_table_check.py	/^tablelist   = open(config_file,'r');$/;"	kind:variable	line:22
+tdate	../python_sms.py	/^tdate = strftime("%d-%m")$/;"	kind:variable	line:25
+temp	../psunotify.py	/^     temp=url.split("\/")$/;"	kind:variable	line:25
+term	../QuadraticCalc.py	/^    term=str(i+1)$/;"	kind:variable	line:20
+testPass	../password_cracker.py	/^def testPass(cryptPass):	  # Start the function$/;"	kind:function	line:24
+test_flag	../python_sms.py	/^  test_flag = 0$/;"	kind:variable	line:48
+testlines.py	../testlines.py	1;"	kind:file	line:1
+text	../EncryptionTool.py	/^text=input("Enter text: ")$/;"	kind:variable	line:6
+text	../EncryptionTool.py	/^text=list(text)$/;"	kind:variable	line:8
+text	../kmp_str_search.py	/^    text = "ABABZABABYABABX"$/;"	kind:variable	line:49
+text1	../kmp_str_search.py	/^    text1 = "alskfjaldsabc1abc1abc12k23adsfabcabc"$/;"	kind:variable	line:43
+text2	../kmp_str_search.py	/^    text2 = "alskfjaldsk23adsfabcabc"$/;"	kind:variable	line:44
+text2Speech	../TTS.py	/^def text2Speech():$/;"	kind:function	line:5
+tf_idf_generator.py	../tf_idf_generator.py	1;"	kind:file	line:1
+the	../backup_automater_services.py	/^import datetime                         # Load the library module$/;"	kind:namespace	line:11
+the	../backup_automater_services.py	/^import os                               # Load the library module$/;"	kind:namespace	line:12
+the	../backup_automater_services.py	/^import shutil							# Load the library module$/;"	kind:namespace	line:13
+the	../check_file.py	/^import os		# Import the Modules$/;"	kind:namespace	line:13
+the	../check_file.py	/^import sys		# Import the Modules$/;"	kind:namespace	line:12
+the	../create_dir_if_not_there.py	/^import os		# Import the OS module$/;"	kind:namespace	line:11
+the	../daily_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:20
+the	../dir_test.py	/^import os  # Import the OS Module$/;"	kind:namespace	line:10
+the	../logs.py	/^from time import strftime   # Load just the strftime Module from Time$/;"	kind:namespace	line:13
+the	../logs.py	/^import os                   # Load the Library Module$/;"	kind:namespace	line:12
+the	../new_script.py	/^import datetime		# Load the library module$/;"	kind:namespace	line:13
+the	../new_script.py	/^import os				# Load the library module$/;"	kind:namespace	line:11
+the	../new_script.py	/^import sys				# Load the library module$/;"	kind:namespace	line:12
+the	../nmap_scan.py	/^import nmap			# Import the module$/;"	kind:namespace	line:11
+the	../nmap_scan.py	/^import optparse		# Import the module$/;"	kind:namespace	line:12
+the	../nslookup_check.py	/^import subprocess										# Import the subprocess module$/;"	kind:namespace	line:11
+the	../password_cracker.py	/^       import fcrypt # Try importing the fcrypt module$/;"	kind:namespace	line:19
+the	../password_cracker.py	/^    import crypt # Import the module$/;"	kind:namespace	line:15
+the	../ping_servers.py	/^import os						  	# Load the Library Module$/;"	kind:namespace	line:11
+the	../ping_servers.py	/^import subprocess				# Load the Library Module$/;"	kind:namespace	line:12
+the	../ping_servers.py	/^import sys							# Load the Library Module$/;"	kind:namespace	line:13
+the	../ping_subnet.py	/^import os						# Load the Library Module$/;"	kind:namespace	line:11
+the	../ping_subnet.py	/^import subprocess			# Load the Library Module$/;"	kind:namespace	line:12
+the	../ping_subnet.py	/^import sys						# Load the Library Module$/;"	kind:namespace	line:13
+the	../portscanner.py	/^from socket import *		# Import the module$/;"	kind:namespace	line:12
+the	../portscanner.py	/^from threading import *		# Import the module$/;"	kind:namespace	line:13
+the	../portscanner.py	/^import optparse				# Import the module$/;"	kind:namespace	line:11
+the	../powerdown_startup.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:13
+the	../powerdown_startup.py	/^import os				# Load the Library Module$/;"	kind:namespace	line:11
+the	../powerdown_startup.py	/^import subprocess			# Load the Library Module $/;"	kind:namespace	line:12
+the	../powerup_checks.py	/^from time import strftime		# Load just the strftime Module from Time$/;"	kind:namespace	line:15
+the	../powerup_checks.py	/^import os							# Load the Library Module $/;"	kind:namespace	line:13
+the	../powerup_checks.py	/^import sqlite3					# Load the Library Module 	$/;"	kind:namespace	line:12
+the	../powerup_checks.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:14
+the	../powerup_checks.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:11
+the	../puttylogs.py	/^from time import strftime												# Load just the strftime Module from Time$/;"	kind:namespace	line:14
+the	../puttylogs.py	/^import os																	# Load the Library Module$/;"	kind:namespace	line:12
+the	../puttylogs.py	/^import shutil																# Load the Library Module - 1.2$/;"	kind:namespace	line:13
+the	../recyclebin.py	/^from _winreg import *	# Load the Module$/;"	kind:namespace	line:13
+the	../recyclebin.py	/^import optparse			# Load the Module$/;"	kind:namespace	line:12
+the	../recyclebin.py	/^import os					# Load the Module$/;"	kind:namespace	line:11
+the	../script_count.py	/^import os																					# Load the library module$/;"	kind:namespace	line:14
+the	../script_listing.py	/^import os																		# Load the library module							$/;"	kind:namespace	line:12
+the	../work_connect.py	/^import os							# Load the Library Module$/;"	kind:namespace	line:13
+the	../work_connect.py	/^import subprocess				# Load the Library Module $/;"	kind:namespace	line:11
+the	../work_connect.py	/^import sys							# Load the Library Module $/;"	kind:namespace	line:12
+the	../work_connect.py	/^import time						# Load the Library Module$/;"	kind:namespace	line:14
+time	../SimpleStopWatch.py	/^import time$/;"	kind:namespace	line:4
+time	../fileinfo.py	/^import time$/;"	kind:namespace	line:17
+time	../game_of_life/game_o_life.py	/^import random, time, sys$/;"	kind:namespace	line:31
+time	../get_likes_on_FB.py	/^   time=item['created_time'][11:19]$/;"	kind:variable	line:18
+time	../get_youtube_view.py	/^import time$/;"	kind:namespace	line:8
+time	../move_files_over_x_days.py	/^import time$/;"	kind:namespace	line:11
+time	../polygon.py	/^import pygame, sys, time$/;"	kind:namespace	line:1
+time	../work_connect.py	/^import time						# Load the Library Module$/;"	kind:namespace	line:14
+timy	../timymodule.py	/^import timy # begin by importing timy$/;"	kind:namespace	line:8
+timymodule.py	../timymodule.py	1;"	kind:file	line:1
+toaster	../Cricket_score.py	/^toaster = ToastNotifier()$/;"	kind:variable	line:5
+today	../backup_automater_services.py	/^today    = datetime.date.today()	    # Get Today's date$/;"	kind:variable	line:15
+today	../new_script.py	/^today = datetime.date.today()$/;"	kind:variable	line:59
+todaystr	../backup_automater_services.py	/^todaystr = today.isoformat()		    # Format it so we can use the format to create the directory$/;"	kind:variable	line:16
+tokens	../Assembler/assembler.py	/^tokens = [] # contains all tokens of the source code.$/;"	kind:variable	line:4
+triangle	../sierpinski_triangle.py	/^def triangle(points,depth):$/;"	kind:function	line:40
+try_count	../fileinfo.py	/^try_count = 16$/;"	kind:variable	line:19
+tts	../TTS.py	/^tts = Tk()$/;"	kind:variable	line:12
+turtle	../sierpinski_triangle.py	/^import turtle$/;"	kind:namespace	line:24
+tweepy	../tweeter.py	/^import tweepy, os$/;"	kind:namespace	line:9
+tweeter.py	../tweeter.py	1;"	kind:file	line:1
+tweetthis	../tweeter.py	/^def tweetthis(type):$/;"	kind:function	line:22
+twoSum	../two_num.py	/^def twoSum(nums, target):$/;"	kind:function	line:13
+two_num.py	../two_num.py	1;"	kind:file	line:1
+uReq	../cricket_live_score.py	/^from urllib.request import urlopen as uReq$/;"	kind:namespace	line:3
+url	../Cricket_score.py	/^url = 'http:\/\/www.cricbuzz.com\/cricket-match\/live-scores'$/;"	kind:variable	line:7
+url	../GroupSms_Way2.py	/^url = 'http:\/\/site24.way2sms.com\/Login1.action?'$/;"	kind:variable	line:17
+url	../python_sms.py	/^  url = 'http:\/\/www.txtlocal.com\/sendsmspost.php'$/;"	kind:variable	line:61
+urlencode	../Google Image Downloader/image grapper.py	/^from urllib.parse import urlencode$/;"	kind:namespace	line:7
+urllib	../get_likes_on_FB.py	/^import urllib$/;"	kind:namespace	line:1
+urllib	../python_sms.py	/^import urllib      # URL functions$/;"	kind:namespace	line:11
+urllib	../xkcd_downloader.py	/^import urllib.request$/;"	kind:namespace	line:14
+urllib2	../GroupSms_Way2.py	/^import urllib2$/;"	kind:namespace	line:3
+urllib2	../check_internet_con.py	/^import urllib2$/;"	kind:namespace	line:1
+urllib2	../jee_result.py	/^import urllib2$/;"	kind:namespace	line:4
+urllib2	../psunotify.py	/^import urllib2$/;"	kind:namespace	line:3
+urllib2	../python_sms.py	/^import urllib2     # URL functions$/;"	kind:namespace	line:12
+urlopen	../Google Image Downloader/image grapper.py	/^from urllib.request import urlopen, Request$/;"	kind:namespace	line:6
+urlopen	../Google_News.py	/^from urllib.request import urlopen$/;"	kind:namespace	line:3
+urlretrieve	../Google Image Downloader/image grapper.py	/^from urllib.request import urlretrieve$/;"	kind:namespace	line:11
+urls	../psunotify.py	/^urls=re.findall(patt,h)$/;"	kind:variable	line:16
+usage	../check_file.py	/^def usage():$/;"	kind:function	line:18
+usage_doc	../game_of_life/game_o_life.py	/^usage_doc='Usage of script: script_nama <size_of_canvas:int>'$/;"	kind:variable	line:36
+userId	../get_likes_on_FB.py	/^userId = sys.argv[1]          #USERID$/;"	kind:variable	line:7
+user_exit_checker	../dice_rolling_simulator.py	/^user_exit_checker="exit"$/;"	kind:variable	line:11
+username	../GroupSms_Way2.py	/^username = raw_input('Enter mobile number:')$/;"	kind:variable	line:8
+username	../python_sms.py	/^  username = 'YOUR_USERNAME'$/;"	kind:variable	line:40
+usock	../GroupSms_Way2.py	/^    usock = opener.open(url, data)$/;"	kind:variable	line:28
+usr_agent	../Google Image Downloader/image grapper.py	/^usr_agent = {$/;"	kind:variable	line:17
+values	../EncryptionTool.py	/^values= list()$/;"	kind:variable	line:9
+values	../python_sms.py	/^  values = {'test'    : test_flag,$/;"	kind:variable	line:54
+variable	../multiplication_table.py	/^from sys import argv # import argment variable $/;"	kind:namespace	line:1
+variables	../Assembler/assembler.py	/^variables = {}$/;"	kind:variable	line:24
+variation1.py	../CountMillionCharacters-Variations/variation1.py	1;"	kind:file	line:1
+verb	../random-sentences.py	/^verb = ["drove", "jumped", "ran", "walked", "skipped"]$/;"	kind:variable	line:15
+version	../Print_List_of_Even_Numbers.py	/^    version=2$/;"	kind:variable	line:7
+version	../Print_List_of_Even_Numbers.py	/^    version=3 $/;"	kind:variable	line:9
+walk	../Google Image Downloader/image grapper.py	/^from os import walk$/;"	kind:namespace	line:8
+webbrowser	../google.py	/^import webbrowser, sys, pyperclip, requests, bs4$/;"	kind:namespace	line:10
+webbrowser	../wiki_random.py	/^import requests, json, webbrowser$/;"	kind:namespace	line:17
+webbrowser	../youtube.py	/^import webbrowser$/;"	kind:namespace	line:10
+webcam.py	../webcam.py	1;"	kind:file	line:1
+webdriver	../get_youtube_view.py	/^from selenium import webdriver$/;"	kind:namespace	line:11
+whoGoesFirst	../TicTacToe.py	/^def whoGoesFirst():$/;"	kind:function	line:29
+wiki_random.py	../wiki_random.py	1;"	kind:file	line:1
+win32com	../TTS.py	/^import win32com.client as wincl$/;"	kind:namespace	line:1
+wincl	../TTS.py	/^import win32com.client as wincl$/;"	kind:namespace	line:1
+window	../polygon.py	/^window = pygame.display.set_mode((400, 300), 0, 32)$/;"	kind:variable	line:5
+windows	../powerdown_startup.py	/^def windows():																							# This is the function to run if it detects the OS is windows.$/;"	kind:function	line:15
+windows	../powerup_checks.py	/^def windows():																																			# This is the function to run if it detects the OS is windows.$/;"	kind:function	line:35
+wordfreq	../CountMillionCharacter.py	/^wordfreq = [wordlist.count(w) for w in wordlist]$/;"	kind:variable	line:295
+wordlist	../CountMillionCharacter.py	/^wordlist = wordstring.split()$/;"	kind:variable	line:293
+work_connect.py	../work_connect.py	1;"	kind:file	line:1
+write_to_file	../testlines.py	/^def write_to_file(filename, txt):$/;"	kind:function	line:12
+x	../GroupSms_Way2.py	/^x=raw_input('Enter Mobile numbers seperated with comma:')$/;"	kind:variable	line:12
+x	../check_input.py	/^x = get_user_input(1,6)$/;"	kind:variable	line:42
+x	../get_youtube_view.py	/^x = input("Enter the URL (no https): ")$/;"	kind:variable	line:16
+xkcd_downloader.py	../xkcd_downloader.py	1;"	kind:file	line:1
+year	../get_likes_on_FB.py	/^   year=item['created_time'][0:4]$/;"	kind:variable	line:20
+youtube-downloader fast.py	../youtube-downloader fast.py	1;"	kind:file	line:1
+youtube.py	../youtube.py	1;"	kind:file	line:1
+yyyymmdd	../jee_result.py	/^   yyyymmdd = currentdate.strftime("%Y\/%m\/%d")$/;"	kind:variable	line:28
+zeroFlag	../Assembler/assembler.py	/^zeroFlag = False$/;"	kind:variable	line:13
+zip_program	../logs.py	/^zip_program = "zip.exe"       # Set the Variable zip_program - 1.1$/;"	kind:variable	line:16
+zip_program	../puttylogs.py	/^zip_program="zip.exe"												# Set the Variable zip_program - 1.1$/;"	kind:variable	line:18
+zipdir	../puttylogs.py	/^zipdir="c:\\logs\\puttylogs\\zipped_logs"							# Set the Variable zipdir - 1.2$/;"	kind:variable	line:17

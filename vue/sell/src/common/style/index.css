@@ -17,3 +17,12 @@
     transform: scaleY(0.5);
   }
 }
+
+.df {display: -webkit-box;display: -webkit-flex;display: flex;}
+.df1 {-webkit-box-flex: 1;flex: 1;overflow: hidden;}
+.dfc {-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;} /*水平垂直居中*/
+.dfaic {-webkit-box-align: center;align-items: center;} /*垂直居中*/
+.dfaie {-webkit-box-align: end;align-items: flex-end;} /*底对齐*/
+.dfjcc {-webkit-box-pack: center;justify-content: center;} /*水平居中*/
+.dfjce {-webkit-box-pack: end;justify-content: flex-end;} /*水平方向右对齐*/
+.dfdir {-webkit-box-orient: vertical;flex-direction: column;} /*垂直方向*/

@@ -56,3 +56,20 @@ def __init__(self, make, model, year):
     """
     super().__init__(make, model, year) 
     self.battery = Battery()
+    
+########################################################################
+class aa:
+    """test"""
+
+    #----------------------------------------------------------------------
+    def __init__(self):
+        """Constructor"""
+        
+        user_email = self.email
+        
+    
+    
+        
+        
+    
+    

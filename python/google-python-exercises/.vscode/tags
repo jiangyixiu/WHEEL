@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+babynames.py	../babynames/babynames.py	1;"	kind:file	line:1
+babynames.py	../babynames/solution/babynames.py	1;"	kind:file	line:1
+both_ends	../basic/solution/string1.py	/^def both_ends(s):$/;"	kind:function	line:43
+both_ends	../basic/string1.py	/^def both_ends(s):$/;"	kind:function	line:36
+commands	../copyspecial/copyspecial.py	/^import commands$/;"	kind:namespace	line:13
+commands	../copyspecial/solution/copyspecial.py	/^import commands$/;"	kind:namespace	line:13
+copy_to	../copyspecial/solution/copyspecial.py	/^def copy_to(paths, to_dir):$/;"	kind:function	line:33
+copyspecial.py	../copyspecial/copyspecial.py	1;"	kind:file	line:1
+copyspecial.py	../copyspecial/solution/copyspecial.py	1;"	kind:file	line:1
+donuts	../basic/solution/string1.py	/^def donuts(count):$/;"	kind:function	line:26
+donuts	../basic/string1.py	/^def donuts(count):$/;"	kind:function	line:26
+download_images	../logpuzzle/logpuzzle.py	/^def download_images(img_urls, dest_dir):$/;"	kind:function	line:30
+download_images	../logpuzzle/solution/logpuzzle.py	/^def download_images(img_urls, dest_dir):$/;"	kind:function	line:64
+extract_names	../babynames/babynames.py	/^def extract_names(filename):$/;"	kind:function	line:37
+extract_names	../babynames/solution/babynames.py	/^def extract_names(filename):$/;"	kind:function	line:37
+fix_start	../basic/solution/string1.py	/^def fix_start(s):$/;"	kind:function	line:65
+fix_start	../basic/string1.py	/^def fix_start(s):$/;"	kind:function	line:50
+front_back	../basic/solution/string2.py	/^def front_back(a, b):$/;"	kind:function	line:58
+front_back	../basic/string2.py	/^def front_back(a, b):$/;"	kind:function	line:43
+front_x	../basic/list1.py	/^def front_x(words):$/;"	kind:function	line:35
+front_x	../basic/solution/list1.py	/^def front_x(words):$/;"	kind:function	line:43
+get_count	../basic/solution/wordcount.py	/^def get_count(word_count_tuple):$/;"	kind:function	line:76
+get_special_paths	../copyspecial/solution/copyspecial.py	/^def get_special_paths(dirname):$/;"	kind:function	line:22
+hello.py	../hello.py	1;"	kind:file	line:1
+last	../basic/solution/list1.py	/^def last(a):$/;"	kind:function	line:62
+linear_merge	../basic/list2.py	/^def linear_merge(list1, list2):$/;"	kind:function	line:24
+linear_merge	../basic/solution/list2.py	/^def linear_merge(list1, list2):$/;"	kind:function	line:32
+list1.py	../basic/list1.py	1;"	kind:file	line:1
+list1.py	../basic/solution/list1.py	1;"	kind:file	line:1
+list2.py	../basic/list2.py	1;"	kind:file	line:1
+list2.py	../basic/solution/list2.py	1;"	kind:file	line:1
+logpuzzle.py	../logpuzzle/logpuzzle.py	1;"	kind:file	line:1
+logpuzzle.py	../logpuzzle/solution/logpuzzle.py	1;"	kind:file	line:1
+main	../babynames/babynames.py	/^def main():$/;"	kind:function	line:47
+main	../babynames/solution/babynames.py	/^def main():$/;"	kind:function	line:97
+main	../basic/list1.py	/^def main():$/;"	kind:function	line:63
+main	../basic/list2.py	/^def main():$/;"	kind:function	line:48
+main	../basic/mimic.py	/^def main():$/;"	kind:function	line:61
+main	../basic/solution/list1.py	/^def main():$/;"	kind:function	line:92
+main	../basic/solution/list2.py	/^def main():$/;"	kind:function	line:72
+main	../basic/solution/mimic.py	/^def main():$/;"	kind:function	line:89
+main	../basic/solution/string1.py	/^def main():$/;"	kind:function	line:107
+main	../basic/solution/string2.py	/^def main():$/;"	kind:function	line:86
+main	../basic/solution/wordcount.py	/^def main():$/;"	kind:function	line:98
+main	../basic/string1.py	/^def main():$/;"	kind:function	line:79
+main	../basic/string2.py	/^def main():$/;"	kind:function	line:60
+main	../basic/wordcount.py	/^def main():$/;"	kind:function	line:52
+main	../copyspecial/copyspecial.py	/^def main():$/;"	kind:function	line:23
+main	../copyspecial/solution/copyspecial.py	/^def main():$/;"	kind:function	line:57
+main	../hello.py	/^def main():$/;"	kind:function	line:23
+main	../logpuzzle/logpuzzle.py	/^def main():$/;"	kind:function	line:41
+main	../logpuzzle/solution/logpuzzle.py	/^def main():$/;"	kind:function	line:94
+match_ends	../basic/list1.py	/^def match_ends(words):$/;"	kind:function	line:23
+match_ends	../basic/solution/list1.py	/^def match_ends(words):$/;"	kind:function	line:23
+mimic.py	../basic/mimic.py	1;"	kind:file	line:1
+mimic.py	../basic/solution/mimic.py	1;"	kind:file	line:1
+mimic_dict	../basic/mimic.py	/^def mimic_dict(filename):$/;"	kind:function	line:48
+mimic_dict	../basic/solution/mimic.py	/^def mimic_dict(filename):$/;"	kind:function	line:48
+mix_up	../basic/solution/string1.py	/^def mix_up(a, b):$/;"	kind:function	line:84
+mix_up	../basic/string1.py	/^def mix_up(a, b):$/;"	kind:function	line:62
+not_bad	../basic/solution/string2.py	/^def not_bad(s):$/;"	kind:function	line:38
+not_bad	../basic/string2.py	/^def not_bad(s):$/;"	kind:function	line:31
+os	../copyspecial/copyspecial.py	/^import os$/;"	kind:namespace	line:11
+os	../copyspecial/solution/copyspecial.py	/^import os$/;"	kind:namespace	line:11
+os	../logpuzzle/logpuzzle.py	/^import os$/;"	kind:namespace	line:9
+os	../logpuzzle/solution/logpuzzle.py	/^import os$/;"	kind:namespace	line:9
+print_mimic	../basic/mimic.py	/^def print_mimic(mimic_dict, word):$/;"	kind:function	line:54
+print_mimic	../basic/solution/mimic.py	/^def print_mimic(mimic_dict, word):$/;"	kind:function	line:72
+print_top	../basic/solution/wordcount.py	/^def print_top(filename):$/;"	kind:function	line:81
+print_words	../basic/solution/wordcount.py	/^def print_words(filename):$/;"	kind:function	line:68
+random	../basic/mimic.py	/^import random$/;"	kind:namespace	line:44
+random	../basic/solution/mimic.py	/^import random$/;"	kind:namespace	line:44
+re	../babynames/babynames.py	/^import re$/;"	kind:namespace	line:10
+re	../babynames/solution/babynames.py	/^import re$/;"	kind:namespace	line:10
+re	../copyspecial/copyspecial.py	/^import re$/;"	kind:namespace	line:10
+re	../copyspecial/solution/copyspecial.py	/^import re$/;"	kind:namespace	line:10
+re	../logpuzzle/logpuzzle.py	/^import re$/;"	kind:namespace	line:10
+re	../logpuzzle/solution/logpuzzle.py	/^import re$/;"	kind:namespace	line:10
+read_urls	../logpuzzle/logpuzzle.py	/^def read_urls(filename):$/;"	kind:function	line:22
+read_urls	../logpuzzle/solution/logpuzzle.py	/^def read_urls(filename):$/;"	kind:function	line:31
+remove_adjacent	../basic/list2.py	/^def remove_adjacent(nums):$/;"	kind:function	line:15
+remove_adjacent	../basic/solution/list2.py	/^def remove_adjacent(nums):$/;"	kind:function	line:15
+shutil	../copyspecial/copyspecial.py	/^import shutil$/;"	kind:namespace	line:12
+shutil	../copyspecial/solution/copyspecial.py	/^import shutil$/;"	kind:namespace	line:12
+sort_last	../basic/list1.py	/^def sort_last(tuples):$/;"	kind:function	line:47
+sort_last	../basic/solution/list1.py	/^def sort_last(tuples):$/;"	kind:function	line:72
+string1.py	../basic/solution/string1.py	1;"	kind:file	line:1
+string1.py	../basic/string1.py	1;"	kind:file	line:1
+string2.py	../basic/solution/string2.py	1;"	kind:file	line:1
+string2.py	../basic/string2.py	1;"	kind:file	line:1
+sys	../babynames/babynames.py	/^import sys$/;"	kind:namespace	line:9
+sys	../babynames/solution/babynames.py	/^import sys$/;"	kind:namespace	line:9
+sys	../basic/mimic.py	/^import sys$/;"	kind:namespace	line:45
+sys	../basic/solution/mimic.py	/^import sys$/;"	kind:namespace	line:45
+sys	../basic/solution/wordcount.py	/^import sys$/;"	kind:namespace	line:40
+sys	../basic/wordcount.py	/^import sys$/;"	kind:namespace	line:40
+sys	../copyspecial/copyspecial.py	/^import sys$/;"	kind:namespace	line:9
+sys	../copyspecial/solution/copyspecial.py	/^import sys$/;"	kind:namespace	line:9
+sys	../hello.py	/^import sys$/;"	kind:namespace	line:20
+sys	../logpuzzle/logpuzzle.py	/^import sys$/;"	kind:namespace	line:11
+sys	../logpuzzle/solution/logpuzzle.py	/^import sys$/;"	kind:namespace	line:11
+test	../basic/list1.py	/^def test(got, expected):$/;"	kind:function	line:54
+test	../basic/list2.py	/^def test(got, expected):$/;"	kind:function	line:39
+test	../basic/solution/list1.py	/^def test(got, expected):$/;"	kind:function	line:83
+test	../basic/solution/list2.py	/^def test(got, expected):$/;"	kind:function	line:63
+test	../basic/solution/string1.py	/^def test(got, expected):$/;"	kind:function	line:97
+test	../basic/solution/string2.py	/^def test(got, expected):$/;"	kind:function	line:76
+test	../basic/string1.py	/^def test(got, expected):$/;"	kind:function	line:69
+test	../basic/string2.py	/^def test(got, expected):$/;"	kind:function	line:50
+url_sort_key	../logpuzzle/solution/logpuzzle.py	/^def url_sort_key(url):$/;"	kind:function	line:22
+urllib	../logpuzzle/logpuzzle.py	/^import urllib$/;"	kind:namespace	line:12
+urllib	../logpuzzle/solution/logpuzzle.py	/^import urllib$/;"	kind:namespace	line:12
+verbing	../basic/solution/string2.py	/^def verbing(s):$/;"	kind:function	line:18
+verbing	../basic/string2.py	/^def verbing(s):$/;"	kind:function	line:18
+word_count_dict	../basic/solution/wordcount.py	/^def word_count_dict(filename):$/;"	kind:function	line:50
+wordcount.py	../basic/solution/wordcount.py	1;"	kind:file	line:1
+wordcount.py	../basic/wordcount.py	1;"	kind:file	line:1
+zip_to	../copyspecial/solution/copyspecial.py	/^def zip_to(paths, zipfile):$/;"	kind:function	line:43
