@@ -1,0 +1,43 @@
+html {
+	height: 100%;
+	font-size: 100%;
+}
+body {
+	min-height: 100%;
+	font-family: "Microsoft Yahei",'Lato', sans-serif;
+	font-weight: 400;
+	background: #FFF;
+	-webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+	padding:100px 0;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.attribution {
+	padding: 3em 0;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.attribution a {
+	color: #fff;
+}
+
+
+
+@media only screen and ( max-width: 32.5em ) /* 520 */
+{
+	#wrapper
+	{
+		width: 100%;
+		height: auto;
+		position: static;
+		padding: 8em 1.25em; /* 50 20 */
+		margin: 0;
+	}
+}
