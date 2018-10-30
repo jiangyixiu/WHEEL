@@ -26,3 +26,6 @@
 .dfjcc {-webkit-box-pack: center;justify-content: center;} /*水平居中*/
 .dfjce {-webkit-box-pack: end;justify-content: flex-end;} /*水平方向右对齐*/
 .dfdir {-webkit-box-orient: vertical;flex-direction: column;} /*垂直方向*/
+/* 粗体 */
+.bold {font-family: PingFangSC-Semibold, PingFangSC-Medium, "microsoft yahei";}
+

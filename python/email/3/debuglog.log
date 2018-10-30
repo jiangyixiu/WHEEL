@@ -362,3 +362,12 @@
 18 Dec 2017 18:55:43 send_email.py[line:24]WARNING warning message
 18 Dec 2017 18:55:43 send_email.py[line:25]ERROR error message
 18 Dec 2017 18:55:43 send_email.py[line:26]CRITICAL critical message
+04 Apr 2018 11:34:37 gemail2.py[line:92]WARNING (535, 'Error: authentication failed, system busy')
+04 Apr 2018 11:34:37 gemail2.py[line:93]INFO 无法发送邮件=======>>>Sophia:liqiong456@126.com
+
+04 Apr 2018 11:36:07 PngImagePlugin.py[line:135]DEBUG STREAM 'IHDR' 16 13
+04 Apr 2018 11:36:07 PngImagePlugin.py[line:135]DEBUG STREAM 'tEXt' 41 25
+04 Apr 2018 11:36:07 PngImagePlugin.py[line:135]DEBUG STREAM 'iTXt' 78 888
+04 Apr 2018 11:36:07 PngImagePlugin.py[line:135]DEBUG STREAM 'IDAT' 978 102758
+04 Apr 2018 11:36:10 gemail2.py[line:89]INFO 邮件发送成功Sophia:liqiong456@126.com
+

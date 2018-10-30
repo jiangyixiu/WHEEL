@@ -4,7 +4,6 @@
 from send_email import SendEmail
 from machining import Machining
 from log import *
-from redis_util import *
 import os
 import time
 import shutil
@@ -15,10 +14,13 @@ import shutil
 # Redis.rpush(QUEUE_NAME, u_info)
 
 while True:
+    from redis_util import *
+
     u_info = Redis.lpop(QUEUE_NAME)
     if u_info:
         u_info = u_info.decode('utf-8')
         u_info = eval(u_info)
+        print(time.asctime())
         print(u_info)
 
     if u_info and \
@@ -59,7 +61,7 @@ while True:
     else:
         if u_info == None:
             os.path.exists('./static/images') and shutil.rmtree('./static/images')
-            print('无任务', u_info)
-            time.sleep(60)
+            # print('无任务', u_info)
+            time.sleep(2)
         else:
             print('参数缺失', u_info)

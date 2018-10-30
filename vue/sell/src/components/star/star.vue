@@ -31,7 +31,7 @@
         for (let i = 0; i < integer; i++) {
           result.push(CLS_ON);
         }
-        console.log(result);
+        // console.log(result);
         if (hasDecimal) {
           result.push(CLS_HALF);
         }

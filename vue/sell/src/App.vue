@@ -14,7 +14,7 @@
       </li>
     </ul>
     <!--路由视口-->
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
   </div>
 </template>
 

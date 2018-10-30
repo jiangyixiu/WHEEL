@@ -1,13 +1,19 @@
 .border-1px(@color) {
   position: relative;
   &::after {
-    display: block;
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     border-top: 1px solid @color;
-    content: '';
+    transform: scaleY(.5);
+  }
+}
+
+.border-none(){
+  &::after {
+    display: none;
   }
 }
 
@@ -21,3 +27,5 @@
 // 站内色调
 @active: rgb(240, 20, 20);
 @tabFontColor: rgb(77, 85, 93);
+@fontGray: rgb(147, 153, 159);
+@fontBlack: rgb(7, 17, 27);

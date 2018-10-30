@@ -1315,3 +1315,25 @@
 24 Dec 2017 02:00:33 connectionpool.py[line:208]DEBUG Starting new HTTP connection (1): localhost
 24 Dec 2017 02:00:33 connectionpool.py[line:396]DEBUG http://localhost:64940 "GET http://file.ichazuo.cn/1514038419520379122.jpg HTTP/1.1" 200 721382
 24 Dec 2017 02:01:42 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:28:43 connectionpool.py[line:208]DEBUG Starting new HTTP connection (1): file.ichazuo.cn
+30 Aug 2018 15:28:44 connectionpool.py[line:396]DEBUG http://file.ichazuo.cn:80 "GET /1514038419520379122.jpg HTTP/1.1" 200 721382
+30 Aug 2018 15:28:52 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:28:54 app.py[line:53]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:28:57 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:28:59 app.py[line:53]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:29:02 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:29:03 app.py[line:53]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:29:06 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:29:08 app.py[line:53]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:33:37 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:33:39 app.py[line:54]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:33:41 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:34:21 send_email.py[line:23]INFO 初始化成功
+30 Aug 2018 15:34:22 app.py[line:54]INFO 邮件发送成功江小咏:2227006164@qq.com
+
+30 Aug 2018 15:35:15 send_email.py[line:23]INFO 初始化成功
