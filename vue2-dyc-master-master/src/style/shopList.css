@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+a.aico{
+    background:url(../images/ico.png) 0px -867px no-repeat;
+    background-size: 125px;
+}
+.wmlist{
+    padding-top: 4px!important;
+    padding-bottom:3px!important;
+}
+.blocklistbox{
+    padding-bottom: 5px;
+}

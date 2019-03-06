@@ -1,0 +1,122 @@
+.shanghu{
+    background:url(../images/ico.png) 0px -59px no-repeat;
+    background-size:125px;
+}
+.pingfenxX span{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background:url(../images/ico.png) 0px -133px no-repeat;
+}
+.textAr{
+    width:auto;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mgTp8, .mFoodWmUl li{
+    margin-top: 10px!important;
+    margin-bottom: 10px;
+}
+a.aico{
+    background:url(../images/ico.png) 0px -867px no-repeat;
+    background-size: 125px;
+}
+.review{
+    background: #fff;
+}
+.reviewTopleft{
+    width: 105px;
+    height: 132px;
+    background: #f6f6f6;
+}
+.reviewTopright{
+    padding:15px 10px 0px 10px;
+    background: #fff;
+    height: 117px;
+    overflow: hidden;
+}
+.reviewTopleft>section{
+    width: 95px;
+    height: 90px;
+}
+
+.pinglun li {
+	background: url(../images/ico.png) 0px -240px no-repeat;
+	background-size: 125px;
+	width: 15px;
+	height: 32px;
+	/*margin-left: 5px-;*/
+}
+.pinglun .kongxin{ background: url(../images/ico.png) 0px -362px no-repeat; background-size: 125px;}
+.pinglun .kongxinB{background: url(../images/ico.png) 0px -450px no-repeat; background-size: 125px;}
+.pinglun li:first-child{ margin-left:0px;}
+.shanghu ul+p {
+	margin-left: 5px;
+}
+.pingboxs{
+    width:72px;
+    height:32px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto 10px auto;
+}
+.bgFenshu{
+    width:75px;
+    top:10px;
+}
+.tiaoshu{
+    padding-top: 10px;
+}
+.fenshubar{
+    height: 9px;
+    text-indent: -9999px;
+}
+.reinfo{
+    margin-left: 8px;
+}
+.listrevise{
+    margin-top: 10px;
+}
+.touxiangbox{
+    width: 32px; 
+}
+.touxiangbox article{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+.touxiangbox article.boy{
+   background: url(../images/ico.png) -91px -820px  #f6f6f6 no-repeat;
+    background-size: 125px; 
+}
+
+.touxiangbox article.gril{
+   background: url(../images/ico.png) -91px -871px #f6f6f6 no-repeat;
+    background-size: 125px; 
+}
+.reviewinfoContnat{
+    padding: 6px;
+}
+
+.fenshubox{
+    position: relative;
+}
+.fenshubox .pingboxs{
+    margin: 0px 0px 0px 0px
+} 
+.fenshubox .pingboxs{
+    height: 15px;
+}
+.fenshubox .pinglun li{
+    height: 15px;
+    background: url(../images/ico.png) 0px -421px no-repeat;
+       background-size: 125px;
+}
+.fenshubox .bgFenshu{
+    top: 2px
+}
+.padTp10{ padding: 12px 0px;}

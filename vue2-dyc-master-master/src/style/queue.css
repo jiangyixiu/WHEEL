@@ -1,0 +1,52 @@
+@charset "utf-8";
+.blocklistbox{
+	padding-top: 10px;
+	min-height: 250px;
+}
+.queueType{
+	width: 90px;
+	height: 58px;
+	background: #fff;
+}
+.dlistblock a div{
+	padding:0px 0px 0px 0px;
+}
+div.queuelistcontant{
+	padding-left: 12px!important;
+}
+.bf{
+	background: #ffed00;
+        margin-left:-5px;
+}
+.dmgr10{
+	margin-right: 15px;
+}
+.colofbb900{
+	color: #fbb900
+}
+
+.ratobtns{
+	width: 44px;
+	height: 44px;
+}
+.ratobtns i{
+	display: block;
+	width: 25px;
+	height: 25px;
+	 background: url(../images/ico.png) no-repeat -9px -1674px;
+    background-size: 125px;
+}
+
+.dlistblock{
+    padding-left:0px;
+}
+.redbtn{
+    height:25px;
+    line-height: 24px;
+}
+.pd15{
+    padding:10px 15px;
+}
+footer{
+    margin-top:0px;
+}

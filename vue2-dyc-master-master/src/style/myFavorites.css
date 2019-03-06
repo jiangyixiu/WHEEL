@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    padding-top:82px;
+}
+ .ratobtns{
+	width: 44px;
+	height: 44px;
+}
+
+
+/* CSS Document */
+
+.mianbaoxiexian{ display:block;}
+.blocklistbox{padding-top:10px; display: none;}
+.ztitle a{
+	min-width: 50px;
+}
+.warpDlistblock{
+    position: relative;
+    overflow: hidden;
+   margin-bottom: 10px;
+}
+.shanchubox{
+    height:92px;
+    width: 70px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    color:#fff;
+    
+}
+
+.dlistblock{
+   margin-bottom:0px;
+}
+.deletebox{
+    width: 0px;
+    overflow: hidden;
+}
+.shanchu{
+    width:18px;
+    height:18px;
+    border-radius: 18px;
+    background: url(../images/ico.png) -4px -1401px #ee3535 no-repeat;
+}
+.gaodiv .shanchubox{
+     height: 115px;
+}
+
+
+

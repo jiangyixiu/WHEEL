@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*我的美食*/
+.tonglanUl li .iconFd{background:url(../images/icon.png) -3px -639px no-repeat; padding-left:35px;}
+.tonglanUl li.lv2 .iconFd{ background-position:-3px -542px;}
+.tonglanUl li.lv3 .iconFd{ background-position:-3px -593px;}
+.tonglanUl li.lv4 .iconFd{ background-position:-3px -490px;}
+.tonglanUl li.lv5 .iconFd{ background-position:-3px -438px;}
+.tonglanUl li.lv6 .iconFd{background-position:-3px -241px;}
+.tonglanUl li.lv7 .iconFd{background-position:-3px -193px; }
+.dingweiSj{-webkit-transform:rotate(-90deg); margin-left:5px;}
+a.aico{background:url(../images/ico.png) 10px -1726px no-repeat; background-size:125px;}
+/*我的美食外卖02*/
+.shanghu{ padding:5px 0px 5px 0px; background:url(../images/ico.png) 0px -54px no-repeat; background-size:125px;}
+
+/*我的地址地址管理*/
+.ratobtns{
+    width: 44px;
+    height: 44px;
+}
+.addresstitle{
+    height:44px;
+    background:#ffffff;
+}
+.addresstitle>div{
+    padding-left:20px;
+    background:url(../images/ico.png) 0px -532px no-repeat; 
+    background-size:125px;
+}
+
+.eixtBar a{
+    display:none;
+    width:24px;
+    height:22px;
+    overflow:hidden;
+    margin-left:10px;
+}
+.eixtBar a:first-child{
+    background:url(../images/ico.png) no-repeat -38px -1935px ;
+    background-size:125px;
+
+}
+.eixtBar a:last-child{
+    background:url(../images/ico.png) no-repeat -70px -1935px ;
+    background-size:125px; 
+}
+.shHuUl li:last-child{
+    border-bottom:none
+}
+.dwleft{
+    position:relative;
+    padding-left:10px;
+}
+.dwleft select{
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-appearance: none;
+}

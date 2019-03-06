@@ -1,0 +1,146 @@
+@charset "utf-8";
+.shanghuBg{ background-position:0px -57px;}
+.dingweiSj{
+    transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    margin-left:0px;
+}
+.ztitle01 ul:nth-child(3){ display:none;}
+.mianbaoxiexian{ display:block;}
+.degHx{ 
+    transform:rotate(-0deg);
+    -webkit-transform:rotate(-0deg);
+    -moz-transform:rotate(-0deg);
+    -o-transform:rotate(-0deg);
+}
+.shanghuD{ position:relative;}
+.shanghuD select{ width: 100%; height:100%; line-height:30px; position:absolute; top:0; left:0; opacity:0; -webkit-appearance: none;}
+.shHuUl li:last-child{ border-bottom:0px;}
+.zhifu li:nth-child(2),.zhifu .fapiaoVl{ display:none;}
+.loadingbtn{ background-color:#e6e5e6; color:#666;}
+.shanghu{ padding:5px 0px 5px 0px; background:url(../images/ico.png) 0px -54px no-repeat; background-size:125px;}
+.zhifu li:nth-child(2){
+    padding-bottom: 10px;
+}
+.pinglun li {
+    background: url(../images/ico.png) 0px -240px no-repeat;
+    background-size: 125px;
+    width: 15px;
+    height: 32px;
+    /*margin-left: 5px-;*/
+}
+.pinglun .kongxin{ background: url(../images/ico.png) 0px -362px no-repeat; background-size: 125px;}
+.pinglun .kongxinB{background: url(../images/ico.png) 0px -450px no-repeat; background-size: 125px;}
+.pinglun li:first-child{ margin-left:0px;}
+.bgFenshu{
+    width:75px;
+    top:10px;
+}
+.pingboxs{
+    width:72px;
+    height:32px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto 10px auto;
+}
+.fenshubox{
+    position: relative;
+}
+.fenshubox .pingboxs{
+    margin: 0px 0px 0px 0px
+} 
+.fenshubox .pingboxs{
+    height: 15px;
+}
+.fenshubox .pinglun li{
+    height: 15px;
+    background: url(../images/ico.png) 0px -421px no-repeat;
+    background-size: 125px;
+}
+.fenshubox .bgFenshu{
+    top: 2px
+}
+/*购物车图标*/
+.gobuy{
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    background: url(../images/ico.png) no-repeat 7px -1424px;
+}
+.buybar{
+    height: 43px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.tekeoutbox{
+    padding-top: 45px;
+    padding-bottom: 44px;
+    padding-left: 75px;
+}
+.leftbar{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:75px;
+    height: 100%;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+.zongjie {
+    padding: 10px 10px;
+    text-align: center;
+}
+.pszt{
+    height: 87px;
+    text-align: center;
+}
+.pszt div{
+    display: block;
+
+}
+.pszt div.on span{
+    visibility: visible;
+}
+.pszt div span{
+    visibility: hidden;
+}
+.pszt div>div.top{
+    height: 33px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+.pszt div i{
+    display: block;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    background: url(../images/jsico.png) no-repeat -65px 0px;
+    background-size:270px;
+    bottom: -7px;
+}
+.pszt div.on i{
+    background: url(../images/jsico.png) no-repeat -65px -14px!important;
+    background-size:270px!important;
+}
+
+.pszt div:first-child{
+
+}
+.pszt div:last-child{
+
+}
+.pszt section{
+    padding-top: 10px;
+}
+
+

@@ -2,7 +2,7 @@
   <div class="goods">
     <div class="menu-wrapper" ref="menuWrapper">
       <ul>
-        <li v-for="(item, $index) in goods" class="menu-item" 
+        <li v-for="(item, $index) in goods" class="menu-item"
             :class="{'current':currentIndex==$index}"
             @click="selectMenu($index, $event)">
           <span class="text">
@@ -32,6 +32,9 @@
                   <span><small>￥</small>{{ food.price }}</span>
                   <span v-show="food.oldPrice" class="oldPrice">￥{{ food.oldPrice }}</span>
                 </div>
+                <div class="cartcontrol-wrapper">
+                  <cartcontrol :food="food"></cartcontrol>
+                </div>
               </div>
             </li>
           </ul>
@@ -45,7 +48,8 @@
 <script type="text/ecmascript-6">
 import axios from 'axios';
 import BScroll from 'better-scroll';
-import shopcart from '../shopcart/shopcart';
+import shopcart from '@/components/shopcart/shopcart';
+import cartcontrol from '@/components/cartcontrol/cartcontrol';
 const REE_OK = 0;
 export default {
   props: {
@@ -122,7 +126,8 @@ export default {
     }
   },
   components: {
-    shopcart
+    shopcart,
+    cartcontrol
   }
 };
 </script>
@@ -191,7 +196,7 @@ export default {
         vertical-align: middle;
         .border-1px(rgba(7, 17, 27, 0.1))
       }
-      
+
     }
   }
   & .foods-wrapper {
@@ -247,6 +252,11 @@ export default {
             font-size: 10px;
             color: @fontGray;
           }
+        }
+        .cartcontrol-wrapper {
+          position: absolute;
+          right: 0;
+          bottom: 12px;
         }
       }
     }

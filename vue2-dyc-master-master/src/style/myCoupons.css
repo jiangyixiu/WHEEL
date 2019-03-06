@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    padding-top: 85px;
+}
+.wmlist{
+    padding-top: 4px!important;
+    padding-bottom:3px!important;
+}
+.blocklistbox{
+    padding-bottom: 5px;
+}

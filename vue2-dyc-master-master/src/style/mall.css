@@ -1,0 +1,349 @@
+.banner{
+    min-height: 26px;
+    background: #ddd
+}
+.banner img{
+    display: block;
+}
+a.aico{
+    background:url(../images/ico.png) 0px -867px no-repeat;
+    background-size: 125px;
+}
+.shopname{
+    background: #ffffff;
+    height: 46px;
+    position: relative;
+    padding-left: 68px;
+}
+
+.shopname img{
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background: #ffffff; 
+    border: 1px solid #cccccc;
+    left: 10px;
+    top: -16px;
+}
+.titlefoot{
+    height: 40px;
+}
+.zanxin{
+    width: 21px;
+    height: 21px;
+    border-radius: 20px;
+    background:url(../images/ico.png) -15px -97px #dbdbdb no-repeat;
+    background-size: 125px;
+    margin-right: 10px;
+}
+.mianbaoxiexian{ display:block;}
+.ztitle {
+    background: #f6f6f6;
+}
+.blocklistbox{
+    display: none;
+    min-height: 200px;
+    padding: 5px 0px 0px 0px;
+}
+.footlistbox{
+    padding-left: 2%;
+}
+.footlistbox section{
+    display: block;
+    margin-right: 1.4%;
+    width: 31.9%;
+    float: left;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+.clear{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 1px;
+}
+.startitbar{
+    width: 106px;
+    height: 32px;
+    overflow: hidden;
+    background-color:rgba(51,51,51,0.7);
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    color: #fff;
+    opacity: 0.0;
+
+}
+.startitbar div{
+    padding-left: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.chenggong div{
+    background:url(../images/ico.png) 0px -674px no-repeat;
+    background-size: 75px;
+    opacity: 1;
+    
+}
+.shibai div{
+    background:url(../images/ico.png) 0px -634px no-repeat;
+    background-size: 75px;
+}
+.conimglist{
+    margin: 5px;
+    background: #f6f6f6
+}
+.conimglist img{
+    display: block;
+    width: 100%;
+    margin-bottom:10px;
+}
+.lotitle{
+    margin: 0px 7px 7px 7px;
+    overflow: hidden;
+    height: 35px;
+    display: block;
+}
+.mg0{
+    margin: 0px;
+}
+.hauto{
+    height: auto;
+}
+
+.footCoupon{
+    padding: 10px 5px 0px 5px;
+}
+
+.ztitle a i{
+    padding-right: 18px;
+    background: url(../images/ico.png) no-repeat right -356px;
+    font-style: normal;
+}
+
+.ztitle a i.on{
+    padding-right: 18px;
+    background: url(../images/ico.png) no-repeat right -258px;
+    font-style: normal;
+}
+/*-356px*/
+/*-268px*/
+
+
+img.wk75{
+    width: 75px;
+    height: 75px;
+    top: -45px;
+}
+.pdl95{
+    padding-left: 95px;
+}
+.boxl{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.ornBtn{
+    background: #fbb900!important
+}
+.mlfu{
+    margin-left: -5px;
+}
+.jbred{
+    top: -14px;
+    left:87px;
+}
+
+.mallwarp{
+    padding: 0px 10px 15px 10px;
+}
+.red{
+    background-color: #ee3535;
+}
+
+.bgFenshu{
+    width:75px;
+    top:10px;
+}
+.pinglun li {
+	background: url(../images/ico.png) 0px -240px no-repeat;
+	background-size: 125px;
+	width: 15px;
+	height: 32px;
+	/*margin-left: 5px-;*/
+}
+.pingboxs{
+    width:72px;
+    height:32px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto 10px auto;
+}
+.fenshubox{
+    position: relative;
+}
+.fenshubox .pingboxs{
+    margin: 0px 0px 0px 0px
+} 
+.fenshubox .pingboxs{
+    height: 15px;
+}
+.fenshubox .pinglun li{
+    height: 15px;
+    background: url(../images/ico.png) 0px -421px no-repeat;
+       background-size: 125px;
+}
+.fenshubox .bgFenshu{
+    top: 2px
+}
+
+.mallnavbox article{
+    display: block;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    width: 23%
+}
+.mallnavbox article span{
+    margin-right: 2px;
+    /*font-weight: bold;*/
+}
+.mallnavbox article:first-child{
+   width: 30%;
+    text-align: left;
+}
+.mallnavbox article:last-child{
+    border-right:none;
+    text-align: right;
+}
+
+.addres span {
+	background-color: #e6e5e6;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	
+}
+.addres span:first-child{
+    display: block;
+    margin-right: 10px;
+}
+.dhIco{
+     background: url(../images/ico.png) #e6e5e6 0px -502px no-repeat;
+    background-size: 125px;
+}
+.Dzico{
+     background: url(../images/ico.png) #e6e5e6 0px -533px no-repeat;
+    background-size: 125px;
+}
+.mallinfobox{
+    padding: 0px 5px;
+}
+.iboxmall{
+    height: 96px;
+}
+.iboxmall section{
+    height: 58px;
+    display: block;
+    text-align: center;
+}
+.iboxmall section .ico{
+    width: 34px;
+    height: 34px;
+    margin-bottom: 5px;
+     background: url(../images/icon.png) 0px -533px no-repeat;
+    background-size: 49px;
+    
+}
+.iboxmall section .wm{
+    background: url(../images/icon.png) -7px -945px no-repeat;
+    background-size: 49px;
+}
+.iboxmall section .dw{
+    background: url(../images/icon.png) -7px -870px no-repeat;
+    background-size: 49px;
+}
+.iboxmall section .dc{
+    background: url(../images/icon.png) -7px -796px no-repeat;
+    background-size: 49px;
+}
+.iboxmall section .pd{
+    background: url(../images/icon.png) -7px -721px no-repeat;
+    background-size: 49px;
+}
+.iboxmall section .zf{
+    background: url(../images/icon.png) -8px -294px no-repeat;
+    background-size: 49px;
+}
+.shanghuD{
+    padding: 12px;
+    position: relative;
+}
+.kuai{
+    width: 5px;
+    height: 12px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -7px;
+}
+.mallinfocontant{
+    padding: 0px 5px 5px 5px
+}
+.mallinfocontant img{
+    display: block;
+    width: 120px;
+}
+.huimallright{
+    padding: 0px 10px;
+}
+
+.touxiangbox{
+    width: 32px; 
+}
+.touxiangbox article{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+.touxiangbox article.boy{
+   background: url(../images/ico.png) -91px -820px  #fff no-repeat;
+    background-size: 125px; 
+}
+
+.touxiangbox article.gril{
+   background: url(../images/ico.png) -91px -871px #fff no-repeat;
+    background-size: 125px; 
+}
+.reviewinfoContnat{
+    padding: 10px;
+}
+
+.tiaoshu{
+    padding-top: 10px;
+}
+.reviewinfoContnat .fenshubox .pinglun li{
+    height: 15px;
+    background: url(../images/ico.png)  0px -245px no-repeat;
+    background-size: 125px;
+}
+.opacity60{
+    opacity: 0.3
+}
+.maocontant p{
+    text-indent: 2em;
+}
+
+
+
+
+
+

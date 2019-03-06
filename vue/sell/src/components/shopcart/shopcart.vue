@@ -27,7 +27,7 @@
           return [
             {
               price: 12.5,
-              count: 1
+              count: 5
             }
           ];
         }
@@ -64,6 +64,13 @@
           return `还差￥${diff}元起送`;
         } else {
           return '去结账';
+        }
+      },
+      payClass () {
+        if (this.totalPrice < this.minPrice) {
+          return 'not-enough';
+        } else {
+          return 'enough';
         }
       }
     }

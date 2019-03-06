@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background:url(../images/bodyleftbg.png) repeat-y #fff;
+    background-size: 75px;
+}
+a.aico{
+     background: url(../images/ico.png) no-repeat 5px -1552px;
+     background-size: 125px;
+}
+.buybar{
+    height: 43px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.tekeoutbox{
+    padding-top: 45px;
+    padding-bottom: 44px;
+    padding-left: 75px;
+}
+.leftbar{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:75px;
+    height: 100%;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+.topzhaiwei{
+    height: 45px;
+    width: 75px;
+}
+
+.bottomzhanwei{
+    height: 44px;
+    width: 75px;
+}
+
+.leftbar ul li{   
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.leftbar ul li .num,.leftbar ul li .num0{
+    display: block;
+    background: #ee3535;
+    width:14px;
+    height:14px;
+    border-radius: 14px;
+    position: absolute;
+    top: 5px;
+    right:5px;
+    overflow: hidden;
+    font-size: 10px;
+    color:#fff;
+    text-align:center;
+    line-height: 14px;
+}
+
+.leftbar ul li.baidihuangzi .num{
+    background: #ee3535;
+    width:14px;
+    height:14px;
+    border-radius: 14px;
+    top: 5px;
+    right:5px;
+    text-indent: 0px;
+    text-align: center;
+    line-height: 14px;
+}
+.leftbar ul li .num:empty{
+    display: none;
+}
+.leftbar ul li div{
+    padding: 0px 3px;
+    text-align: center;
+    line-height: 20px;
+    
+}
+.teketitle{
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.listbox{
+    margin-left: 10px;
+    padding: 10px 10px 10px 0px;
+    position: relative;
+    
+}
+.listbox img{
+   display:block;
+   margin-right: 10px;
+}
+
+/*加减功能块*/
+
+.position_r10_b10{
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+}
+
+/*购物车图标*/
+.gobuy{
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    background: url(../images/ico.png) no-repeat 7px -1424px;
+}
+.line{
+    line-height: 16px;
+}
+.boxl{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.dlogcontant{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.ftn14 {
+    font-size: 14px;
+}
+.alertbtnbar {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.dbor{
+    border: 1px solid #ddd
+}
+.addplus{
+    margin-right: 0px;
+}
+
+
