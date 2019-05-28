@@ -20,8 +20,7 @@
 				return new Date(year, month, 1).getDay();
 			},
 			getMonth : function(m){
-				// return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][m];
-				return ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'][m];
+				return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][m];
 			},
 			//计算年某月的最后一天日期
 			getLastDayInMonth : function(year, month){
@@ -58,7 +57,7 @@
 				this.initListeners();
 			},
 			renderHTML : function(){
-				var $html = $('<div class="md_mask"></div><div class="md_panel"><div class="md_head"><div class="md_selectarea"><a class="md_prev change_month" href="javascript:void(0);">&lt;</a><a class="md_headtext yeartag" href="javascript:void(0);"></a><a class="md_headtext" href="javascript:void(0);">年</a><a class="md_headtext monthtag" href="javascript:void(0);">月</a> <a class="md_next change_month" href="javascript:void(0);">&gt;</a></div></div><div class="md_body"><ul class="md_weekarea"><li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li></ul><ul class="md_datearea in"></ul></div><div class="md_foot"><a href="javascript:void(0);" class="md_ok">确定</a> <a href="javascript:void(0);" class="md_cancel">取消</a></div></div>');
+				var $html = $('<div class="md_mask"></div><div class="md_panel"><div class="md_head"><div class="md_selectarea"><a class="md_prev change_year" href="javascript:void(0);">&lt;</a> <a class="md_headtext yeartag" href="javascript:void(0);"></a> <a class="md_next change_year" href="javascript:void(0);">&gt;</a></div><div class="md_selectarea"><a class="md_prev change_month" href="javascript:void(0);">&lt;</a> <a class="md_headtext monthtag" href="javascript:void(0);">月</a> <a class="md_next change_month" href="javascript:void(0);">&gt;</a></div></div><div class="md_body"><ul class="md_weekarea"><li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li></ul><ul class="md_datearea in"></ul></div><div class="md_foot"><a href="javascript:void(0);" class="md_ok">确定</a> <a href="javascript:void(0);" class="md_cancel">取消</a></div></div>');
 
 				$(document.body).append($html);
 			},
@@ -284,7 +283,7 @@
 							_this._changeMonth(add, _this.value.date);
 						}
 						else{
-							$this.addClass('current md_ok').siblings('.current').removeClass('current');	
+							$this.addClass('current').siblings('.current').removeClass('current');	
 						}						
 					},
 					'.md_ok' : function(){

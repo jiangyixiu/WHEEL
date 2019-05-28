@@ -195,59 +195,11 @@ a{
 	box-shadow: none;
 }
 .md_datearea li{
-	font-family: '微软雅黑';
-	font-size: 1.5rem;
-	line-height: 4.31em;
+    line-height: 5.31em;
 }
 .md_foot{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
-}
-.md_selectarea{
-	width: 100%;
-}
-.md_headtext{
-	width: auto;
-}
-.md_selectarea{
-	text-align: center;
-}
-.md_foot{
-	/* display: none; */
-}
-.md_weekarea{
-	border: none;
-	background-color: #ffffff;
-}
-.md_weekarea li{
-	height: 3.666667rem;
-	line-height: 3.666667rem;
-	color: #999;
-	font-size: 1.166667rem;
-}
-.md_next {
-  right: 4em;
-}
-.md_prev {
-  left: 4em;
-}
-.md_foot{
-	position: absolute;
-	bottom: auto; 
-	right: auto; 
-	left: 20px;
-	top: 0;	
-	margin: auto;
-	line-height: 40px;
-}
-.md_selectarea{
-	background-color: #3573B3;
-}
-.md_selectarea a{
-	color: #ffffff;
-}
-.md_foot .md_cancel{
-	color: #ffffff;
 }
