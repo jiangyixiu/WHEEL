@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="http://sslfile.ichazuo.cn/h5.jquery.min.js"></script>
+    <script>
+        var callbacks = $.Callbacks()
+        callbacks.add(function(info) {
+            console.log(1, info);
+        })
+        callbacks.add(function(info) {
+            console.log(2, info);
+        })
+        callbacks.add(function(info) {
+            console.log(3, info);
+        })
+        callbacks.fire('@')
+        callbacks.fire('#')
+    </script>
+</body>
+
+</html>

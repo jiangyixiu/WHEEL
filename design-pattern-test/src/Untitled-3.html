@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="">@</a>
+    <a href="">@</a>
+    <a href="">@</a>
+    <script src="http://sslfile.ichazuo.cn/h5.jquery.min.js"></script>
+    <script>
+        var arr = [1, 2, 3]
+        var nodeList = document.getElementsByTagName('a')
+        var $a = $('a')
+
+        function each(object) {
+            for (const key in object) {
+                if (object.hasOwnProperty(key)) {
+                    const element = object[key];
+                    console.log(element)
+                }
+            }
+        }
+        each(arr)
+        each(nodeList)
+            // arr.forEach(element => {
+            //     console.log(element)
+            // });
+            // for (const key in nodeList) {
+            //     if (nodeList.hasOwnProperty(key)) {
+            //         const element = nodeList[key];
+            //         console.log(element)
+            //     }
+            // }
+            // $a.each(function(key, val) {
+            //     console.log(key, val)
+            // })
+    </script>
+</body>
+
+</html>
