@@ -33,7 +33,7 @@
                   <span v-show="food.oldPrice" class="oldPrice">￥{{ food.oldPrice }}</span>
                 </div>
                 <div class="cartcontrol-wrapper">
-                  <cartcontrol :food="food"></cartcontrol>
+                  <cartcontrol :food="food" v-on:cart-add="drop" ></cartcontrol>
                 </div>
               </div>
             </li>
@@ -41,7 +41,7 @@
         </li>
       </ul>
     </div>
-    <shopcart :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
+    <shopcart ref="shopcart" :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
   </div>
 </template>
 
@@ -77,6 +77,17 @@ export default {
         }
       }
       return 0;
+    },
+    selectFoods () {
+      let foods = [];
+      this.goods.forEach(good => {
+        good.foods.forEach(food => {
+          if (food.count) {
+            foods.push(food);
+          }
+        });
+      });
+      return foods;
     }
   },
   created () {
@@ -106,7 +117,8 @@ export default {
         click: true
       });
       this.foodsScroll = new BScroll(this.$refs.foodsWrapper, {
-        probeType: 3
+        probeType: 3,
+        click: true
       });
       this.foodsScroll.on('scroll', (pos) => {
         this.scrollY = Math.abs(Math.round(pos.y));
@@ -123,6 +135,9 @@ export default {
           this.listHeight.push(height);
         }
       }
+    },
+    drop (target) {
+      this.$refs.shopcart.drop(target);
     }
   },
   components: {
