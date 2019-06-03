@@ -1,6 +1,6 @@
 <template>
   <div class="shopcart">
-    <div class="content">
+    <div class="content" @click="toggleList">
       <div class="content-left">
         <div class="logo-wrapper">
           <div class="logo" :class="totalCount>0?'highlight':''">
@@ -15,6 +15,7 @@
         <div class="pay">{{payDesc}}</div>
       </div>
     </div>
+    <!-- 购物车小球特效 -->
     <div class="ball-container drop-transition">
       <div v-for="(ball,index) in balls" :key="index">
         <transition 
@@ -27,10 +28,31 @@
         </transition>
       </div>
     </div>
+    <!-- 购物车列表 -->
+    <div class="shopcart-list" v-show="listShow">
+      <div class="list-header">
+        <h1 class="title">购物车</h1>
+        <span class="empty">清空</span>
+      </div>
+      <div class="list-content">
+        <ul>
+          <li class="food" v-for="(food, index) in selectFoods" :key="index">
+            <span class="name">{{food.name}}</span>
+            <div class="price">
+              <span>¥{{food.price*food.count}}</span>
+            </div>
+            <div class="catcontrol-wrapper">
+              <catcontrol :food="food"></catcontrol>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+  import catcontrol from '../cartcontrol/cartcontrol';
   const BALL_LEN = 10;
   const innerClsHook = 'inner-hook';
 
@@ -62,7 +84,8 @@
     },
     data () {
       return {
-        balls: createBalls()
+        balls: createBalls(),
+        fold: true // 购物列表折叠 true折叠 false展开
       };
     },
     computed: {
@@ -96,6 +119,14 @@
         } else {
           return 'enough';
         }
+      },
+      listShow () {
+        if (!this.totalCount) {
+          this.fold = true;
+          return false;
+        }
+        let show = !this.fold;
+        return show;
       }
     },
     created () {
@@ -137,7 +168,17 @@
           ball.show = false;
           el.style.display = 'none';
         }
+      },
+      // 展示隐藏购物车
+      toggleList () {
+        if (!this.totalCount) {
+          return;
+        }
+        this.fold = !this.fold;
       }
+    },
+    components: {
+      catcontrol
     }
   };
 </script>
@@ -248,6 +289,13 @@
         background-color: rgb(0, 160, 220);
         transition: all 400ms linear;
       }
+    }
+    .shopcart-list {
+      position: absolute;
+      left: 0;
+      bottom: 48px;
+      z-index: -1;
+      width: 100%;
     }
   }
 </style>
