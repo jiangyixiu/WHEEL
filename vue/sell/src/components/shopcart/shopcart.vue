@@ -29,40 +29,43 @@
       </div>
     </div>
     <!-- 购物车列表 -->
-    <div class="shopcart-list" v-show="listShow">
-      <div class="list-header">
-        <h1 class="title">购物车</h1>
-        <span class="empty">清空</span>
+    <transition name="fold">
+      <div class="shopcart-list" v-show="listShow">
+        <div class="list-header">
+          <h1 class="title">购物车</h1>
+          <span class="empty" @click="empty">清空</span>
+        </div>
+        <div class="list-content" ref="listContent">
+          <ul>
+            <li class="food df dfaic" v-for="(food, index) in selectFoods" :key="index">
+              <span class="name df1">{{food.name}}</span>
+              <div class="price">
+                <span>¥{{food.price*food.count}}</span>
+              </div>
+              <div class="catcontrol-wrapper">
+                <catcontrol :food="food"></catcontrol>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="list-content">
-        <ul>
-          <li class="food" v-for="(food, index) in selectFoods" :key="index">
-            <span class="name">{{food.name}}</span>
-            <div class="price">
-              <span>¥{{food.price*food.count}}</span>
-            </div>
-            <div class="catcontrol-wrapper">
-              <catcontrol :food="food"></catcontrol>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import catcontrol from '../cartcontrol/cartcontrol';
-  const BALL_LEN = 10;
-  const innerClsHook = 'inner-hook';
+import catcontrol from '../cartcontrol/cartcontrol';
+import BScroll from 'better-scroll';
+const BALL_LEN = 10;
+const innerClsHook = 'inner-hook';
 
-  function createBalls () {
-    let balls = [];
-    for (let i = 0; i < BALL_LEN; i++) {
-      balls.push({show: false});
-    }
-    return balls;
+function createBalls () {
+  let balls = [];
+  for (let i = 0; i < BALL_LEN; i++) {
+    balls.push({show: false});
   }
+  return balls;
+}
 
   export default {
     name: 'shop-cart',
@@ -126,6 +129,17 @@
           return false;
         }
         let show = !this.fold;
+        if (show) {
+          this.$nextTick(() => {
+            if (!this.scroll) {
+              this.scroll = new BScroll(this.$refs.listContent, {
+                click: true
+              });
+            } else {
+              this.scroll.refresh();
+            };
+          });
+        }
         return show;
       }
     },
@@ -175,6 +189,12 @@
           return;
         }
         this.fold = !this.fold;
+      },
+      // 清空购物车
+      empty () {
+        this.selectFoods.forEach(food => {
+          food.count = 0;
+        });
       }
     },
     components: {
@@ -184,7 +204,7 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
-@import url('../../common/style/index.less');
+  @import '../../common/style/index.less';
   .shopcart {
     position: fixed;
     bottom: 0;
@@ -232,7 +252,7 @@
             right: 0;
             background-color: @active;
             color: #fff;
-            padding: 1px 6px;
+            padding: 3px 9px;
             border-radius: 16px;
             font-size: 9px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
@@ -293,9 +313,64 @@
     .shopcart-list {
       position: absolute;
       left: 0;
-      bottom: 48px;
+      top: 0;
       z-index: -1;
       width: 100%;
+      transition: all 400ms;
+      transform: translate3d(0, -100%, 0);
+      // &.show {
+      //   transform: translate3d(0, -100%, 0);
+      // }
+      &.fold-leave-active, &.fold-leave-to {
+        transform: translate3d(0, 0, 0);
+      }
+      &.fold-enter-active, &.fold-enter-to{
+        transform: translate3d(0, 0, 0);
+      }
+      .list-header {
+        height: 40xp;
+        line-height: 40px;
+        padding:  0 18px;
+        background-color: #f3f5f7;
+        border-bottom: 1px solid rgba(7, 17, 27, .1);
+        overflow: hidden;
+        .title {
+          float: left;
+          font-size: 14px;
+          color: rgb(7, 17, 27);
+        }
+        .empty {
+          float: right;
+          font-size: 12px;
+          color: rgb(0, 160, 220);
+        }
+      }
+      .list-content {
+        padding: 0 18px;
+        max-height: 240px;
+        background-color: #ffffff;
+        overflow: hidden;
+        .food {
+          position: relative;
+          padding: 12px 0;
+          box-sizing: border-box;
+          .border-1px(rgba(7, 17, 27, .1));
+          .name {
+            line-height: 24px;
+            font-size: 14px;
+            color: rgb(7, 17, 27);
+          }
+          .price {
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bolder;
+            color: @active;
+          }
+          .catcontrol-wrapper {
+            margin-left: 18px;
+          }
+        }
+      }
     }
   }
 </style>
