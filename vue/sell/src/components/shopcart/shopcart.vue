@@ -1,36 +1,36 @@
 <template>
-  <div class="shopcart">
-    <div class="content" @click="toggleList">
-      <div class="content-left">
-        <div class="logo-wrapper">
-          <div class="logo" :class="totalCount>0?'highlight':''">
-            <span class="icon-shopping_cart"></span>
+  <div>
+    <div class="shopcart">
+      <div class="content" @click="toggleList">
+        <div class="content-left">
+          <div class="logo-wrapper">
+            <div class="logo" :class="totalCount>0?'highlight':''">
+              <span class="icon-shopping_cart"></span>
+            </div>
+            <div class="num" v-show="totalCount">{{totalCount}}</div>
           </div>
-          <div class="num" v-show="totalCount">{{totalCount}}</div>
+          <div class="price bold" :class="{'highlight':totalPrice>0}">￥{{totalPrice}}</div>
+          <div class="desc">另配送费￥{{deliveryPrice}}元</div>
         </div>
-        <div class="price bold" :class="{'highlight':totalPrice>0}">￥{{totalPrice}}</div>
-        <div class="desc">另配送费￥{{deliveryPrice}}元</div>
+        <div class="content-right" :class="{'highlight':totalPrice>minPrice}">
+          <div class="pay">{{payDesc}}</div>
+        </div>
       </div>
-      <div class="content-right" :class="{'highlight':totalPrice>minPrice}">
-        <div class="pay">{{payDesc}}</div>
+      <!-- 购物车小球特效 -->
+      <div class="ball-container drop-transition">
+        <div v-for="(ball,index) in balls" :key="index">
+          <transition 
+            @before-enter="beforeDrop"
+            @enter="dropping"
+            @after-enter="afterDrop">
+            <div class="ball" v-if="ball.show">
+              <div class="inner inner-hook"></div>
+            </div>
+          </transition>
+        </div>
       </div>
-    </div>
-    <!-- 购物车小球特效 -->
-    <div class="ball-container drop-transition">
-      <div v-for="(ball,index) in balls" :key="index">
-        <transition 
-          @before-enter="beforeDrop"
-          @enter="dropping"
-          @after-enter="afterDrop">
-          <div class="ball" v-if="ball.show">
-            <div class="inner inner-hook"></div>
-          </div>
-        </transition>
-      </div>
-    </div>
-    <!-- 购物车列表 -->
-    <transition name="fold">
-      <div class="shopcart-list" v-show="listShow">
+      <!-- 购物车列表 -->
+      <div class="shopcart-list" :class="{'show': listShow}">
         <div class="list-header">
           <h1 class="title">购物车</h1>
           <span class="empty" @click="empty">清空</span>
@@ -49,7 +49,9 @@
           </ul>
         </div>
       </div>
-    </transition>
+    </div>
+
+    <div class="list-mack" :class="{'show': listShow}"></div>
   </div>
 </template>
 
@@ -210,10 +212,13 @@ function createBalls () {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 41;
     margin: auto;
     height: 48px;
     background-color: #999;
     .content {
+      position: relative;
+      z-index: 40;
       display: flex;
       height: 100%;
       background-color: #141d27;
@@ -314,19 +319,22 @@ function createBalls () {
       position: absolute;
       left: 0;
       top: 0;
-      z-index: -1;
+      // z-index: -1;
       width: 100%;
       transition: all 400ms;
-      transform: translate3d(0, -100%, 0);
-      // &.show {
-      //   transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, 0, 0);
+      &.show {
+        transform: translate3d(0, -100%, 0);
+      }
+      // &.fold-leave-active, &.fold-leave-to {
+      //   transform: translate3d(0, 0, 0);
       // }
-      &.fold-leave-active, &.fold-leave-to {
-        transform: translate3d(0, 0, 0);
-      }
-      &.fold-enter-active, &.fold-enter-to{
-        transform: translate3d(0, 0, 0);
-      }
+      // &.fold-enter-active, &.fold-enter-to{
+      //   transform: translate3d(0, 0, 0);
+      // }
+      // &.fold-leave-to {
+      //   transform: translate3d(0, 0, 0);
+      // }
       .list-header {
         height: 40xp;
         line-height: 40px;
@@ -371,6 +379,21 @@ function createBalls () {
           }
         }
       }
+    }
+  }
+  .list-mack {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    opacity: 0;
+    transition: all 400ms;
+    backdrop-filter: blur(10px);
+    &.show {
+      opacity: 1;
+      top: 0;
+      background-color: rgba(7, 17, 27, .6);
     }
   }
 </style>
