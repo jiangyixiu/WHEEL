@@ -12,14 +12,14 @@
           <div class="price bold" :class="{'highlight':totalPrice>0}">￥{{totalPrice}}</div>
           <div class="desc">另配送费￥{{deliveryPrice}}元</div>
         </div>
-        <div class="content-right" :class="{'highlight':totalPrice>minPrice}">
+        <div class="content-right" @click.stop="pay" :class="{'highlight':totalPrice>minPrice}">
           <div class="pay">{{payDesc}}</div>
         </div>
       </div>
       <!-- 购物车小球特效 -->
       <div class="ball-container drop-transition">
         <div v-for="(ball,index) in balls" :key="index">
-          <transition 
+          <transition
             @before-enter="beforeDrop"
             @enter="dropping"
             @after-enter="afterDrop">
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="list-mack" :class="{'show': listShow}"></div>
+    <div class="list-mack" @click="hideList" :class="{'show': listShow}"></div>
   </div>
 </template>
 
@@ -192,11 +192,22 @@ function createBalls () {
         }
         this.fold = !this.fold;
       },
+      hideList () {
+        this.fold = true;
+      },
       // 清空购物车
       empty () {
         this.selectFoods.forEach(food => {
           food.count = 0;
         });
+      },
+      // 去支付
+      pay () {
+        if (this.totalPrice < this.minPrice) {
+          return;
+        }
+
+        window.alert(`支付${this.totalPrice}元`);
       }
     },
     components: {
@@ -319,24 +330,14 @@ function createBalls () {
       position: absolute;
       left: 0;
       top: 0;
-      // z-index: -1;
       width: 100%;
       transition: all 400ms;
       transform: translate3d(0, 0, 0);
       &.show {
         transform: translate3d(0, -100%, 0);
       }
-      // &.fold-leave-active, &.fold-leave-to {
-      //   transform: translate3d(0, 0, 0);
-      // }
-      // &.fold-enter-active, &.fold-enter-to{
-      //   transform: translate3d(0, 0, 0);
-      // }
-      // &.fold-leave-to {
-      //   transform: translate3d(0, 0, 0);
-      // }
       .list-header {
-        height: 40xp;
+        height: 40px;
         line-height: 40px;
         padding:  0 18px;
         background-color: #f3f5f7;

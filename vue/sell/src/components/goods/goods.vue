@@ -1,5 +1,6 @@
 <template>
   <div class="goods">
+    <!-- 菜单 -->
     <div class="menu-wrapper" ref="menuWrapper">
       <ul>
         <li v-for="(item, $index) in goods" class="menu-item"
@@ -12,12 +13,13 @@
         </li>
       </ul>
     </div>
+    <!-- 菜品 -->
     <div class="foods-wrapper" ref="foodsWrapper">
       <ul>
         <li v-for="item in goods" class="foods-list foods-list-hook">
           <h1 class="title">{{ item.name }}</h1>
           <ul>
-            <li v-for="food in item.foods" class="food-item border-1px">
+            <li v-for="food in item.foods" @click="selectFood($event, food)" class="food-item border-1px">
               <div class="icon">
                 <img :src="food.icon" width="57" height="57">
               </div>
@@ -41,7 +43,9 @@
         </li>
       </ul>
     </div>
+    <!-- 购物车 -->
     <shopcart ref="shopcart" :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
+    <food :food="selectedFood" ref="food"></food>
   </div>
 </template>
 
@@ -50,6 +54,7 @@ import axios from 'axios';
 import BScroll from 'better-scroll';
 import shopcart from '@/components/shopcart/shopcart';
 import cartcontrol from '@/components/cartcontrol/cartcontrol';
+import food from '@/components/food/food';
 const REE_OK = 0;
 export default {
   props: {
@@ -61,7 +66,8 @@ export default {
     return {
       goods: [],
       listHeight: [],
-      scrollY: 0
+      scrollY: 0,
+      selectedFood: {}
     };
   },
   computed: {
@@ -112,6 +118,14 @@ export default {
       let el = foodList[index];
       this.foodsScroll.scrollToElement(el, 300);
     },
+    selectFood (event, food) {
+      if (!event._constructed) {
+        return;
+      }
+      this.selectedFood = food;
+      console.log(food);
+      this.$refs.food.show();
+    },
     _initScroll () {
       this.menuScroll = new BScroll(this.$refs.menuWrapper, {
         click: true
@@ -142,7 +156,8 @@ export default {
   },
   components: {
     shopcart,
-    cartcontrol
+    cartcontrol,
+    food
   }
 };
 </script>
