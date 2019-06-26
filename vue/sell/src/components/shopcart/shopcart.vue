@@ -56,25 +56,26 @@
 </template>
 
 <script type="text/ecmascript-6">
-import catcontrol from '../cartcontrol/cartcontrol';
-import BScroll from 'better-scroll';
-const BALL_LEN = 10;
-const innerClsHook = 'inner-hook';
+  import catcontrol from '../cartcontrol/cartcontrol';
+  import BScroll from 'better-scroll';
 
-function createBalls () {
-  let balls = [];
-  for (let i = 0; i < BALL_LEN; i++) {
-    balls.push({show: false});
+  const BALL_LEN = 10;
+  const innerClsHook = 'inner-hook';
+
+  function createBalls() {
+    let balls = [];
+    for (let i = 0; i < BALL_LEN; i++) {
+      balls.push({show: false});
+    }
+    return balls;
   }
-  return balls;
-}
 
   export default {
     name: 'shop-cart',
     props: {
       selectFoods: {
         type: Array,
-        default () {
+        default() {
           return [];
         }
       },
@@ -87,28 +88,28 @@ function createBalls () {
         default: 0
       }
     },
-    data () {
+    data() {
       return {
         balls: createBalls(),
         fold: true // 购物列表折叠 true折叠 false展开
       };
     },
     computed: {
-      totalPrice () {
+      totalPrice() {
         let total = 0;
         this.selectFoods.forEach((food) => {
           total += food.price * food.count;
         });
         return total;
       },
-      totalCount () {
+      totalCount() {
         let count = 0;
         this.selectFoods.forEach(food => {
           count += food.count;
         });
         return count;
       },
-      payDesc () {
+      payDesc() {
         if (this.totalPrice === 0) {
           return `￥${this.minPrice}元起送`;
         } else if (this.totalPrice < this.minPrice) {
@@ -118,14 +119,14 @@ function createBalls () {
           return '去结账';
         }
       },
-      payClass () {
+      payClass() {
         if (this.totalPrice < this.minPrice) {
           return 'not-enough';
         } else {
           return 'enough';
         }
       },
-      listShow () {
+      listShow() {
         if (!this.totalCount) {
           this.fold = true;
           return false;
@@ -139,17 +140,18 @@ function createBalls () {
               });
             } else {
               this.scroll.refresh();
-            };
+            }
+            ;
           });
         }
         return show;
       }
     },
-    created () {
+    created() {
       this.dropBalls = [];
     },
     methods: {
-      drop (el) {
+      drop(el) {
         for (let i = 0; i < this.balls.length; i++) {
           const ball = this.balls[i];
           if (!ball.show) {
@@ -160,7 +162,7 @@ function createBalls () {
           }
         }
       },
-      beforeDrop (el) {
+      beforeDrop(el) {
         const ball = this.dropBalls[this.dropBalls.length - 1];
         console.log(el);
         const rect = ball.el.getBoundingClientRect();
@@ -171,14 +173,14 @@ function createBalls () {
         const inner = el.getElementsByClassName(innerClsHook)[0];
         inner.style.transform = inner.style.webkitTransform = `translate3d(${x}px,0,0)`;
       },
-      dropping (el, done) {
+      dropping(el, done) {
         this._reflow = document.body.offsetHeight;
         el.style.transform = el.style.webkitTransform = `translate3d(0,0,0)`;
         const inner = el.getElementsByClassName(innerClsHook)[0];
         inner.style.transform = inner.style.webkitTransform = `translate3d(0,0,0)`;
         el.addEventListener('transitionend', done);
       },
-      afterDrop (el) {
+      afterDrop(el) {
         const ball = this.dropBalls.shift();
         if (ball) {
           ball.show = false;
@@ -186,23 +188,23 @@ function createBalls () {
         }
       },
       // 展示隐藏购物车
-      toggleList () {
+      toggleList() {
         if (!this.totalCount) {
           return;
         }
         this.fold = !this.fold;
       },
-      hideList () {
+      hideList() {
         this.fold = true;
       },
       // 清空购物车
-      empty () {
+      empty() {
         this.selectFoods.forEach(food => {
           food.count = 0;
         });
       },
       // 去支付
-      pay () {
+      pay() {
         if (this.totalPrice < this.minPrice) {
           return;
         }
@@ -218,6 +220,7 @@ function createBalls () {
 
 <style lang="less" rel="stylesheet/less">
   @import '../../common/style/index.less';
+
   .shopcart {
     position: fixed;
     bottom: 0;
@@ -264,7 +267,7 @@ function createBalls () {
           }
           .num {
             position: absolute;
-            top:  0;
+            top: 0;
             right: 0;
             background-color: @active;
             color: #fff;
@@ -339,7 +342,7 @@ function createBalls () {
       .list-header {
         height: 40px;
         line-height: 40px;
-        padding:  0 18px;
+        padding: 0 18px;
         background-color: #f3f5f7;
         border-bottom: 1px solid rgba(7, 17, 27, .1);
         overflow: hidden;
@@ -382,6 +385,7 @@ function createBalls () {
       }
     }
   }
+
   .list-mack {
     position: fixed;
     left: 0;

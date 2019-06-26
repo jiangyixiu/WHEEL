@@ -14,6 +14,7 @@
 
 <script type="text/ecmascript-6">
   import Vue from 'vue';
+
   export default {
     props: {
       food: {
@@ -21,7 +22,7 @@
       }
     },
     methods: {
-      addCart (event) {
+      addCart(event) {
         if (!event._constructed) {
           return;
         }
@@ -32,7 +33,7 @@
         }
         this.$emit('cart-add', event.target);
       },
-      decreaseCart (event) {
+      decreaseCart(event) {
         if (!event._constructed) {
           return;
         }

@@ -24,6 +24,12 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'semi': ['error', 'always'],
-    'indent': 0
+    'indent': 0,
+    /**
+     * 函数名后面跟的括号之间是否加空格
+     * "error" => 加空格
+     * ["error", "never"] => 不加空格
+     */
+    'space-before-function-paren': ["error", "never"]
   }
 }

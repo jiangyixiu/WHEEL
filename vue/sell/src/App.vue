@@ -22,15 +22,16 @@
 
   import header from './components/header/header.vue';
   import axios from 'axios';
+
   const ERR_OK = 0;
 
   export default {
-    data () {
+    data() {
       return {
         seller: {}
       };
     },
-    created () {
+    created() {
       axios.get('/api/seller').then((response) => {
         response = response.data;
         if (response.errno === ERR_OK) {
