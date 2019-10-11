@@ -1,0 +1,37 @@
+.page{
+  padding-top: 60px;
+}
+
+.weui-grid{
+  text-align: center;
+  width: 20%;
+  padding: 10px 0;
+}
+
+.weui-grid.active{
+  background: #32b16c;
+  border-left-color: #32b16c;
+  border-right-color: #32b16c;
+  color: #fff;
+}
+
+.weui-grid.active .weui-grid__label{
+  color: #fff;
+}
+
+.weui-grid__icon{
+  width: 100%;
+  font-size: 20px;
+}
+
+.weui-grid__label{
+  font-size: 10px;
+}
+
+.weui-search-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}

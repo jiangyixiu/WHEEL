@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Toast",
+  "usingComponents": {
+    "weapp-toast": "/components/weapp/toast/toast"
+  }
+}

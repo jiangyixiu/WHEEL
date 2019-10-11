@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Loader",
+  "usingComponents": {
+    "weapp-loader": "/components/weapp/loader/loader"
+  }
+}

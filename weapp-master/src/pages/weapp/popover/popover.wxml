@@ -1,0 +1,44 @@
+<weapp-popover list="{{list}}" dir="{{dir}}" elem-id="{{elemId}}" show="{{show}}" bind:select="onSelectPopover" />
+
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Popover</view>
+        <view class="page__desc">弹出菜单（点击绿色图标显示）</view>
+    </view>
+    <view class="page__bd page__bd_spacing weapp-bg-white">
+    
+        <view class="weui-article">
+            <view class="weui-article__h1">大标题</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">章标题</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.1 节标题</view>
+                    
+                    <!-- 显示菜单 -->
+                    <view class="btn-box">
+                      <button class="weui-btn mini-btn" size="mini" type="primary" bindtap="showPopover" id="btnPopover">
+                        <text class="fa fa-list"></text>   显示菜单
+                      </button>
+                    </view>
+                    <view class="btn-box">
+                      <button class="weui-btn mini-btn" size="mini" type="default" bindtap="showPopover2" id="btnPopover2">
+                        <text class="fa fa-list"></text>   显示菜单2
+                      </button>
+                    </view>
+
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </view>
+
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="/pages/libs/weui/images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="/pages/libs/weui/images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

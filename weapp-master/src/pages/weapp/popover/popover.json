@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Popover",
+  "usingComponents": {
+    "weapp-popover": "/components/weapp/popover/popover"
+  }
+}
